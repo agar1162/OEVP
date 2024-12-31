@@ -1,4 +1,4 @@
-import SearchBar from "./search";
+import SearchBar from "./Search";
 
 export default function Navbar() {
     const item = (name, link) => {
