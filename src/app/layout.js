@@ -1,4 +1,3 @@
-import { icons } from "lucide-react";
 import "./globals.css";
 
 
