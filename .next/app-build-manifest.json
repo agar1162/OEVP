@@ -6,20 +6,20 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/offices/2024/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/offices/2024/page.js"
+      "static/chunks/app/page.js"
     ],
     "/departments/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/departments/page.js"
     ],
-    "/page": [
+    "/offices/2024/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/app/offices/2024/page.js"
     ],
     "/resources/page": [
       "static/chunks/webpack.js",
