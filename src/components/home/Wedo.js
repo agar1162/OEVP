@@ -16,7 +16,7 @@ export default function Wedo() {
                 </div>
 
                 <div id="text" className="basis-2/3">
-                    <p className="mx-[10rem]">
+                    <p className="mx-[5rem]">
                         "The Office of the Executive Vice President (OEVP) of the Associated Students of the University of California (ASUC) is dedicated to empowering students by fostering transparency, equity, and collaboration across campus. We strive to amplify student voices, bridge communication between students and administration, and ensure the efficient allocation of resources to meet the diverse needs of our community."
                     </p>
                 </div>

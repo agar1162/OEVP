@@ -1,12 +1,8 @@
-'use client'
-import { useState } from 'react'
-
-
 export default function Footer(){
     
     return(
         <footer className="bg-[#003A70] h-[30rem] flex flex-row">
-            <a className="basis-1/4 grid place-content-center"><img src="ASUC-logo.png" height='200px' width='200px' alt="logo"/></a>
+            <a className="basis-1/4 grid place-content-center"><img src="/ASUC-logo.png" height='200px' width='200px' alt="logo"/></a>
             <div className="basis-1/4 grid place-content-center" style={{width:"394.864px"}}>
                 <h1 className="p-2" style={{color:"#F9B315", fontWeight: "bold", fontSize: '24px'}}>ASUC Newsletter</h1>
                 <p className="p-2" id="geo">Want to stay updated? Get access to the latest free resources, contributions, and how your student government and support your endeavors. </p>
