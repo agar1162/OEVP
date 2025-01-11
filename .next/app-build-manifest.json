@@ -11,11 +11,6 @@
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
-    "/departments/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/departments/page.js"
-    ],
     "/offices/2024/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",

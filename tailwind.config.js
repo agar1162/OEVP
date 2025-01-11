@@ -8,7 +8,7 @@ module.exports = {
   ],
   theme: {
 	screens: {
-		'sm': '640px',
+		'sm': '300px',
 		// => @media (min-width: 640px) { ... }
   
 		'md': '768px',
@@ -25,6 +25,7 @@ module.exports = {
 	  },
   	extend: {
   		colors: {
+			berkeley: "#003A70",
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

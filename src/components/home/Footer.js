@@ -1,11 +1,17 @@
 export default function Footer(){
     
     return(
-        <footer className="bg-[#003A70] h-[30rem] flex flex-row">
-            <a className="basis-1/4 grid place-content-center"><img src="/ASUC-logo.png" height='200px' width='200px' alt="logo"/></a>
-            <div className="basis-1/4 grid place-content-center" style={{width:"394.864px"}}>
-                <h1 className="p-2" style={{color:"#F9B315", fontWeight: "bold", fontSize: '24px'}}>ASUC Newsletter</h1>
-                <p className="p-2" id="geo">Want to stay updated? Get access to the latest free resources, contributions, and how your student government and support your endeavors. </p>
+        <footer className="bg-[#003A70] h-[30rem] flex flex-col md:flex-row text-[9px]">
+        <div className="basis-1/4 hidden lg:flex items-center justify-center">
+                <img
+                src="/ASUC-logo.png"
+                alt="ASUC Logo"
+                className="h-[200px] w-[200px] object-contain"
+        />
+      </div>
+            <div className="basis-1/4 grid p-5 place-content-center w-[400px]" >
+                <h1 className="p-2 text-[24px] font-bold text-[#F9B315]">ASUC Newsletter</h1>
+                <p className="p-2 lg:text-[12px]" id="geo">Want to stay updated? Get access to the latest free resources, contributions, and how your student government and support your endeavors. </p>
                 <div className="p-2 py-3">
                 <input 
                     placeholder="Enter Email"
@@ -18,7 +24,7 @@ export default function Footer(){
             <div id="blocks"className="basis-2/4 grid place-content-center">
                 <div className="grid gap-4 grid-cols-2">
                     <div>
-                        <h1 className="font-bold text-[19.5px]">Free Resources</h1>
+                        <h1 className="font-bold">Free Resources</h1>
                         <ul>
                             <li>Newspaper Subscriptions</li>
                             <li>Affinity Spaces</li>
@@ -26,21 +32,21 @@ export default function Footer(){
                         </ul>
                     </div>
                     <div>
-                        <h1 className="font-bold text-[19.5px]">Follow Us</h1>
+                        <h1 className="font-bold">Follow Us</h1>
                         <ul>
                             <li>Instagram</li>
                             <li>Facebook</li>
                         </ul>
                     </div>
                     <div> 
-                        <h1 className="font-bold text-[19.5px]">Inquires</h1>
+                        <h1 className="font-bold">Inquires</h1>
                         <ul>
                             <li>123-456-7890</li>
                             <li>Email</li>
                         </ul>
                     </div>
                     <div>
-                        <h1 className="font-bold text-[19.5px]">Home</h1>
+                        <h1 className="font-bold">Home</h1>
                         <ul>
                             <li>About Us</li>
                             <li>Committes</li>

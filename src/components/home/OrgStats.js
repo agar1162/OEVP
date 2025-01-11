@@ -1,6 +1,6 @@
 export default function OrgStats() {
     return (
-        <div className="flex flex-wrap justify-center items-center gap-8 h-auto pb-2">
+        <div className="flex flex-wrap transition-all duration-75 ease-in justify-center items-center gap-8 h-auto p-[5vh]">
             <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
                 <h1 id="gradient-text" className="text-[#003A70] text-[56px] font-bold">400+</h1>
                 <p className="text-[20px] text-center mx-4">Registered Student Organizations receive funding & resources</p>

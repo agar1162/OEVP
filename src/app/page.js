@@ -6,8 +6,6 @@ import Footer from "../components/home/Footer";
 import Wedo from "../components/home/Wedo"
 import "./globals.css";
 import OrgStats from "../components/home/OrgStats";
-import Events from "../components/home/Events";
-
 
 
 export default function Home() {
@@ -18,12 +16,8 @@ export default function Home() {
       <Wedo />
       <OrgStats/>
       <Subscription />
-      <Events />
       <Partner />
-  
       <Footer />
-    
-
     </div>
   );
 }
