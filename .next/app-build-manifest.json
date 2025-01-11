@@ -6,6 +6,11 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
+    "/resources/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/resources/page.js"
+    ],
     "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -16,15 +21,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/offices/2024/page.js"
     ],
-    "/resources/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/resources/page.js"
-    ],
     "/partnerships/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/partnerships/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

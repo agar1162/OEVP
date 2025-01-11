@@ -1,6 +1,5 @@
 {
-  "/partnerships/page": "app/partnerships/page.js",
-  "/resources/page": "app/resources/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/page": "app/page.js",
   "/offices/2024/page": "app/offices/2024/page.js"
 }
