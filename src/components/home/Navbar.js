@@ -65,10 +65,10 @@ export default function Navbar() {
                 <a href="/departments/communications">Communications</a>
               </li>
               <li className="px-4 py-2 hover:bg-gray-100">
-                <a href="/departments/legal">Legal Affairs</a>
+                <a href="/departments/legal-affairs">Legal Affairs</a>
               </li>
               <li className="px-4 py-2 hover:bg-gray-100">
-                <a href="/departments/commercial">Commercial Activities</a>
+                <a href="/departments/commercial-activities">Commercial Activities</a>
               </li>
               <li className="px-4 py-2 hover:bg-gray-100">
                 <a href="/departments/student-affairs">Student Affairs</a>

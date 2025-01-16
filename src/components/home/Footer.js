@@ -1,7 +1,7 @@
 export default function Footer(){
     
     return(
-        <footer className="bg-[#003A70] h-[30rem] flex flex-col md:flex-row text-[9px]">
+        <footer className="bg-[#003A70] sticky h-[30rem] flex flex-col md:flex-row text-[9px]">
             <div className="basis-1/4 hidden lg:flex items-center justify-center">
                 <img
                 src="/ASUC-logo.png"
@@ -9,7 +9,7 @@ export default function Footer(){
                 className="h-[200px] w-[200px] object-contain"
                 />
             </div >
-            <div className="basis-1/4 grid p-5  lg:block place-content-center w-[400px]" >
+            <div className="basis-1/4 grid p-5 lg:block place-content-center w-[400px]" >
                 <h1 className="p-2 text-[24px] font-bold text-[#F9B315]">ASUC Newsletter</h1>
                 <p className="p-2 lg:text-[12px]" id="geo">Want to stay updated? Get access to the latest free resources, contributions, and how your student government and support your endeavors. </p>
                 <div className="p-2 py-3">
