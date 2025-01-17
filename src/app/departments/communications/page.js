@@ -21,7 +21,7 @@ export default function DepartmentsPage() {
 
         <Cover 
             name="Communications & Public Relations"
-            link="comm.png"
+            link="comms.jpeg"
             desc="Responsible for managing strategic communications and public relations initiatives "
             members="Responsible for managing strategic communications and public relations initiatives "
             />

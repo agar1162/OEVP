@@ -1,7 +1,7 @@
 export default function Footer(){
     
     return(
-        <footer className="bg-[#003A70] sticky h-[30rem] flex flex-col md:flex-row text-[9px]">
+        <footer className="bg-[#003A70] sticky h-[30rem] md:h-[20rem] flex flex-col md:flex-row text-[9px]">
             <div className="basis-1/4 hidden lg:flex items-center justify-center">
                 <img
                 src="/ASUC-logo.png"

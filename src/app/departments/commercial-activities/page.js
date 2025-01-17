@@ -23,7 +23,7 @@ export default function departmentsPage() {
     <div>
         <Navbar />
         <Cover 
-            link="act.png"
+            link="act.jpg"
             name="Commerical Activities"
             desc="Responsible for managing strategic communications and public relations initiatives "
             members="Chloe Choi (Intern), Hailey Jung (Intern), Matt Blake (Associate) "

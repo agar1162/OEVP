@@ -19,7 +19,7 @@ export default function Navbar() {
     <nav className="flex justify-between items-center bg-[#003A70] text-white py-4 px-6 sticky top-0 z-50">
       {/* Logo Section */}
       <a href="/" className="flex items-center">
-        <img src={logoref} alt="Logo" className="w-[150px] object-contain" />
+        <img src={logoref} alt="Logo" className="lg:w-[300px] w-[250px] object-contain" />
       </a>
 
       {/* Mobile Menu Button */}

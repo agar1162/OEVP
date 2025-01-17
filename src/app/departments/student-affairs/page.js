@@ -8,7 +8,7 @@ export default function departmentsPage() {
         <Navbar />
         <Cover 
             name="Student Affairs"
-            link="affair.png"
+            link="affairs.jpg"
             desc="Addresses the gaps in resources for students."
             mem="Chloe Choi (Intern), Hailey Jung (Intern), Matt Blake (Associate)"
         />

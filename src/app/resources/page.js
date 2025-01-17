@@ -68,7 +68,7 @@ export default function resourcesPage() {
                         <li>Complete Registration Finish the registration process, and you'll have access to The New York Times online content. You’ll also be notified of the expiration date of your pass, and you can set a reminder to renew it when it expires.</li>
                     </ul>
                     <p className="text-[#3B3B3B] text-[14px]">*If you have a personally paid subscription with the NYT, you can cancel it by calling NYT Customer Care (800) 591-9233 and then activate your free Berkely account. For assistance with your ASUC NYTimes.com access, email edu@nytimes.com</p>
-                    <hr className="w-48 left h-1 mx-auto mx-0 my-6 bg-berkeley border-0 rounded"/>
+                    <hr className="mr-[60vw] left h-1 mx-auto mx-0 my-6 bg-berkeley border-0 rounded"/>
 
                 </div>
 

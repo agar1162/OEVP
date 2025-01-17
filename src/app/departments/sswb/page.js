@@ -8,7 +8,7 @@ export default function departmentsPage() {
         <Navbar />
         <Cover 
             name="Student Safety, Wellnes & Success"
-            link="safety.png"
+            link="safety.jpg"
             desc="Addresses the needs of the UC Berkeley campus."
             mem="Shea Davison (Deputy Director), Clara Hinsdale (Associate), Paige Clark (Director), Angel Zamora (Intern), Madison Hua (Associate), Karen Yhim (Associate)"
         />

@@ -18,7 +18,7 @@ export default function departmentsPage() {
         <Navbar />
         <Cover 
             name="Finance"
-            link="finance.png"
+            link="finance.jpg"
             desc="Responsible for keeping track of the office budget"
             mem="Emily Melero (Director), Paola Moron (Associate)"
                 />

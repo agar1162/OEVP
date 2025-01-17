@@ -8,7 +8,7 @@ export default function departmentsPage() {
         <Navbar />
         <Cover 
             name="RSO Support"
-            link="rso.png"
+            link="rso.jpeg"
             desc="Ensures that registered student organizations have access to all resources provided by the ASUC."
             mem="Chloe Choi (Intern), Hailey Jung (Intern), Matt Blake (Associate)"
         />

@@ -1,78 +1,150 @@
+"use client"
+import React, { useState, useEffect } from "react";
 import Navbar from "../components/home/Navbar";
 import Footer from "../components/home/Footer";
 import "./globals.css";
-
-
 
 export default function Home() {
   const times = "/nyt.png";
   const wsj = "/wsj.png";
   const def =
-  "Get free access to a variety of New York Times articles, games, and podcasts if you are an undergraduate or graduate student.";
+    "Get free access to a variety of New York Times articles, games, and podcasts if you are an undergraduate or graduate student.";
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [progress, setProgress] = useState(0); // State for the progress bar
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? slides.length - 1 : prevIndex - 1));
+  };
+
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === slides.length - 1 ? 0 : prevIndex + 1));
+  };
+
+  const slides = [
+    {
+      url: "/backgrounds/slideshow/s1.png"
+    },
+    {
+      url: "/backgrounds/slideshow/s2.png"
+    },
+    {
+      url: "/backgrounds/slideshow/s3.png"
+    },
+    {
+      url: "/backgrounds/slideshow/s4.png"
+    }
+  ];
+
+  useEffect(() => {
+    // Reset progress when the slide changes
+    setProgress(0);
+
+    // Autoplay function to move to the next slide
+    const autoplay = setInterval(() => {
+      nextSlide();
+    }, 5000);
+
+    // Update the progress bar every 30ms
+    const progressInterval = setInterval(() => {
+      setProgress((prevProgress) => {
+        if (prevProgress < 100) {
+          return prevProgress + (100 / 5000) * 30; // Calculate the progress
+        } else {
+          return 100; // Ensure it doesn't exceed 100
+        }
+      });
+    }, 30);
+
+    return () => {
+      clearInterval(autoplay);
+      clearInterval(progressInterval);
+    };
+  }, [currentIndex]);
 
   return (
     <div>
       <Navbar />
-  
-      <div
-        id="COVER"
-        className="h-[90vh] bg-cover bg-center bg-no-repeat text-white text-center flex items-start justify-center"
-          style={{
-              backgroundImage:
-                  "linear-gradient(180deg, rgba(165, 165, 165, 0.53) 4%, rgba(0, 58, 112, 0.53) 78.5%), url('/backgrounds/b1.png')",
-          }}>
 
-            <div className="mt-[8rem] p-8 rounded-md max-w-[80%] md:max-w-[60%] lg:max-w-[50%]">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-wider mb-8">
-                    OFFICE OF THE EXECUTIVE VICE PRESIDENT
-                </h1>
-                <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed tracking-wide">
-                    Welcome to the Office of the EVP at University of California, Berkeley
-                </p>
-            </div>
+      <div className="w-full h-2 bg-gray-300 ">
+        <div
+          className="h-full bg-[#FDB515]"
+          style={{ width: `${progress}%` }}
+        ></div>
       </div>
 
       <div
-        id="WHO_WE_ARE"
-        className="mx-8 lg:mx-[5rem]">
-            <main className="flex flex-col lg:flex-row pt-10 text-[20px] gap-8">
-                {/* Side Menu */}
-                <div
-                    id="sidemenu"
-                    className="lg:basis-1/3 flex flex-col items-center drop-shadow-lg">
-                    <h3 className="flex items-center w-full text-2xl lg:text-3xl font-extrabold text-center">
-                        <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-                        <span className="px-4">Who We Are</span>
-                        <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-                    </h3>
+        id="COVER"
+        className="h-[90vh] bg-cover bg-center bg-no-repeat text-white text-center flex items-start justify-center relative"
+      >
+        {/* Background images with transition */}
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={`absolute bg-cover bg-center b w-full h-full transition-opacity duration-1000 ease-in-out ${
+              currentIndex === index ? "opacity-100" : "opacity-0"
+            }`}
+            style={{
+              backgroundImage: `linear-gradient(180deg, rgba(165, 165, 165, 0.53) 4%, rgba(0, 58, 112, 0.53) 78.5%), url(${slide.url})`,
+            }}
+          ></div>
+        ))}
 
-                    <menu className="flex flex-col pt-5 w-1/2 gap-4">
-                        <a
-                            href="#mission"
-                            className="hover:bg-[#003A70] hover:text-white border-2 border-[#003A70] p-4 text-center font-semibold rounded-md transition">
-                            Our Mission
-                        </a>
-                        <a
-                            href="#resources"
-                            className="hover:bg-[#003A70] hover:text-white border-2 border-gray-300 p-4 text-center font-semibold rounded-md transition">
-                            Free Resources
-                        </a>
-                    </menu>
-                </div>
-
-                {/* Main Content */}
-                <div id="text" className="lg:basis-2/3">
-                    <p className="text-center">
-                        "The Office of the Executive Vice President (OEVP) of the Associated
-                        Students of the University of California (ASUC) is dedicated to empowering
-                        students by fostering transparency, equity, and collaboration across campus. 
-                        We strive to amplify student voices, bridge communication between students 
-                        and administration, and ensure the efficient allocation of resources to meet 
-                        the diverse needs of our community."
-                    </p>
-                </div>
-            </main>
+        {/* Title section */}
+        <div className="absolute top-0 mt-[8rem] p-8 rounded-md max-w-[80%] md:max-w-[60%] lg:max-w-[50%] z-10">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-wider mb-8">
+            OFFICE OF THE EXECUTIVE VICE PRESIDENT
+          </h1>
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed tracking-wide">
+            Welcome to the Office of the EVP at University of California, Berkeley
+          </p>
         </div>
+      </div>
+
+
+      {/* Progress bar */}
+      
+
+      {/* Rest of your content */}
+      <div id="WHO_WE_ARE" className="mx-8 lg:mx-[5rem]">
+        <main className="flex flex-col lg:flex-row pt-10 text-[20px] gap-8">
+          {/* Side Menu */}
+          <div id="sidemenu" className="lg:basis-1/3 flex flex-col items-center drop-shadow-lg">
+            <h3 className="flex items-center w-full text-2xl lg:text-3xl font-extrabold text-center">
+              <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+              <span className="px-4">Who We Are</span>
+              <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+            </h3>
+
+            <menu className="flex flex-col pt-5 w-1/2 gap-4">
+              <a
+                href="#mission"
+                className="hover:bg-[#003A70] hover:text-white border-2 border-[#003A70] p-4 text-center font-semibold rounded-md transition"
+              >
+                Our Mission
+              </a>
+              <a
+                href="#resources"
+                className="hover:bg-[#003A70] hover:text-white border-2 border-gray-300 p-4 text-center font-semibold rounded-md transition"
+              >
+                Free Resources
+              </a>
+            </menu>
+          </div>
+
+          {/* Main Content */}
+          <div id="text" className="lg:basis-2/3">
+            <p className="text-center">
+              "The Office of the Executive Vice President (OEVP) of the Associated
+              Students of the University of California (ASUC) is dedicated to empowering
+              students by fostering transparency, equity, and collaboration across campus. 
+              We strive to amplify student voices, bridge communication between students 
+              and administration, and ensure the efficient allocation of resources to meet 
+              the diverse needs of our community."
+            </p>
+          </div>
+        </main>
+      </div>
 
         
         <div 

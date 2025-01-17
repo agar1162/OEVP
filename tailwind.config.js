@@ -25,7 +25,7 @@ module.exports = {
 	  },
   	extend: {
   		colors: {
-			berkeley: "#003A70",
+			berkeley: "#002676",
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
