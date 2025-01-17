@@ -1,39 +1,42 @@
-# Workflow for deploying the OEVP-site to the server via GitHub Actions
 name: Deploy OEVP-Site
 
-# Controls when the workflow will run
 on:
-  # Trigger the workflow on push events to the specified branch
   push:
-    branches: 
+    branches:
       - main
 
-# Jobs to perform in the workflow
 jobs:
   deploy:
     name: Deploy OEVP-Site
     runs-on: ubuntu-latest
 
     steps:
-      # Check out the repository
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      # Install project dependencies and build the site
       - name: Build
         run: |
           npm install
           npm run build
 
-      # Deploy files to the remote server via SSH
+      - name: Set up SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+
+      - name: Add SSH known hosts
+        run: |
+          ssh-keyscan -H ssh.ocf.berkeley.edu >> ~/.ssh/known_hosts
+
       - name: Deploy to Server
         uses: appleboy/ssh-action@v0.1.4
         with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
+          host: ssh.ocf.berkeley.edu
+          username: asucevp
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            cd OEVP
+            cd OEVP-site
             git pull
             cp -r out/* ../public_html
