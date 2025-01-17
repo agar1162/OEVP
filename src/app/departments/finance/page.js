@@ -23,7 +23,7 @@ export default function departmentsPage() {
             mem="Emily Melero (Director), Paola Moron (Associate)"
                 />
             
-        <div className="p-[5vh] lg:mx-[10%]">
+        <div className="p-[5vh] lg:mx-[10%] text-[20px]">
             <p>
                 This department ensures the Office of the Executive Vice President is
                 informed about the finances of the Associated Students of the University of California (ASUC).

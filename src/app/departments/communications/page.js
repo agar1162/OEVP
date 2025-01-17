@@ -4,8 +4,11 @@ import React, { useState } from "react";
 import Navbar from "../../../components/home/Navbar";
 import Footer from "../../../components/home/Footer";
 import Cover from "../components/Cover"
+import InstagramPostEmbed from "../components/InstaPostEmbed";
+import InstagramReelEmbed from "../components/InstaReelEmbed";
 
-export default function departmentsPage() {
+
+export default function DepartmentsPage() {
     const [isExpanded, setIsExpanded] = useState(false);
 
     const toggleReadMore = () => {
@@ -23,7 +26,7 @@ export default function departmentsPage() {
             members="Responsible for managing strategic communications and public relations initiatives "
             />
     
-        <div className="p-[5vh] lg:mx-[10%]">
+        <div className="p-[5vh] lg:mx-[10%] text-[20px]">
             <p>
             The Communications and PR team is responsible for managing strategic communications and public relations 
             initiatives that amplify the OEVP's mission and activities. The department develops social media outreach 
@@ -53,14 +56,19 @@ export default function departmentsPage() {
 
         <div className="relative flex  items-center mx-[10%]">
             <div className="flex-grow border-t border-[#A6A6A6]"></div>
-            <span className="flex-shrink mx-4 text-[25px] md:hidden">Our Work</span>
+            <span className="flex-shrink mx-4 text-[25px]">Our Work</span>
             <div className="flex-grow border-t border-[#A6A6A6]"></div>
         </div>
-        <div>
-           
+
+        <div className="lg:grid lg:grid-cols-3 lg:mx-[10%]">
+            <InstagramPostEmbed postId="DDNZUO0zFv1"/>
+            <InstagramReelEmbed postId="DCff6JySrrl"/>
+            <InstagramReelEmbed postId="DCDlkWhR_bq"/>
+            <InstagramPostEmbed postId="DB7snwWJeB9"/>
+            <InstagramPostEmbed postId="DCZ5aD9z4-4"/>
         </div>
-
-
+       
+            
         <Footer />
     </div>
 
