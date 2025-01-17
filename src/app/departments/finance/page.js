@@ -53,8 +53,8 @@ export default function departmentsPage() {
                 {isExpanded ? "Read less" : "Read more"}
                 </button>
             </div>
-        
         </div>
+        
         <div className="relative flex  items-center mx-[10%]">
             <div className="flex-grow border-t border-[#A6A6A6]"></div>
             <span className="flex-shrink mx-4 text-[25px] md:hidden">FAQ</span>

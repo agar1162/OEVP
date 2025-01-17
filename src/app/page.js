@@ -101,7 +101,7 @@ export default function Home() {
               <img src={times} alt="New York Times" className="h-[46px] w-[36px] mx-auto mb-4" />
               <h1 className="text-[23px] font-bold mb-2">New York Times</h1>
               <p className="text-sm leading-relaxed mb-4">{def}</p>
-              <a href="/access" className="p-5 px-10 bg-white rounded-lg text-[#A6A6A6] hover:text-berkeley">
+              <a href="/access" className="p-3 px-10 bg-white rounded-lg text-[#A6A6A6] hover:text-berkeley">
                 Register
               </a>
             </div>
@@ -113,7 +113,7 @@ export default function Home() {
               <img src={wsj} alt="Wall Street Journal" className="h-[36px] w-[62px] mx-auto mb-4" />
               <h1 className="text-[23px] font-bold mb-2">Wall Street Journal</h1>
               <p className="text-sm leading-relaxed mb-4">{def}</p>
-              <a href="/access" className="p-5 px-10 bg-white rounded-lg text-[#A6A6A6] hover:text-berkeley">
+              <a href="/access" className="p-3 px-10 bg-white rounded-lg text-[#A6A6A6] hover:text-berkeley">
                 Register
               </a>
             </div>

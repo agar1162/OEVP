@@ -1,6 +1,8 @@
 {
-  "/page": "app/page.js",
-  "/departments/legal-affairs/page": "app/departments/legal-affairs/page.js",
+  "/departments/rso/page": "app/departments/rso/page.js",
+  "/resources/page": "app/resources/page.js",
+  "/departments/student-affairs/page": "app/departments/student-affairs/page.js",
+  "/departments/spaces/page": "app/departments/spaces/page.js",
   "/departments/communications/page": "app/departments/communications/page.js",
-  "/departments/finance/page": "app/departments/finance/page.js"
+  "/page": "app/page.js"
 }
