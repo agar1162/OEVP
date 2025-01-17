@@ -8,6 +8,7 @@
 6. Within OEVP run ->```cp -r out/* ../public_html```
 
 ## Front End File Routing Structure
+```
 └── 📁src
     └── 📁app
         └── 📁departments 
