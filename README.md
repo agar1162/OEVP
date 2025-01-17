@@ -11,8 +11,7 @@
 ```
 └── 📁src
     └── 📁app
-        └── .DS_Store
-        └── 📁departments
+        └── 📁departments $${\color{lightgreen}Light \space Green}$$
             └── 📁commercial-activities
                 └── page.js
             └── 📁communications
@@ -48,11 +47,7 @@
         └── 📁resources
             └── page.js
     └── 📁components
-        └── .DS_Store
         └── 📁home
             └── Footer.js
             └── Navbar.js
-    └── 📁lib
-        └── utils.js
-    └── .DS_Store
 ```
