@@ -47,8 +47,8 @@ export default function Navbar() {
           </a>
         </li>
 
-        {/* Departments Dropdown */}
-        <li className="p-4 relative">
+                {/* Departments Dropdown */}
+                <li className="p-4 relative">
           <button
             onClick={toggleDepartmentMenu}
             className="flex items-center text-lg font-bold hover:text-gray-400 transition"
@@ -57,7 +57,10 @@ export default function Navbar() {
             <img src={icon} alt="Toggle" className="ml-2 w-4" />
           </button>
           {isDepartmentMenuVisible && (
-            <ul className="absolute top-full left-0 mt-2 bg-white text-black rounded-md shadow-lg w-48">
+            <ul
+              className="absolute top-full left-0 mt-2 bg-white text-black rounded-md shadow-lg w-48 z-50"
+              style={{ pointerEvents: 'auto' }}
+            >
               <li className="px-4 py-2 hover:bg-gray-100">
                 <a href="/departments/finance">Finance</a>
               </li>
@@ -73,9 +76,22 @@ export default function Navbar() {
               <li className="px-4 py-2 hover:bg-gray-100">
                 <a href="/departments/student-affairs">Student Affairs</a>
               </li>
+              <li className="px-4 py-2 hover:bg-gray-100">
+                <a href="/departments/rso">RSO Support</a>
+              </li>
+              <li className="px-4 py-2 hover:bg-gray-100">
+                <a href="/departments/sswb">Student Safety Wellness & Success</a>
+              </li>
+              <li className="px-4 py-2 hover:bg-gray-100">
+                <a href="/departments/deib">Diversity, Equity, Inclusion & Belonging</a>
+              </li>
+              <li className="px-4 py-2 hover:bg-gray-100">
+                <a href="/departments/spaces">Spaces</a>
+              </li>
             </ul>
           )}
         </li>
+
 
         <li className="p-4">
           <a

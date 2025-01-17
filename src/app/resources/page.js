@@ -56,8 +56,8 @@ export default function resourcesPage() {
                 </div>
             </div>
 
-            <div>
-                <div className="p-6" >
+            <div className="lg:px-[20vh]">
+                <div className="p-6 pb-0" >
                     <h1 className="font-bold pb-4 text-[25px]">How to Register for the <u>New York Times</u></h1>
                     <h3 className="font-bold">Steps to set up your subscription:</h3>
                     <ul className="list-decimal list-inside p-5 pt-0">
@@ -68,11 +68,11 @@ export default function resourcesPage() {
                         <li>Complete Registration Finish the registration process, and you'll have access to The New York Times online content. You’ll also be notified of the expiration date of your pass, and you can set a reminder to renew it when it expires.</li>
                     </ul>
                     <p className="text-[#3B3B3B] text-[14px]">*If you have a personally paid subscription with the NYT, you can cancel it by calling NYT Customer Care (800) 591-9233 and then activate your free Berkely account. For assistance with your ASUC NYTimes.com access, email edu@nytimes.com</p>
-                    <hr class="w-48 left h-1 mx-auto my-4 bg-berkeley border-0 rounded"/>
+                    <hr className="w-48 left h-1 mx-auto mx-0 my-6 bg-berkeley border-0 rounded"/>
 
                 </div>
 
-                <div className="p-6 pt-2">
+                <div className="p-6 pt-0">
                     <h1 className="font-bold pb-4 text-[25px]">How to Register for the <u>Wall Street Journal</u></h1>
                     <h3 className="font-bold">Steps to set up your subscription:</h3>
                     <ul className="list-decimal list-inside p-5 pt-0">

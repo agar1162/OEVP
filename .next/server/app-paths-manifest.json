@@ -1,4 +1,8 @@
 {
-  "/resources/page": "app/resources/page.js",
-  "/page": "app/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/departments/deib/page": "app/departments/deib/page.js",
+  "/departments/finance/page": "app/departments/finance/page.js",
+  "/page": "app/page.js",
+  "/departments/communications/page": "app/departments/communications/page.js",
+  "/departments/legal-affairs/page": "app/departments/legal-affairs/page.js"
 }

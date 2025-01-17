@@ -16,7 +16,7 @@ export default function Home() {
   
       <div
         id="COVER"
-        className="h-screen bg-cover bg-center bg-no-repeat text-white text-center flex items-start justify-center"
+        className="h-[90vh] bg-cover bg-center bg-no-repeat text-white text-center flex items-start justify-center"
           style={{
               backgroundImage:
                   "linear-gradient(180deg, rgba(165, 165, 165, 0.53) 4%, rgba(0, 58, 112, 0.53) 78.5%), url('/slideshow/b1.png')",
