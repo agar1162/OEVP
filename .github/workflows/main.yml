@@ -15,12 +15,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Check out the repository to the GitHub runner
+      # Check out the repository
       - name: Checkout Code
         uses: actions/checkout@v3
 
       # Install project dependencies and build the site
-      - name: Install and Build
+      - name: Build
         run: |
           npm install
           npm run build
@@ -34,6 +34,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            cd OEVP-site
+            cd OEVP
             git pull
             cp -r out/* ../public_html
