@@ -7,11 +7,10 @@
 5. ```git pull```
 6. Within OEVP run ->```cp -r out/* ../public_html```
 
-## Front End Structure
-```
+## Front End File Routing Structure
 └── 📁src
     └── 📁app
-        └── 📁departments $${\color{lightgreen}Light \space Green}$$
+        └── 📁departments 
             └── 📁commercial-activities
                 └── page.js
             └── 📁communications
@@ -35,13 +34,11 @@
                 └── page.js
             └── 📁student-affairs
                 └── page.js
-        └── globals.css
-        └── layout.js
         └── 📁offices
             └── 📁2024
                 └── 📁components
                 └── page.js
-        └── page.js
+        └── page.js 
         └── 📁partnerships
             └── page.js
         └── 📁resources
@@ -50,4 +47,4 @@
         └── 📁home
             └── Footer.js
             └── Navbar.js
-```
+
