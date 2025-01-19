@@ -131,7 +131,7 @@ export default function Navbar() {
 
         <li className="p-4">
           <button className="bg-[#265885] px-6 py-2 rounded-md text-lg font-bold hover:bg-[#1d486a] transition">
-            Partner With Us
+            Senate Meeting
           </button>
         </li>
       </ul>

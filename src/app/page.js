@@ -23,16 +23,22 @@ export default function Home() {
 
   const slides = [
     {
-      url: "/backgrounds/slideshow/s1.png"
+      url: "/backgrounds/slideshow/s1.jpeg"
     },
     {
-      url: "/backgrounds/slideshow/s2.png"
+      url: "/backgrounds/slideshow/s2.jpeg"
     },
     {
-      url: "/backgrounds/slideshow/s3.png"
+      url: "/backgrounds/slideshow/s3.JPG"
     },
     {
-      url: "/backgrounds/slideshow/s4.png"
+      url: "/backgrounds/slideshow/s4.JPG"
+    },
+    {
+      url: "/backgrounds/slideshow/s5.JPG"
+    },
+    {
+      url: "/backgrounds/slideshow/s6.JPG"
     }
   ];
 
@@ -110,7 +116,7 @@ export default function Home() {
         <main className="flex flex-col lg:flex-row pt-10 text-[20px] gap-8">
           {/* Side Menu */}
           <div id="sidemenu" className="lg:basis-1/3 flex flex-col items-center drop-shadow-lg">
-            <h3 className="flex items-center w-full text-2xl lg:text-3xl font-extrabold text-center">
+            <h3 className="flex items-center w-full text-2xl lg:text-3xl text-center">
               <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
               <span className="px-4">Who We Are</span>
               <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>

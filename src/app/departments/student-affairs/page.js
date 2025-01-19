@@ -31,8 +31,8 @@ export default function departmentsPage() {
             <div className="flex-grow border-t border-[#A6A6A6]"></div>
         </div>
 
-        <div className="md:mx-[25%]  mx-[10%] py-5 place-items-center">
-            <img src="../backgrounds/stu_aff.png"/>
+        <div className="md:mx-[30%]  mx-[10%] py-5 place-items-center">
+            <img src="../backgrounds/stu_aff.png" width={"50%"}/>
             <p className="text-[12px] md:text-lg"><i>To celebrate Hispanic Heritage Month, the Student Affairs
                  department organized a collaborative event with Cal Dining
                   and Berkeley Dining at CrossRoads Dining Hall for a night

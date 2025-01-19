@@ -54,6 +54,38 @@ export default function departmentsPage() {
                 </button>
             </div>
         </div>
+
+        <div className="relative flex  items-center mx-[10%]">
+            <div className="flex-grow border-t border-[#A6A6A6]"></div>
+            <span className="flex-shrink mx-4 text-[25px]">Our Work</span>
+            <div className="flex-grow border-t border-[#A6A6A6]"></div>
+        </div>
+
+        <div className="md:flex justify-center">
+            <div className="flex flex-col items-center  py-5 md:w-1/3 md:max-w-[45%]">
+                <img
+                className="w-[40vh] md:w-[60vh]"
+                src="/departments/finance/f1.jpg"
+                alt="Grant Submission Portal"
+                />
+                <p className="mt-4 px-4 md:px-0 max-w-[60vh]">
+                Grant Submission Portal: Allow RSOs or individuals to apply for the CASSA Grant directly from the website.
+                </p>
+            </div>
+
+            <div className="flex flex-col items-center py-5 md:w-1/3 md:max-w-[45%]">
+                <img
+                className="w-[40vh] md:w-[60vh]"
+                src="/departments/finance/f2.jpg"
+                alt="Funding Information"
+                />
+                <p className="mt-4 px-4 md:px-0 max-w-[60vh]">
+                Funding information for registered student organizations (RSOs), including funding opportunities.
+                </p>
+            </div>
+        </div>
+
+
         
         <div className="relative flex  items-center mx-[10%]">
             <div className="flex-grow border-t border-[#A6A6A6]"></div>
@@ -61,6 +93,8 @@ export default function departmentsPage() {
             <span className="flex-shrink mx-4 text-[25px] sm:hidden md:block">Frequently Asked Questions</span>
             <div className="flex-grow border-t border-[#A6A6A6]"></div>
         </div>
+
+        
         
         <div className="mx-8 pb-10 ">
             <FAQ 

@@ -31,9 +31,9 @@ export default function departmentsPage() {
 
 
 
-        <div className="p-[5vh] lg:mx-[10%] text-[20px]">
+        <div className="p-[5vh] lg:mx-[10%] text-[20px] indent-10">
             <p>
-                Commercial Activities works closely on both ongoing and future partnerships with the ASUC 
+                  Commercial Activities works closely on both ongoing and future partnerships with the ASUC 
                 and UC Berkeley students. Our department ensures that important platforms, such as the 
                 Wall Street Journal and the New York Times, remain accessible to students. 
                 Beyond maintaining these existing relationships, we also explore and establish 
@@ -80,7 +80,6 @@ export default function departmentsPage() {
             </div>
           </div>
 
-          {/* Wall Street Journal Section */}
           <div className="flex-1 flex justify-center items-center p-6">
             <div className="text-center max-w-sm">
               <img src={wsj} alt="Wall Street Journal" className="h-[36px] w-[62px] mx-auto mb-4" />
@@ -96,16 +95,119 @@ export default function departmentsPage() {
         <div className="items-center mx-[10%] pt-[5vh] text-center">
             <div className="relative flex items-center ">
                 <div className="flex-grow border-t border-[#A6A6A6] "></div>
-                <span className="flex-shrink mx-4 text-[25px] md:hidden">C.A.S.S.A.</span>
-                <span className="flex-shrink mx-4 text-[25px] sm:hidden md:block">Commercial Activities and Student Services Agreement (CASSA)</span>
-
+                <span className="flex-shrink mx-4 text-[25px] font-bold md:font-normal">Commercial Activities and Student Services Agreement (CASSA)</span>
                 <div className="flex-grow border-t border-[#A6A6A6]"></div>
             </div>
-            <p className="text-[#808080] md:hidden"><i>Commercial Activities and Student Services Agreement</i></p>
         </div>
-       
+
+        <div id="WHO_WE_ARE" className="mx-8 lg:mx-[5rem] text-[20px]  pb-10">
+          <main className="flex flex-col lg:flex-row pt-10  gap-8">
+            <div id="sidemenu" className="md:basis-1/2 flex flex-col items-center drop-shadow-lg">
+              <h3 className="">What is CSSA?</h3>
+              <menu className="flex flex-col pt-5 w-1/2 gap-4">
+                <a
+                  href="#mission"
+                  className="hover:bg-[#003A70] hover:text-white border-2 border-[#003A70] p-4 text-center rounded-md transition"
+                >
+                  Purpose
+                </a>
+                <a
+                  href="#resources"
+                  className="hover:bg-[#003A70] hover:text-white border-2 border-gray-300 p-4 text-center  rounded-md transition"
+                >
+                  Past Examples of CSSA Funding
+                </a>
+                <a
+                  href="#resources"
+                  className="hover:bg-[#003A70] hover:text-white border-2 border-gray-300 p-4 text-center  rounded-md transition"
+                >
+                  How Does CSSA Funding Work?
+                </a>
+                <a
+                  href="#resources"
+                  className="hover:bg-[#003A70] hover:text-white border-2 border-gray-300 p-4 text-center  rounded-md transition"
+                >
+                  Who Can Propose Initiatives?
+                </a>
+            </menu>
+          </div>
+
+          {/* Main Content */}
+          <div id="text" className="md:basis-1/2  ">
+            <p className="">
+            The Commercial Activities and Student Services Agreement (CASSA) between the University of California, Berkeley (UCB), 
+            the ASUC, and the GA outlines how the ASUC's commercial activities support student services and programs: 
+            </p>
+          </div>
+        </main>
+      </div>
+      <div className="items-center mx-[10%] pt-[5vh] text-center">
+              <div className="relative flex items-center ">
+                  <div className="flex-grow border-t border-[#A6A6A6] "></div>
+                  <span className="flex-shrink mx-4 text-[25px] font-bold md:font-normal">Partner Feedback Form</span>
+                  <div className="flex-grow border-t border-[#A6A6A6]"></div>
+              </div>
+        </div>
+          
+      <div className="place-items-center pb-10">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1KuBN9xP-FY7UD5JLEyeJ2D2aVWMxE9Wn6xgUKtC1O-RIQg/viewform?embedded=true" 
+          width="85%" 
+          height="500" 
+          frameBorder="0" 
+          marginHeight="0" 
+          marginWidth="0">
+            Loading…
+          </iframe>
+      </div>
+
+      <div className="items-center mx-[10%] pt-[5vh] text-center">
+          <div className="relative flex items-center ">
+              <div className="flex-grow border-t border-[#A6A6A6] "></div>
+              <span className="flex-shrink mx-4 text-[25px] font-bold md:font-normal">Our Ongoing Work</span>
+              <div className="flex-grow border-t border-[#A6A6A6]"></div>
+          </div>
+      </div>
+
+      <div className="md:mx-[30%]  mx-[10%] py-5 place-items-center">
+            <img src="/departments/comm_act/c1.png" className="w-full"/>
+            <p className="text-[12px] md:text-lg"><i>The OEVP provides free access to newspaper 
+              subscriptions such as the Wall Street Journal and New York Times, and financial grants.</i></p>
+        </div>
+
+        <div className="items-center mx-[10%] pt-[5vh] text-center">
+          <div className="relative flex items-center ">
+              <div className="flex-grow border-t border-[#A6A6A6] "></div>
+              <span className="flex-shrink mx-4 text-[25px] font-bold md:font-normal">Our Past Work As Seen on Daily Cal</span>
+              <div className="flex-grow border-t border-[#A6A6A6]"></div>
+          </div>
+        </div>
         
 
+
+
+        <div className="flex flex-wrap pb-10 md:flex-regular mx-[10%] py-5">
+            <div className=" md:flex md:basis-1/2 hover:bg-gray-100">
+              <img src="/departments/comm_act/c2.jpg" className="w-[35vh]"/>
+              <div className=" mt-4 md:mt-0 p-3">
+                <a href="https://www.dailycal.org/news/campus/asuc/asuc-contracts-provide-students-more-than-new-york-times-subscription/article_37319cec-a702-11ef-a1e8-2bba65ea0e83.html">
+                  <h3 className="font-bold text-xl">ASUC contracts provide students more than New York Times subscription</h3>
+                  <p className="text-[#5E5E5E] text-sm">Through ASUC partnerships with the New York Times, the Wall Street Journal, and LinkedIn Premium.</p>
+                </a>
+                
+              </div>
+            </div>
+
+
+          <div className=" md:flex md:basis-1/2 hover:bg-gray-100">
+            <img src="/departments/comm_act/c3.png" className="w-[35vh]"/>
+            <div className=" mt-4 md:mt-0 p-3">
+              <a href="https://www.dailycal.org/archives/asuc-announces-partnerships-with-the-new-york-times-wall-street-journal/article_269c3ab0-59ae-5fcd-9322-85bfad8ece51.html">
+                <h3 className="font-bold text-xl">ASUC contracts provide students more than Walls Street Journal subscription</h3>
+                <p className="text-[#5E5E5E] text-sm">Through ASUC partnerships with the New York Times, the Wall Street Journal, and LinkedIn Premium.</p>
+              </a>
+              </div>
+          </div>
+        </div>
 
         <Footer />
     </div>

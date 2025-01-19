@@ -16,7 +16,7 @@ export default function departmentsPage() {
     <div>
         <Navbar />
         <Cover 
-            name="Legal Affairs"
+            name="Legislative Affairs"
             link="legal.jpeg"
             desc="Responsible for managing strategic communications and  public relations initiatives"
             mem="Chloe Choi (Intern), Hailey Jung (Intern), Matt Blake (Associate)"
