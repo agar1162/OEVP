@@ -1,7 +1,7 @@
 import Navbar from "../../../components/home/Navbar";
 import Footer from "../../../components/home/Footer";
 import Cover from "../components/Cover";
-
+import React from "react";
 export const gridItem = (name, link = "", img = "") => (
     <div className="relative p-20 border border-gray-300 bg-berkeley text-white">
         {/* Black Tint Overlay */}
@@ -81,7 +81,11 @@ export default function DepartmentsPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mx-[10%] pb-10">
-                {communities.map((community) => gridItem(community.name, community.link))}
+                {communities.map((community, index) => (
+                    <React.Fragment key={index}>
+                    {gridItem(community.name, community.link)}
+                    </React.Fragment>
+                ))}
             </div>
 
             <div className="text-center p-5">
