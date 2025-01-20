@@ -95,31 +95,31 @@ export default function Navbar() {
                     style={{ pointerEvents: "auto" }}
                   >
                     <li className="px-4 py-2 hover:bg-gray-100">
-                      <a href="/departments/finance">Finance</a>
+                      <a href="/departments/finance.html">Finance</a>
                     </li>
                     <li className="px-4 py-2 hover:bg-gray-100">
-                      <a href="/departments/communications">Communications</a>
+                      <a href="/departments/communications.html">Communications</a>
                     </li>
                     <li className="px-4 py-2 hover:bg-gray-100">
-                      <a href="/departments/legal-affairs">Legal Affairs</a>
+                      <a href="/departments/legal-affairs.html">Legal Affairs</a>
                     </li>
                     <li className="px-4 py-2 hover:bg-gray-100">
-                      <a href="/departments/commercial-activities">Commercial Activities</a>
+                      <a href="/departments/commercial-activities.html">Commercial Activities</a>
                     </li>
                     <li className="px-4 py-2 hover:bg-gray-100">
-                      <a href="/departments/student-affairs">Student Affairs</a>
+                      <a href="/departments/student-affairs.html">Student Affairs</a>
                     </li>
                     <li className="px-4 py-2 hover:bg-gray-100">
-                      <a href="/departments/rso">RSO Support</a>
+                      <a href="/departments/rso.html">RSO Support</a>
                     </li>
                     <li className="px-4 py-2 hover:bg-gray-100">
-                      <a href="/departments/sswb">Student Safety Wellness & Success</a>
+                      <a href="/departments/sswb.html">Student Safety Wellness & Success</a>
                     </li>
                     <li className="px-4 py-2 hover:bg-gray-100">
-                      <a href="/departments/deib">Diversity, Equity, Inclusion & Belonging</a>
+                      <a href="/departments/deib.html">Diversity, Equity, Inclusion & Belonging</a>
                     </li>
                     <li className="px-4 py-2 hover:bg-gray-100">
-                      <a href="/departments/spaces">Spaces</a>
+                      <a href="/departments/spaces.html">Spaces</a>
                     </li>
                   </ul>
                 )}

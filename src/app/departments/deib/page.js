@@ -32,8 +32,8 @@ const gridItem = (name, link = "", img = "") => (
 
 export default function DepartmentsPage() {
     const communities = [
-        { name: "Black/Afrikan Diaspora Community", link: "/departments/deib/communities#Black/Afrikan" },
-        { name: "Latinx/Chicanx Community", link: "/departments/deib/communities#Latinx/Chicanx" },
+        { name: "Black/Afrikan Diaspora Community", link: "/departments/deib/communities.html#Black/Afrikan" },
+        { name: "Latinx/Chicanx Community", link: "/departments/deib/communities.html#Latinx/Chicanx" },
         { name: "Indigenous/Native American Community", link: "/" },
         { name: "Middle Eastern, North African, and Muslim Student Association", link: "/" },
         { name: "Asian American and Pacific Islander (AAPI) Community", link: "/" },
@@ -90,7 +90,7 @@ export default function DepartmentsPage() {
 
 
             <div className="text-center p-5">
-                <a href="/departments/deib/communities" className="border-2 border-black p-5 hover:bg-gray-200">
+                <a href="/departments/deib/communities.html" className="border-2 border-black p-5 hover:bg-gray-200">
                     Learn More About All DEI Initiatives
                 </a>
             </div>
