@@ -148,6 +148,11 @@ export default function departmentsPage() {
                   <div className="flex-grow border-t border-[#A6A6A6]"></div>
               </div>
         </div>
+
+        <div className="place-content-center text-center mx-[30%]">
+              <p className="text-[#3D3D3D]">Form for students to list what partnerships they want from the university, what increased functions/access they want from each app.</p>
+        </div>
+
           
       <div className="place-items-center pb-10">
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1KuBN9xP-FY7UD5JLEyeJ2D2aVWMxE9Wn6xgUKtC1O-RIQg/viewform?embedded=true" 
@@ -159,6 +164,7 @@ export default function departmentsPage() {
             Loading…
           </iframe>
       </div>
+
 
       <div className="items-center mx-[10%] pt-[5vh] text-center">
           <div className="relative flex items-center ">
@@ -181,6 +187,7 @@ export default function departmentsPage() {
               <div className="flex-grow border-t border-[#A6A6A6]"></div>
           </div>
         </div>
+        
         
 
 

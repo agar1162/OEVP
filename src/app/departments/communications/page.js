@@ -5,7 +5,6 @@ import Navbar from "../../../components/home/Navbar";
 import Footer from "../../../components/home/Footer";
 import Cover from "../components/Cover"
 import InstagramPostEmbed from "../components/InstaPostEmbed";
-import InstagramReelEmbed from "../components/InstaReelEmbed";
 
 
 export default function DepartmentsPage() {
@@ -62,8 +61,8 @@ export default function DepartmentsPage() {
 
         <div className="lg:grid lg:grid-cols-3 lg:mx-[10%]">
             <InstagramPostEmbed postId="DDNZUO0zFv1"/>
-            <InstagramReelEmbed postId="DCff6JySrrl"/>
-            <InstagramReelEmbed postId="DCDlkWhR_bq"/>
+            <InstagramPostEmbed postId="DCff6JySrrl"/>
+            <InstagramPostEmbed postId="DCDlkWhR_bq"/>
             <InstagramPostEmbed postId="DB7snwWJeB9"/>
             <InstagramPostEmbed postId="DCZ5aD9z4-4"/>
         </div>

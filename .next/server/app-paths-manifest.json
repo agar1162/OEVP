@@ -1,4 +1,7 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
+  "/departments/deib/page": "app/departments/deib/page.js",
+  "/page": "app/page.js",
+  "/departments/rso/page": "app/departments/rso/page.js",
+  "/departments/deib/communities/page": "app/departments/deib/communities/page.js",
   "/departments/commercial-activities/page": "app/departments/commercial-activities/page.js"
 }

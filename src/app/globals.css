@@ -7,6 +7,16 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+@layer components {
+  #COMMUNITIES_DESCRIPTIONS_CONTAINER a {
+    @apply text-blue-500;
+    @apply italic;
+    @apply underline underline-offset-1;
+
+
+  }
+}
+
 #gradient-text {
   background: linear-gradient(90deg, #003A70 40.5%, #003A70 42.99%, #F9B315 43%);
   -webkit-background-clip: text;

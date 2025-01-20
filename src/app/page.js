@@ -11,77 +11,62 @@ export default function Home() {
     "Get free access to a variety of New York Times articles, games, and podcasts if you are an undergraduate or graduate student.";
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [progress, setProgress] = useState(0); // State for the progress bar
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? slides.length - 1 : prevIndex - 1));
-  };
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === slides.length - 1 ? 0 : prevIndex + 1));
+    setCurrentIndex((currentIndex) => {
+      const isLastSlide = currentIndex === slides.length - 1;
+      return isLastSlide ? 0 : currentIndex + 1;
+    });
   };
+  
+  
 
   const slides = [
     {
-      url: "/backgrounds/slideshow/s1.jpeg"
+      url: "/backgrounds/slideshow/team.jpeg",
+      caption: "Find out more about the team and the work we do!",
+      title: "Office"
     },
     {
-      url: "/backgrounds/slideshow/s2.jpeg"
+      url: "/backgrounds/slideshow/rso.JPG",
+      caption: "Read about the benefits of getting your Registered Student Organization (RSO) ASUC-funded",
+      title: "RSO"
     },
     {
-      url: "/backgrounds/slideshow/s3.JPG"
+      url: "/backgrounds/slideshow/com.JPG",
+      caption: "Explore resources for the diverse communities we support!",
+      title: "Communities"
     },
     {
-      url: "/backgrounds/slideshow/s4.JPG"
+      url: "/backgrounds/slideshow/events.JPG",
+      caption: "View past Senate meetings run by the EVP",
+      title: "Events"
     },
     {
-      url: "/backgrounds/slideshow/s5.JPG"
-    },
-    {
-      url: "/backgrounds/slideshow/s6.JPG"
+      url: "/backgrounds/slideshow/legis.JPG",
+      caption: "Want to get involved? Learn about the different legislations in the ASUC senate and how to provide public comment!",
+      title: "Legislature"
     }
   ];
 
   useEffect(() => {
-    // Reset progress when the slide changes
-    setProgress(0);
-
-    // Autoplay function to move to the next slide
     const autoplay = setInterval(() => {
       nextSlide();
     }, 5000);
 
-    // Update the progress bar every 30ms
-    const progressInterval = setInterval(() => {
-      setProgress((prevProgress) => {
-        if (prevProgress < 100) {
-          return prevProgress + (100 / 5000) * 30; // Calculate the progress
-        } else {
-          return 100; // Ensure it doesn't exceed 100
-        }
-      });
-    }, 30);
+    return () => clearInterval(autoplay);
+  }, []);
 
-    return () => {
-      clearInterval(autoplay);
-      clearInterval(progressInterval);
-    };
-  }, [currentIndex]);
 
   return (
     <div>
       <Navbar />
 
-      <div className="w-full h-2 bg-gray-300 ">
-        <div
-          className="h-full bg-[#FDB515]"
-          style={{ width: `${progress}%` }}
-        ></div>
-      </div>
+
 
       <div
         id="COVER"
-        className="h-[90vh] bg-cover bg-center bg-no-repeat text-white text-center flex items-start justify-center relative"
+        className="h-[75vh] md:m-10 bg-cover bg-center bg-no-repeat text-white text-center flex items-start justify-center relative"
       >
         {/* Background images with transition */}
         {slides.map((slide, index) => (
@@ -96,15 +81,40 @@ export default function Home() {
           ></div>
         ))}
 
-        {/* Title section */}
-        <div className="absolute top-0 mt-[8rem] p-8 rounded-md max-w-[80%] md:max-w-[60%] lg:max-w-[50%] z-10">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-wider mb-8">
-            OFFICE OF THE EXECUTIVE VICE PRESIDENT
+        <div className="absolute p-8 rounded-md max-w-[90%]  h-full py-10">
+          <h1 className="text-4xl lg:text-7xl font-extrabold tracking-wider" style={{ textShadow: "6px 4px 5px rgba(0,0,0,0.3)" }}>
+          OFFICE OF THE EXECUTIVE VICE PRESIDENT
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed tracking-wide">
-            Welcome to the Office of the EVP at University of California, Berkeley
-          </p>
+          
         </div>
+      <div className="absolute bottom-0 w-full pb-10">
+        {/* Captions with rec.svg */}
+        <h3 className="text-2xl md:text-3xl mx-[10vw]">{slides[currentIndex].caption}</h3>
+        <div className="flex justify-center md:text-2xl gap-[4vw] md:gap-[10vw] p-10">
+          {slides.map((slide, index) => (
+            <div key={index} className="relative text-center ">
+
+              {currentIndex === index && (
+                <img
+                  src="rec.svg"
+                  alt="rec icon"
+                  className="absolute top-[-20px] left-1/2 transform -translate-x-1/2 h-4 duration-700 ease-in-out"
+                />
+              )}
+                  <a href={`${slide.link}`}>
+                    <h3
+                      className={`transition duration-500 ease-in-out ${
+                        currentIndex === index ? "text-[#FDB515]" : "text-white"
+                      }`}
+                    >
+                      {slide.title}
+                    </h3>
+                  </a>
+                </div>
+              ))}
+        </div>
+      </div>
+
       </div>
 
 

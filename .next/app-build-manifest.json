@@ -11,10 +11,51 @@
       "static/chunks/main-app.js",
       "static/chunks/app/departments/commercial-activities/page.js"
     ],
-    "/_not-found/page": [
+    "/departments/communications/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+      "static/chunks/app/departments/communications/page.js"
+    ],
+    "/departments/legal-affairs/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/departments/legal-affairs/page.js"
+    ],
+    "/departments/sswb/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/departments/sswb/page.js"
+    ],
+    "/departments/rso/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/departments/rso/page.js"
+    ],
+    "/departments/deib/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/departments/deib/page.js"
+    ],
+    "/departments/finance/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/departments/finance/page.js"
+    ],
+    "/departments/student-affairs/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/departments/student-affairs/page.js"
+    ],
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
+    ],
+    "/departments/deib/communities/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/departments/deib/communities/page.js"
     ]
   }
 }
