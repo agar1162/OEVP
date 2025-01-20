@@ -1,6 +1,6 @@
-import Footer from "../../../components/home/Footer";
-import Navbar from "../../../components/home/Navbar";
-import { gridItem } from "../deib/page";
+import Footer from "../../../../components/home/Footer";
+import Navbar from "../../../../components/home/Navbar";
+import { gridItem } from "../page";
 
 export default function Page() {
     const images = () => {
