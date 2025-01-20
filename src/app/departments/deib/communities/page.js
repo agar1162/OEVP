@@ -3,6 +3,33 @@ import Navbar from "../../../../components/home/Navbar";
 import { gridItem } from "../page";
 
 export default function Page() {
+    const gridItem = (name, link = "", img = "") => (
+        <div className="relative p-20 border border-gray-300 bg-berkeley text-white">
+            {/* Black Tint Overlay */}
+            {img && (
+                <div 
+                    className="absolute inset-0 bg-black opacity-75" 
+                    style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                />
+            )}
+            <h1 className="font-semibold text-center relative z-10">{name}</h1>
+            {link ? (
+                <a
+                    href={link}
+                    className="absolute bottom-4 right-4 px-4 py-2 bg-berkeley text-white border border-white hover:bg-white hover:text-berkeley transition duration-300"
+                >
+                    Read More
+                </a>
+            ) : (
+                <button
+                    className="absolute bottom-4 right-4 px-4 py-2 bg-white text-berkeley border border-berkeley hover:bg-berkeley hover:text-white transition duration-300"
+                >
+                    Read More
+                </button>
+            )}
+        </div>
+    );
+
     const images = () => {
         const data = []
         for (let i = 1; i < 10; i++) {

@@ -2,7 +2,7 @@ import Navbar from "../../../components/home/Navbar";
 import Footer from "../../../components/home/Footer";
 import Cover from "../components/Cover";
 
-export const gridItem = (name, link = "", img = "") => (
+const gridItem = (name, link = "", img = "") => (
     <div className="relative p-20 border border-gray-300 bg-berkeley text-white">
         {/* Black Tint Overlay */}
         {img && (

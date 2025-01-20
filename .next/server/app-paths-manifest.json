@@ -1,17 +1,17 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
   "/departments/deib/communities/page": "app/departments/deib/communities/page.js",
+  "/departments/deib/page": "app/departments/deib/page.js",
   "/departments/legal-affairs/page": "app/departments/legal-affairs/page.js",
+  "/departments/communications/page": "app/departments/communications/page.js",
+  "/departments/finance/page": "app/departments/finance/page.js",
   "/departments/commercial-activities/page": "app/departments/commercial-activities/page.js",
   "/departments/rso/page": "app/departments/rso/page.js",
-  "/departments/communications/page": "app/departments/communications/page.js",
   "/departments/spaces/page": "app/departments/spaces/page.js",
-  "/departments/finance/page": "app/departments/finance/page.js",
-  "/departments/student-affairs/page": "app/departments/student-affairs/page.js",
-  "/offices/2024/page": "app/offices/2024/page.js",
   "/departments/sswb/page": "app/departments/sswb/page.js",
-  "/partnerships/page": "app/partnerships/page.js",
-  "/resources/page": "app/resources/page.js",
+  "/departments/student-affairs/page": "app/departments/student-affairs/page.js",
   "/page": "app/page.js",
-  "/departments/deib/page": "app/departments/deib/page.js"
+  "/offices/2024/page": "app/offices/2024/page.js",
+  "/resources/page": "app/resources/page.js",
+  "/partnerships/page": "app/partnerships/page.js"
 }
