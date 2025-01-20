@@ -46,7 +46,7 @@ export default function Navbar() {
             href="/"
             className="text-lg font-bold hover:text-gray-400 transition"
           >
-            Bruh
+            Home
           </a>
         </li>
 
