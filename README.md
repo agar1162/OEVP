@@ -1,8 +1,7 @@
 ## Updating Site
 1. npm run deploy
 2. Open terminal then -> ```ssh username@ssh.ocf.berkeley.edu```
-3. SSH again into ```ssh asucevp@vampires```
-4. Run the ```./update_evp.sh``` script
+3. Run the ```./update_evp.sh``` script
 
 ## Front End File Routing Structure
 ```
