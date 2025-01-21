@@ -32,8 +32,8 @@ export default function Footer(){
                     <div>
                         <h1 className="font-bold text-lg">Follow Us</h1>
                         <ul className="flex gap-2 pt-2">
-                            <li><a href="https://www.instagram.com/ucbvicepresident/"><img src="insta.png" className="w-9 p-1"/></a></li>
-                            <li><a href="https://www.facebook.com/theASUC/"><img src="face.png" className="w-9 "/></a></li>
+                            <li><a href="https://www.instagram.com/ucbvicepresident/"><img src="./insta.png" className="w-9 p-1"/></a></li>
+                            <li><a href="https://www.facebook.com/theASUC/"><img src="./face.png" className="w-9 "/></a></li>
                         </ul>
                     </div>
                     <div> 
