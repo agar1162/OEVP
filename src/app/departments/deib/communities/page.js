@@ -526,7 +526,7 @@ export default function Page() {
                     </div>
                 
                     <div className="basis-1/2 flex flex-wrap">
-                        <img src="/departments/deib/f6.png" className="w-full"/>
+                        <img src="/departments/deib/f8.png" className="w-full"/>
                         <div className="mt-10 border-2 border-black">
                             <p>
                                 Community Organizations: 
@@ -551,7 +551,7 @@ export default function Page() {
 
                 <div id="International" className="md:flex p-10 gap-10">
                     <div className="basis-1/2 flex flex-wrap">
-                        <h1 className="text-berkeley text-3xl pb-10 md:hidden"><i>LGBTQIA+</i></h1>
+                        <h1 className="text-berkeley text-3xl pb-10 md:hidden"><i>International Students</i></h1>
                         <img src="/departments/deib/f9.png" className="w-full"/>
                         <div className="mt-10 border-2 border-black">
                             <p>Academic and Language Programs: 
@@ -577,7 +577,7 @@ export default function Page() {
                     </div>
 
                     <div className="basis-1/2 pt-10 md:pt-0">
-                        <h1 className="text-berkeley text-3xl pb-10 hidden md:block"><i>LGBTQIA+</i></h1>
+                        <h1 className="text-berkeley text-3xl pb-10 hidden md:block"><i>International Students</i></h1>
                         <p>
                             UC Berkeley fosters a welcoming and supportive environment for its diverse International Student population, 
                             which represents over 100 countries. The Berkeley International Office offers personalized guidance on visa 
