@@ -25,27 +25,32 @@ export default function Home() {
     {
       url: "/backgrounds/slideshow/team.jpeg",
       caption: "Find out more about the team and the work we do!",
-      title: "Office"
+      title: "Office",
+      link: "/offices/2024.html"
     },
     {
       url: "/backgrounds/slideshow/rso.JPG",
       caption: "Read about the benefits of getting your Registered Student Organization (RSO) ASUC-funded",
-      title: "RSO"
+      title: "RSO",
+      link: "/departments/rso.html"
     },
     {
       url: "/backgrounds/slideshow/com.JPG",
       caption: "Explore resources for the diverse communities we support!",
-      title: "Communities"
+      title: "Communities",
+      link: "/departments/deib.html"
     },
     {
       url: "/backgrounds/slideshow/events.JPG",
       caption: "View past Senate meetings run by the EVP",
-      title: "Events"
+      title: "Events",
+      link: "https://www.facebook.com/theASUC/"
     },
     {
       url: "/backgrounds/slideshow/legis.JPG",
       caption: "Want to get involved? Learn about the different legislations in the ASUC senate and how to provide public comment!",
-      title: "Legislature"
+      title: "Legislature",
+      link: ""
     }
   ];
 

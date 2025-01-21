@@ -165,9 +165,9 @@ export default function Navbar() {
         </li>
 
         <li className="p-4">
-          <button className="bg-[#265885] px-6 py-2 rounded-md text-lg font-bold hover:bg-[#1d486a] transition">
-            Senate Meeting
-          </button>
+          <a href="https://berkeley.zoom.us/j/6685684771?_x_zm_rtaid=MOwFCASdTuqDG7Yo6PLAEw.1736649189758.7b91ccafcde961b05952e5e32cf3d571&_x_zm_rhtaid=781#success" className="bg-[#265885] px-6 py-2 rounded-md text-lg font-bold hover:bg-[#1d486a] transition">
+            Join Senate Meeting
+          </a>
         </li>
       </ul>
     </nav>
