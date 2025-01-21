@@ -64,9 +64,7 @@ export default function Navbar() {
             <img 
               src={icon} 
               alt="Toggle" 
-              className={`ml-2 w-4 transform transition-transform duration-300 ${
-                isDepartmentMenuVisible ? "rotate-180" : "rotate-0"
-                }`} 
+              className={'ml-2 w-4 transform transition-transform duration-300'} 
                 />
 
           </button>
@@ -84,9 +82,7 @@ export default function Navbar() {
                   <img 
                     src="/down_gray.svg" 
                     alt="Toggle" 
-                    className={`ml-2 w-10 transform transition-transform duration-300 ${
-                      isSubDepartmentMenuVisible ? "rotate-180" : "rotate-0"
-                    }`} 
+                    className={'ml-2 w-10 transform transition-transform duration-300'} 
                   />
                 </button>
                 {isSubDepartmentMenuVisible && (
@@ -156,9 +152,7 @@ export default function Navbar() {
             <img 
               src={icon} 
               alt="Toggle" 
-              className={`ml-2 w-4 transform transition-transform duration-300 ${
-                isOfficeMenuVisible ? "rotate-180" : "rotate-0"
-                }`} 
+              className={`ml-2 w-4 transform transition-transform duration-300`} 
                 />
           </button>
           {isOfficeMenuVisible && (

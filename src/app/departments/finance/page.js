@@ -61,7 +61,7 @@ export default function departmentsPage() {
             <div className="flex-grow border-t border-[#A6A6A6]"></div>
         </div>
 
-        <div className="md:flex justify-center">
+        <div className="md:flex justify-center gap-8">
             <div className="flex flex-col items-center  py-5 md:w-1/3 md:max-w-[45%]">
                 <img
                 className="w-[40vh] md:w-[60vh]"
