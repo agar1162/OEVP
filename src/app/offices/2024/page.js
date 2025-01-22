@@ -34,11 +34,11 @@ export default function officePage () {
 
             <div className="items-center pb-10">
             
-            <div id="image_frame" className="mx-[20%] lg:mx-[10%]  pt-5 lg:grid lg:grid-cols-3 place-self-center gap-[10rem]">
+            <div id="image_frame" className="mx-[20%] lg:mx-[10%]  pt-5 lg:grid lg:grid-cols-3 place-self-center gap-[5rem]">
                 {profiles.map((profile) => (
                 <div key={profile.id} className="flex flex-col p-5">
                     <img
-                    src={`/profile/${profile.id}.png`}
+                    src={`/profile/${profile.id}.jpeg`}
                     alt={`Profile picture ${profile.id}`}
                     className="rounded-lg"
                     />

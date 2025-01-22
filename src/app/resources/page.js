@@ -13,10 +13,10 @@ export default function resourcesPage() {
                 id="FRONTPAGE"
                 style={{
                     backgroundImage:
-                        "linear-gradient(180deg, rgba(165, 165, 165, 0.53) 4%, rgba(0, 58, 112, 0.53) 78.5%), url('/resources_background.png')",
+                        "linear-gradient(180deg, rgba(165, 165, 165, 0.53) 4%, rgba(0, 58, 112, 0.53) 78.5%), url('/backgrounds/NYT.jpg')",
                 }} className="h-fit bg-cover p-9 bg-center bg-no-repeat">
 
-                <div className="bg-[#FBFBFBCC] p-5">
+                <div className="bg-[#FBFBFBCC] m-10 p-10 pb-20">
                     <h1 className="font-bold text-[20px] lg:text-[35px] pt-5">New York Times & Wall Street Journal Access</h1>
                     <ul className="list-disc list-inside p-5">
                         <li>Learn how to sign up for the <u>New York Times</u></li>

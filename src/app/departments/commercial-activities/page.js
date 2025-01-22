@@ -169,13 +169,13 @@ export default function departmentsPage() {
       <div className="items-center mx-[10%] pt-[5vh] text-center">
           <div className="relative flex items-center ">
               <div className="flex-grow border-t border-[#A6A6A6] "></div>
-              <span className="flex-shrink mx-4 text-[25px] font-bold md:font-normal">Our Ongoing Work</span>
+              <span className="flex-shrink mx-4 text-[25px] font-bold md:font-normal">Our Work</span>
               <div className="flex-grow border-t border-[#A6A6A6]"></div>
           </div>
       </div>
 
       <div className="md:mx-[30%]  mx-[10%] py-5 place-items-center">
-            <img src="/departments/comm_act/c1.png" className="w-full"/>
+            <img src='/departments/comm_act/c1.png' className="w-full"/>
             <p className="text-[12px] md:text-lg"><i>The OEVP provides free access to newspaper 
               subscriptions such as the Wall Street Journal and New York Times, and financial grants.</i></p>
         </div>

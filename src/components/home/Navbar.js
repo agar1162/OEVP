@@ -70,24 +70,24 @@ export default function Navbar() {
           </button>
           {isDepartmentMenuVisible && (
             <ul
-              className="absolute top-full left-0 mt-2 bg-white text-black rounded-md shadow-lg  w-48"
+              className="absolute top-full left-0 mt-2 bg-berkeley border-t-2 border-[#FDB515] text-white shadow-lg w-48"
               style={{ pointerEvents: "auto" }}
             >
-              <li className="px-4 py-2 hover:bg-gray-100 hover:rounded-md relative border-4 border-gray ">
+              <li className="px-4 py-2  relative">
                 <button
                   onClick={toggleSubDepartmentMenu}
                   className="flex items-center w-full text-left"
                 >
                   2024-2025
                   <img 
-                    src="/down_gray.svg" 
+                    src="/down.svg" 
                     alt="Toggle" 
-                    className={'ml-2 w-10 transform transition-transform duration-300'} 
+                    className={'ml-2 w-4 transform transition-transform duration-300'} 
                   />
                 </button>
                 {isSubDepartmentMenuVisible && (
                   <ul
-                    className="absolute top-0 top-full bg-white text-black rounded-md shadow-lg mt-4 border-4 border-gray "
+                    className="absolute top-0 top-full text-white border-t-2 border-[#FDB515] shadow-lg mt-4 bg-berkeley"
                     style={{ pointerEvents: "auto" }}
                   >
                     <li className="px-4 py-2 hover:bg-gray-100">
@@ -156,8 +156,8 @@ export default function Navbar() {
                 />
           </button>
           {isOfficeMenuVisible && (
-            <ul className="absolute top-full left-0 mt-2 bg-white text-black rounded-md shadow-lg w-48">
-              <li className="px-4 py-2 hover:bg-gray-100 hover:rounded-md">
+            <ul className="absolute top-full left-0 mt-2 bg-berkeley border-t-2 border-[#FDB515] shadow-lg w-48">
+              <li className="px-4 py-2">
                 <a href="/offices/2024">2024-2025</a>
               </li>
             </ul>
