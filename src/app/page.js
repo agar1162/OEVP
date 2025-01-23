@@ -11,6 +11,7 @@ export default function Home() {
     "Get free access to a variety of New York Times articles, games, and podcasts if you are an undergraduate or graduate student.";
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentText, setCurrentText] = useState(0); // Tracks the selected text
 
   const nextSlide = () => {
     setCurrentIndex((currentIndex) => {
@@ -27,30 +28,29 @@ export default function Home() {
       caption: "Find out more about the team and the work we do!",
       title: "Office",
       link: "/offices/2024.html"
-    },
-    {
-      url: "/backgrounds/slideshow/rso.JPG",
-      caption: "Read about the benefits of getting your Registered Student Organization (RSO) ASUC-funded",
-      title: "RSO",
-      link: "/departments/rso.html"
-    },
-    {
-      url: "/backgrounds/slideshow/com.JPG",
-      caption: "Explore resources for the diverse communities we support!",
-      title: "Communities",
-      link: "/departments/deib.html"
-    },
-    {
+    }, {
       url: "/backgrounds/slideshow/events.JPG",
       caption: "View past Senate meetings run by the EVP",
       title: "Events",
       link: "https://www.facebook.com/theASUC/"
     },
     {
+      url: "/backgrounds/slideshow/com.JPG",
+      caption: "Explore resources for the diverse communities we support!",
+      title: "Communities",
+      link: "/departments/deib/communities.html"
+    },
+    {
       url: "/backgrounds/slideshow/legis.JPG",
       caption: "Want to get involved? Learn about the different legislations in the ASUC senate and how to provide public comment!",
-      title: "Legislature",
-      link: ""
+      title: "Legislation",
+      link: "/departments/"
+    },
+    {
+      url: "/backgrounds/slideshow/rso.JPG",
+      caption: "Read about the benefits of getting your Registered Student Organization (RSO) ASUC-funded",
+      title: "RSO",
+      link: "/departments/rso.html"
     }
   ];
 
@@ -58,10 +58,46 @@ export default function Home() {
     const autoplay = setInterval(() => {
       nextSlide();
     }, 5000);
+    console.log(currentIndex)
 
     return () => clearInterval(autoplay);
-  }, []);
+  }, []); 
 
+
+    const texts = [
+      {
+        text: `Office of the Executive Vice President (OEVP) of the Associated 
+               Students of the University of California (ASUC) is a student-led body 
+               dedicated to empowering students by fostering transparency, equity, and 
+               collaboration across campus. We strive to amplify student voices, bridge 
+               communication between students and administration, and ensure the efficient 
+               allocation of resources to meet the diverse needs of our community. By developing strategic 
+               partnerships, advocating for students, and launching inclusive initiatives, the 
+               OEVP supports overall student wellness. The office provides essential resources, 
+               leadership development opportunities, and financial support to the campus community. 
+               In facilitating collaborative events, coalition-building, and engaging students in 
+               key campus decisions, we work to make UC Berkeley a more vibrant, inclusive, and empowering campus for all.`
+      },
+      {
+        text: `The Executive Vice President (EVP) serves as the second-ranking representative of the ASUC, overseeing its 
+               general operations and commercial activities, as well as chairing the Senate where they have the power to break 
+               tie votes and appoint committee members. Additionally, the EVP ensures the execution of Senate directives, 
+               leads the Senate Leadership Institute, and manages the allocation of office space and resources to 
+               ASUC-sponsored organizations, while carrying out other duties as defined by the ASUC Constitution and EVP Bylaws.`
+      }, {
+        text: `Our office has various departments, each specializing in a specific area designed to enhance student life and 
+              support our broader mission. These departments play key roles in facilitating campus-wide initiatives, building strategic 
+              partnerships, engaging with campus groups & student leaders, and ensuring the fair and equitable distribution of resources.
+              Together, we support the academic, personal, and professional growth of all UC Berkeley students and registered student 
+              organizations (RSOs), ensuring they have the tools to succeed.`
+      }, {
+        text: `The OEVP provides free access to newspaper subscriptions such as the Wall Street Journal and New York Times, financial grants, & 
+          campus spaces for RSO’s.`
+      }
+    ]
+  
+  
+  
 
   return (
     <div>
@@ -88,7 +124,7 @@ export default function Home() {
 
         <div className="absolute p-8 rounded-md max-w-[90%]  h-full py-10">
           <h1 className="text-4xl lg:text-7xl font-extrabold tracking-wider" style={{ textShadow: "6px 4px 5px rgba(0,0,0,0.3)" }}>
-          OFFICE OF THE EXECUTIVE VICE PRESIDENT
+            OFFICE OF THE EXECUTIVE VICE PRESIDENT
           </h1>
           
         </div>
@@ -121,32 +157,43 @@ export default function Home() {
       </div>
 
       </div>
+     
+      <div id="WHO_WE_ARE" className="mx-8 pt-10">
+        <h3 className="flex items-center mx-[10%] text-2xl lg:text-3xl text-center">
+                <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+                <span className="px-4">Who We Are</span>
+                <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+        </h3>
 
-
-      {/* Progress bar */}
-      
-
-      {/* Rest of your content */}
-      <div id="WHO_WE_ARE" className="mx-8 lg:mx-[5rem]">
-        <main className="flex flex-col lg:flex-row pt-10 text-[20px] gap-8">
+        <main className="flex flex-col lg:flex-row pt-10 text-[20px] mx-[10%]">
           {/* Side Menu */}
-          <div id="sidemenu" className="lg:basis-1/3 flex flex-col items-center drop-shadow-lg">
-            <h3 className="flex items-center w-full text-2xl lg:text-3xl text-center">
-              <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-              <span className="px-4">Who We Are</span>
-              <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-            </h3>
 
-            <menu className="flex flex-col pt-5 w-1/2 gap-4">
+          <div id="sidemenu" className="lg:basis-1/2 flex flex-col items-center ">
+            <div>
+              <h3 className="text-left">What We Do</h3>
+            </div>
+            <menu className="flex flex-col w-1/2  border-2 border-t-4 border-t-[#003A70] divide-y-2 divide-gray-200  shadow-xl">
               <a
-                href="#mission"
-                className="hover:bg-[#003A70] hover:text-white border-2 border-[#003A70] p-4 text-center font-semibold rounded-md transition"
+                onClick={() => setCurrentText(0)}
+                className="hover:bg-[#003A70] hover:text-white p-4  transition"
               >
                 Our Mission
               </a>
               <a
-                href="#resources"
-                className="hover:bg-[#003A70] hover:text-white border-2 border-gray-300 p-4 text-center font-semibold rounded-md transition"
+                onClick={() => setCurrentText(1)}
+                className="hover:bg-[#003A70] hover:text-white p-4  transition"
+              >
+                What is the Executive Vice President's (EVP) Role?
+              </a>
+              <a
+                onClick={() => setCurrentText(2)}
+                className="hover:bg-[#003A70] hover:text-white  p-4 transition"
+              >
+                What Does Our Office Do?
+              </a>
+              <a
+                onClick={() => setCurrentText(3)}
+                className="hover:bg-[#003A70] hover:text-white  p-4 transition"
               >
                 Free Resources
               </a>
@@ -154,14 +201,9 @@ export default function Home() {
           </div>
 
           {/* Main Content */}
-          <div id="text" className="lg:basis-2/3">
-            <p className="text-center">
-              "The Office of the Executive Vice President (OEVP) of the Associated
-              Students of the University of California (ASUC) is dedicated to empowering
-              students by fostering transparency, equity, and collaboration across campus. 
-              We strive to amplify student voices, bridge communication between students 
-              and administration, and ensure the efficient allocation of resources to meet 
-              the diverse needs of our community."
+          <div id="text" className="lg:basis-1/2">
+            <p className="">
+              {texts[currentText].text}
             </p>
           </div>
         </main>
