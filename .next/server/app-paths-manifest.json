@@ -1,8 +1,3 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/offices/2024/page": "app/offices/2024/page.js",
-  "/departments/sswb/page": "app/departments/sswb/page.js",
-  "/resources/page": "app/resources/page.js",
-  "/departments/communications/page": "app/departments/communications/page.js",
   "/page": "app/page.js"
 }
