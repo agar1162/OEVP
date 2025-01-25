@@ -2,23 +2,135 @@ import Navbar from "../../../components/home/Navbar"
 import Footer from "../../../components/home/Footer"
 export default function officePage () {
     const profiles = [
-        { id: 1, name: "Robert Carrillo", title: "Executive Vice President", major: "Political Science, Public Policy and Rhetoric", contact: null, },
-        { id: 2, name: "Joselyn Espinoza", title: "Chief of Staff", major: "Sociology and Public Policy", contact: "j.espinoza@berkeley.edu" },
-        { id: 3, name: "Dafne Rodriguez", title: "Chief of Staff", major: "Sociology and Public Policy", contact: "dcruzrodriguez@berkeley.edu" },
-        { id: 4, name:"Kianna Rodrate", title: "Chief of Staff Intern", major: "Economics & Political Science", contact: null },
-        { id: 5, name: "Ernesto Barragan", title: "Chief of Staff Intern", major: "Political Economy, Environmental Econmics", contact: null },
-        { id: 6, name: "Shawntaya Jeanes", title: "Communications and Public Relations Director", major: null, contact: null },
-        { id: 8, name: "Emily Melero", title: "Finance Director", major: "Political Science & Public Policy", contact: null },
-        { id: 14, name: "Emily Melero", title: "Legislative Affairs Director", major: "Business Administration", contact: null },
-        { id: 7, name: "Rishi Reddy", title: "DEI&B Director", major: "Neuroscience & Business", contact: null },
-        { id: 15, name: "Arisbeth Ambriz", title: "(RSO) Support Director", major: "Political Science & Social Welfar", contact: null },
-        { id: 10, name: "Aarja Singh", title: "Senatorial and Committee Affairs Director", major: "Political Science", contact: null },
-        { id: 9, name: "Micheal Moy", title: "Spaces Director", major: "Political Science & Economics", contact: null },
-        { id: 13, name: "Katiana Bosdet", title: "Student Affairs Director", major: "Business Adminstration", contact: null },
-        {id: 11, name: "Paige Clark", title: "Student Safety, Success & Wellness Director", major: "Political Science ", contact: null },
-        {id: 11, name: "Hibba", title: "XXX", major: "XXX", contact: null }
-
-      ];
+{
+      id: 1,
+      name: "Robert Carrillo",
+      title: "Executive Vice President",
+      major: "Political Science, Public Policy and Rhetoric",
+      contact: "robertcarrillo@berkeley.edu",
+      linkedin: "https://www.linkedin.com/in/robertmcarrillo/"
+    },
+    {
+      id: 2,
+      name: "Joselyn Espinoza",
+      title: "Chief of Staff",
+      major: "Sociology and Public Policy",
+      contact: "j.espinoza@berkeley.edu",
+      linkedin: "https://www.linkedin.com/in/joselyn-espinoza/"
+    },
+    {
+      id: 3,
+      name: "Dafne Rodriguez",
+      title: "Chief of Staff",
+      major: "Sociology and Public Policy",
+      contact: "dcruzrodriguez@berkeley.edu",
+      linkedin: "https://www.linkedin.com/in/dafne-cruz-rodriguez/"
+    },
+    {
+      id: 4,
+      name: "Kianna Rodrate",
+      title: "Chief of Staff Intern",
+      major: "Economics & Political Science",
+      contact: null,
+      linkedin: null
+    },
+    {
+      id: 5,
+      name: "Ernesto Barragan",
+      title: "Chief of Staff Intern",
+      major: "Political Economy, Environmental Economics",
+      contact: null,
+      linkedin: null
+    },
+    {
+      id: 6,
+      name: "Shawntaya Jeanes",
+      title: "Communications and Public Relations Director",
+      major: null,
+      contact: "shawntaya.jeanes@berkeley.edu",
+      linkedin: null
+    },
+    {
+      id: 8,
+      name: "Emily Melero",
+      title: "Finance Director",
+      major: "Political Science & Public Policy",
+      contact: "emilycmelero@berkeley.edu",
+      linkedin: "https://www.linkedin.com/in/emily-melero-a99308254/"
+    },
+    {
+      id: null,
+      name: "Emily Melero",
+      title: "Legislative Affairs Director",
+      major: "Business Administration",
+      contact: "emilycmelero@berkeley.edu",
+      linkedin: "https://www.linkedin.com/in/emily-melero-a99308254/"
+    },
+    {
+      id: 7,
+      name: "Rishi Reddy",
+      title: "DEI&B Director",
+      major: "Neuroscience & Business",
+      contact: null,
+      linkedin: "https://www.linkedin.com/in/rishi-reddy-228a041ba/"
+    },
+    {
+      id: 15,
+      name: "Arisbeth Ambriz",
+      title: "(RSO) Support Director",
+      major: "Political Science & Social Welfare",
+      contact: "arisbethm1904@berkeley.edu",
+      linkedin: "https://www.linkedin.com/in/arisbeth-molina/"
+    },
+    {
+      id: 10,
+      name: "Aarja Singh",
+      title: "Senatorial and Committee Affairs Director",
+      major: "Political Science",
+      contact: "aarja@berkeley.edu",
+      linkedin: null
+    },
+    {
+      id: 9,
+      name: "Michael Moy",
+      title: "Spaces Director",
+      major: "Political Science & Economics",
+      contact: null,
+      linkedin: "https://www.linkedin.com/in/michael-h-moy/"
+    },
+    {
+      id: 13,
+      name: "Katiana Bosdet",
+      title: "Student Affairs Director",
+      major: "Business Administration",
+      contact: "katianayb@berkeley.edu",
+      linkedin: "https://www.linkedin.com/in/katianayb/"
+    },
+    {
+      id: 11,
+      name: "Paige Clark",
+      title: "Student Safety, Success & Wellness Director",
+      major: "Political Science",
+      contact: "paigeclark21@berkeley.edu",
+      linkedin: "https://www.linkedin.com/in/paige-clark-820a14173/"
+    },
+    {
+      id: null,
+      name: "Hibba Adeel",
+      title: "XXX",
+      major: "XXX",
+      contact: "hadeel@berkeley.edu",
+      linkedin: "https://www.linkedin.com/in/hibba-a-73a709211/"
+    },
+    {
+      id: null,
+      name: "Audrey Lee",
+      title: "XXX",
+      major: "XXX",
+      contact: "audreylee2004@berkeley.edu",
+      linkedin: "https://www.linkedin.com/in/audrey-s-lee/"
+    }
+  ];
 
     return(
         <div>
@@ -36,7 +148,7 @@ export default function officePage () {
             
             <div id="image_frame" className="mx-[20%] lg:mx-[10%]  pt-5 lg:grid lg:grid-cols-3 place-self-center gap-[5rem]">
                 {profiles.map((profile) => (
-                <div key={profile.id} className="flex flex-col p-5">
+                <div key={profile.id} className="flex flex-col p-5 relative">
                     <img
                     src={`/profile/${profile.id}.jpeg`}
                     alt={`Profile picture ${profile.id}`}
@@ -44,7 +156,28 @@ export default function officePage () {
                     />
                     <h1 className="mt-2 font-bold text-gray-700">{profile.name}</h1>
                     <p className="text-[#6d6d6d]">{profile.title}</p>
-                    <p className="">{profile.major}</p>
+                    <p>{profile.major}</p>
+                    
+                    <div className="absolute bottom-4 right-4 flex space-x-2">
+                        {profile.linkedin && (
+                            <a href={profile.linkedin} target="_blank" rel="noopener noreferrer">
+                                <img
+                                src="/linkedin.png"
+                                alt="LinkedIn"
+                                className="w-6 h-6 hover:scale-110 transition-transform"
+                                />
+                                </a>
+                            )}
+                            {profile.contact && (
+                                <a href={`mailto:${profile.contact}`}>
+                                    <img
+                                    src="/email.png"
+                                    alt="Email"
+                                    className="w-6 h-6 hover:scale-110 transition-transform"
+                                    />
+                  </a>
+                )}
+              </div>
                 </div>
                 ))}
             </div>
