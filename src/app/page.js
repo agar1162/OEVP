@@ -20,7 +20,6 @@ export default function Home() {
     });
   };
   
-  
 
   const slides = [
     {
@@ -104,10 +103,9 @@ export default function Home() {
       <Navbar />
 
 
-
       <div
         id="COVER"
-        className="h-[75vh] md:m-10 bg-cover bg-center bg-no-repeat text-white text-center flex items-start justify-center relative"
+        className="h-[90vh] bg-cover bg-center bg-no-repeat text-white text-center flex items-start justify-center relative"
       >
         {/* Background images with transition */}
         {slides.map((slide, index) => (
@@ -165,14 +163,11 @@ export default function Home() {
                 <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
         </h3>
 
-        <main className="flex flex-col lg:flex-row pt-10 text-[20px] mx-[10%]">
-          {/* Side Menu */}
+        <main className="flex flex-col md:flex-row  pt-10 text-[20px] mx-[10%] text-sm md:text-xl">
 
           <div id="sidemenu" className="lg:basis-1/2 flex flex-col items-center ">
-            <div>
-              <h3 className="text-left">What We Do</h3>
-            </div>
-            <menu className="flex flex-col w-1/2  border-2 border-t-4 border-t-[#003A70] divide-y-2 divide-gray-200  shadow-xl">
+
+            <menu className="flex flex-col mx-[10%] border-2 border-t-4 border-t-[#003A70] divide-y-2 divide-gray-200  shadow-xl">
               <a
                 onClick={() => setCurrentText(0)}
                 className="hover:bg-[#003A70] hover:text-white p-4  transition"
@@ -201,7 +196,7 @@ export default function Home() {
           </div>
 
           {/* Main Content */}
-          <div id="text" className="lg:basis-1/2">
+          <div id="text" className="lg:basis-1/2 pt-10 md:pt-0">
             <p className="">
               {texts[currentText].text}
             </p>
@@ -214,16 +209,16 @@ export default function Home() {
           id="ORGSTATS"
           className="flex flex-wrap transition-all duration-75 ease-in justify-center items-center gap-8 h-auto p-[5vh]">
             <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
-                <h1 className="text-[#003A70] text-[56px] font-bold">400+</h1>
-                <p className="text-[20px] text-center mx-4">Registered Student Organizations receive funding & resources</p>
+                <h1 className="text-[#003A70] text-5xl md:text-7xl  font-bold pb-5">400+</h1>
+                <p className="text-lg text-center mx-4">Registered Student Organizations receive funding & resources</p>
             </div>
             <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
-                <h1  className="text-[#003A70] text-[56px] font-bold">100+</h1>
-                <p className="text-[20px] text-center mx-4">Legislations implemented in collaboration with ASUC Senate</p>
+                <h1  className="text-[#003A70] text-5xl md:text-7xl font-bold pb-5">100+</h1>
+                <p className="text-lg text-center mx-4">Legislations implemented in collaboration with ASUC Senate</p>
             </div>
             <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
-                <h1 className="text-[#003A70] text-[56px] font-bold">180k</h1>
-                <p className="text-[20px] text-center mx-4">New York Times articles read monthly by students</p>
+                <h1 className="text-[#003A70] text-5xl md:text-7xl font-bold pb-5">180k</h1>
+                <p className="text-lg text-center mx-4">New York Times articles read monthly by students</p>
             </div>
         </div>
 
@@ -255,12 +250,57 @@ export default function Home() {
           </div>
         </div>
 
-      <div 
-        id="PARTNER"
-        className="mx-8 lg:mx-[5rem] pb-10">
+        <div 
+        id="EVENTS"
+        className="mx-8 pb-10">
         <main className="flex flex-col pt-10 text-[20px] gap-8">
           <div className="flex mx-[10%] items-center drop-shadow-lg">
-            <h3 className="flex items-center w-full text-2xl lg:text-3xl font-extrabold text-center">
+            <h3 className="flex items-center w-full text-2xl lg:text-3xl text-center">
+              <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+              <span className="px-4">Come To Our Events</span>
+              <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+            </h3>
+          </div>
+
+          <div id="text" className="flex md:flex-row flex-col items-center gap-6 mx-[10%]">
+            <div className="basis-1/2 text-sm md:text-xl">
+              <p>
+                The Office of the Executive Vice President organizes a wide range of events, including those led independently 
+                by one of our departments, collaborations with other ASUC offices or campus groups, and events in conjunction 
+                with companies, external groups, or individuals. 
+              </p>
+              <br/>
+              <p>
+                These events vary in scope and purpose, serving the diverse needs of the campus community & beyond. Past events 
+                have included professional development workshops, leadership panels, networking opportunities, community-building 
+                events, and advocacy initiatives.
+              </p>
+            </div>
+              
+            <div className="basis-1/2 py-5 flex flex-col items-center">
+              <div className="w-full max-w-md">
+                <img
+                  src="/backgrounds/e_1.png"
+                  alt="example"
+                  className="w-full"
+                />
+                <p className="w-full text-sm  mt-2">
+                  <i>
+                    The Office of the Executive Vice President held the PPIA Junior Summer Institute Panel and Mixer in collaboration with the Goldman School of Public Policy and the Student Policy Institute at Berkeley.                   </i>
+                </p>
+              </div>
+          </div>
+
+          </div>
+        </main>
+      </div>
+      
+      <div 
+        id="PARTNER"
+        className="mx-8  pb-10">
+        <main className="flex flex-col pt-10 text-[20px] gap-8">
+          <div className="flex mx-[10%] items-center drop-shadow-lg">
+            <h3 className="flex items-center w-full text-2xl lg:text-3xl text-center">
               <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
               <span className="px-4">Partner With Us</span>
               <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
@@ -273,16 +313,16 @@ export default function Home() {
             </p>
             <div className="flex flex-wrap justify-center items-center gap-8 h-auto">
               <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
-                  <h1 className="text-[#003A70] text-[56px] font-bold">180K</h1>
-                  <p className="text-center text-[20px]">Articles Read</p>
+                  <h1 className="text-[#003A70] text-5xl md:text-7xl font-bold">180K</h1>
+                  <p className="text-center text-lg">Articles Read</p>
               </div>
               <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
-                  <h1  className="text-[#003A70] text-[56px] font-bold">409</h1>
-                  <p className="text-center text-[20px]">Registered Student Organizations</p>
+                  <h1  className="text-[#003A70] text-5xl md:text-7xl  font-bold">409</h1>
+                  <p className="text-center text-lg">Registered Student Organizations</p>
               </div>
               <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
-                  <h1 className="text-[#003A70] text-[56px] font-bold">100+</h1>
-                  <p className="text-center text-[20px]">Legislations drafted, passed, and implemented</p>
+                  <h1 className="text-[#003A70] text-5xl md:text-7xl font-bold">100+</h1>
+                  <p className="text-center text-lg">Legislations drafted, passed, and implemented</p>
               </div>
           </div>
             <button className="bg-[#003A70] text-white py-3 px-6 rounded-full text-sm lg:text-base font-bold hover:bg-[#002957] transition-colors">
