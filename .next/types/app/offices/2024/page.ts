@@ -1,4 +1,4 @@
-// File: /Users/albertogarcia/Public/vscode/OEVP/src/app/offices/2024/page.js
+// File: /home/hype/OEVP/src/app/offices/2024/page.js
 import * as entry from '../../../../../src/app/offices/2024/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
