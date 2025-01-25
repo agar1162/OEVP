@@ -2,7 +2,7 @@ import Navbar from "../../../components/home/Navbar"
 import Footer from "../../../components/home/Footer"
 export default function officePage () {
     const profiles = [
-        { id: 1, name: "Robert Carrillo", title: "Executive Vice President", major: "Political Science, Public Policy and Rhetoric", contact: null },
+        { id: 1, name: "Robert Carrillo", title: "Executive Vice President", major: "Political Science, Public Policy and Rhetoric", contact: null, },
         { id: 2, name: "Joselyn Espinoza", title: "Chief of Staff", major: "Sociology and Public Policy", contact: "j.espinoza@berkeley.edu" },
         { id: 3, name: "Dafne Rodriguez", title: "Chief of Staff", major: "Sociology and Public Policy", contact: "dcruzrodriguez@berkeley.edu" },
         { id: 4, name:"Kianna Rodrate", title: "Chief of Staff Intern", major: "Economics & Political Science", contact: null },
