@@ -105,7 +105,7 @@ export default function Home() {
 
       <div
         id="COVER"
-        className="h-[90vh] bg-cover bg-center bg-no-repeat text-white text-center flex items-start justify-center relative"
+        className="h-[90vh] bg-cover bg-center bg-no-repeat text-yellow text-center flex items-start justify-center relative"
       >
         {/* Background images with transition */}
         {slides.map((slide, index) => (
