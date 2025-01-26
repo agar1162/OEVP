@@ -154,16 +154,15 @@ export default function departmentsPage() {
         </div>
 
           
-      <div className="place-items-center pb-10">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1KuBN9xP-FY7UD5JLEyeJ2D2aVWMxE9Wn6xgUKtC1O-RIQg/viewform?embedded=true" 
-          width="85%" 
-          height="500" 
-          frameBorder="0" 
-          marginHeight="0" 
-          marginWidth="0">
-            Loading…
-          </iframe>
-      </div>
+        <div className="flex justify-center items-center">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc1KuBN9xP-FY7UD5JLEyeJ2D2aVWMxE9Wn6xgUKtC1O-RIQg/viewform?usp=sf_link"
+            className="flex justify-center items-center"
+          >
+            <img src="/form.jpg" className="w-[20vw]" />
+          </a>
+        </div>
+
 
 
       <div className="items-center mx-[10%] pt-[5vh] text-center">

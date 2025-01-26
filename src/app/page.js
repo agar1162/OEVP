@@ -107,7 +107,6 @@ export default function Home() {
         id="COVER"
         className="h-[75vh] md:m-10 bg-cover bg-center bg-no-repeat text-white text-center flex items-start justify-center relative"
       >
-        {/* Background images with transition */}
         {slides.map((slide, index) => (
           <div
             key={index}
@@ -231,7 +230,7 @@ export default function Home() {
               <img src={times} alt="New York Times" className="h-[46px] w-[36px] mx-auto mb-4" />
               <h1 className="text-[23px] font-bold mb-2">New York Times</h1>
               <p className="text-sm leading-relaxed mb-4">{def}</p>
-              <a href="/access" className="p-3 px-10 bg-white rounded-lg text-[#A6A6A6] hover:text-berkeley">
+              <a href="/resources" className="p-3 px-10 bg-white rounded-lg text-[#A6A6A6] hover:text-berkeley">
                 Register
               </a>
             </div>
@@ -243,7 +242,7 @@ export default function Home() {
               <img src={wsj} alt="Wall Street Journal" className="h-[36px] w-[62px] mx-auto mb-4" />
               <h1 className="text-[23px] font-bold mb-2">Wall Street Journal</h1>
               <p className="text-sm leading-relaxed mb-4">{def}</p>
-              <a href="/access" className="p-3 px-10 bg-white rounded-lg text-[#A6A6A6] hover:text-berkeley">
+              <a href="/resources" className="p-3 px-10 bg-white rounded-lg text-[#A6A6A6] hover:text-berkeley">
                 Register
               </a>
             </div>
@@ -325,9 +324,9 @@ export default function Home() {
                   <p className="text-center text-lg">Legislations drafted, passed, and implemented</p>
               </div>
           </div>
-            <button className="bg-[#003A70] text-white py-3 px-6 rounded-full text-sm lg:text-base font-bold hover:bg-[#002957] transition-colors">
+            <a href="/partnerships.html" className="bg-[#003A70] text-white py-3 px-6 rounded-full text-sm lg:text-base font-bold hover:bg-[#002957] transition-colors">
               Become a Partner
-            </button>
+            </a>
           </div>
         </main>
       </div>

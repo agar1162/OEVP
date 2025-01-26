@@ -43,6 +43,14 @@ export default function officePage () {
       linkedin: null
     },
     {
+      id: 11,
+      name: "Paige Clark",
+      title: "Student Safety, Success & Wellness Director",
+      major: "Political Science",
+      contact: "paigeclark21@berkeley.edu",
+      linkedin: "https://www.linkedin.com/in/paige-clark-820a14173/"
+    },
+    {
       id: 6,
       name: "Shawntaya Jeanes",
       title: "Communications and Public Relations Director",
@@ -59,12 +67,20 @@ export default function officePage () {
       linkedin: "https://www.linkedin.com/in/emily-melero-a99308254/"
     },
     {
-      id: null,
+      id: 14,
       name: "Emily Melero",
       title: "Legislative Affairs Director",
       major: "Business Administration",
-      contact: "emilycmelero@berkeley.edu",
-      linkedin: "https://www.linkedin.com/in/emily-melero-a99308254/"
+      contact: null,
+      linkedin: null
+    },
+    {
+      id: 6,
+      name: "Hibba Adeel",
+      title: "XXX",
+      major: "XXX",
+      contact: "hadeel@berkeley.edu",
+      linkedin: "https://www.linkedin.com/in/hibba-a-73a709211/"
     },
     {
       id: 7,
@@ -105,30 +121,6 @@ export default function officePage () {
       major: "Business Administration",
       contact: "katianayb@berkeley.edu",
       linkedin: "https://www.linkedin.com/in/katianayb/"
-    },
-    {
-      id: 11,
-      name: "Paige Clark",
-      title: "Student Safety, Success & Wellness Director",
-      major: "Political Science",
-      contact: "paigeclark21@berkeley.edu",
-      linkedin: "https://www.linkedin.com/in/paige-clark-820a14173/"
-    },
-    {
-      id: null,
-      name: "Hibba Adeel",
-      title: "XXX",
-      major: "XXX",
-      contact: "hadeel@berkeley.edu",
-      linkedin: "https://www.linkedin.com/in/hibba-a-73a709211/"
-    },
-    {
-      id: null,
-      name: "Audrey Lee",
-      title: "XXX",
-      major: "XXX",
-      contact: "audreylee2004@berkeley.edu",
-      linkedin: "https://www.linkedin.com/in/audrey-s-lee/"
     }
   ];
 
@@ -158,7 +150,7 @@ export default function officePage () {
                     <p className="text-[#6d6d6d]">{profile.title}</p>
                     <p>{profile.major}</p>
                     
-                    <div className="absolute bottom-4 right-4 flex space-x-2">
+                    <div className="block ml-auto flex space-x-2">
                         {profile.linkedin && (
                             <a href={profile.linkedin} target="_blank" rel="noopener noreferrer">
                                 <img
@@ -175,9 +167,9 @@ export default function officePage () {
                                     alt="Email"
                                     className="w-6 h-6 hover:scale-110 transition-transform"
                                     />
-                  </a>
-                )}
-              </div>
+                      </a>
+                    )}
+                  </div>
                 </div>
                 ))}
             </div>

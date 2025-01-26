@@ -25,7 +25,6 @@ export default function Navbar() {
         <img src={logoref} alt="Logo" className="lg:w-[300px] w-[250px] object-contain" />
       </a>
 
-      {/* Mobile Menu Button */}
       <button
         onClick={toggleMobileMenu}
         className="lg:hidden flex items-center text-white"
@@ -33,7 +32,6 @@ export default function Navbar() {
         <img src="/bars.svg" alt="Menu" className="w-6" />
       </button>
 
-      {/* Navigation Links */}
       <ul
         className={`lg:flex lg:flex-row lg:space-x-6 items-center text-white ${
           isMobileMenuVisible
@@ -44,17 +42,38 @@ export default function Navbar() {
         <li className="p-4">
           <a
             href="/"
-            className="text-lg font-bold hover:text-gray-400 transition"
+            className="font-bold hover:text-gray-400 transition"
           >
             Home
           </a>
+        </li>
+
+        <li className="p-4 relative">
+          <button
+            onClick={toggleOfficeMenu}
+            className="flex items-center font-bold hover:text-gray-400 transition"
+          >
+            Offices
+            <img 
+              src={icon} 
+              alt="Toggle" 
+              className={`ml-2 w-4 transform transition-transform duration-300`} 
+                />
+          </button>
+          {isOfficeMenuVisible && (
+            <ul className="absolute top-full left-0 mt-2 bg-berkeley border-t-2 border-[#FDB515] shadow-lg w-48">
+              <li className="px-4 py-2">
+                <a href="/offices/2024">2024-2025</a>
+              </li>
+            </ul>
+          )}
         </li>
 
         {/* Departments Dropdown */}
         <li className="p-4 relative">
           <button
             onClick={toggleDepartmentMenu}
-            className="flex items-center text-lg font-bold hover:text-gray-400 transition"
+            className="flex items-center font-bold hover:text-gray-400 transition"
           >
             Departments
             {/* 
@@ -124,48 +143,30 @@ export default function Navbar() {
           )}
         </li>
 
-        <li className="p-4">
-          <a
-            href="/resources"
-            className="text-lg font-bold hover:text-gray-400 transition"
-          >
-            Resources
-          </a>
-        </li>
+    
 
         <li className="p-4">
           <a
             href="/departments/deib/communities.html"
-            className="text-lg font-bold hover:text-gray-400 transition"
+            className="font-bold hover:text-gray-400 transition"
           >
             DEI Initiatives
           </a>
         </li>
 
-        {/* Offices Dropdown */}
-        <li className="p-4 relative">
-          <button
-            onClick={toggleOfficeMenu}
-            className="flex items-center text-lg font-bold hover:text-gray-400 transition"
+        <li className="p-4">
+          <a
+            href="/partnerships.html"
+            className="font-bold hover:text-gray-400 transition"
           >
-            Offices
-            <img 
-              src={icon} 
-              alt="Toggle" 
-              className={`ml-2 w-4 transform transition-transform duration-300`} 
-                />
-          </button>
-          {isOfficeMenuVisible && (
-            <ul className="absolute top-full left-0 mt-2 bg-berkeley border-t-2 border-[#FDB515] shadow-lg w-48">
-              <li className="px-4 py-2">
-                <a href="/offices/2024">2024-2025</a>
-              </li>
-            </ul>
-          )}
+            Commerical Partnerships
+          </a>
         </li>
 
+        
+
         <li className="p-4">
-          <a href="https://berkeley.zoom.us/j/6685684771?_x_zm_rtaid=MOwFCASdTuqDG7Yo6PLAEw.1736649189758.7b91ccafcde961b05952e5e32cf3d571&_x_zm_rhtaid=781#success" className="bg-[#265885] px-6 py-2 rounded-md text-lg font-bold hover:bg-[#1d486a] transition">
+          <a href="https://berkeley.zoom.us/j/6685684771?_x_zm_rtaid=MOwFCASdTuqDG7Yo6PLAEw.1736649189758.7b91ccafcde961b05952e5e32cf3d571&_x_zm_rhtaid=781#success" className="bg-[#265885] px-6 py-2 rounded-md font-bold hover:bg-[#1d486a] transition">
             Senate Meeting
           </a>
         </li>
