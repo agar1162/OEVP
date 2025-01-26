@@ -20,8 +20,16 @@
       "static/chunks/4bd1b696-7f4092adee896cfb.js",
       "static/chunks/517-1ec7c2b72d653d31.js",
       "static/chunks/main-app-cdf54b64e6057b27.js",
-      "static/chunks/206-e9dad63d9e639a98.js",
+      "static/chunks/206-4583a79244f040ae.js",
       "static/chunks/app/departments/commercial-activities/page-fdbce54855a70863.js"
+    ],
+    "/departments/communications/page": [
+      "static/chunks/webpack-9edee2920554d0a5.js",
+      "static/chunks/4bd1b696-7f4092adee896cfb.js",
+      "static/chunks/517-1ec7c2b72d653d31.js",
+      "static/chunks/main-app-cdf54b64e6057b27.js",
+      "static/chunks/206-4583a79244f040ae.js",
+      "static/chunks/app/departments/communications/page-af7dbd6b1a36f238.js"
     ],
     "/departments/deib/communities/page": [
       "static/chunks/webpack-9edee2920554d0a5.js",
@@ -30,36 +38,21 @@
       "static/chunks/main-app-cdf54b64e6057b27.js",
       "static/chunks/app/departments/deib/communities/page-17badef4882ac16e.js"
     ],
-    "/departments/finance/page": [
-      "static/chunks/webpack-9edee2920554d0a5.js",
-      "static/chunks/4bd1b696-7f4092adee896cfb.js",
-      "static/chunks/517-1ec7c2b72d653d31.js",
-      "static/chunks/main-app-cdf54b64e6057b27.js",
-      "static/chunks/206-e9dad63d9e639a98.js",
-      "static/chunks/app/departments/finance/page-e7f9845337030f14.js"
-    ],
-    "/departments/communications/page": [
-      "static/chunks/webpack-9edee2920554d0a5.js",
-      "static/chunks/4bd1b696-7f4092adee896cfb.js",
-      "static/chunks/517-1ec7c2b72d653d31.js",
-      "static/chunks/main-app-cdf54b64e6057b27.js",
-      "static/chunks/206-e9dad63d9e639a98.js",
-      "static/chunks/app/departments/communications/page-af7dbd6b1a36f238.js"
-    ],
     "/departments/legal-affairs/page": [
       "static/chunks/webpack-9edee2920554d0a5.js",
       "static/chunks/4bd1b696-7f4092adee896cfb.js",
       "static/chunks/517-1ec7c2b72d653d31.js",
       "static/chunks/main-app-cdf54b64e6057b27.js",
-      "static/chunks/206-e9dad63d9e639a98.js",
+      "static/chunks/206-4583a79244f040ae.js",
       "static/chunks/app/departments/legal-affairs/page-b85cfb14a9a7d088.js"
     ],
-    "/departments/rso/page": [
+    "/departments/finance/page": [
       "static/chunks/webpack-9edee2920554d0a5.js",
       "static/chunks/4bd1b696-7f4092adee896cfb.js",
       "static/chunks/517-1ec7c2b72d653d31.js",
       "static/chunks/main-app-cdf54b64e6057b27.js",
-      "static/chunks/app/departments/rso/page-e9b8a73044151950.js"
+      "static/chunks/206-4583a79244f040ae.js",
+      "static/chunks/app/departments/finance/page-e7f9845337030f14.js"
     ],
     "/departments/deib/page": [
       "static/chunks/webpack-9edee2920554d0a5.js",
@@ -68,20 +61,28 @@
       "static/chunks/main-app-cdf54b64e6057b27.js",
       "static/chunks/app/departments/deib/page-5e3b900d635dd73b.js"
     ],
-    "/offices/2024/page": [
+    "/departments/rso/page": [
       "static/chunks/webpack-9edee2920554d0a5.js",
       "static/chunks/4bd1b696-7f4092adee896cfb.js",
       "static/chunks/517-1ec7c2b72d653d31.js",
       "static/chunks/main-app-cdf54b64e6057b27.js",
-      "static/chunks/app/offices/2024/page-fc5479d981a3fbfb.js"
+      "static/chunks/app/departments/rso/page-e9b8a73044151950.js"
     ],
     "/departments/sswb/page": [
       "static/chunks/webpack-9edee2920554d0a5.js",
       "static/chunks/4bd1b696-7f4092adee896cfb.js",
       "static/chunks/517-1ec7c2b72d653d31.js",
       "static/chunks/main-app-cdf54b64e6057b27.js",
-      "static/chunks/206-e9dad63d9e639a98.js",
+      "static/chunks/206-4583a79244f040ae.js",
       "static/chunks/app/departments/sswb/page-f543b0d070a1dd04.js"
+    ],
+    "/departments/spaces/page": [
+      "static/chunks/webpack-9edee2920554d0a5.js",
+      "static/chunks/4bd1b696-7f4092adee896cfb.js",
+      "static/chunks/517-1ec7c2b72d653d31.js",
+      "static/chunks/main-app-cdf54b64e6057b27.js",
+      "static/chunks/206-4583a79244f040ae.js",
+      "static/chunks/app/departments/spaces/page-55b315a0b313b896.js"
     ],
     "/departments/student-affairs/page": [
       "static/chunks/webpack-9edee2920554d0a5.js",
@@ -90,22 +91,12 @@
       "static/chunks/main-app-cdf54b64e6057b27.js",
       "static/chunks/app/departments/student-affairs/page-4af3223512eca9df.js"
     ],
-    "/departments/spaces/page": [
+    "/partnerships/page": [
       "static/chunks/webpack-9edee2920554d0a5.js",
       "static/chunks/4bd1b696-7f4092adee896cfb.js",
       "static/chunks/517-1ec7c2b72d653d31.js",
       "static/chunks/main-app-cdf54b64e6057b27.js",
-      "static/chunks/206-e9dad63d9e639a98.js",
-      "static/chunks/app/departments/spaces/page-55b315a0b313b896.js"
-    ],
-    "/page": [
-      "static/chunks/webpack-9edee2920554d0a5.js",
-      "static/chunks/4bd1b696-7f4092adee896cfb.js",
-      "static/chunks/517-1ec7c2b72d653d31.js",
-      "static/chunks/main-app-cdf54b64e6057b27.js",
-      "static/css/d4508c00865b8556.css",
-      "static/chunks/206-e9dad63d9e639a98.js",
-      "static/chunks/app/page-63b3d3fb9ff11135.js"
+      "static/chunks/app/partnerships/page-c9fc99543ba7cbdc.js"
     ],
     "/resources/page": [
       "static/chunks/webpack-9edee2920554d0a5.js",
@@ -114,12 +105,21 @@
       "static/chunks/main-app-cdf54b64e6057b27.js",
       "static/chunks/app/resources/page-3cdde97af6a78657.js"
     ],
-    "/partnerships/page": [
+    "/page": [
       "static/chunks/webpack-9edee2920554d0a5.js",
       "static/chunks/4bd1b696-7f4092adee896cfb.js",
       "static/chunks/517-1ec7c2b72d653d31.js",
       "static/chunks/main-app-cdf54b64e6057b27.js",
-      "static/chunks/app/partnerships/page-c9fc99543ba7cbdc.js"
+      "static/css/d4508c00865b8556.css",
+      "static/chunks/206-4583a79244f040ae.js",
+      "static/chunks/app/page-63b3d3fb9ff11135.js"
+    ],
+    "/offices/2024/page": [
+      "static/chunks/webpack-9edee2920554d0a5.js",
+      "static/chunks/4bd1b696-7f4092adee896cfb.js",
+      "static/chunks/517-1ec7c2b72d653d31.js",
+      "static/chunks/main-app-cdf54b64e6057b27.js",
+      "static/chunks/app/offices/2024/page-fc5479d981a3fbfb.js"
     ]
   }
 }

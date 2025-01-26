@@ -41,7 +41,7 @@ export default function Footer(){
                         <ul>
                             <li>(510) 664-7976</li>
                             <li>evp@asuc.org</li>
-                            <li><a href="" className="font-bold underline">Have a Request?</a></li>
+                            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfqJ1pIDmCFu9Rg-14QRCYSre3DAYxHUmOkRW05Part_E98jg/viewform?usp=sf_link" className="font-bold underline">Have a Request?</a></li>
 
                         </ul>
                     </div>
