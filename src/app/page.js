@@ -124,7 +124,8 @@ export default function Home() {
             OFFICE OF THE EXECUTIVE VICE PRESIDENT
           </h1>
           
-        </div>
+      </div>
+      
       <div className="absolute bottom-0 w-full pb-10">
         {/* Captions with rec.svg */}
         <h3 className="text-2xl md:text-3xl mx-[10vw]">{slides[currentIndex].caption}</h3>

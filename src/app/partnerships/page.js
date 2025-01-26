@@ -2,9 +2,39 @@ import Navbar from "../../components/home/Navbar";
 import Footer from "../../components/home/Footer";
 
 export default function partnershipPage() {
+
+    const Cover = ({ name, link, desc, mem }) => { 
+        return (
+            <div> 
+                <div className="border-t-8  bottom-0 border-berkeley bg-[#FFFFFFCC] w-fit lg: opacity-100 p-10 md:hidden">
+                    <h3 className="text-berkeley font-bold text-lg">Department</h3>
+                    <h1 className="font-bold text-4xl pt-3">{name}</h1>
+                    <p className="text-lg pt-1">{desc}</p>
+                    <p className="pt-4 text-sm">{mem}</p>
+                </div>
+                <div
+                    style={{ backgroundImage: `url('${link}')` }}
+                    className="h-[75vh] md:m-10 md:m-[5vh] bg-cover bg-center bg-no-repeat md:place-content-center relative align-center md:place-content-center"
+                >
+                
+                    <div className="border-t-8  bottom-0 border-berkeley bg-[#FFFFFFCC] w-fit lg: opacity-100 p-10 absolute bottom-0 hidden md:block">
+                        <h1 className="font-bold text-4xl pt-3">{name}</h1>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+    
     return (
         <div>
             <Navbar />
+
+            <Cover 
+            name="Commericial Partnerships"
+            link="/prof.jpeg"
+            />
+            
+
             <div className="p-[5vh] lg:mx-[10%] text-[20px]">
                 <p>
                     The ASUC OEVP is committed to building meaningful partnerships with companies and organizations 
