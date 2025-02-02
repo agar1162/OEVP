@@ -1,3 +1,5 @@
+"use client"
+import { act, useState } from "react";
 import Footer from "../../../../components/home/Footer";
 import Navbar from "../../../../components/home/Navbar";
 
@@ -39,6 +41,12 @@ export default function Page() {
         return data;
     }
 
+    const [activeSection, setActiveSection] = useState(null);
+
+    const toggleSection = (section) => {
+        setActiveSection(activeSection === section ? null : section);
+    };
+
 
     return (
         <div>
@@ -62,8 +70,9 @@ export default function Page() {
                 <div id="Black/Afrikan" className="md:flex p-10 gap-10">
                     <div className="basis-1/2 flex flex-wrap">
                         <h1 className="text-berkeley text-3xl pb-10 md:hidden"><i>Black/Afrikan Diaspora</i></h1>
-                        <img src="/departments/deib/f1.png" className="w-full"/>
-                        <div className="mt-10 border-2 border-black">
+                        <img src="/departments/deib/f1.png" className="w-full h-[400px] object-contain"/>
+
+                        <div className={`mt-10 ${activeSection == "black_resources" ? "block" : "hidden"}`}>
                             <p>Clubs/ Organizations: <a href="https://www.instagram.com/blackatberkeley/?hl=en">Black Student Union (BSU)</a>, <a href="https://star.berkeley.edu/resources/fannie-lou-hamer-black-resource-center">Fannie Lou Hamer 
                                 Black Resource Center</a>, <a href="https://cejce.berkeley.edu/aasd"> African American Student Development 
                                 (AASD)</a>, <a href="https://callink.berkeley.edu/organization/brrc">Black Recruitment and Retention Center (BRCC)</a></p>
@@ -82,15 +91,25 @@ export default function Page() {
                             contributions. Despite systemic challenges, Black students at Berkeley continue to 
                             thrive through collective empowerment and advocacy for Black liberation. </p>
                         <br/>
-                        <h3>Resources:</h3>
-                        <ul className="list-decimal list-inside">
-                            <li> <a href="https://berkeleyclubs.com/club/BlackStudentsinHealthAssociation"> Professional Resources: Black Students in Health Association (BSHA)</a>, 
-                                <a>Haas Undergraduate Black Business Association (HUBBA)</a>, <a href="https://ga.berkeley.edu/get-involved/projects/">Womxn of Color 
-                                Initiative – Graduate Assembly</a>, Black Equal Opportunity Employment Journal, <a href="https://www.jopwell.com/">Jopwell</a></li>
-                            <li><a href="https://alumni.berkeley.edu/get-involved/scholarships/aai/">Support Resources: African American Initiative Scholarship</a>, <a href="https://lsadvising.berkeley.edu/connect-through-mentorship">mentorship programs.</a></li>
-                            <li>Events: <a href="https://diversity.berkeley.edu/celebrating-black-history-month">Black Heritage Month programmin</a>, <a href="https://news.berkeley.edu/2024/02/01/black-history-tour-at-uc-berkeley/">town halls</a>, and <a href="https://www.instagram.com/blackatberkeley/?hl=en">socials.</a></li>
+                        <div className="flex flex-col items-start gap-4">
+                            <button onClick={() => toggleSection("black_resources")} className="p-4 border-2 border-black flex hover:opacity-50">Resources <img src="/tri.png" className="w-2 mt-2 ml-2"/></button> 
+                            <button onClick={() => toggleSection("black_organizations")} className="p-4 border-2 border-black flex hover:opacity-50">Organizations <img src="/tri.png" className="w-2 mt-2 ml-2"/></button> 
+                        </div>
+                        
 
-                        </ul>
+
+                        <div className={`${activeSection == "black_organizations" ? "block" : "hidden"}`}>
+                            <h3>Resources:</h3>
+                            <ul className="list-decimal list-inside">
+                                <li> <a href="https://berkeleyclubs.com/club/BlackStudentsinHealthAssociation"> Professional Resources: Black Students in Health Association (BSHA)</a>, 
+                                    <a>Haas Undergraduate Black Business Association (HUBBA)</a>, <a href="https://ga.berkeley.edu/get-involved/projects/">Womxn of Color 
+                                    Initiative – Graduate Assembly</a>, Black Equal Opportunity Employment Journal, <a href="https://www.jopwell.com/">Jopwell</a></li>
+                                <li><a href="https://alumni.berkeley.edu/get-involved/scholarships/aai/">Support Resources: African American Initiative Scholarship</a>, <a href="https://lsadvising.berkeley.edu/connect-through-mentorship">mentorship programs.</a></li>
+                                <li>Events: <a href="https://diversity.berkeley.edu/celebrating-black-history-month">Black Heritage Month programmin</a>, <a href="https://news.berkeley.edu/2024/02/01/black-history-tour-at-uc-berkeley/">town halls</a>, and <a href="https://www.instagram.com/blackatberkeley/?hl=en">socials.</a></li>
+
+                            </ul>
+                        </div>
+                        
                     </div>
                 </div>
 
@@ -108,31 +127,42 @@ export default function Page() {
                             connection and advocacy, ensuring Latinx students can succeed academically and personally.</p>
                         <br/>
 
-                        <h3>Appointment with EOP Success Counselor</h3>
-                        <ul className="list-disc list-inside">
-                            <li>Via Zoom and in person at the Latinx Student Resource Center.</li>
-                            <li>To schedule an appointment with Sandra Arias, visit <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3VFYp6QjJM-qBIKPuZP5FEf2XyYtVDudpzmnj1DXD_GyJJnEW8YtHvMtHgh533pd5JOk9v8yfv">http://tinyurl.com/F24SandraEOPAdvising</a></li>
-                        </ul>
-
-                        <br/>
-                        <h3>Resources:</h3>
-                        <ul className="list-disc list-inside">
-                            <li><a href="https://cejce.berkeley.edu/clsd/latinx-student-resource-center">Latinx Resource Center</a></li>
-                            <li><a href="https://undocu.berkeley.edu/financial-aid-for-undocumented-students/#:~:text=Undocumented%20students%20with%20AB540%20and,and%20scholarships,%20and%20private%20scholarships.">Financial aid for undocumented students</a></li>
-                            <li><a href="https://admission.universityofcalifornia.edu/tuition-financial-aid/types-of-aid/who-can-get-financial-aid/ca-dream-act.html">California Dream Act</a></li>
-                        </ul>
-                        <br/>
+                        <div className="flex flex-col items-start gap-4">
+                            <button onClick={() => toggleSection("latinx_resources")} className="p-4 border-2 border-black flex hover:opacity-50">Resources <img src="/tri.png" className="w-2 mt-2 ml-2"/></button> 
+                            <button onClick={() => toggleSection("latinx_organizations")} className="p-4 border-2 border-black flex hover:opacity-50">Organizations <img src="/tri.png" className="w-2 mt-2 ml-2"/></button> 
+                        </div>
                         
-                        <h3>Events</h3>
-                        <ul className="list-disc list-inside">
-                            <li>Día de los Muertos celebrations (cultural festivals) </li>
-                            <li>Academic workshops</li>
-                        </ul>
+                        <br/>
+
+                        <div className={`${activeSection == "latinx_resources" ? "block" : "hidden"}`}>
+                            <h3>Appointment with EOP Success Counselor</h3>
+                            <ul className="list-disc list-inside">
+                                <li>Via Zoom and in person at the Latinx Student Resource Center.</li>
+                                <li>To schedule an appointment with Sandra Arias, visit <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3VFYp6QjJM-qBIKPuZP5FEf2XyYtVDudpzmnj1DXD_GyJJnEW8YtHvMtHgh533pd5JOk9v8yfv">http://tinyurl.com/F24SandraEOPAdvising</a></li>
+                            </ul>
+
+                            <br/>
+                            
+                            <h3>Resources:</h3>
+                            <ul className="list-disc list-inside">
+                                <li><a href="https://cejce.berkeley.edu/clsd/latinx-student-resource-center">Latinx Resource Center</a></li>
+                                <li><a href="https://undocu.berkeley.edu/financial-aid-for-undocumented-students/#:~:text=Undocumented%20students%20with%20AB540%20and,and%20scholarships,%20and%20private%20scholarships.">Financial aid for undocumented students</a></li>
+                                <li><a href="https://admission.universityofcalifornia.edu/tuition-financial-aid/types-of-aid/who-can-get-financial-aid/ca-dream-act.html">California Dream Act</a></li>
+                            </ul>
+                            <br/>
+                            
+                            <h3>Events</h3>
+                            <ul className="list-disc list-inside">
+                                <li>Día de los Muertos celebrations (cultural festivals) </li>
+                                <li>Academic workshops</li>
+                            </ul>
+                        </div>
+                        
                     </div>
                 
                     <div className="basis-1/2 flex flex-wrap">
-                        <img src="/departments/deib/f2.png" className="w-full"/>
-                        <div className="mt-10 border-2 border-black">
+                        <img src="/departments/deib/f2.png" className="w-full h-[400px] object-contain"/>
+                        <div className={`mt-10 ${activeSection == "latinx_organizations" ? "block" : "hidden"}`}>
                             <p>Affinity Groups: <a href="">Central Americans for Empowerment</a>, <a href="">CED Students of Color (CEDSOC)</a>, <a href="">Colombians at Berkeley</a></p>
                             <br/>
                             <p>Academic Clubs/ Organizations: <a href="https://www.ocf.berkeley.edu/~calche/">Comunidad for Health Equity (CHE)</a>, 
@@ -168,8 +198,8 @@ export default function Page() {
                 <div id="Indigenous" className="md:flex p-10 gap-10">
                     <div className="basis-1/2 flex flex-wrap">
                         <h1 className="text-berkeley text-3xl pb-10 md:hidden"><i>Indigenous Community</i></h1>
-                        <img src="/departments/deib/f3.png" className="w-full"/>
-                        <div className="mt-10 border-2 border-black">
+                        <img src="/departments/deib/f3.png" className="w-full h-[400px] object-contain"/>
+                        <div className={`mt-10 ${activeSection == "ind_organizations" ? "block" : "hidden"}`}>
                             <p>Development Organizations: 
                                 <a href="https://callink.berkeley.edu/organization/nativeamericanrrc">Indigenous Native Coalition Recruitment and Retention Center</a>, 
                                 <a href="https://issi.berkeley.edu/crnai">Joseph Myers Center for Research on Native American Issues</a>, 
@@ -204,19 +234,28 @@ export default function Page() {
                          occupation of this land since the institution's founding in 1868.
                         </p>
                         <br/>
-                        <h3>Resources:</h3>
-                        <ul className="list-decimal list-inside">
-                            <li><a href="https://cejce.berkeley.edu/nasd">Native American Student Development Office</a></li>
-                            <li><a href="https://jsp-ls.berkeley.edu/legal-studies-undergraduate-program/about-major/land-acknowledgement-statement">land acknowledgment tools</a></li>
-                            <li><a href="https://financialaid.berkeley.edu/types-of-aid-at-berkeley/innovative-berkeley-aid-programs/native-american-opportunity-plan/#:~:text=American%20Opportunity%20Plan-,Native%20American%20Opportunity%20Plan,Indian,%20and%20Alaska%20Native%20tribes.">Financial Aid</a></li>
-                        </ul>
-                        <br/>
-                        <h3>Events:</h3>
-                        <ul className="list-decimal list-inside">
-                            <li>Powwows</li>
-                            <li>Indigenous Peopels' Day</li>
-                            <li>Upcoming Events</li>
-                        </ul>
+
+                        <div className="flex flex-col items-start gap-4">
+                            <button onClick={() => toggleSection("ind_resources")} className="p-4 border-2 border-black flex hover:opacity-50">Resources <img src="/tri.png" className="w-2 mt-2 ml-2"/></button> 
+                            <button onClick={() => toggleSection("ind_organizations")} className="p-4 border-2 border-black flex hover:opacity-50">Organizations <img src="/tri.png" className="w-2 mt-2 ml-2"/></button> 
+                        </div>
+                        
+                        <div className={`${activeSection == "ind_resources" ? "block" : "hidden"}`}>
+                            <h3>Resources:</h3>
+                            <ul className="list-decimal list-inside">
+                                <li><a href="https://cejce.berkeley.edu/nasd">Native American Student Development Office</a></li>
+                                <li><a href="https://jsp-ls.berkeley.edu/legal-studies-undergraduate-program/about-major/land-acknowledgement-statement">land acknowledgment tools</a></li>
+                                <li><a href="https://financialaid.berkeley.edu/types-of-aid-at-berkeley/innovative-berkeley-aid-programs/native-american-opportunity-plan/#:~:text=American%20Opportunity%20Plan-,Native%20American%20Opportunity%20Plan,Indian,%20and%20Alaska%20Native%20tribes.">Financial Aid</a></li>
+                            </ul>
+                            <br/>
+                            <h3>Events:</h3>
+                            <ul className="list-decimal list-inside">
+                                <li>Powwows</li>
+                                <li>Indigenous Peopels' Day</li>
+                                <li>Upcoming Events</li>
+                            </ul>
+                        </div>
+                        
                     </div>
                 </div>
 
@@ -233,41 +272,50 @@ export default function Page() {
                              community on campus.
                         </p>
                         <br/>
+
+                        <div className="flex flex-col items-start gap-4">
+                            <button onClick={() => toggleSection("mena_resources")} className="p-4 border-2 border-black flex hover:opacity-50">Resources <img src="/tri.png" className="w-2 mt-2 ml-2"/></button> 
+                            <button onClick={() => toggleSection("mena_organizations")} className="p-4 border-2 border-black flex hover:opacity-50">Organizations <img src="/tri.png" className="w-2 mt-2 ml-2"/></button> 
+                        </div>
+                        
                         <br/>
 
-                        <h3>Resources:</h3>
-                        <ul className="list-disc list-inside">
-                            <li>
-                                <a href="https://dining.berkeley.edu/nutrition/special-diets/#:~:text=Cafe%203%20is%20the%20dining,entree%20station%20are%20certified%20Halal.">Halal dining options</a> and  
-                                <a href="https://berkeleymsa.org/spaces"> prayer/meditation spaces</a>.</li>
-                        </ul>
-                        <br/>
+                        <div className={`${activeSection == "mena_resources" ? "block" : "hidden"}`}>
+                            <h3>Resources:</h3>
+                            <ul className="list-disc list-inside">
+                                <li>
+                                    <a href="https://dining.berkeley.edu/nutrition/special-diets/#:~:text=Cafe%203%20is%20the%20dining,entree%20station%20are%20certified%20Halal.">Halal dining options</a> and  
+                                    <a href="https://berkeleymsa.org/spaces"> prayer/meditation spaces</a>.</li>
+                            </ul>
+                            <br/>
 
-                        <h3>Events</h3>
-                        <ul className="list-disc list-inside">
-                            <li>Ramadan Iftars, cultural showcases, and interfaith dialogues.</li>
-                            <li><a href="https://diversity.berkeley.edu/arab-american-heritage-month">Arab Heritage Month</a> and MENA cultural week programming</li>
-                        </ul>
-                        <br/>
+                            <h3>Events</h3>
+                            <ul className="list-disc list-inside">
+                                <li>Ramadan Iftars, cultural showcases, and interfaith dialogues.</li>
+                                <li><a href="https://diversity.berkeley.edu/arab-american-heritage-month">Arab Heritage Month</a> and MENA cultural week programming</li>
+                            </ul>
+                            <br/>
 
-                        <h3>Performences</h3>
-                        <ul className="list-disc list-inside">
-                            <li>
-                                <a href="https://www.instagram.com/ucbazaad/">Azaad</a>, 
-                                <a href="https://www.instagram.com/p/CMLb2o0FUmr/"> Cal Bhangra, Deewani</a>, 
-                                <a href="https://www.instagram.com/ucbdeewani/"> Dil Se</a>, 
-                                <a href="https://www.instagram.com/p/CMOB4J6ARAN/"> Laya of Berkeley</a>, 
-                                <a href="https://www.facebook.com/MayaatBerkeley/"> Maya at Cal</a>, 
-                                <a href="https://www.instagram.com/ucbzahanat/"> Natya at Berkeley</a>, 
-                                <a href="https://www.instagram.com/nazakatatberkeley/"> Nazakat at Berkeley (Cal Kathak)</a>,
-                                <a href="https://www.instagram.com/ucb.raasramzat/"> Raas Ramzat</a>, 
-                                <a href="https://www.instagram.com/ucbzahanat/"> UC Berkeley Zahanat</a></li>
-                        </ul>
+                            <h3>Performences</h3>
+                            <ul className="list-disc list-inside">
+                                <li>
+                                    <a href="https://www.instagram.com/ucbazaad/">Azaad</a>, 
+                                    <a href="https://www.instagram.com/p/CMLb2o0FUmr/"> Cal Bhangra, Deewani</a>, 
+                                    <a href="https://www.instagram.com/ucbdeewani/"> Dil Se</a>, 
+                                    <a href="https://www.instagram.com/p/CMOB4J6ARAN/"> Laya of Berkeley</a>, 
+                                    <a href="https://www.facebook.com/MayaatBerkeley/"> Maya at Cal</a>, 
+                                    <a href="https://www.instagram.com/ucbzahanat/"> Natya at Berkeley</a>, 
+                                    <a href="https://www.instagram.com/nazakatatberkeley/"> Nazakat at Berkeley (Cal Kathak)</a>,
+                                    <a href="https://www.instagram.com/ucb.raasramzat/"> Raas Ramzat</a>, 
+                                    <a href="https://www.instagram.com/ucbzahanat/"> UC Berkeley Zahanat</a></li>
+                            </ul>
+                        </div>
+                        
                     </div>
                 
                     <div className="basis-1/2 flex flex-wrap">
-                        <img src="/departments/deib/f4.png" className="w-full"/>
-                        <div className="mt-10 border-2 border-black">
+                        <img src="/departments/deib/f4.png" className="w-full h-[400px] object-contain"/>
+                        <div className={`mt-10 ${activeSection == "mena_organizations" ? "block" : "hidden"}`}>
                             <p>
                             Community and Identity-Based Organizations: 
                                 <a href="https://mepi.state.gov/leadership/student-leaders-program/">MENA Student Development Office</a>, 
@@ -307,8 +355,8 @@ export default function Page() {
                 <div id="AAPI" className="md:flex p-10 gap-10">
                     <div className="basis-1/2 flex flex-wrap">
                         <h1 className="text-berkeley text-3xl pb-10 md:hidden"><i>Asian American and Pacific Island Community </i></h1>
-                        <img src="/departments/deib/f5.png" className="w-full"/>
-                        <div className="mt-10 border-2 border-black">
+                        <img src="/departments/deib/f5.png" className="w-full h-[400px] object-contain"/>
+                        <div className={`mt-10 ${activeSection == "aapi_organizations" ? "block" : "hidden"}`}>
                             <p>Professional Development: 
                                 <a href="https://cejce.berkeley.edu/apasd"> Asian Pacific American Student Development (APASD)</a> , 
                                 <a href="https://callink.berkeley.edu/organization/reachrrc"> Asian Pacific Islander Recruitment and Retention Center (REACH!)</a>, 
@@ -335,19 +383,27 @@ export default function Page() {
                             ethnic groups – including 24.7 million Asians and Pacific Islanders in the United States
                         </p>
                         <br/>
-
-                        <h3>Wellness Resources/Reports:</h3>
-                        <ul className="list-decimal list-inside">
-                            <li><a href="https://diversity.berkeley.edu/sites/default/files/aapisc-2021-report-final_0.pdf"> AAPI representation and diversity within the student body</a></li>
-                            <li><a href="https://docs.google.com/document/d/18UOradc0WlJC6_M6yVdDzepL09yuFauy9-E-2KlPk4Y/edit?tab=t.0#heading=h.gugfmiro0i">AAPI Mental Wellness Guide.</a></li>
-                        </ul>
+                        <div className="flex flex-col items-start gap-4">
+                            <button onClick={() => toggleSection("aapi_resources")} className="p-4 border-2 border-black flex hover:opacity-50">Resources <img src="/tri.png" className="w-2 mt-2 ml-2"/></button> 
+                            <button onClick={() => toggleSection("aapi_organizations")} className="p-4 border-2 border-black flex hover:opacity-50">Organizations <img src="/tri.png" className="w-2 mt-2 ml-2"/></button> 
+                        </div>
                         <br/>
+                    
+                        <div className={`${activeSection == "aapi_resources" ? "block" : "hidden"}`}>
+                            <h3>Wellness Resources/Reports:</h3>
+                            <ul className="list-decimal list-inside">
+                                <li><a href="https://diversity.berkeley.edu/sites/default/files/aapisc-2021-report-final_0.pdf"> AAPI representation and diversity within the student body</a></li>
+                                <li><a href="https://docs.google.com/document/d/18UOradc0WlJC6_M6yVdDzepL09yuFauy9-E-2KlPk4Y/edit?tab=t.0#heading=h.gugfmiro0i">AAPI Mental Wellness Guide.</a></li>
+                            </ul>
+                            <br/>
 
-                        <h3>Events:</h3>
-                        <ul className="list-decimal list-inside">
-                            <li><a href="https://events.berkeley.edu/student-events/event/235245-lunar-new-year-celebration">Lunar New Year</a></li>
-                            <li><a href="https://diversity.berkeley.edu/asian-american-and-pacific-islander-heritage-month">Heritage Celebrations</a></li>
-                        </ul>
+                            <h3>Events:</h3>
+                            <ul className="list-decimal list-inside">
+                                <li><a href="https://events.berkeley.edu/student-events/event/235245-lunar-new-year-celebration">Lunar New Year</a></li>
+                                <li><a href="https://diversity.berkeley.edu/asian-american-and-pacific-islander-heritage-month">Heritage Celebrations</a></li>
+                            </ul>
+                        </div>
+                        
                     </div>
                 </div>
 
@@ -367,31 +423,38 @@ export default function Page() {
                             providing safe spaces for students to discuss identity.
                         </p>
                         <br/>
+                        <div className="flex flex-col items-start gap-4">
+                            <button onClick={() => toggleSection("jewish_resources")} className="p-4 border-2 border-black flex hover:opacity-50">Resources <img src="/tri.png" className="w-2 mt-2 ml-2"/></button> 
+                            <button onClick={() => toggleSection("jewish_organizations")} className="p-4 border-2 border-black flex hover:opacity-50">Organizations <img src="/tri.png" className="w-2 mt-2 ml-2"/></button> 
+                        </div>
                         <br/>
 
-                        <h3>Resources:</h3>
-                        <ul className="list-disc list-inside">
-                            <li><a href="https://jewishstudies.berkeley.edu/about/affiliates-resources">Center for Jewish Studies - Resources</a></li>
-                            <li><a href="https://berkeleyhillel.org/wellness/">Berkeley Hillel - Wellness Resources</a></li>
-                            <li><a href="https://diversity.berkeley.edu/support-uc-berkeley-jewish-community">Support for the UC Berkeley Jewish Community</a></li>
-                            <li><a href="https://magnes.berkeley.edu/">Magnes Collection for Jewish Art and Life</a></li>
-                            <li><a href="https://jewishstudies.berkeley.edu/antisemitism-education/">Antisemitism Education Initiative</a></li>
-                            <li><a href="https://deanofstudents.berkeley.edu/our-resources/support/resources-support-trauma-tragedies-loss/">Resources & Support for Trauma, Tragedies, and Loss</a></li> 
-                        </ul>
-                        <br/>
+                        <div className={`${activeSection == "jewish_resources" ? "block" : "hidden"}`}>   
+                            <h3>Resources:</h3>
+                            <ul className="list-disc list-inside">
+                                <li><a href="https://jewishstudies.berkeley.edu/about/affiliates-resources">Center for Jewish Studies - Resources</a></li>
+                                <li><a href="https://berkeleyhillel.org/wellness/">Berkeley Hillel - Wellness Resources</a></li>
+                                <li><a href="https://diversity.berkeley.edu/support-uc-berkeley-jewish-community">Support for the UC Berkeley Jewish Community</a></li>
+                                <li><a href="https://magnes.berkeley.edu/">Magnes Collection for Jewish Art and Life</a></li>
+                                <li><a href="https://jewishstudies.berkeley.edu/antisemitism-education/">Antisemitism Education Initiative</a></li>
+                                <li><a href="https://deanofstudents.berkeley.edu/our-resources/support/resources-support-trauma-tragedies-loss/">Resources & Support for Trauma, Tragedies, and Loss</a></li> 
+                            </ul>
+                            <br/>
 
-                        <h3>Events</h3>
-                        <ul className="list-disc list-inside">
-                            <li><a href="https://jewishstudies.berkeley.edu/news-events-media/events">Speaker Events</a></li>
-                            <li><a href="https://diversity.berkeley.edu/jewish-american-heritage-month">Heritage Month Celebrations</a></li>
+                            <h3>Events</h3>
+                            <ul className="list-disc list-inside">
+                                <li><a href="https://jewishstudies.berkeley.edu/news-events-media/events">Speaker Events</a></li>
+                                <li><a href="https://diversity.berkeley.edu/jewish-american-heritage-month">Heritage Month Celebrations</a></li>
 
-                        </ul>
-                        <br/>
+                            </ul>
+                            <br/>
+                        </div>
+                        
                     </div>
                 
                     <div className="basis-1/2 flex flex-wrap">
-                        <img src="/departments/deib/f6.png" className="w-full"/>
-                        <div className="mt-10 border-2 border-black">
+                        <img src="/departments/deib/f6.png" className="w-full h-[400px] object-contain"/>
+                        <div className={`mt-10 ${activeSection == "jewish_organizations" ? "block" : "hidden"}`}>
                             <p>
                                 Community Organizations: 
                                     <a href="https://www.jewishucb.com/"> The Rohr Chabad Jewish Student Center</a>, 
@@ -416,8 +479,8 @@ export default function Page() {
                 <div id="LGBTQIA+" className="md:flex p-10 gap-10">
                     <div className="basis-1/2 flex flex-wrap">
                         <h1 className="text-berkeley text-3xl pb-10 md:hidden"><i>LGBTQIA+</i></h1>
-                        <img src="/departments/deib/f7.png" className="w-full"/>
-                        <div className="mt-10 border-2 border-black">
+                        <img src="/departments/deib/f7.png" className="w-full h-[400px] object-contain"/>
+                        <div className={`mt-10 ${activeSection == "lgbtq_organizations" ? "block" : "hidden"}`}>
                             <p>Professional Development and Academic Networks: 
                                 <a href="https://www.instagram.com/berkeleylawqc/?hl=en">Berkeley Law Queer Caucus</a>, 
                                 <a href="https://linktr.ee/qappaberkeley"> Queer + Allied Pre-Health Pre-Med Association (QAPPA)</a>,
@@ -455,21 +518,28 @@ export default function Page() {
                             empower queer and trans students across all disciplines. 
                         </p>
                         <br/>
+                        <div className="flex flex-col items-start gap-4">
+                            <button onClick={() => toggleSection("lgbtq_resources")} className="p-4 border-2 border-black flex hover:opacity-50">Resources <img src="/tri.png" className="w-2 mt-2 ml-2"/></button> 
+                            <button onClick={() => toggleSection("lgbtq_organizations")} className="p-4 border-2 border-black flex hover:opacity-50">Organizations <img src="/tri.png" className="w-2 mt-2 ml-2"/></button> 
+                        </div>
+                        
+                        <div className={`${activeSection == "lgbtq_resources" ? "block" : "hidden"}`}>
+                            <h3>Resources:</h3>
+                            <ul className="list-decimal list-inside">
+                                <li><a href="https://cejce.berkeley.edu/geneq">Gender Equity Resources Center (GenEq)</a></li>
+                                <li><a href="https://docs.google.com/document/d/18UOradc0WlJC6_M6yVdDzepL09yuFauy9-E-2KlPk4Y/edit?tab=t.0#heading=h.gugfmiro0i">Queer Alliance & Resource Center</a></li>
+                                <li><a href="https://uhs.berkeley.edu/pride">LGBTQ Counseling</a></li>
 
-                        <h3>Resources:</h3>
-                        <ul className="list-decimal list-inside">
-                            <li><a href="https://cejce.berkeley.edu/geneq">Gender Equity Resources Center (GenEq)</a></li>
-                            <li><a href="https://docs.google.com/document/d/18UOradc0WlJC6_M6yVdDzepL09yuFauy9-E-2KlPk4Y/edit?tab=t.0#heading=h.gugfmiro0i">Queer Alliance & Resource Center</a></li>
-                            <li><a href="https://uhs.berkeley.edu/pride">LGBTQ Counseling</a></li>
+                            </ul>
+                            <br/>
 
-                        </ul>
-                        <br/>
-
-                        <h3>Events:</h3>
-                        <ul className="list-decimal list-inside">
-                            <li><a href="https://news.berkeley.edu/2022/06/01/celebrating-pride-month-a-year-of-returning-to-in-person-spaces-and-connection/">Pride Month programming</a></li>
-                            <li><a href="https://events.berkeley.edu/ASUC/event/270669-national-coming-out-day">Coming Out Day</a></li>
-                        </ul>
+                            <h3>Events:</h3>
+                            <ul className="list-decimal list-inside">
+                                <li><a href="https://news.berkeley.edu/2022/06/01/celebrating-pride-month-a-year-of-returning-to-in-person-spaces-and-connection/">Pride Month programming</a></li>
+                                <li><a href="https://events.berkeley.edu/ASUC/event/270669-national-coming-out-day">Coming Out Day</a></li>
+                            </ul>
+                        </div>
+                        
                     </div>
                 </div>
 
@@ -489,59 +559,70 @@ export default function Page() {
                             every student can thrive in an inclusive environment.
                         </p>
                         <br/>
-
-                        <p>
-                            Cal students registered with the Disabled Student Program can schedule hour-long one-on-one appointments 
-                            with an experienced <a href="https://career.berkeley.edu/about-us/meet-our-team/ricardo-flores/"> Career Counselor</a> to support their career exploration, preparation, and job seeking 
-                            as an employee with a disability. 
-                        </p>
-
-                        <ul className="list-disc list-inside pl-4">
-                            <li>Sign up on Handshake. Select <a href="https://berkeley.joinhandshake.com/login">“DSP Counseling” as the appointment type.</a></li>
-                            <li>If you experience any accessibility difficulties with scheduling, email ricardo.flores@berkeley.edu</li>
-                            <li>Documents: <a href="https://career.berkeley.edu/wp-content/uploads/Career-Readiness-Checklist-PDF.pdf">Career Readiness Checklist</a>, <a href="https://career.berkeley.edu/wp-content/uploads/Preparing-for-a-Career-Fair.pdf">Preparing for a Career Fair</a> </li>
-                            <li className="pl-4 list-none">
-                                <ul className="list-disc list-inside">    
-                                    <li>Proof of disability form: <a href="https://career.berkeley.edu/wp-content/uploads/Sample-ScheduleALetter.pdf">Sample Schedule A</a></li>
-                                    <li>Slideshow on informing potential employers about your disability: <a href="https://career.berkeley.edu/wp-content/uploads/Strength-Based-Disclosure-PDF.pdf">Strengths Based Disclosure</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-
+                        <div className="flex flex-col items-start gap-4">
+                            <button onClick={() => toggleSection("dsp_resources")} className="p-4 border-2 border-black flex hover:opacity-50">Resources <img src="/tri.png" className="w-2 mt-2 ml-2"/></button> 
+                            <button onClick={() => toggleSection("dsp_organizations")} className="p-4 border-2 border-black flex hover:opacity-50">Organizations <img src="/tri.png" className="w-2 mt-2 ml-2"/></button> 
+                        </div>
                         <br/>
+                        <div className={`${activeSection == "dsp_resources" ? "block" : "hidden"}`}>
+                            <p>
+                                Cal students registered with the Disabled Student Program can schedule hour-long one-on-one appointments 
+                                with an experienced <a href="https://career.berkeley.edu/about-us/meet-our-team/ricardo-flores/"> Career Counselor</a> to support their career exploration, preparation, and job seeking 
+                                as an employee with a disability. 
+                            </p>
 
-                        <h3>Resources:</h3>
-                        <ul className="list-disc list-inside">
-                            <li><a href="https://jewishstudies.berkeley.edu/about/affiliates-resources">DSP/TRIO Online Disability Resources</a></li>
-                        </ul>
-                        <br/>
+                            <ul className="list-disc list-inside pl-4">
+                                <li>Sign up on Handshake. Select <a href="https://berkeley.joinhandshake.com/login">“DSP Counseling” as the appointment type.</a></li>
+                                <li>If you experience any accessibility difficulties with scheduling, email ricardo.flores@berkeley.edu</li>
+                                <li>Documents: <a href="https://career.berkeley.edu/wp-content/uploads/Career-Readiness-Checklist-PDF.pdf">Career Readiness Checklist</a>, <a href="https://career.berkeley.edu/wp-content/uploads/Preparing-for-a-Career-Fair.pdf">Preparing for a Career Fair</a> </li>
+                                <li className="pl-4 list-none">
+                                    <ul className="list-disc list-inside">    
+                                        <li>Proof of disability form: <a href="https://career.berkeley.edu/wp-content/uploads/Sample-ScheduleALetter.pdf">Sample Schedule A</a></li>
+                                        <li>Slideshow on informing potential employers about your disability: <a href="https://career.berkeley.edu/wp-content/uploads/Strength-Based-Disclosure-PDF.pdf">Strengths Based Disclosure</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
 
-                        <h3>Events</h3>
-                        <ul className="list-disc list-inside">
-                            <li><a href="https://dac.berkeley.edu/news/dap-digital-accessibility-workshop-series">Accessibility awareness workshops</a></li>
-                            <li><a href="https://dsp.berkeley.edu/getting-involved-programs-services-and-opportunities">Community Events</a></li>
+                            <br/>
 
-                        </ul>
-                        <br/>
+                            <h3>Resources:</h3>
+                            <ul className="list-disc list-inside">
+                                <li><a href="https://jewishstudies.berkeley.edu/about/affiliates-resources">DSP/TRIO Online Disability Resources</a></li>
+                            </ul>
+                            <br/>
+
+                            <h3>Events</h3>
+                            <ul className="list-disc list-inside">
+                                <li><a href="https://dac.berkeley.edu/news/dap-digital-accessibility-workshop-series">Accessibility awareness workshops</a></li>
+                                <li><a href="https://dsp.berkeley.edu/getting-involved-programs-services-and-opportunities">Community Events</a></li>
+
+                            </ul>
+                            <br/>
+                        </div>
+                        
                     </div>
                 
                     <div className="basis-1/2 flex flex-wrap">
-                        <img src="/departments/deib/f8.png" className="w-full"/>
-                        <div className="mt-10 border-2 border-black">
+                        <img src="/departments/deib/f8.png" className="w-full h-[400px] object-contain"/>
+                        <div className={`mt-10 ${activeSection == "dsp_organizations" ? "block" : "hidden"}`}>
                             <p>
-                                Community Organizations: 
-                                    <a href="https://www.jewishucb.com/"> The Rohr Chabad Jewish Student Center</a>, 
-                                    <a href="https://berkeleyhillel.org/jews-of-color-collective/"> Jews of Color Collective</a>, 
-                                    <a href="https://berkeleyhillel.org/gaavah/"> Cal Ga’avah (Queer Judaism Organization)</a>, 
-                                    <a href="https://berkeleyhillel.org/aepi/"> Alpha Epsilon Pi (Jewish Fraternity)</a>
+                                Programs/Organizations: 
+                                    <a href="https://dsp.berkeley.edu/home">Disabled Students Program</a>, 
+                                    <a href="https://callink.berkeley.edu/organizations?query=disabled">DSP Organizations</a>
                             </p>
                             <br/>
-                        
+                            <p>
+                                Job Networks: 
+                                    <a href="https://abilityjobs.com/"> AbilityJOBS</a> , 
+                                    <a href="https://askjan.org/"> Job Accommodation Network (JAN)</a> , 
+                                    <a href="https://helendillerinstitute.berkeley.edu/"> Lime Connect</a> , 
+                                    <a href="https://helendillerinstitute.berkeley.edu/"> Project Hired</a> , 
+                            </p>
 
                             <p>
-                                Academic Centers: 
-                                    <a href="https://helendillerinstitute.berkeley.edu/"> The Berkeley Institute for Jewish Law and Israel Studies</a> , 
-                                    JEWSE: Jews in Science and Engineering
+                                ADHD/LD providers that administer testing: 
+                                    <a href="https://uhs-var.berkeley.edu/adhd.html"> ADHS/LD Testing Referrals</a>
+                                    
                             </p>
                         </div>
                     </div>
@@ -552,8 +633,8 @@ export default function Page() {
                 <div id="International" className="md:flex p-10 gap-10">
                     <div className="basis-1/2 flex flex-wrap">
                         <h1 className="text-berkeley text-3xl pb-10 md:hidden"><i>International Students</i></h1>
-                        <img src="/departments/deib/f9.png" className="w-full"/>
-                        <div className="mt-10 border-2 border-black">
+                        <img src="/departments/deib/f9.png" className="w-full h-[400px] object-contain"/>
+                        <div className={`mt-10 ${activeSection == "int_organizations" ? "block" : "hidden"}`}>
                             <p>Academic and Language Programs: 
                                 <a href="https://slc.berkeley.edu/international-student-program"> Student Learning Center International Student Program (ISP)</a>,
                                 <a href="https://slc.berkeley.edu/language-exchange-program"> language exchange program</a>, 
@@ -588,20 +669,28 @@ export default function Page() {
                             they navigate the academic, social, and cultural landscape at Berkeley.
                         </p>
                         <br/>
-
-                        <h3>Career/Community Resources:</h3>
-                        <ul className="list-decimal list-inside">
-                            <li><a href="https://career.berkeley.edu/communities/international-students/">Berkeley Career Engagement Resources</a></li>
-                            <li><a href="https://basicneeds.berkeley.edu/community-specific-resources/international-students">Community Resources for International Students</a></li>
-
-                        </ul>
+                        <div className="flex flex-col items-start gap-4">
+                            <button onClick={() => toggleSection("int_resources")} className="p-4 border-2 border-black flex hover:opacity-50">Resources <img src="/tri.png" className="w-2 mt-2 ml-2"/></button> 
+                            <button onClick={() => toggleSection("int_organizations")} className="p-4 border-2 border-black flex hover:opacity-50">Organizations <img src="/tri.png" className="w-2 mt-2 ml-2"/></button> 
+                        </div>
                         <br/>
 
-                        <h3>Events:</h3>
-                        <ul className="list-decimal list-inside">
-                            <li><a href="https://events.berkeley.edu/events/event/259994-international-student-welcome-mixer">Global student mixers/ orientation events,</a></li>
-                            <li><a href="https://events.berkeley.edu/ihouse/event/130193-international-culture-festival-around-the-world">Cultural showcases</a></li>
-                        </ul>
+                        <div className={`${activeSection == "int_resources" ? "block" : "hidden"}`}>
+                            <h3>Career/Community Resources:</h3>
+                            <ul className="list-decimal list-inside">
+                                <li><a href="https://career.berkeley.edu/communities/international-students/">Berkeley Career Engagement Resources</a></li>
+                                <li><a href="https://basicneeds.berkeley.edu/community-specific-resources/international-students">Community Resources for International Students</a></li>
+
+                            </ul>
+                            <br/>
+
+                            <h3>Events:</h3>
+                            <ul className="list-decimal list-inside">
+                                <li><a href="https://events.berkeley.edu/events/event/259994-international-student-welcome-mixer">Global student mixers/ orientation events,</a></li>
+                                <li><a href="https://events.berkeley.edu/ihouse/event/130193-international-culture-festival-around-the-world">Cultural showcases</a></li>
+                            </ul>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
