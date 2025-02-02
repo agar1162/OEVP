@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../../../components/home/Navbar";
 import Footer from "../../../components/home/Footer";
 import Cover from "../components/Cover";
@@ -8,6 +8,7 @@ import Cover from "../components/Cover";
 export default function departmentsPage() {
 
     const [isExpanded, setIsExpanded] = useState(false);
+    const [currentText, setCurrentText] = useState(0); 
 
     const toggleReadMore = () => {
       setIsExpanded(!isExpanded);
@@ -18,6 +19,24 @@ export default function departmentsPage() {
     const def =
     "Get free access to a variety of New York Times articles, games, and podcasts if you are an undergraduate or graduate student.";
 
+    
+    const texts = [
+      {
+        text: "The Commercial Activities and Student Services Agreement (CASSA) between the University of California, Berkeley (UCB), the ASUC, and the GA outlines how the ASUC's commercial activities support student services and programs: "
+      },
+      {
+        text: "The ASUC's commercial activities provide financial support for student activities, services, and programs. "
+      },
+      {
+        text: "The ASUC has partnerships with the New York Times and the Wall Street Journal that have been secured using the CASSA Fund. Campus students have subscriptions to these services for free. "
+      },
+      {
+        text: "Funding for these contracts is negotiated by the ASUC and paid for using the Commercial Activities and Student Services Agreement (CASSA) revenues, which establishes standards for ASUC commercial activities, including a fund generated from the revenue from the Martin Luther King Jr. Student Union building that is used to pay for the contracts of the current fcommerciasubscription services. "
+      },
+      {
+        text: "ASUC officials are allowed to propose potential partnerships with any public or private organization. Students can also propose any future partnerships as long as their proposal is sponsored by an ASUC official. In general, all proposals submitted to the CASSA Fund Advisory Committee (which the EVP is the chair of) through the CASSA Fund Proposal Application should be community oriented and student driven. "
+      }
+    ]
 
     return(
     <div>
@@ -65,82 +84,83 @@ export default function departmentsPage() {
             </div>
         </div>
 
-        <div 
-          id="NYT_WALL_STREET_JOURNAL"
-          className="flex flex-col lg:flex-row border-2 border-[#808080] p-10">
-          {/* New York Times Section */}
-          <div className="flex-1 flex justify-center items-center p-6">
-            <div className="text-center max-w-sm">
-              <img src={times} alt="New York Times" className="h-[46px] w-[36px] mx-auto mb-4" />
-              <h1 className="text-[23px] font-bold mb-2">New York Times</h1>
-              <p className="text-sm leading-relaxed mb-4">{def}</p>
-              <a href="/access" className="p-3 px-10 bg-white border-2 border-black rounded-lg hover:text-berkeley">
-                Register
-              </a>
+       <div 
+            id="NYT_WALL_STREET_JOURNAL"
+            className="flex flex-col lg:flex-row border-black border-2 py-[5vh]">
+            {/* New York Times Section */}
+            <div className="flex-1 flex justify-center">
+                <div className="mx-[10vw]">
+                <img src={times} alt="New York Times" className="h-[46px] w-[36px] mb-4" />
+                <h1 className="text-[23px] font-bold mb-2">New York Times</h1>
+                <p className="text-md leading-relaxed mb-4">{def}</p>
+                <a href="https://www.nytimes.com/activate-access/edu-access" className="p-3 px-10 bg-white border-2 border-black rounded-sm hover:text-[#A6A6A6] hover:text-berkeley">
+                    Register
+                </a>
+                </div>
             </div>
-          </div>
 
-          <div className="flex-1 flex justify-center items-center p-6">
-            <div className="text-center max-w-sm">
-              <img src={wsj} alt="Wall Street Journal" className="h-[36px] w-[62px] mx-auto mb-4" />
-              <h1 className="text-[23px] font-bold mb-2">Wall Street Journal</h1>
-              <p className="text-sm leading-relaxed mb-4">{def}</p>
-              <a href="/access" className="p-3 px-10 bg-white rounded-lg border-2 border-black hover:text-berkeley">
-                Register
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="items-center mx-[10%] pt-[5vh] text-center">
-            <div className="relative flex items-center ">
-                <div className="flex-grow border-t border-[#A6A6A6] "></div>
-                <span className="flex-shrink mx-4 text-[25px] font-bold md:font-normal">Commercial Activities and Student Services Agreement (CASSA)</span>
-                <div className="flex-grow border-t border-[#A6A6A6]"></div>
+            {/* Wall Street Journal Section */}
+            <div className="flex-1 flex justify-center">
+                <div className="mx-[10vw]">
+                <img src={wsj} alt="Wall Street Journal" className="h-[36px] w-[62px] mb-4" />
+                <h1 className="text-[23px] font-bold mb-2">Wall Street Journal</h1>
+                <p className="text-md leading-relaxed mb-4">{def}</p>
+                <a href="https://WSJ.com/ASUCBerkeley"  className="p-3 px-10 bg-white border-2 border-black rounded-sm hover:text-[#A6A6A6] hover:text-berkeley">
+                    Register
+                </a>
+                </div>
             </div>
         </div>
 
-        <div id="WHO_WE_ARE" className="mx-8 lg:mx-[5rem] text-[20px]  pb-10">
-          <main className="flex flex-col lg:flex-row pt-10  gap-8">
-            <div id="sidemenu" className="md:basis-1/2 flex flex-col items-center drop-shadow-lg">
-              <h3 className="">What is CSSA?</h3>
-              <menu className="flex flex-col pt-5 w-1/2 gap-4">
-                <a
-                  href="#mission"
-                  className="hover:bg-[#003A70] hover:text-white border-2 border-[#003A70] p-4 text-center rounded-md transition"
-                >
-                  Purpose
-                </a>
-                <a
-                  href="#resources"
-                  className="hover:bg-[#003A70] hover:text-white border-2 border-gray-300 p-4 text-center  rounded-md transition"
-                >
-                  Past Examples of CSSA Funding
-                </a>
-                <a
-                  href="#resources"
-                  className="hover:bg-[#003A70] hover:text-white border-2 border-gray-300 p-4 text-center  rounded-md transition"
-                >
-                  How Does CSSA Funding Work?
-                </a>
-                <a
-                  href="#resources"
-                  className="hover:bg-[#003A70] hover:text-white border-2 border-gray-300 p-4 text-center  rounded-md transition"
-                >
-                  Who Can Propose Initiatives?
-                </a>
-            </menu>
+
+      <div id="CASSA" className="mx-8 py-[10vh]">
+          <h3 className="flex items-center mx-[10%] text-2xl lg:text-3xl text-center">
+                  <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+                  <span className="px-4">Commercial Activities and Student Services Agreement (CASSA)</span>
+                  <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+          </h3>
+
+          <main className="flex flex-col md:flex-row  pt-10 text-[20px] mx-[10%] text-sm md:text-xl">
+              <div id="sidemenu" className="lg:basis-1/3 flex flex-col mx-[10%] justify-center ">
+                  <h3>What is CSSA?</h3>
+
+              <menu className="flex flex-col  border-2 border-t-4 border-t-[#003A70] divide-y-2 divide-gray-200  shadow-xl">
+                  <a
+                      onClick={() => setCurrentText(1)}
+                      className="hover:bg-[#003A70] hover:text-white p-4  transition"
+                  >
+                      Purpose
+                  </a>
+                  <a
+                      onClick={() => setCurrentText(2)}
+                      className="hover:bg-[#003A70] hover:text-white p-4  transition"
+                  >
+                      Past Examples of CSSA Funding
+                  </a>
+                  <a
+                      onClick={() => setCurrentText(3)}
+                      className="hover:bg-[#003A70] hover:text-white p-4  transition"
+                  >
+                      How Does CSSA Funding Work?
+                  </a>
+                  <a
+                      onClick={() => setCurrentText(4)}
+                      className="hover:bg-[#003A70] hover:text-white p-4  transition"
+                  >
+                      Who Can Propose Initiatives?
+                  </a>
+              </menu>
           </div>
 
-          {/* Main Content */}
-          <div id="text" className="md:basis-1/2  ">
-            <p className="">
-            The Commercial Activities and Student Services Agreement (CASSA) between the University of California, Berkeley (UCB), 
-            the ASUC, and the GA outlines how the ASUC's commercial activities support student services and programs: 
-            </p>
-          </div>
-        </main>
+              {/* Main Content */}
+              <div id="text" className="md:basis-2/3 pt-10 md:pt-0 ">
+                  <p className="">
+                  {texts[currentText].text}
+                  </p>
+              </div>
+          </main>
       </div>
+
       <div className="items-center mx-[10%] pt-[5vh] text-center">
               <div className="relative flex items-center ">
                   <div className="flex-grow border-t border-[#A6A6A6] "></div>
@@ -155,12 +175,7 @@ export default function departmentsPage() {
 
           
         <div className="flex justify-center items-center">
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSc1KuBN9xP-FY7UD5JLEyeJ2D2aVWMxE9Wn6xgUKtC1O-RIQg/viewform?usp=sf_link"
-            className="flex justify-center items-center"
-          >
-            <img src="/form.jpg" className="w-[20vw]" />
-          </a>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd0Xs2uIpKrg1rOQn6fB1CODypJsukz6WUfURqrwuy0iWJlCw/viewform?embedded=true" width="640" height="500">Loading…</iframe>
         </div>
 
 

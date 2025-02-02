@@ -84,7 +84,7 @@ export default function departmentsPage() {
       </div>
 
         <div className="p-5 place-items-center md:mx-[50vh]">
-            <img src="../backgrounds/legal.png"/>
+            <img src="../home/legal.png"/>
             <i>LGBTQ+ rights bill, Indigenous Women Resolution, Students’ Rights resolution passed unanimously on November 22, 2024</i>
         </div>
 
@@ -97,7 +97,7 @@ export default function departmentsPage() {
 
         <div className="p-5 place-items-center">
             <p className="pb-5 mx-4 text-[#595959]">100+ legislations drafted, passed, and implemented by OEVP in collaboration with the ASUC Senate.</p>
-            <img src="../backgrounds/legis.png"/>
+            <img src="../home/legis.png"/>
             <a className="text-berkeley" href="https://docs.google.com/spreadsheets/d/1VZvZXj5SnRYNmMwoJuFMcAf3actc0e6YN4wg9z3LRxs/edit?gid=643676931#gid=643676931"><u><i>ASUC Historical Resolution Tracker</i></u></a>
         </div>
 

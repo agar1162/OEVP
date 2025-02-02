@@ -243,26 +243,26 @@ export default function Home() {
 
         <div 
           id="NYT_WALL_STREET_JOURNAL"
-          className="flex flex-col lg:flex-row bg-gradient-to-r from-[#FFD67A] to-[#F9B315] py-[10vh] md:gap-0">
+          className="flex flex-col lg:flex-row bg-gradient-to-r from-[#FFD67A] to-[#F9B315] py-[5vh]">
           {/* New York Times Section */}
-          <div className="flex-1 flex justify-center p-10">
-            <div className="max-w-sm">
+          <div className="flex-1 flex justify-center">
+            <div className="mx-[10vw]">
               <img src={times} alt="New York Times" className="h-[46px] w-[36px] mb-4" />
               <h1 className="text-[23px] font-bold mb-2">New York Times</h1>
               <p className="text-md leading-relaxed mb-4">{def}</p>
-              <a href="/resources" className="p-3 px-10 bg-white rounded-sm hover:text-[#A6A6A6] hover:text-berkeley">
+              <a href="https://www.nytimes.com/activate-access/edu-access" className="p-3 px-10 bg-white rounded-sm hover:text-[#A6A6A6]">
                 Register
               </a>
             </div>
           </div>
 
           {/* Wall Street Journal Section */}
-          <div className="flex-1 flex justify-center items-center p-10">
-            <div className="max-w-sm">
+          <div className="flex-1 flex justify-center">
+            <div className="mx-[10vw]">
               <img src={wsj} alt="Wall Street Journal" className="h-[36px] w-[62px] mb-4" />
               <h1 className="text-[23px] font-bold mb-2">Wall Street Journal</h1>
               <p className="text-md leading-relaxed mb-4">{def}</p>
-              <a href="/resources" className="p-3 px-10 bg-white rounded-sm hover:text-[#A6A6A6] hover:text-berkeley">
+              <a href="https://WSJ.com/ASUCBerkeley" className="p-3 px-10 bg-white rounded-sm hover:text-[#A6A6A6]">
                 Register
               </a>
             </div>
