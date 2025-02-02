@@ -140,7 +140,7 @@ export default function Navbar() {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-             {isHovered ?  'Every Wed. 8pm-10pm' : 'Join Senate Live!' }
+             {isHovered ?  'Wed. 8pm-10pm' : 'Join Senate Live!' }
           </a>
         </li>
       </ul>

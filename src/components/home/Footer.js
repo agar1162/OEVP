@@ -12,7 +12,7 @@ export default function Footer(){
             
             <div className="basis-1/4 grid p-5 lg:block place-content-center w-[400px]">
                 <h1 className="p-2 text-2xl font-bold text-[#F9B315]">ASUC Newsletter</h1>
-                <p className="pl-2 pb-2 text-[14px]" id="geo">Want to stay updated? Get access to the latest free resources, contributions, and how your student government and support your endeavors. </p>
+                <p className="pl-2 pb-2 text-[16px]" id="geo">Want to stay updated? Get access to the latest free resources, contributions, and how your student government and support your endeavors. </p>
                 <a href="https://asuc.substack.com/subscribe" className="flex ml-1">
                     <img src="/link.png" className="w-7 h-7"/>
                 </a>

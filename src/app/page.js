@@ -176,7 +176,7 @@ export default function Home() {
                 <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
         </h3>
 
-        <main className="flex flex-col md:flex-row  pt-10 text-[20px] mx-[10%] text-sm md:text-xl">
+        <main className="flex flex-col md:flex-row  pt-10 text-xl mx-[10%] text-sm md:text-xl">
 
           <div id="sidemenu" className="lg:basis-1/2 flex flex-col items-center ">
 
@@ -223,15 +223,15 @@ export default function Home() {
           className="flex flex-wrap transition-all duration-75 ease-in justify-center items-center gap-[12vw] py-[10vh] pb-[15vh]">
             <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
                 <h1 className="text-[#003A70] text-5xl md:text-7xl  font-bold pb-5" >400+</h1>
-                <p className="text-lg text-center mx-4">Registered Student Organizations receive funding & resources</p>
+                <p className="text-xl text-center mx-4">Registered Student Organizations receive funding & resources</p>
             </div>
             <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
                 <h1  className="text-[#003A70] text-5xl md:text-7xl font-bold pb-5" >100+</h1>
-                <p className="text-lg text-center mx-4">Legislations implemented in collaboration with ASUC Senate</p>
+                <p className="text-xl text-center mx-4">Legislations implemented in collaboration with ASUC Senate</p>
             </div>
             <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
                 <h1 className="text-[#003A70] text-5xl md:text-7xl font-bold pb-5" >180k</h1>
-                <p className="text-lg text-center mx-4">New York Times articles read monthly by students</p>
+                <p className="text-xl text-center mx-4">New York Times articles read monthly by students</p>
             </div>
         </div>
 
@@ -243,7 +243,7 @@ export default function Home() {
             <div className="mx-[10vw]">
               <img src={times} alt="New York Times" className="h-[46px] w-[36px] mb-4" />
               <h1 className="text-[23px] font-bold mb-2">New York Times</h1>
-              <p className="text-md leading-relaxed mb-4">{def}</p>
+              <p className="text-lg leading-relaxed mb-4">{def}</p>
               <a href="https://www.nytimes.com/activate-access/edu-access" className="p-3 px-10 bg-white rounded-sm hover:text-[#A6A6A6]">
                 Register
               </a>
@@ -255,7 +255,7 @@ export default function Home() {
             <div className="mx-[10vw]">
               <img src={wsj} alt="Wall Street Journal" className="h-[36px] w-[62px] mb-4" />
               <h1 className="text-[23px] font-bold mb-2">Wall Street Journal</h1>
-              <p className="text-md leading-relaxed mb-4">{def}</p>
+              <p className="text-lg leading-relaxed mb-4">{def}</p>
               <a href="https://WSJ.com/ASUCBerkeley" className="p-3 px-10 bg-white rounded-sm hover:text-[#A6A6A6]">
                 Register
               </a>
@@ -267,7 +267,7 @@ export default function Home() {
         id="EVENTS"
         className="mx-8 md:py-[10vh]">
         <main className="flex flex-col pt-10 text-[20px] gap-8">
-          <div className="flex mx-[10%] items-center drop-shadow-lg">
+          <div className="flex mx-[5%] md:mx-[10%] items-center drop-shadow-lg">
             <h3 className="flex items-center w-full text-2xl lg:text-3xl text-center">
               <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
               <span className="px-4">Come To Our Events</span>
@@ -276,7 +276,7 @@ export default function Home() {
           </div>
 
           <div id="text" className="flex md:flex-row flex-col items-center gap-6 mx-[10%]">
-            <div className="basis-1/2 text-sm md:text-xl">
+            <div className="basis-1/2 text-xl">
               <p>
                 The Office of the Executive Vice President organizes a wide range of events, including those led independently 
                 by one of our departments, collaborations with other ASUC offices or campus groups, and events in conjunction 
@@ -328,18 +328,18 @@ export default function Home() {
             <div className="flex flex-wrap justify-center items-center gap-[12vw] h-auto">
               <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
                   <h1 className="text-[#003A70] text-5xl md:text-7xl font-bold" >180K+</h1>
-                  <p className="text-center text-lg">Articles Read</p>
+                  <p className="text-center text-xl">Articles Read</p>
               </div>
               <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
                   <h1  className="text-[#003A70] text-5xl md:text-7xl  font-bold">409</h1>
-                  <p className="text-center text-lg">Registered Student Organizations</p>
+                  <p className="text-center text-xl">Registered Student Organizations</p>
               </div>
               <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
                   <h1 className="text-[#003A70] text-5xl md:text-7xl font-bold">100+</h1>
-                  <p className="text-center text-lg">Legislations drafted, passed, and implemented</p>
+                  <p className="text-center text-xl">Legislations drafted, passed, and implemented</p>
               </div>
           </div>
-            <a href="/partnerships.html" className="bg-[#003A70] text-white py-3 px-6 rounded-full text-sm lg:text-base font-bold hover:bg-[#002957] transition-colors">
+            <a href="/partnerships.html" className="bg-[#003A70] text-white py-3 px-6 rounded-full text-xl lg:text-base font-bold hover:bg-[#002957] transition-colors">
               Become a partnership
             </a>
           </div>

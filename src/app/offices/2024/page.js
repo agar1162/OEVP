@@ -127,7 +127,7 @@ export default function officePage () {
     return(
         <div>
             <Navbar />
-            <div className="flex flex-wrap mx-[10%] pt-10 justify-center items-center drop-shadow-lg">
+            <div className="flex flex-wrap mx-[5%] md:mx-[10%] pt-10 justify-center items-center drop-shadow-lg">
                 <h3 className="flex items-center w-full text-2xl lg:text-3xl font-extrabold text-center">
                     <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
                     <span className="px-4">Office of Robert Carillo </span>
