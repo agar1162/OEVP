@@ -138,13 +138,13 @@ export default function officePage () {
 
             <div className="items-center pb-10">
             
-            <div id="image_frame" className="mx-[20%] lg:mx-[10%]  pt-5 lg:grid lg:grid-cols-3 place-self-center gap-[5rem]">
+            <div id="image_frame" className="mx-[10%] lg:mx-[10%]  pt-5 lg:grid lg:grid-cols-3 place-self-center gap-[5rem]">
                 {profiles.map((profile) => (
                 <div key={profile.id} className="flex flex-col p-5 relative">
                     <img
                     src={`/profile/${profile.id}.jpeg`}
                     alt={`Profile picture ${profile.id}`}
-                    className="rounded-lg"
+                    className=""
                     />
                     <h1 className="mt-2 font-bold text-gray-700">{profile.name}</h1>
                     <p className="text-[#6d6d6d]">{profile.title}</p>
