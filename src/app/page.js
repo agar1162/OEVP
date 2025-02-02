@@ -128,7 +128,7 @@ export default function Home() {
         {slides.map((slide, index) => (
           <div
             key={index}
-            className={`absolute bg-cover bg-center b w-full h-full transition-opacity duration-1000 ease-in-out bg-fixed ${
+            className={`absolute bg-cover bg-center b w-full h-full transition-opacity duration-1000 ease-in-out md:bg-fixed ${
               currentIndex === index ? "opacity-100" : "opacity-0"
             }`}
             style={{
