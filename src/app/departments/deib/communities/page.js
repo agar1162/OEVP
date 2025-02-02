@@ -70,7 +70,7 @@ export default function Page() {
                 <div id="Black/Afrikan" className="md:flex p-10 gap-10">
                     <div className="basis-1/2 flex flex-wrap">
                         <h1 className="text-berkeley text-3xl pb-10 md:hidden"><i>Black/Afrikan Diaspora</i></h1>
-                        <img src="/departments/deib/f1.png" className="w-full h-[400px] object-contain"/>
+                        <img src="/departments/deib/f1.png" className="w-full h-auto md:h-[400px] object-contain"/>
 
                         <div className={`mt-10 ${activeSection == "black_resources" ? "block" : "hidden"}`}>
                             <p>Clubs/ Organizations: <a href="https://www.instagram.com/blackatberkeley/?hl=en">Black Student Union (BSU)</a>, <a href="https://star.berkeley.edu/resources/fannie-lou-hamer-black-resource-center">Fannie Lou Hamer 
@@ -161,7 +161,7 @@ export default function Page() {
                     </div>
                 
                     <div className="basis-1/2 flex flex-wrap">
-                        <img src="/departments/deib/f2.png" className="w-full h-[400px] object-contain"/>
+                        <img src="/departments/deib/f2.png" className="w-full h-auto md:h-[400px] object-contain"/>
                         <div className={`mt-10 ${activeSection == "latinx_organizations" ? "block" : "hidden"}`}>
                             <p>Affinity Groups: <a href="">Central Americans for Empowerment</a>, <a href="">CED Students of Color (CEDSOC)</a>, <a href="">Colombians at Berkeley</a></p>
                             <br/>
@@ -198,7 +198,7 @@ export default function Page() {
                 <div id="Indigenous" className="md:flex p-10 gap-10">
                     <div className="basis-1/2 flex flex-wrap">
                         <h1 className="text-berkeley text-3xl pb-10 md:hidden"><i>Indigenous Community</i></h1>
-                        <img src="/departments/deib/f3.png" className="w-full h-[400px] object-contain"/>
+                        <img src="/departments/deib/f3.png" className="w-full h-auto md:h-[400px] object-contain"/>
                         <div className={`mt-10 ${activeSection == "ind_organizations" ? "block" : "hidden"}`}>
                             <p>Development Organizations: 
                                 <a href="https://callink.berkeley.edu/organization/nativeamericanrrc">Indigenous Native Coalition Recruitment and Retention Center</a>, 
@@ -314,7 +314,7 @@ export default function Page() {
                     </div>
                 
                     <div className="basis-1/2 flex flex-wrap">
-                        <img src="/departments/deib/f4.png" className="w-full h-[400px] object-contain"/>
+                        <img src="/departments/deib/f4.png" className="w-full h-auto md:h-[400px] object-contain"/>
                         <div className={`mt-10 ${activeSection == "mena_organizations" ? "block" : "hidden"}`}>
                             <p>
                             Community and Identity-Based Organizations: 
@@ -355,7 +355,7 @@ export default function Page() {
                 <div id="AAPI" className="md:flex p-10 gap-10">
                     <div className="basis-1/2 flex flex-wrap">
                         <h1 className="text-berkeley text-3xl pb-10 md:hidden"><i>Asian American and Pacific Island Community </i></h1>
-                        <img src="/departments/deib/f5.png" className="w-full h-[400px] object-contain"/>
+                        <img src="/departments/deib/f5.png" className="w-full h-auto md:h-[400px] object-contain"/>
                         <div className={`mt-10 ${activeSection == "aapi_organizations" ? "block" : "hidden"}`}>
                             <p>Professional Development: 
                                 <a href="https://cejce.berkeley.edu/apasd"> Asian Pacific American Student Development (APASD)</a> , 
@@ -453,7 +453,7 @@ export default function Page() {
                     </div>
                 
                     <div className="basis-1/2 flex flex-wrap">
-                        <img src="/departments/deib/f6.png" className="w-full h-[400px] object-contain"/>
+                        <img src="/departments/deib/f6.png" className="w-full h-auto md:h-[400px] object-contain"/>
                         <div className={`mt-10 ${activeSection == "jewish_organizations" ? "block" : "hidden"}`}>
                             <p>
                                 Community Organizations: 
@@ -479,7 +479,7 @@ export default function Page() {
                 <div id="LGBTQIA+" className="md:flex p-10 gap-10">
                     <div className="basis-1/2 flex flex-wrap">
                         <h1 className="text-berkeley text-3xl pb-10 md:hidden"><i>LGBTQIA+</i></h1>
-                        <img src="/departments/deib/f7.png" className="w-full h-[400px] object-contain"/>
+                        <img src="/departments/deib/f7.png" className="w-full h-auto md:h-[400px] object-contain"/>
                         <div className={`mt-10 ${activeSection == "lgbtq_organizations" ? "block" : "hidden"}`}>
                             <p>Professional Development and Academic Networks: 
                                 <a href="https://www.instagram.com/berkeleylawqc/?hl=en">Berkeley Law Queer Caucus</a>, 
@@ -603,7 +603,7 @@ export default function Page() {
                     </div>
                 
                     <div className="basis-1/2 flex flex-wrap">
-                        <img src="/departments/deib/f8.png" className="w-full h-[400px] object-contain"/>
+                        <img src="/departments/deib/f8.png" className="w-full h-auto md:h-[400px] object-contain"/>
                         <div className={`mt-10 ${activeSection == "dsp_organizations" ? "block" : "hidden"}`}>
                             <p>
                                 Programs/Organizations: 
@@ -633,7 +633,7 @@ export default function Page() {
                 <div id="International" className="md:flex p-10 gap-10">
                     <div className="basis-1/2 flex flex-wrap">
                         <h1 className="text-berkeley text-3xl pb-10 md:hidden"><i>International Students</i></h1>
-                        <img src="/departments/deib/f9.png" className="w-full h-[400px] object-contain"/>
+                        <img src="/departments/deib/f9.png" className="w-full h-auto md:h-[400px] object-contain"/>
                         <div className={`mt-10 ${activeSection == "int_organizations" ? "block" : "hidden"}`}>
                             <p>Academic and Language Programs: 
                                 <a href="https://slc.berkeley.edu/international-student-program"> Student Learning Center International Student Program (ISP)</a>,
