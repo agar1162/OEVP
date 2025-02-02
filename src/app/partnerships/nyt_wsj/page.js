@@ -44,7 +44,7 @@ export default function resourcesPage() {
                 </div>
 
                 {/* Wall Street Journal Section */}
-                <div className="flex-1 flex justify-center">
+                <div className="flex-1 flex justify-center pt-10 md:pt-0">
                     <div className="mx-[10vw]">
                     <img src={wsj} alt="Wall Street Journal" className="h-[36px] w-[62px] mb-4" />
                     <h1 className="text-[23px] font-bold mb-2">Wall Street Journal</h1>

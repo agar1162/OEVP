@@ -151,27 +151,21 @@ export default function Home() {
         </div>
         
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex md:text-2xl gap-[4vw] md:gap-[10vw] p-10 w-full justify-center">
-        {slides.map((slide, index) => (
-            <div key={index} className="relative">
-
+          {slides.map((slide, index) => (
+            <div key={index} className="relative flex-shrink-0">
               {currentIndex === index && (
-                <img
-                  src="rec.svg"
-                  alt="rec icon"
-                  className="absolute top-[-20px] left-1/2 transform -translate-x-1/2 h-4 duration-700 ease-in-out"
-                />
+                <hr className="absolute top-[-20px] left-1/2 transform -translate-x-1/2 w-[60px] h-[2px] bg-white duration-700 ease-in-out" />
               )}
-                  <button onClick={() => {setCurrentIndex(index)}}>
-                    <h3
-                      className={`transition duration-500 ease-in-out }`}
-                    >
-                      {slide.title}
-                    </h3>
-                  </button>
-                </div>
-              ))}
+              <button onClick={() => setCurrentIndex(index)}>
+                <h3 className="transition duration-500 ease-in-out">
+                  {slide.title}
+                </h3>
+              </button>
+            </div>
+          ))}
+          </div>
+  
         </div>
-      </div>
 
       </div>
      
@@ -245,7 +239,7 @@ export default function Home() {
           id="NYT_WALL_STREET_JOURNAL"
           className="flex flex-col lg:flex-row bg-gradient-to-r from-[#FFD67A] to-[#F9B315] py-[5vh]">
           {/* New York Times Section */}
-          <div className="flex-1 flex justify-center">
+          <div className="flex-1 flex justify-center pt-10 md:pt-0">
             <div className="mx-[10vw]">
               <img src={times} alt="New York Times" className="h-[46px] w-[36px] mb-4" />
               <h1 className="text-[23px] font-bold mb-2">New York Times</h1>
@@ -322,7 +316,7 @@ export default function Home() {
           <div className="flex mx-[10%] items-center drop-shadow-lg">
             <h3 className="flex items-center w-full text-2xl lg:text-3xl text-center">
               <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-              <span className="px-4">Partner With Us</span>
+              <span className="px-4">Work With Us</span>
               <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
             </h3>
           </div>

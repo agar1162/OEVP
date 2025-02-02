@@ -52,7 +52,7 @@ export default function Navbar() {
             <img src={icon} alt="Toggle" className="ml-2 w-4 transform transition-transform duration-300" />
           </button>
           {isOfficeMenuVisible && (
-            <ul className="absolute top-full left-0 mt-2 bg-berkeley border-t-2 border-[#FDB515] shadow-lg w-48 z-50">
+            <ul className="absolute top-full left-0 mt-2 bg-berkeley border-t-2 border-[#FDB515] shadow-lg w-fit z-50">
               <li className="px-4 py-2">
                 <a href="/offices/2024">2024-2025</a>
               </li>
@@ -125,7 +125,7 @@ export default function Navbar() {
           {isCommercialMenuVisible && (
             <ul className="absolute top-full left-0 mt-2 bg-berkeley border-t-2 border-[#FDB515] text-white shadow-lg w-48">
               <li className="px-4 py-2 hover:text-gray-400">
-                <a href="/partnerships/nyt_wsj.html">Wall Street Journal & New York Times</a>
+                <a href="/partnerships/nyt_wsj.html">Free Newspaper Subscriptions</a>
               </li>
             </ul>
           )}

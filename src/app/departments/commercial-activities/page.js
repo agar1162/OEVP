@@ -38,6 +38,8 @@ export default function departmentsPage() {
       }
     ]
 
+    const carousel = []
+
     return(
     <div>
         <Navbar />
@@ -100,7 +102,7 @@ export default function departmentsPage() {
             </div>
 
             {/* Wall Street Journal Section */}
-            <div className="flex-1 flex justify-center">
+            <div className="flex-1 flex justify-center pt-10 md:pt-0">
                 <div className="mx-[10vw]">
                 <img src={wsj} alt="Wall Street Journal" className="h-[36px] w-[62px] mb-4" />
                 <h1 className="text-[23px] font-bold mb-2">Wall Street Journal</h1>
@@ -169,13 +171,13 @@ export default function departmentsPage() {
               </div>
         </div>
 
-        <div className="place-content-center text-center mx-[30%]">
-              <p className="text-[#3D3D3D]">Form for students to list what partnerships they want from the university, what increased functions/access they want from each app.</p>
+        <div className="place-content-center text-center mx-[10%] pb-8">
+              <p className="text-[#3D3D3D] text-md">Form for students to list what partnerships they want from the university, what increased functions/access they want from each app.</p>
         </div>
 
           
         <div className="flex justify-center items-center">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd0Xs2uIpKrg1rOQn6fB1CODypJsukz6WUfURqrwuy0iWJlCw/viewform?embedded=true" width="640" height="500">Loading…</iframe>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd0Xs2uIpKrg1rOQn6fB1CODypJsukz6WUfURqrwuy0iWJlCw/viewform?embedded=true" width="500" height="500">Loading…</iframe>
         </div>
 
 
@@ -188,9 +190,9 @@ export default function departmentsPage() {
           </div>
       </div>
 
-      <div className="md:mx-[30%]  mx-[10%] py-5 place-items-center">
-            <img src='/departments/comm_act/c1.png' className="w-full"/>
-            <p className="text-[12px] md:text-lg"><i>The OEVP provides free access to newspaper 
+      <div className="md:mx-[30%]  mx-[10%] py-5 place-items-center py-[5vh]">
+            <img src='/departments/comm_act/c1.png' className="w-[30vw]"/>
+            <p className="text-md md:text-lg w-fit mx-[10%]"><i>The OEVP provides free access to newspaper 
               subscriptions such as the Wall Street Journal and New York Times, and financial grants.</i></p>
         </div>
 
