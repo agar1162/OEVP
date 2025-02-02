@@ -9,14 +9,14 @@ export default function Footer(){
                 className="h-[200px] w-[200px] object-contain"
                 />
             </div >
-            <div className="basis-1/4 grid p-5 lg:block place-content-center w-[400px] " >
+            
+            <div className="basis-1/4 grid p-5 lg:block place-content-center w-[400px]">
                 <h1 className="p-2 text-2xl font-bold text-[#F9B315]">ASUC Newsletter</h1>
                 <p className="pl-2 pb-2 text-[14px]" id="geo">Want to stay updated? Get access to the latest free resources, contributions, and how your student government and support your endeavors. </p>
-                <div className="p-2 py-3 flex text-[14px]">
-                    <a href="https://asuc.substack.com/subscribe" className="rounded-md p-3 w-fit bg-white hover:bg-gray-200">
-                        Register to the ASUC Newsletter
-                    </a>
-                </div>
+                <a href="https://asuc.substack.com/subscribe" className="flex ml-1">
+                    <img src="/link.png" className="w-7 h-7"/>
+                </a>
+
             </div>
 
             <div id="blocks"className="basis-2/4 grid place-content-center m-8">
@@ -41,7 +41,7 @@ export default function Footer(){
                         <ul>
                             <li>(510) 664-7976</li>
                             <li>evp@asuc.org</li>
-                            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfqJ1pIDmCFu9Rg-14QRCYSre3DAYxHUmOkRW05Part_E98jg/viewform?usp=sf_link" className="font-bold underline">Have a Request?</a></li>
+                            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfqJ1pIDmCFu9Rg-14QRCYSre3DAYxHUmOkRW05Part_E98jg/viewform?usp=sf_link" className="font-bold underline">Have a Website Feature Request?</a></li>
 
                         </ul>
                     </div>

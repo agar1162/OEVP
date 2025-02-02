@@ -15,7 +15,7 @@ export default function Page() {
             {link ? (
                 <a
                     href={link}
-                    className="absolute bottom-4 right-4 px-4 py-2 bg-berkeley text-white border border-white hover:bg-white hover:text-berkeley transition duration-300"
+                    className="absolute bottom-4 right-4 px-4 py-2 text-white border border-white hover:bg-white hover:text-berkeley transition duration-300"
                 >
                     Read More
                 </a>

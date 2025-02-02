@@ -31,16 +31,16 @@ export default function officePage () {
       name: "Kianna Rodrate",
       title: "Chief of Staff Intern",
       major: "Economics & Political Science",
-      contact: null,
-      linkedin: null
+      contact: "katianayb@berkeley.edu",
+      linkedin: "https://www.linkedin.com/in/katianayb/"
     },
     {
       id: 5,
       name: "Ernesto Barragan",
       title: "Chief of Staff Intern",
       major: "Political Economy, Environmental Economics",
-      contact: null,
-      linkedin: null
+      contact: "ernestobarragan@berkeley.edu",
+      linkedin: "https://www.linkedin.com/in/netobarragan/"
     },
     {
       id: 11,
@@ -68,11 +68,11 @@ export default function officePage () {
     },
     {
       id: 14,
-      name: "Emily Melero",
+      name: "Audrey Lee",
       title: "Legislative Affairs Director",
       major: "Business Administration",
-      contact: null,
-      linkedin: null
+      contact: "audreylee2004@berkeley.edu",
+      linkedin: "https://www.linkedin.com/in/audrey-s-lee/"
     },
     {
       id: 6,
@@ -87,7 +87,7 @@ export default function officePage () {
       name: "Rishi Reddy",
       title: "DEI&B Director",
       major: "Neuroscience & Business",
-      contact: null,
+      contact: "rishireddy@berkeley.edu",
       linkedin: "https://www.linkedin.com/in/rishi-reddy-228a041ba/"
     },
     {
@@ -107,21 +107,21 @@ export default function officePage () {
       linkedin: null
     },
     {
-      id: 9,
-      name: "Michael Moy",
-      title: "Spaces Director",
-      major: "Political Science & Economics",
-      contact: null,
-      linkedin: "https://www.linkedin.com/in/michael-h-moy/"
-    },
-    {
       id: 13,
       name: "Katiana Bosdet",
       title: "Student Affairs Director",
       major: "Business Administration",
       contact: "katianayb@berkeley.edu",
       linkedin: "https://www.linkedin.com/in/katianayb/"
-    }
+    },
+    {
+      id: 69,
+      name: "Michael Moy",
+      title: "Spaces Director",
+      major: "Political Science & Economics",
+      contact: "moy.mike168@berkeley.edu,",
+      linkedin: "https://www.linkedin.com/in/michael-h-moy/"
+    },
   ];
 
     return(
@@ -130,7 +130,7 @@ export default function officePage () {
             <div className="flex flex-wrap mx-[10%] pt-10 justify-center items-center drop-shadow-lg">
                 <h3 className="flex items-center w-full text-2xl lg:text-3xl font-extrabold text-center">
                     <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-                    <span className="px-4">Office Leadership</span>
+                    <span className="px-4">Office of Robert Carillo </span>
                     <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
                 </h3>
                 <p>Meet the 2024-2025 Team</p>
