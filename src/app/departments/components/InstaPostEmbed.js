@@ -15,14 +15,14 @@ const InstagramPostEmbed = ({ postId }) => {
   }, []);
 
   return (
-    <div className="m-[10%]">
+    <div className="m-[5%]">
       <blockquote 
         className="instagram-media" 
         data-instgrm-captioned 
         data-instgrm-permalink={`https://www.instagram.com/p/${postId}/?utm_source=ig_embed&amp;utm_campaign=loading`}
         data-instgrm-version="14"
       >
-        <div style={{ padding: '16px' }}>
+        <div style={{ padding: '12px' }}>
           <a 
             href={`https://www.instagram.com/p/${postId}/?utm_source=ig_embed&amp;utm_campaign=loading`}
             style={{ textDecoration: 'none', color: '#3897f0' }}

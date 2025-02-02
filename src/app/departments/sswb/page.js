@@ -78,12 +78,8 @@ export default function departmentsPage() {
             <div className="flex-grow border-t border-[#A6A6A6]"></div>
         </div>
 
-        <div className="lg:grid lg:grid-cols-3 lg:mx-[10%]">
-            <InstagramPostEmbed postId="DB23Ktcxz6c"/>
+        <div className="flex flex-row justify-center items-center m-0 p-0">
             <InstagramPostEmbed postId="DBzVcxiTLil"/>
-            <InstagramPostEmbed postId="DB0UAelxK0v"/>
-
-            
         </div>
         
 

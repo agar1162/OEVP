@@ -36,7 +36,7 @@ export default function Navbar() {
       </button>
 
       <ul
-        className={`lg:flex lg:flex-row lg:space-x-6 items-center text-white text-[17px] ${
+        className={`lg:flex lg:flex-row lg:space-x-6 items-center text-white text-md ${
           isMobileMenuVisible
             ? "flex flex-col absolute top-full left-0 w-full bg-[#003A70] py-8 z-40"
             : "hidden lg:flex"
@@ -140,7 +140,7 @@ export default function Navbar() {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-             {isHovered ?  'Every Wed. 8-10' : 'Join Senate Live!' }
+             {isHovered ?  'Every Wed. 8pm-10pm' : 'Join Senate Live!' }
           </a>
         </li>
       </ul>
