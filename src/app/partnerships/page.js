@@ -83,13 +83,8 @@ export default function partnershipPage() {
                     <p className="text-[#3D3D3D]">Form for students to list what partnerships they want from the university, what increased functions/access they want from each app.</p>
                 </div>
 
-                <div className="flex justify-center items-center">
-                    <a
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSc1KuBN9xP-FY7UD5JLEyeJ2D2aVWMxE9Wn6xgUKtC1O-RIQg/viewform?usp=sf_link"
-                    className="flex justify-center items-center"
-                    >
-                    <img src="/form.jpg" className="w-[20vw]" />
-                    </a>
+                <div className="flex justify-center items-center py-[10vh]">
+                   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd0Xs2uIpKrg1rOQn6fB1CODypJsukz6WUfURqrwuy0iWJlCw/viewform?embedded=true" width="500" height="500">Loading…</iframe>
                 </div>
             </div>
 
