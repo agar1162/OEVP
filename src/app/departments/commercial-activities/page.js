@@ -98,11 +98,12 @@ export default function departmentsPage() {
                 <a href="https://www.nytimes.com/activate-access/edu-access" className="p-3 px-10 bg-white border-2 border-black rounded-sm hover:text-[#A6A6A6] hover:text-berkeley">
                     Register
                 </a>
+                <p className="pt-4"><i>180,000+ articles read per month</i></p>
                 </div>
             </div>
 
             {/* Wall Street Journal Section */}
-            <div className="flex-1 flex justify-center pt-10 md:pt-0">
+            <div className="flex-1 flex justify-center pt-14 pt-8 md:pt-0">
                 <div className="mx-[10vw]">
                 <img src={wsj} alt="Wall Street Journal" className="h-[36px] w-[62px] mb-4" />
                 <h1 className="text-[23px] font-bold mb-2">Wall Street Journal</h1>
@@ -110,6 +111,7 @@ export default function departmentsPage() {
                 <a href="https://WSJ.com/ASUCBerkeley"  className="p-3 px-10 bg-white border-2 border-black rounded-sm hover:text-[#A6A6A6] hover:text-berkeley">
                     Register
                 </a>
+                <p className="pt-4"><i>18,224 Students for WSJ monthly</i></p>
                 </div>
             </div>
         </div>
@@ -191,7 +193,7 @@ export default function departmentsPage() {
       </div>
 
       <div className="md:mx-[30%]  mx-[10%] py-5 place-items-center py-[5vh]">
-            <img src='/departments/comm_act/c1.png' className="w-[30vw]"/>
+            <img src='/departments/comm_act/c1.png' className="w-[35vw]"/>
             <p className="text-md md:text-lg w-fit mx-[10%]"><i>The OEVP provides free access to newspaper 
               subscriptions such as the Wall Street Journal and New York Times, and financial grants.</i></p>
         </div>

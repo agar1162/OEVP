@@ -27,12 +27,12 @@ export default function departmentsPage() {
 
         <div className="relative flex  items-center mx-[10%]">
             <div className="flex-grow border-t border-[#A6A6A6]"></div>
-            <span className="flex-shrink mx-4 text-[25px]">400+ Sponsored RSO's</span>
+            <span className="flex-shrink mx-4 text-[25px]">400+ RSO’s are currently ASUC Sponsored</span>
             <div className="flex-grow border-t border-[#A6A6A6]"></div>
         </div>
 
         <div className="mx-[10%] pb-10">
-            <h3 className="font-bold">Info on Benefits of Sponsorship:</h3>
+            <h3 className="font-bold">Benefits of ASUC Sponsorship:</h3>
             <ul className="list-decimal list-inside p-4">
                 <li>RSOs can apply for ASUC funding, special grants, and scholarships. They can also apply for the Senate Contingency Fund, which is available throughout the academic year for RSOs that need more funding than expected, missed deadlines, or are newly formed</li>
                 <li>RSOs can apply for office and storage space, and can use the ASUC Tax ID for fundraising. They can also apply for a fee waiver to use rooms in the MLK Student Union.</li>

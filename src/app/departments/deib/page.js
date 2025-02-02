@@ -109,22 +109,22 @@ export default function DepartmentsPage() {
 
         <div className="flex flex-wrap pb-10 md:flex-regular mx-[10%] py-5">
             <div className=" md:flex md:basis-1/2 hover:bg-gray-100">
-              <img src="/departments/deib/d1.png" className="w-[35vh]"/>
+              <img src="/departments/deib/d1.jpg" className="w-[35vh]"/>
               <div className=" mt-4 md:mt-0 p-3">
-                <a href="https://www.dailycal.org/news/campus/asuc/asuc-passes-bill-supporting-lgbtq-rights-and-other-resolutions/article_5320b210-a8b7-11ef-9382-6ffa6429b000.html">
-                  <h3 className="font-bold text-xl">ASUC passes bill supporting LGBTQ+ rights</h3>
-                  <p className="text-[#5E5E5E] text-sm">During the ASUC Senate meeting Wednesday, ASUC senators passed with a resolution with no objections that aims to protect LGBTQ+ rights.</p>
+                <a href="https://www.dailycal.org/news/campus/asuc/asuc-130k-multicultural-initiative-fund-opens-applications/article_2652cca4-90f3-11ef-9610-2b734167d8cc.html">
+                  <h3 className="font-bold text-xl">ASUC $130K Multicultural Initiative Fund opens application</h3>
+                  <p className="text-[#5E5E5E] text-sm">ASUC offers the Multicultural Initiatitiave Fund to uplift cultural groups on campus.</p>
                 </a>
               </div>
             </div>
 
 
           <div className=" md:flex md:basis-1/2 hover:bg-gray-100">
-            <img src="/departments/deib/d2.png" className="w-[35vh]"/>
+            <img src="/departments/deib/d2.jpg" className="w-[35vh]"/>
             <div className=" mt-4 md:mt-0 p-3">
-              <a href="https://www.dailycal.org/news/campus/asuc/asuc-senate-discusses-five-new-resolutions/article_0ac3a9d6-a3bd-11ef-a730-73af5a8a0ead.html">
-                <h3 className="font-bold text-xl">ASUC Senate discusses five new resolutions</h3>
-                <p className="text-[#5E5E5E] text-sm">The ASUC senate saw five new resolutions up for approval this Wednesday, including protecting LGBTQ+ rights on campus.</p>
+              <a href="https://www.dailycal.org/news/campus/asuc/newsom-approves-bill-establishing-disability-access-and-compliance-training/article_dad9eb1c-7fd2-11ef-98f9-e3c106b4346a.html">
+                <h3 className="font-bold text-xl">Newsom approves bill establishing disability access and compliance training</h3>
+                <p className="text-[#5E5E5E] text-sm">Assembly Bill 2821 was signed and approved by California Gov. Gavin Newsom on Saturday.</p>
               </a>
               </div>
           </div>
