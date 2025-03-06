@@ -59,14 +59,14 @@ export default function Home() {
     },
     {
       url: "/home/slideshow/legis.JPG",
-      caption: "Want to get involved? Learn about the different legislations in the ASUC senate and how to provide public comment!",
+      caption: "Want to get involved? Learn about the different resolutions in the ASUC senate and how to provide public comment!",
       title: "Legislation",
       link: "/departments/legal-affairs.html"
     },
     {
       url: "/home/slideshow/rso.JPG",
       caption: "Read about the benefits of getting your Registered Student Organization (RSO) ASUC-funded",
-      title: "RSO",
+      title: "RSO's",
       link: "/departments/rso.html"
     }
   ];
