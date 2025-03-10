@@ -46,13 +46,13 @@ export default function Home() {
       title: "Office",
       link: "/offices/2024.html"
     }, {
-      url: "/home/slideshow/events.JPG",
+      url: "/home/slideshow/events.jpg",
       caption: "Check out the events the Office of the Executive Vice President coordinates for the student body!",
       title: "Events",
       link: "departments/student-affairs.html"
     },
     {
-      url: "/home/slideshow/com.JPG",
+      url: "/home/slideshow/com.jpg",
       caption: "Explore resources for the diverse communities we support!",
       title: "Communities",
       link: "/departments/deib/communities.html"
@@ -64,7 +64,7 @@ export default function Home() {
       link: "/departments/legal-affairs.html"
     },
     {
-      url: "/home/slideshow/rso.JPG",
+      url: "/home/slideshow/rso.jpg",
       caption: "Read about the benefits of getting your Registered Student Organization (RSO) ASUC-funded.",
       title: "RSOs",
       link: "/departments/rso.html"
@@ -299,7 +299,7 @@ export default function Home() {
           id="NYT_WALL_STREET_JOURNAL"
           className="flex flex-col lg:flex-row bg-gradient-to-r from-[#FFD67A] to-[#F9B315] py-[5vh]">
           {/* New York Times Section */}
-          <div className="flex-1 flex justify-center pt-10 md:pt-0">
+          {/* <div className="flex-1 flex justify-center pt-10 md:pt-0">
             <div className="mx-[10vw]">
               <img src={times} alt="New York Times" className="h-[46px] w-[36px] mb-4" />
               <h1 className="text-[23px] font-bold mb-2">New York Times</h1>
@@ -308,10 +308,20 @@ export default function Home() {
                 Register
               </a>
             </div>
+          </div> */}
+          <div className="flex-1 flex justify-center pt-10 md:pt-0 items-center">
+            <div className="mx-[10vw] text-center">
+              <img src="/nyt.svg" alt="New York Times" className="h-[50px] mb-4 mx-auto" />
+              <h1 className="text-xl font-bold mb-2">New York Times</h1>
+              <p className="text-lg leading-relaxed mb-4">{def}</p>
+              <a href="https://www.nytimes.com/activate-access/edu-access" className="p-3 px-10 bg-white rounded-sm hover:text-[#A6A6A6]">
+                Register
+              </a>
+            </div>
           </div>
 
           {/* Wall Street Journal Section */}
-          <div className="flex-1 flex justify-center py-10 md:pt-0">
+          {/* <div className="flex-1 flex justify-center py-10 md:pt-0">
             <div className="mx-[10vw]">
               <img src={wsj} alt="Wall Street Journal" className="h-[36px] w-[62px] mb-4" />
               <h1 className="text-[23px] font-bold mb-2">Wall Street Journal</h1>
@@ -320,7 +330,21 @@ export default function Home() {
                 Register
               </a>
             </div>
+          </div> */}
+          <div className="flex-1 flex justify-center py-10 md:pt-0 items-center">
+            <div className="mx-[10vw] text-center">
+              <img src="/wsj.svg" alt="Wall Street Journal" className="h-[50px] mb-4 mx-auto" />
+              <h1 className="text-xl font-bold mb-2">Wall Street Journal</h1>
+              <p className="text-lg leading-relaxed mb-4">
+                Get free access to a variety of WSJ articles, career advice, and job prep resources!
+              </p>
+              <a href="https://WSJ.com/ASUCBerkeley" className="p-3 px-10 bg-white rounded-sm hover:text-[#A6A6A6]">
+                Register
+              </a>
+            </div>
           </div>
+
+          
         </div>
 
         <div 
