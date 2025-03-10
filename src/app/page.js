@@ -47,7 +47,7 @@ export default function Home() {
       link: "/offices/2024.html"
     }, {
       url: "/home/slideshow/events.JPG",
-      caption: "Check out the events the Office of the Executive Vice President coordinates for the student body!”",
+      caption: "Check out the events the Office of the Executive Vice President coordinates for the student body!",
       title: "Events",
       link: "departments/student-affairs.html"
     },
