@@ -84,12 +84,41 @@ export default function Home() {
               partnerships, advocating for students, and launching inclusive initiatives, the 
               OEVP supports overall student wellness.`
     },
+    // {
+    //   text: `The Executive Vice President (EVP) serves as the second-ranking representative of the ASUC, overseeing its 
+    //           general operations and commercial activities, as well as chairing the Senate where they have the power to break 
+    //           tie votes and appoint committee members. Additionally, the EVP ensures the execution of Senate directives, 
+    //           leads the Senate Leadership Institute, and manages the allocation of office space and resources to 
+    //           ASUC-sponsored organizations, while carrying out other duties as defined by the ASUC Constitution and EVP Bylaws.`
+    // }, {
     {
-      text: `The Executive Vice President (EVP) serves as the second-ranking representative of the ASUC, overseeing its 
-              general operations and commercial activities, as well as chairing the Senate where they have the power to break 
-              tie votes and appoint committee members. Additionally, the EVP ensures the execution of Senate directives, 
-              leads the Senate Leadership Institute, and manages the allocation of office space and resources to 
-              ASUC-sponsored organizations, while carrying out other duties as defined by the ASUC Constitution and EVP Bylaws.`
+      text: (
+        <>
+          The Executive Vice President (EVP) serves as the second-ranking representative of the ASUC, overseeing its
+          general operations and commercial activities, as well as chairing the Senate where they have the power to break
+          tie votes and appoint committee members. Additionally, the EVP ensures the execution of Senate directives,
+          leads the Senate Leadership Institute, and manages the allocation of office space and resources to
+          ASUC-sponsored organizations, while carrying out other duties as defined by the{' '}
+          <a
+            href="https://docs.google.com/document/d/1Qk565835nTJFky68YxK6bwRzsPLE1zRjK0a1psF2_9o/edit?tab=t.0"
+            className="underline hover:text-blue-600"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ASUC Constitution
+          </a>{' '}
+          and{' '}
+          <a
+            href="https://docs.google.com/document/d/119xX22loigaKYddHGle9wpG1yrNkRa6sCXuUHuuHKeg/edit?tab=t.0#heading=h.div3mh1s3942"
+            className="underline hover:text-blue-600"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            EVP Bylaws
+          </a>
+          .
+        </>
+      ),
     }, {
       text: `Our office has various departments, each specializing in a specific area designed to enhance student life and 
             support our broader mission. These departments play key roles in facilitating campus-wide initiatives, building strategic 
@@ -203,7 +232,7 @@ export default function Home() {
                 onClick={() => setCurrentText(3)}
                 className="hover:bg-[#003A70] hover:text-white  p-4 transition"
               >
-                Free Resources
+                Resources (RSO’s & Students)
               </a>
             </menu>
           </div>
