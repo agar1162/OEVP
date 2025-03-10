@@ -47,9 +47,9 @@ export default function Home() {
       link: "/offices/2024.html"
     }, {
       url: "/home/slideshow/events.JPG",
-      caption: "View past Senate meetings run by the EVP",
+      caption: "Check out the events the Office of the Executive Vice President coordinates for the student body!”",
       title: "Events",
-      link: "https://www.facebook.com/theASUC/"
+      link: "departments/student-affairs.html"
     },
     {
       url: "/home/slideshow/com.JPG",
@@ -59,14 +59,14 @@ export default function Home() {
     },
     {
       url: "/home/slideshow/legis.JPG",
-      caption: "Want to get involved? Learn about the different resolutions in the ASUC senate and how to provide public comment!",
+      caption: "Want to get involved? Learn about the different resolutions in the ASUC senate.",
       title: "Legislation",
       link: "/departments/legal-affairs.html"
     },
     {
       url: "/home/slideshow/rso.JPG",
-      caption: "Read about the benefits of getting your Registered Student Organization (RSO) ASUC-funded",
-      title: "RSO's",
+      caption: "Read about the benefits of getting your Registered Student Organization (RSO) ASUC-funded.",
+      title: "RSOs",
       link: "/departments/rso.html"
     }
   ];
@@ -172,7 +172,7 @@ export default function Home() {
       <div id="WHO_WE_ARE" className="mx-8 py-[10vh]">
         <h3 className="flex items-center mx-[10%] text-2xl lg:text-3xl text-center">
                 <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-                <span className="px-4">Who We Are</span>
+                <span className="px-4">Who are we?</span>
                 <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
         </h3>
 
