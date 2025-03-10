@@ -196,10 +196,16 @@ export default function Home() {
           <h1 className="text-4xl mx-[15%] lg:text-7xl font-extrabold tracking-wider">
             OFFICE OF THE EXECUTIVE VICE PRESIDENT
           </h1>
-          <a href={slides[currentIndex].link}>
+          {/* <a href={slides[currentIndex].link}>
             <h3 className="text-2xl md:text-3xl mt-[5%] mx-[20%]">
               {slides[currentIndex].caption}
               <img src="/link.png" className="w-8 h-8 inline-block align-middle ml-2" />
+            </h3>
+          </a> */}
+          <a href={slides[currentIndex].link}>
+            <h3 className="text-2xl md:text-3xl mt-[5%] mx-[20%] flex items-center justify-center gap-2">
+              {slides[currentIndex].caption}
+              <i className="fa fa-long-arrow-right text-2xl ml-1" aria-hidden="true"></i>
             </h3>
           </a>
         </div>
