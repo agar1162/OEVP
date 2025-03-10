@@ -299,53 +299,36 @@ export default function Home() {
           id="NYT_WALL_STREET_JOURNAL"
           className="flex flex-col lg:flex-row bg-gradient-to-r from-[#FFD67A] to-[#F9B315] py-[5vh]">
           {/* New York Times Section */}
-          {/* <div className="flex-1 flex justify-center pt-10 md:pt-0">
-            <div className="mx-[10vw]">
-              <img src={times} alt="New York Times" className="h-[46px] w-[36px] mb-4" />
-              <h1 className="text-[23px] font-bold mb-2">New York Times</h1>
-              <p className="text-lg leading-relaxed mb-4">{def}</p>
-              <a href="https://www.nytimes.com/activate-access/edu-access" className="p-3 px-10 bg-white rounded-sm hover:text-[#A6A6A6]">
-                Register
-              </a>
-            </div>
-          </div> */}
-          <div className="flex-1 flex justify-center pt-10 md:pt-0 items-center">
-            <div className="mx-[10vw] text-center">
-              <img src="/nyt.svg" alt="New York Times" className="h-[50px] mb-4 mx-auto" />
-              <h1 className="text-xl font-bold mb-2">New York Times</h1>
-              <p className="text-lg leading-relaxed mb-4">{def}</p>
-              <a href="https://www.nytimes.com/activate-access/edu-access" className="p-3 px-10 bg-white rounded-sm hover:text-[#A6A6A6]">
-                Register
-              </a>
-            </div>
+          <div className="flex-1 flex flex-col items-center justify-center p-8">
+            <img src={times} alt="New York Times" className="h-[50px] w-auto mb-4" />
+            <h1 className="text-xl font-bold mb-2">New York Times</h1>
+            <p className="text-center mb-4">
+              Get free access to a variety of New York Times articles, games, and podcasts if you are an undergraduate or graduate student.
+            </p>
+            <a 
+              href="https://www.nytimes.com/activate-access/edu-access"
+              className="bg-white px-6 py-2 rounded hover:bg-gray-200 transition"
+            >
+              Register
+            </a>
           </div>
 
           {/* Wall Street Journal Section */}
-          {/* <div className="flex-1 flex justify-center py-10 md:pt-0">
-            <div className="mx-[10vw]">
-              <img src={wsj} alt="Wall Street Journal" className="h-[36px] w-[62px] mb-4" />
-              <h1 className="text-[23px] font-bold mb-2">Wall Street Journal</h1>
-              <p className="text-lg leading-relaxed mb-4">{def}</p>
-              <a href="https://WSJ.com/ASUCBerkeley" className="p-3 px-10 bg-white rounded-sm hover:text-[#A6A6A6]">
-                Register
-              </a>
-            </div>
-          </div> */}
-          <div className="flex-1 flex justify-center py-10 md:pt-0 items-center">
-            <div className="mx-[10vw] text-center">
-              <img src="/wsj.svg" alt="Wall Street Journal" className="h-[50px] mb-4 mx-auto" />
-              <h1 className="text-xl font-bold mb-2">Wall Street Journal</h1>
-              <p className="text-lg leading-relaxed mb-4">
-                Get free access to a variety of WSJ articles, career advice, and job prep resources!
-              </p>
-              <a href="https://WSJ.com/ASUCBerkeley" className="p-3 px-10 bg-white rounded-sm hover:text-[#A6A6A6]">
-                Register
-              </a>
-            </div>
+          <div className="flex-1 flex flex-col items-center justify-center p-8">
+            <img src={wsj} alt="Wall Street Journal" className="h-[50px] w-auto mb-4" />
+            <h1 className="text-xl font-bold mb-2">Wall Street Journal</h1>
+            <p className="text-center mb-4">
+              Get free access to a variety of WSJ articles, career advice, and job prep resources!
+            </p>
+            <a 
+              href="https://WSJ.com/ASUCBerkeley"
+              className="bg-white px-6 py-2 rounded hover:bg-gray-200 transition"
+            >
+              Register
+            </a>
           </div>
-
-          
         </div>
+
 
         <div 
         id="EVENTS"
