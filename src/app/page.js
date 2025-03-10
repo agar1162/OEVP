@@ -330,7 +330,7 @@ export default function Home() {
         </div>
 
 
-        <div 
+      {/* <div 
         id="EVENTS"
         className="mx-8 md:py-[10vh]">
         <main className="flex flex-col pt-10 text-[20px] gap-8">
@@ -374,7 +374,49 @@ export default function Home() {
 
           </div>
         </main>
+      </div> */}
+
+      <div 
+        id="EVENTS" 
+        className="mx-8 md:py-[10vh]">
+        <main className="flex flex-col pt-10 gap-8">
+          <div className="flex mx-[5%] md:mx-[10%] items-center drop-shadow-lg">
+            <h3 className="flex items-center w-full text-2xl lg:text-3xl text-center">
+              <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+              <span className="px-4">Come To Our Events</span>
+              <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+            </h3>
+          </div>
+
+          <div className="flex md:flex-row flex-col-reverse gap-8 items-center mx-[10%]">
+            <div className="basis-1/2 text-xl">
+              <p>
+                The Office of the Executive Vice President organizes a wide range of events, including those led independently 
+                by one of our departments, collaborations with other ASUC offices or campus groups, and events in conjunction 
+                with companies, external groups, or individuals. 
+              </p>
+              <br/>
+              <p>
+                These events vary in scope and purpose, serving the diverse needs of the campus community & beyond. Past events 
+                have included professional development workshops, leadership panels, networking opportunities, community-building 
+                events, and advocacy initiatives.
+              </p>
+            </div>
+
+            <div className="basis-1/2 max-w-md overflow-hidden rounded-xl shadow-lg">
+              <img
+                src={carousel[currentCarousel].img}
+                alt="Event preview"
+                className="object-cover w-full h-[350px]"
+              />
+              <p className="text-sm mt-2 px-2 italic">
+                {carousel[currentCarousel].caption}
+              </p>
+            </div>
+          </div>
+        </main>
       </div>
+
       
       <div 
         id="PARTNER"
