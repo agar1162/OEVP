@@ -101,7 +101,7 @@ export default function Home() {
           ASUC-sponsored organizations, while carrying out other duties as defined by the{' '}
           <a
             href="https://docs.google.com/document/d/1Qk565835nTJFky68YxK6bwRzsPLE1zRjK0a1psF2_9o/edit?tab=t.0"
-            className="underline hover:text-blue-600"
+            className="underline hover:text-[#003A70]"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -110,7 +110,7 @@ export default function Home() {
           and{' '}
           <a
             href="https://docs.google.com/document/d/119xX22loigaKYddHGle9wpG1yrNkRa6sCXuUHuuHKeg/edit?tab=t.0#heading=h.div3mh1s3942"
-            className="underline hover:text-blue-600"
+            className="underline hover:text-[#003A70]"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -125,9 +125,34 @@ export default function Home() {
             partnerships, engaging with campus groups & student leaders, and ensuring the fair and equitable distribution of resources.
             Together, we support the academic, personal, and professional growth of all UC Berkeley students and registered student 
             organizations (RSOs), ensuring they have the tools to succeed.`
+    // }, {
+    //   text: `The OEVP provides free access to newspaper subscriptions such as the Wall Street Journal and New York Times, financial grants, & 
+    //     campus spaces for RSO’s.`
+    // }
     }, {
-      text: `The OEVP provides free access to newspaper subscriptions such as the Wall Street Journal and New York Times, financial grants, & 
-        campus spaces for RSO’s.`
+      text: (
+        <>
+          The OEVP provides free access to newspaper subscriptions such as the Wall Street Journal and New York Times,{' '}
+          <a
+            href="https://callink.berkeley.edu/organization/gsf"
+            className="underline hover:text-[#003A70]"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            financial grants
+          </a>
+          , &{' '}
+          <a
+            href="https://lead.berkeley.edu/student-orgs/manage-your-org/plan-events-for-your-org/reserve-space/"
+            className="underline hover:text-[#003A70]"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            campus spaces
+          </a>{' '}
+          for RSO’s.
+        </>
+      ),
     }
   ]
 
