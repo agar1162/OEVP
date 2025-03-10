@@ -1,5 +1,6 @@
 "use client"
 import React, { useState, useEffect } from "react";
+import CountUp from 'react-countup';
 import Navbar from "../components/home/Navbar";
 import Footer from "../components/home/Footer";
 import "./globals.css";
@@ -278,7 +279,7 @@ export default function Home() {
       </div>
 
         
-        <div 
+        {/* <div 
           id="ORGSTATS"
           className="flex flex-wrap transition-all duration-75 ease-in justify-center items-center gap-[12vw] py-[10vh] pb-[15vh]">
             <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
@@ -293,6 +294,29 @@ export default function Home() {
                 <h1 className="text-[#003A70] text-5xl md:text-7xl font-bold pb-5" >180k</h1>
                 <p className="text-xl text-center mx-4">New York Times articles read monthly by students</p>
             </div>
+        </div> */}
+        <div 
+          id="ORGSTATS"
+          className="flex flex-wrap transition-all duration-75 ease-in justify-center items-center gap-[12vw] py-[10vh] pb-[15vh]">
+          <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
+            <h1 className="text-[#003A70] text-5xl md:text-7xl font-bold pb-5">
+              <CountUp end={400} duration={3} suffix="+"/>
+            </h1>
+            <p className="text-xl text-center mx-4">Registered Student Organizations receive funding & resources</p>
+          </div>
+          <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
+            <h1 className="text-[#003A70] text-5xl md:text-7xl font-bold pb-5">
+              <CountUp end={100} duration={3} suffix="+"/>
+            </h1>
+            <p className="text-xl text-center mx-4">Legislation implemented in collaboration with ASUC Senate</p>
+          </div>
+          <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
+            <h1 className="text-[#003A70] text-5xl md:text-7xl font-bold pb-5">
+              <CountUp end={180} duration={3} suffix="k"/>
+            </h1>
+            <p className="text-xl text-center mx-4">New York Times articles read monthly by students</p>
+          </div>
+
         </div>
 
         <div 
