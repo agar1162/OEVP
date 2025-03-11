@@ -297,7 +297,7 @@ export default function Home() {
         </div> */}
         <div 
           id="ORGSTATS"
-          className="flex flex-wrap transition-all duration-75 ease-in justify-center items-center gap-[12vw] py-[10vh] pb-[15vh]">
+          className="flex flex-wrap justify-center items-center gap-[12vw] py-[10vh] pb-[15vh]">
           <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
             <h1 className="text-[#003A70] text-5xl md:text-7xl font-bold pb-5">
               <CountUp end={400} duration={3} suffix="+"/>
@@ -308,16 +308,16 @@ export default function Home() {
             <h1 className="text-[#003A70] text-5xl md:text-7xl font-bold pb-5">
               <CountUp end={100} duration={3} suffix="+"/>
             </h1>
-            <p className="text-xl text-center mx-4">Legislation implemented in collaboration with ASUC Senate</p>
+            <p className="text-xl text-center mx-4">Resolutions implemented in collaboration with ASUC Senate</p>
           </div>
           <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
             <h1 className="text-[#003A70] text-5xl md:text-7xl font-bold pb-5">
-              <CountUp end={180} duration={3} suffix="k"/>
+              <CountUp end={180} duration={3} suffix="k+"/>
             </h1>
             <p className="text-xl text-center mx-4">New York Times articles read monthly by students</p>
           </div>
-
         </div>
+
 
         <div 
           id="NYT_WALL_STREET_JOURNAL"
@@ -399,12 +399,11 @@ export default function Home() {
           </div>
         </main>
       </div> */}
-
       <div 
         id="EVENTS" 
         className="mx-8 md:py-[10vh]">
         <main className="flex flex-col pt-10 gap-8">
-          <div className="flex mx-[5%] md:mx-[10%] items-center drop-shadow-lg">
+          <div className="flex items-center mx-[5%] md:mx-[10%] drop-shadow-lg">
             <h3 className="flex items-center w-full text-2xl lg:text-3xl text-center">
               <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
               <span className="px-4">Come To Our Events</span>
@@ -412,34 +411,27 @@ export default function Home() {
             </h3>
           </div>
 
-          <div className="flex md:flex-row flex-col-reverse gap-8 items-center mx-[10%]">
-            <div className="basis-1/2 text-xl">
-              <p>
-                The Office of the Executive Vice President organizes a wide range of events, including those led independently 
-                by one of our departments, collaborations with other ASUC offices or campus groups, and events in conjunction 
-                with companies, external groups, or individuals. 
-              </p>
-              <br/>
-              <p>
-                These events vary in scope and purpose, serving the diverse needs of the campus community & beyond. Past events 
-                have included professional development workshops, leadership panels, networking opportunities, community-building 
-                events, and advocacy initiatives.
+          <div className="flex flex-col md:flex-row items-center gap-8 mx-[10%]">
+            <div className="basis-1/2">
+              <p className="text-xl">
+                The Office of the Executive Vice President organizes a wide range of events, including those led independently by our departments, collaborations, and external partners. Events include professional development, networking, community building, and advocacy initiatives.
               </p>
             </div>
 
-            <div className="basis-1/2 max-w-md overflow-hidden rounded-xl shadow-lg">
+            <div className="basis-1/2 rounded-xl shadow-xl overflow-hidden">
               <img
                 src={carousel[currentCarousel].img}
-                alt="Event preview"
-                className="object-cover w-full h-[350px]"
+                alt="Event"
+                className="object-cover h-[350px] w-full"
               />
-              <p className="text-sm mt-2 px-2 italic">
+              <p className="italic p-2 text-sm">
                 {carousel[currentCarousel].caption}
               </p>
             </div>
           </div>
         </main>
       </div>
+
 
       
       <div 
