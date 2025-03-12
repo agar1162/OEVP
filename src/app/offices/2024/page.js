@@ -128,7 +128,7 @@ export default function officePage () {
         <div>
             <Navbar />
             <div className="flex flex-wrap mx-[5%] md:mx-[10%] pt-10 justify-center items-center drop-shadow-lg">
-                <h3 className="flex items-center w-full text-2xl lg:text-3xl font-extrabold text-center">
+                <h3 className="flex items-center w-full text-2xl lg:text-3xl text-center">
                     <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
                     <span className="px-4">Office of Robert Carillo </span>
                     <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
@@ -146,7 +146,7 @@ export default function officePage () {
                     alt={`Profile picture ${profile.id}`}
                     className=""
                     />
-                    <h1 className="mt-2 font-bold text-gray-700">{profile.name}</h1>
+                    <h1 className="mt-2 text-gray-700">{profile.name}</h1>
                     <p className="text-[#6d6d6d]">{profile.title}</p>
                     <p>{profile.major}</p>
                     
