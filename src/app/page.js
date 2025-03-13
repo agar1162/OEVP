@@ -312,7 +312,7 @@ export default function Home() {
           </div>
           <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
             <h1 className="text-[#003A70] text-5xl md:text-7xl font-bold pb-5">
-              <CountUp end={180} duration={3} suffix="h"/>
+              <CountUp end={180} duration={3} suffix="v"/>
             </h1>
             <p className="text-xl text-center mx-4">New York Times articles read monthly by students</p>
           </div>
