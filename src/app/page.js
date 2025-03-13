@@ -43,7 +43,7 @@ export default function Home() {
   const slides = [
     {
       url: "/home/slideshow/team.jpeg",
-      caption: "Find out more about the team and the work we do!",
+      caption: "Find out more about the team and the work we do!!",
       title: "Office",
       link: "/offices/2024.html"
     }, {
@@ -312,7 +312,7 @@ export default function Home() {
           </div>
           <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
             <h1 className="text-[#003A70] text-5xl md:text-7xl font-bold pb-5">
-              <CountUp end={180} duration={3} suffix="v"/>
+              <CountUp end={180} duration={3} suffix="k+"/>
             </h1>
             <p className="text-xl text-center mx-4">New York Times articles read monthly by students</p>
           </div>
