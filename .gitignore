@@ -1,3 +1,5 @@
 node_modules/
 
 ssh = ASUCEVPWebsite*01 .DS_Store
+
+.DS_Store
