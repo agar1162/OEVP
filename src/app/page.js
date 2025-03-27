@@ -59,7 +59,7 @@ export default function Home() {
       link: "/departments/deib/communities.html"
     },
     {
-      url: "/home/slideshow/legis.JPG",
+      url: "/home/slideshow/legis.jpg",
       caption: "Want to get involved? Learn about the different resolutions in the ASUC senate.",
       title: "Legislation",
       link: "/departments/legal-affairs.html"
