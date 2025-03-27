@@ -233,7 +233,7 @@ export default function Home() {
       <div id="WHO_WE_ARE" className="mx-8 py-[10vh]">
         <h3 className="flex items-center mx-[10%] text-2xl lg:text-3xl text-center">
                 <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-                <span className="px-4">Who are we?</span>
+                <span className="px-4">Who Are We?</span>
                 <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
         </h3>
 
