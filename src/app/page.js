@@ -12,7 +12,6 @@ export default function Home() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentText, setCurrentText] = useState(0); 
-  const [currentCarousel, setCarousel] = useState(0);
 
   const nextSlide = () => {
     setCurrentIndex((currentIndex) => {
@@ -20,19 +19,11 @@ export default function Home() {
       return isLastSlide ? 0 : currentIndex + 1;
     });
   };
-
-  const nextCarousel = () => {
-    setCarousel((currentCarousel) => {
-      const isLastSlide = currentCarousel === carousel.length - 1;
-      return isLastSlide ? 0 : currentCarousel + 1;
-    });
-  };
   
 
   useEffect(() => {
     const autoplay = setInterval(() => {
       nextSlide();
-      nextCarousel()
     }, 5000);
     return () => clearInterval(autoplay);
   }, []); 
@@ -85,13 +76,6 @@ export default function Home() {
               partnerships, advocating for students, and launching inclusive initiatives, the 
               OEVP supports overall student wellness.`
     },
-    // {
-    //   text: `The Executive Vice President (EVP) serves as the second-ranking representative of the ASUC, overseeing its 
-    //           general operations and commercial activities, as well as chairing the Senate where they have the power to break 
-    //           tie votes and appoint committee members. Additionally, the EVP ensures the execution of Senate directives, 
-    //           leads the Senate Leadership Institute, and manages the allocation of office space and resources to 
-    //           ASUC-sponsored organizations, while carrying out other duties as defined by the ASUC Constitution and EVP Bylaws.`
-    // }, {
     {
       text: (
         <>
@@ -126,10 +110,6 @@ export default function Home() {
             partnerships, engaging with campus groups & student leaders, and ensuring the fair and equitable distribution of resources.
             Together, we support the academic, personal, and professional growth of all UC Berkeley students and registered student 
             organizations (RSOs), ensuring they have the tools to succeed.`
-    // }, {
-    //   text: `The OEVP provides free access to newspaper subscriptions such as the Wall Street Journal and New York Times, financial grants, & 
-    //     campus spaces for RSO’s.`
-    // }
     }, {
       text: (
         <>
@@ -154,21 +134,6 @@ export default function Home() {
           for RSO’s.
         </>
       ),
-    }
-  ]
-
-  const carousel = [
-    {
-      img: "/home/carousel/e_3.png",
-      caption: "El Mercadito, organized in partnership with an ASUC Senator's Office, celebrated the diversity of the Latin community at UC Berkeley through a vibrant night market event."
-    },
-    {
-      img: "/home/carousel/e_1.png",
-      caption: "Fireside Chat with the UC Student Regents, moderated by the Executive Vice President."
-    }, 
-    {
-      img: "/home/carousel/e_2.png",
-      caption: ""
     }
   ]
   
@@ -197,12 +162,6 @@ export default function Home() {
           <h1 className="text-4xl mx-[15%] lg:text-7xl font-extrabold tracking-wider">
             OFFICE OF THE EXECUTIVE VICE PRESIDENT
           </h1>
-          {/* <a href={slides[currentIndex].link}>
-            <h3 className="text-2xl md:text-3xl mt-[5%] mx-[20%]">
-              {slides[currentIndex].caption}
-              <img src="/link.png" className="w-8 h-8 inline-block align-middle ml-2" />
-            </h3>
-          </a> */}
           <a href={slides[currentIndex].link}>
             <h3 className="text-2xl md:text-3xl mt-[5%] mx-[20%] flex items-center justify-center gap-2">
               {slides[currentIndex].caption}
@@ -318,158 +277,129 @@ export default function Home() {
           </div>
         </div>
 
+      
+      {/* NYT and WSJ Section */}
+      <div
+        id="NYT_WSJ"
+        className="w-full bg-gradient-to-r from-[#FFD67A] to-[#F9B315] px-10 py-20 flex flex-col lg:flex-row gap-10 justify-center"
+      >
+        {/* NYT */}
+        <div className="flex flex-col gap-4 text-left max-w-[600px]">
+          <img src={times} alt="nyt" className="w-[54px] h-[54px]" />
+          <div className="text-[34.56px] font-normal font-[Georgia] leading-[35.98px]">
+            New York Times
+          </div>
+          <div className="text-[23.93px] font-normal font-[Georgia] leading-[34.56px]">
+            Get free access to a variety of New York Times articles, games, and podcasts if you are an undergraduate or graduate student!
+          </div>
+          <a
+            href="https://www.nytimes.com/activate-access/edu-access"
+            className="bg-white w-fit px-6 py-2 rounded text-[26.35px] font-[Georgia] text-black hover:bg-gray-200"
+          >
+            Register
+          </a>
+        </div>
 
-        <div 
-          id="NYT_WALL_STREET_JOURNAL"
-          className="flex flex-col lg:flex-row bg-gradient-to-r from-[#FFD67A] to-[#F9B315] py-[5vh]">
-          {/* New York Times Section */}
-          <div className="flex-1 flex flex-col items-center justify-center p-8">
-            <img src={times} alt="New York Times" className="h-[50px] w-auto mb-4" />
-            <h1 className="text-xl font-bold mb-2">New York Times</h1>
-            <p className="text-center mb-4">
-              Get free access to a variety of New York Times articles, games, and podcasts if you are an undergraduate or graduate student.
+        {/* WSJ */}
+        <div className="flex flex-col gap-4 text-left max-w-[600px]">
+          <img src={wsj} alt="wsj" className="w-[73px] h-[45px]" />
+          <div className="text-[34.56px] font-normal font-[Georgia] leading-[35.98px]">
+            Wall Street Journal
+          </div>
+          <div className="text-[23.93px] font-normal font-[Georgia] leading-[34.56px]">
+            Get free access to a variety of WSJ articles, career advice, and job prep resources if you are an undergraduate student, graduate student, or faculty/staff!
+          </div>
+          <a
+            href="https://WSJ.com/ASUCBerkeley"
+            className="bg-white w-fit px-6 py-2 rounded text-[26.29px] font-[Georgia] text-black hover:bg-gray-200"
+          >
+            Register
+          </a>
+        </div>
+      </div>
+
+      {/* Events Section */}
+      <div id="EVENTS" className="px-[10%] py-[10vh]">
+        {/* Section Header */}
+        <div className="flex items-center justify-center mb-10">
+          <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+          <h3 className="px-4 text-2xl lg:text-3xl font-[Georgia]">Come To Our Events</h3>
+          <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+        </div>
+
+        {/* Content */}
+        <div className="flex flex-col lg:flex-row gap-10 items-start">
+          {/* Left Text */}
+          <div className="lg:pl-[5%] flex-1 text-[18px] md:text-[20px] font-[Georgia] leading-[36px]">
+            <p>
+              The Office of the Executive Vice President organizes a wide range of events,
+              including those led independently by one of our departments, collaborations with
+              other ASUC offices or campus groups, and events in conjunction with companies,
+              external groups, or individuals.
             </p>
-            <a 
-              href="https://www.nytimes.com/activate-access/edu-access"
-              className="bg-white px-6 py-2 rounded hover:bg-gray-200 transition"
-            >
-              Register
-            </a>
+            <br />
+            <p>
+              These events vary in scope and purpose, serving the diverse needs of the campus
+              community & beyond. Past events have included professional development workshops,
+              leadership panels, networking opportunities, community-building events, and
+              advocacy initiatives.
+            </p>
           </div>
 
-          {/* Wall Street Journal Section */}
-          <div className="flex-1 flex flex-col items-center justify-center p-8">
-            <img src={wsj} alt="Wall Street Journal" className="h-[50px] w-auto mb-4" />
-            <h1 className="text-xl font-bold mb-2">Wall Street Journal</h1>
-            <p className="text-center mb-4">
-              Get free access to a variety of WSJ articles, career advice, and job prep resources!
+          {/* Right Image */}
+          <div className="lg:pr-[5%] flex-1">
+            <img src="/home/e_1.png" alt="Event" className="w-full h-auto" />
+            <p className="text-[13.36px] font-[Georgia] italic mt-2">
+              The Office of the Executive Vice President held the{' '}
+              <span className="underline">PPIA Junior Summer Institute</span> Panel and Mixer
+              in collaboration with the Goldman School of Public Policy and the Student Policy
+              Institute at Berkeley.
             </p>
-            <a 
-              href="https://WSJ.com/ASUCBerkeley"
-              className="bg-white px-6 py-2 rounded hover:bg-gray-200 transition"
+          </div>
+        </div>
+      </div>
+
+      <div id="PARTNER" className="px-[10%] pb-[15vh]">
+        {/* Section Header */}
+        <div className="flex items-center justify-center mb-10">
+          <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+          <h3 className="px-4 text-2xl lg:text-3xl font-[Georgia] text-center">Work With Us</h3>
+          <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+        </div>
+
+        {/* Content */}
+        <div className="flex flex-col lg:flex-row gap-10 items-center justify-center text-justify">
+          {/* Left Image */}
+          <div className="flex-1 lg:pl-[5%] max-w-[500px]">
+            <img
+              src="/home/work.png"
+              alt="Work With Us"
+              className="w-full h-auto"
+            />
+          </div>
+
+          {/* Right Text + CTA */}
+          <div className="flex-1 lg:pr-[5%] max-w-[600px]">
+            <p className="text-[22px] font-[Georgia] font-normal leading-[37.41px] mb-0.5 text-justify">
+              Are you an<br />
+              Organization or Company<br />
+              that would like to work with us?
+            </p>
+
+            <p className="text-[12px] font-[Georgia] font-normal leading-[28px] mb-4 px-2 text-justify">
+              The Office of the Executive Vice President can partner with services or platforms that address student needs and make them available to the student body, ensuring these resources are provided in the best interest of students, on behalf of the office.
+            </p>
+
+            <a
+              href="/partnerships.html"
+              className="inline-flex justify-center items-center px-4 py-[6px] bg-[#003A70] rounded-full outline outline-[2.67px] outline-white outline-offset-[-2.67px] font-[Georgia] text-white text-[26.79px] font-normal hover:bg-[#002957] transition-colors"
             >
-              Register
+              Partner with ASUC Here
             </a>
           </div>
         </div>
-
-
-      {/* <div 
-        id="EVENTS"
-        className="mx-8 md:py-[10vh]">
-        <main className="flex flex-col pt-10 text-[20px] gap-8">
-          <div className="flex mx-[5%] md:mx-[10%] items-center drop-shadow-lg">
-            <h3 className="flex items-center w-full text-2xl lg:text-3xl text-center">
-              <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-              <span className="px-4">Come To Our Events</span>
-              <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-            </h3>
-          </div>
-
-          <div id="text" className="flex md:flex-row flex-col items-center gap-6 mx-[10%]">
-            <div className="basis-1/2 text-xl">
-              <p>
-                The Office of the Executive Vice President organizes a wide range of events, including those led independently 
-                by one of our departments, collaborations with other ASUC offices or campus groups, and events in conjunction 
-                with companies, external groups, or individuals. 
-              </p>
-              <br/>
-              <p>
-                These events vary in scope and purpose, serving the diverse needs of the campus community & beyond. Past events 
-                have included professional development workshops, leadership panels, networking opportunities, community-building 
-                events, and advocacy initiatives.
-              </p>
-            </div>
-              
-            <div className="basis-1/2 py-5 flex flex-col items-center">
-              <div className="w-full max-w-md h-[400px]">
-                <img
-                  src={carousel[currentCarousel].img}
-                  alt="example"
-                  className="w-full"
-                />
-                <p className="max-h-full w-full text-sm mt-2">
-                  <i>
-                    {carousel[currentCarousel].caption} 
-                  </i>
-                </p>
-              </div>
-            </div>
-
-          </div>
-        </main>
-      </div> */}
-      <div 
-        id="EVENTS" 
-        className="mx-8 md:py-[10vh]">
-        <main className="flex flex-col pt-10 gap-8">
-          <div className="flex items-center mx-[5%] md:mx-[10%] drop-shadow-lg">
-            <h3 className="flex items-center w-full text-2xl lg:text-3xl text-center">
-              <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-              <span className="px-4">Come To Our Events</span>
-              <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-            </h3>
-          </div>
-
-          <div className="flex flex-col md:flex-row items-center gap-8 mx-[10%]">
-            <div className="basis-1/2">
-              <p className="text-xl">
-                The Office of the Executive Vice President organizes a wide range of events, including those led independently by our departments, collaborations, and external partners. Events include professional development, networking, community building, and advocacy initiatives.
-              </p>
-            </div>
-
-            <div className="basis-1/2 rounded-xl shadow-xl overflow-hidden">
-              <img
-                src={carousel[currentCarousel].img}
-                alt="Event"
-                className="object-cover h-[350px] w-full"
-              />
-              <p className="italic p-2 text-sm">
-                {carousel[currentCarousel].caption}
-              </p>
-            </div>
-          </div>
-        </main>
       </div>
       
-      <div 
-        id="PARTNER"
-        className="mx-8  pb-[15vh]">
-        <main className="flex flex-col pt-10 text-[20px] gap-8">
-          <div className="flex mx-[10%] items-center drop-shadow-lg">
-            <h3 className="flex items-center w-full text-2xl lg:text-3xl text-center">
-              <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-              <span className="px-4">Work With Us</span>
-              <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-            </h3>
-          </div>
-
-          <div id="text" className="flex flex-col items-center gap-6">
-            <p className="text-center">
-              Are you a company, or organization that would like to partner with us?
-            </p>
-            <div className="flex flex-wrap justify-center items-center gap-[12vw] h-auto">
-              <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
-                  <h1 className="text-[#003A70] text-5xl md:text-7xl font-bold" >180K+</h1>
-                  <p className="text-center text-xl">Articles Read</p>
-              </div>
-              <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
-                  <h1  className="text-[#003A70] text-5xl md:text-7xl  font-bold">409</h1>
-                  <p className="text-center text-xl">Registered Student Organizations</p>
-              </div>
-              <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
-                  <h1 className="text-[#003A70] text-5xl md:text-7xl font-bold">100+</h1>
-                  <p className="text-center text-xl">Legislations drafted, passed, and implemented</p>
-              </div>
-          </div>
-            <a href="/partnerships.html" className="bg-[#003A70] text-white py-3 px-6 rounded-full text-xl lg:text-base font-bold hover:bg-[#002957] transition-colors">
-              Become a partnership
-            </a>
-          </div>
-        </main>
-      </div>
-
-
       <Footer />
     </div>
   );
