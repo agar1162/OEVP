@@ -23,14 +23,6 @@
       "static/chunks/852-8e77b646935912d0.js",
       "static/chunks/app/departments/communications/page-dfeec31f283b8e9b.js"
     ],
-    "/departments/finance/page": [
-      "static/chunks/webpack-ca91b70416cab134.js",
-      "static/chunks/4bd1b696-baab6ac3eb0f075e.js",
-      "static/chunks/684-8c08bda53901bf58.js",
-      "static/chunks/main-app-264096a86f546754.js",
-      "static/chunks/852-8e77b646935912d0.js",
-      "static/chunks/app/departments/finance/page-950e598a8134206d.js"
-    ],
     "/departments/commercial-activities/page": [
       "static/chunks/webpack-ca91b70416cab134.js",
       "static/chunks/4bd1b696-baab6ac3eb0f075e.js",
@@ -46,6 +38,14 @@
       "static/chunks/main-app-264096a86f546754.js",
       "static/chunks/852-8e77b646935912d0.js",
       "static/chunks/app/departments/deib/communities/page-64471a932019b48d.js"
+    ],
+    "/departments/finance/page": [
+      "static/chunks/webpack-ca91b70416cab134.js",
+      "static/chunks/4bd1b696-baab6ac3eb0f075e.js",
+      "static/chunks/684-8c08bda53901bf58.js",
+      "static/chunks/main-app-264096a86f546754.js",
+      "static/chunks/852-8e77b646935912d0.js",
+      "static/chunks/app/departments/finance/page-950e598a8134206d.js"
     ],
     "/departments/deib/page": [
       "static/chunks/webpack-ca91b70416cab134.js",
@@ -91,13 +91,6 @@
       "static/chunks/main-app-264096a86f546754.js",
       "static/chunks/app/departments/student-affairs/page-f3a98cb7342f89fe.js"
     ],
-    "/partnerships/page": [
-      "static/chunks/webpack-ca91b70416cab134.js",
-      "static/chunks/4bd1b696-baab6ac3eb0f075e.js",
-      "static/chunks/684-8c08bda53901bf58.js",
-      "static/chunks/main-app-264096a86f546754.js",
-      "static/chunks/app/partnerships/page-054ca388bfa3c59a.js"
-    ],
     "/departments/sswb/page": [
       "static/chunks/webpack-ca91b70416cab134.js",
       "static/chunks/4bd1b696-baab6ac3eb0f075e.js",
@@ -105,6 +98,13 @@
       "static/chunks/main-app-264096a86f546754.js",
       "static/chunks/852-8e77b646935912d0.js",
       "static/chunks/app/departments/sswb/page-3487313f955729f1.js"
+    ],
+    "/partnerships/page": [
+      "static/chunks/webpack-ca91b70416cab134.js",
+      "static/chunks/4bd1b696-baab6ac3eb0f075e.js",
+      "static/chunks/684-8c08bda53901bf58.js",
+      "static/chunks/main-app-264096a86f546754.js",
+      "static/chunks/app/partnerships/page-054ca388bfa3c59a.js"
     ],
     "/partnerships/nyt_wsj/page": [
       "static/chunks/webpack-ca91b70416cab134.js",
