@@ -34,7 +34,7 @@ export default function Home() {
   const slides = [
     {
       url: "/home/slideshow/team.jpeg",
-      caption: "Find out more about the team and the work we do!!",
+      caption: "Find out more about the team and the work we do!",
       title: "Office",
       link: "/offices/2024.html"
     }, {
@@ -290,7 +290,7 @@ export default function Home() {
             New York Times
           </div>
           <div className="text-[23.93px] font-normal font-[Georgia] leading-[34.56px]">
-            Get free access to a variety of New York Times articles, games, and podcasts if you are an undergraduate or graduate student!
+            Get free access to a variety of New York Times articles, games, and podcasts if you are an undergraduate or graduate student.
           </div>
           <a
             href="https://www.nytimes.com/activate-access/edu-access"
@@ -307,7 +307,7 @@ export default function Home() {
             Wall Street Journal
           </div>
           <div className="text-[23.93px] font-normal font-[Georgia] leading-[34.56px]">
-            Get free access to a variety of WSJ articles, career advice, and job prep resources if you are an undergraduate student, graduate student, or faculty/staff!
+            Get free access to a variety of WSJ articles, career advice, and job prep resources if you are an undergraduate student, graduate student, or faculty/staff.
           </div>
           <a
             href="https://WSJ.com/ASUCBerkeley"
@@ -399,7 +399,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      
+
       <Footer />
     </div>
   );
