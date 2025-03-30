@@ -36,7 +36,7 @@ export default function Home() {
       url: "/home/slideshow/team.jpeg",
       caption: "Find out more about the team and the work we do!",
       title: "Office",
-      link: "/offices/2024.html"
+      link: "/office/2024.html"
     }, {
       url: "/home/slideshow/events.jpg",
       caption: "Check out the events the Office of the Executive Vice President coordinates for the student body!",

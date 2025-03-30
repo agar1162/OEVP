@@ -28,7 +28,7 @@
                 └── page.js
         └── globals.css
         └── layout.js
-        └── 📁offices
+        └── 📁office
             └── 📁2024
                 └── 📁components
                 └── page.js

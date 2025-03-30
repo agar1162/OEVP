@@ -50,13 +50,13 @@ export default function Navbar() {
 
         <li className="p-4 relative">
           <button onClick={toggleOfficeMenu} className="flex items-center font-bold hover:text-gray-400 transition">
-            Offices
+            Office
             <img src={icon} alt="Toggle" className="ml-2 w-4 transform transition-transform duration-300 hover:opacity-50" />
           </button>
           {isOfficeMenuVisible && (
             <ul className="absolute top-full left-0 mt-2 bg-berkeley border-t-2 border-[#FDB515] shadow-lg w-fit z-50">
               <li className="px-4 py-2">
-                <a href="/offices/2024">2024-2025</a>
+                <a href="/office/2024">2024-2025</a>
               </li>
             </ul>
           )}

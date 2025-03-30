@@ -108,7 +108,7 @@ git push origin main
                 └── page.js
             └── 📁student-affairs
                 └── page.js
-        └── 📁offices
+        └── 📁office
             └── 📁2024
                 └── 📁components
                 └── page.js
