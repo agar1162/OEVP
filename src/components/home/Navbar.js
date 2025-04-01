@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const logoref = "/evp-logo.png";
@@ -12,6 +13,7 @@ export default function Navbar() {
   const [isMobileMenuVisible, setMobileMenuVisible] = useState(false);
   const [isPartnershipsMenuVisible, setPartnershipMenuVisible] = useState(false); // Fixed spelling
   const [isHovered, setIsHovered] = useState(false);
+  const pathname = usePathname();
 
   // Toggle functions
   const toggleOfficeMenu = () => setOfficeMenuVisible((prev) => !prev);
@@ -119,7 +121,7 @@ export default function Navbar() {
           </a>
         </li>
 
-        <li className="p-4 relative">
+        {/* <li className="p-4 relative">
           <button onClick={togglePartnershipMenu} className="flex items-center font-bold hover:text-gray-400 transition">
             Partnerships
             <img src={icon} alt="Toggle" className="ml-2 w-4 transform transition-transform duration-300 hover:opacity-50"/>
@@ -131,7 +133,26 @@ export default function Navbar() {
               </li>
             </ul>
           )}
-        </li>
+        </li> */}
+        <li className="p-4 relative">
+          <a
+            href="/partnerships"
+            onClick={() => setPartnershipsMenuVisible(!isPartnershipsMenuVisible)}
+            className="flex items-center font-bold hover:text-gray-400 transition"
+          >
+            Partnerships
+            <img src={icon} alt="Toggle" className="ml-2 w-4 transform transition-transform duration-300 hover:opacity-50" />
+          </a>
+
+          {/* Show dropdown only if user is on /partnerships */}
+          {pathname === "/partnerships" && isPartnershipsMenuVisible && (
+            <ul className="absolute top-full left-0 mt-2 bg-berkeley border-t-2 border-[#FDB515] text-white shadow-lg w-48">
+              <li className="px-4 py-2 hover:text-gray-400">
+                <a href="/partnerships/nyt_wsj">Free Newspaper Subscriptions</a>
+              </li>
+            </ul>
+          )}
+        </li>        
 
         <li className="p-4">
           <a
