@@ -10,7 +10,7 @@ export default function Navbar() {
   const [isDepartmentMenuVisible, setDepartmentMenuVisible] = useState(false);
   const [isSubDepartmentMenuVisible, setSubDepartmentMenuVisible] = useState(false);
   const [isMobileMenuVisible, setMobileMenuVisible] = useState(false);
-  const [isCommercialMenuVisible, setCommercialMenuVisible] = useState(false); // Fixed spelling
+  const [isPartnershipsMenuVisible, setPartnershipMenuVisible] = useState(false); // Fixed spelling
   const [isHovered, setIsHovered] = useState(false);
 
   // Toggle functions
@@ -18,7 +18,7 @@ export default function Navbar() {
   const toggleDepartmentMenu = () => setDepartmentMenuVisible((prev) => !prev);
   const toggleSubDepartmentMenu = () => setSubDepartmentMenuVisible((prev) => !prev);
   const toggleMobileMenu = () => setMobileMenuVisible((prev) => !prev);
-  const toggleCommercialMenu = () => setCommercialMenuVisible((prev) => !prev); // Fixed function name and arrow function syntax
+  const togglePartnershipMenu = () => setPartnershipMenuVisible((prev) => !prev); // Fixed function name and arrow function syntax
   
 
   return (
@@ -77,34 +77,34 @@ export default function Navbar() {
                 {isSubDepartmentMenuVisible && (
                   <ul className="absolute top-full text-white border-[#FDB515] z-30 shadow-lg bg-berkeley">
                     <li className="px-4 py-2 hover:text-gray-400">
-                      <a href="/departments/finance.html">Finance</a>
+                      <a href="/departments/communications.html">Communications and Public Relations Department</a>
                     </li>
                     <li className="px-4 py-2 hover:text-gray-400">
-                      <a href="/departments/communications.html">Communications</a>
+                      <a href="/departments/finance.html">Finance Department</a>
                     </li>
                     <li className="px-4 py-2 hover:text-gray-400">
-                      <a href="/departments/legal-affairs.html">Legal Affairs</a>
+                      <a href="/departments/legal-affairs.html">Legal Affairs Department</a>
                     </li>
                     <li className="px-4 py-2 hover:text-gray-400">
-                      <a href="/departments/commercial-activities.html">Commercial Activities</a>
+                      <a href="/departments/commercial-activities.html">Commercial Activities Department</a>
                     </li>
                     <li className="px-4 py-2 hover:text-gray-400">
-                      <a href="/departments/student-affairs.html">Student Affairs</a>
+                      <a href="/departments/deib.html">Diversity, Equity, Inclusion, and Belonging (DEIB) Department</a>
                     </li>
                     <li className="px-4 py-2 hover:text-gray-400">
-                      <a href="/departments/rso.html">RSO Support</a>
+                      <a href="/departments/rso.html">Registered Student Organization (RSO) Support Department</a>
                     </li>
                     <li className="px-4 py-2 hover:text-gray-400">
-                      <a href="/departments/sswb.html">Student Safety Wellness & Success</a>
+                      <a href="/departments/ssc.html">Senatorial and Committee Affairs Department</a>
                     </li>
                     <li className="px-4 py-2 hover:text-gray-400">
-                      <a href="/departments/deib.html">Diversity, Equity, Inclusion & Belonging</a>
+                      <a href="/departments/spaces.html">Spaces Department</a>
+                    </li>                                                                                
+                    <li className="px-4 py-2 hover:text-gray-400">
+                      <a href="/departments/student-affairs.html">Student Affairs Department</a>
                     </li>
                     <li className="px-4 py-2 hover:text-gray-400">
-                      <a href="/departments/spaces.html">Spaces</a>
-                    </li>
-                    <li className="px-4 py-2 hover:text-gray-400">
-                      <a href="/departments/ssc.html">Senatorial and Student Affairs Committee</a>
+                      <a href="/departments/sswb.html">Student Safety, Wellness, & Success Department</a>
                     </li>
                   </ul>
                 )}
@@ -120,11 +120,11 @@ export default function Navbar() {
         </li>
 
         <li className="p-4 relative">
-          <button onClick={toggleCommercialMenu} className="flex items-center font-bold hover:text-gray-400 transition">
-            Commercial Partnerships
+          <button onClick={togglePartnershipMenu} className="flex items-center font-bold hover:text-gray-400 transition">
+            Partnerships
             <img src={icon} alt="Toggle" className="ml-2 w-4 transform transition-transform duration-300 hover:opacity-50"/>
           </button>
-          {isCommercialMenuVisible && (
+          {isPartnershipsMenuVisible && (
             <ul className="absolute top-full left-0 mt-2 bg-berkeley border-t-2 border-[#FDB515] text-white shadow-lg w-48">
               <li className="px-4 py-2 hover:text-gray-400">
                 <a href="/partnerships/nyt_wsj.html">Free Newspaper Subscriptions</a>
