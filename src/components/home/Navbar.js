@@ -1,6 +1,7 @@
 "use client";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 export default function Navbar() {
   const logoref = "/evp-logo.png";
@@ -11,16 +12,21 @@ export default function Navbar() {
   const [isDepartmentMenuVisible, setDepartmentMenuVisible] = useState(false);
   const [isSubDepartmentMenuVisible, setSubDepartmentMenuVisible] = useState(false);
   const [isMobileMenuVisible, setMobileMenuVisible] = useState(false);
-  const [isPartnershipsMenuVisible, setPartnershipMenuVisible] = useState(false); // Fixed spelling
+  const [isPartnershipsMenuVisible, setPartnershipsMenuVisible] = useState(false); // Fixed spelling
+  
   const [isHovered, setIsHovered] = useState(false);
+  const hideTimeout = useRef(null);
+
   const pathname = usePathname();
+  const router = useRouter();
 
   // Toggle functions
   const toggleOfficeMenu = () => setOfficeMenuVisible((prev) => !prev);
   const toggleDepartmentMenu = () => setDepartmentMenuVisible((prev) => !prev);
   const toggleSubDepartmentMenu = () => setSubDepartmentMenuVisible((prev) => !prev);
   const toggleMobileMenu = () => setMobileMenuVisible((prev) => !prev);
-  const togglePartnershipMenu = () => setPartnershipMenuVisible((prev) => !prev); // Fixed function name and arrow function syntax
+  const togglePartnershipMenu = () => setPartnershipsMenuVisible((prev) => !prev); // Fixed function name and arrow function syntax
+  
   
 
   return (
@@ -134,7 +140,7 @@ export default function Navbar() {
             </ul>
           )}
         </li> */}
-        <li className="p-4 relative">
+        {/* <li className="p-4 relative">
           <a
             href="/partnerships"
             onClick={() => setPartnershipsMenuVisible(!isPartnershipsMenuVisible)}
@@ -144,7 +150,6 @@ export default function Navbar() {
             <img src={icon} alt="Toggle" className="ml-2 w-4 transform transition-transform duration-300 hover:opacity-50" />
           </a>
 
-          {/* Show dropdown only if user is on /partnerships */}
           {pathname === "/partnerships" && isPartnershipsMenuVisible && (
             <ul className="absolute top-full left-0 mt-2 bg-berkeley border-t-2 border-[#FDB515] text-white shadow-lg w-48">
               <li className="px-4 py-2 hover:text-gray-400">
@@ -152,7 +157,105 @@ export default function Navbar() {
               </li>
             </ul>
           )}
-        </li>        
+        </li>         */}
+        {/* <li
+          className="p-4 relative"
+          onMouseEnter={() => setPartnershipsMenuVisible(true)}
+          onMouseLeave={() => setPartnershipsMenuVisible(false)}
+        >
+          <div className="flex items-center font-bold hover:text-gray-400 transition">
+            <a href="/partnerships">Partnerships</a>
+            <img
+              src={icon}
+              alt="Toggle"
+              className="ml-2 w-4 transform transition-transform duration-300 hover:opacity-50"
+            />
+          </div>
+
+          {isPartnershipsMenuVisible && (
+            <ul className="absolute top-full left-0 mt-2 bg-berkeley border-t-2 border-[#FDB515] text-white shadow-lg w-60 z-50">
+              <li className="px-4 py-2 hover:text-gray-400">
+                <a href="/partnerships/nyt_wsj">Free Newspaper Subscriptions</a>
+              </li>
+            </ul>
+          )}
+        </li> */}
+        {/* <li
+          className="p-4 relative"
+          onMouseEnter={() => setPartnershipsMenuVisible(true)}
+          onMouseLeave={() => setPartnershipsMenuVisible(false)}
+        >
+          <div className="flex items-center font-bold hover:text-gray-400 transition cursor-pointer">
+            <a href="/partnerships">Partnerships</a>
+            <img
+              src={icon}
+              alt="Dropdown"
+              className="ml-2 w-4 transform transition-transform duration-300 hover:opacity-50"
+            />
+          </div>
+
+          <div>
+            {isPartnershipsMenuVisible && (
+              <ul className="absolute top-full left-0 mt-2 bg-berkeley border-t-2 border-[#FDB515] text-white shadow-lg w-60 z-50">
+                <li className="px-4 py-2 hover:text-gray-400">
+                  <a href="/partnerships/nyt_wsj">Free Newspaper Subscriptions</a>
+                </li>
+              </ul>
+            )}
+          </div>
+        </li> */}
+        {/* <li className="p-4 relative group">
+          <div className="flex items-center font-bold hover:text-gray-400 transition cursor-pointer">
+            <a href="/partnerships">Partnerships</a>
+            <img
+              src={icon}
+              alt="Dropdown"
+              className="ml-2 w-4 transform transition-transform duration-300 hover:opacity-50"
+            />
+          </div>
+
+          <ul className="absolute top-full left-0 mt-2 bg-berkeley border-t-2 border-[#FDB515] text-white shadow-lg w-60 z-50 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200">
+            <li className="px-4 py-2 hover:text-gray-400">
+              <a href="/partnerships/nyt_wsj">Free Newspaper Subscriptions</a>
+            </li>
+          </ul>
+        </li> */}
+        <li className="p-4 relative">
+          <div
+            onMouseEnter={() => {
+              if (hideTimeout.current) {
+                clearTimeout(hideTimeout.current);
+              }
+              setPartnershipsMenuVisible(true);
+            }}
+            onMouseLeave={() => {
+              hideTimeout.current = setTimeout(() => {
+                setPartnershipsMenuVisible(false);
+              }, 200); // Delay of 200ms
+            }}
+            className="relative"
+          >
+            <div className="flex items-center font-bold hover:text-gray-400 transition cursor-pointer">
+              <a href="/partnerships">Partnerships</a>
+              <img
+                src={icon}
+                alt="Dropdown"
+                className="ml-2 w-4 transform transition-transform duration-300 hover:opacity-50"
+              />
+            </div>
+
+            {isPartnershipsMenuVisible && (
+              <ul className="absolute top-full left-0 mt-2 bg-berkeley border-t-2 border-[#FDB515] text-white shadow-lg w-60 z-50">
+                <li className="px-4 py-2 hover:text-gray-400">
+                  <a href="/partnerships/nyt_wsj">Free Newspaper Subscriptions</a>
+                </li>
+              </ul>
+            )}
+          </div>
+        </li>
+
+        
+        
 
         <li className="p-4">
           <a
