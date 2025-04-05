@@ -47,7 +47,7 @@ export default function Home() {
       url: "/home/slideshow/com.jpg",
       caption: "Explore resources for the diverse communities we support!",
       title: "Communities",
-      link: "/departments/deib/communities.html"
+      link: "/departments/deib/communities" // used to be "/departments/deib/communities.html". will see if this change is needed
     },
     {
       url: "/home/slideshow/legis.jpg",

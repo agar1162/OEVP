@@ -121,8 +121,13 @@ export default function Navbar() {
           )}
         </li>
 
-        <li className="p-4">
+        {/* <li className="p-4">
           <a href="/departments/deib/communities.html" className="font-bold hover:text-gray-400 transition">
+            DEI Resources
+          </a>
+        </li> */}
+        <li className="p-4">
+          <a href="/departments/deib/communities" className="font-bold hover:text-gray-400 transition">
             DEI Resources
           </a>
         </li>
