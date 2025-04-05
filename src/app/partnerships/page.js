@@ -31,7 +31,7 @@ export default function partnershipPage() {
 
             <Cover 
             name="Partnerships"
-            link="/prof.jpeg"
+            link="/partnerships.png"
             />
             
 
