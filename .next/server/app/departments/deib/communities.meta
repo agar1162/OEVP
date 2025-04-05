@@ -2,6 +2,6 @@
   "headers": {
     "x-nextjs-stale-time": "4294967294",
     "x-nextjs-prerender": "1",
-    "x-next-cache-tags": "_N_T_/layout,_N_T_/departments/layout,_N_T_/departments/deib/layout,_N_T_/departments/deib/communities/layout,_N_T_/departments/deib/communities/page,_N_T_/departments/deib/communities"
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/departments/layout,_N_T_/departments/deib/layout,_N_T_/departments/deib/communities/layout,_N_T_/departments/deib/communities/page,_N_T_/departments/deib/communities/"
   }
 }
