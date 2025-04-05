@@ -35,7 +35,7 @@ export default function DepartmentsPage() {
         { name: "Black/Afrikan Diaspora Community", link: "/departments/deib/communities.html#Black/Afrikan" },
         { name: "Latinx/Chicanx Community", link: "/departments/deib/communities.html#Latinx/Chicanx" },
         { name: "Indigenous/Native American Community", link: "/departments/deib/communities.html#Indigenous" },
-        { name: "Middle Eastern, North African, and Muslim Student Association", link: "/departments/deib/communities.html#MENA/Muslim" },
+        { name: "Middle Eastern, North African, and Muslim Student Community", link: "/departments/deib/communities.html#MENA/Muslim" },
         { name: "Asian American and Pacific Islander (AAPI) Community", link: "/departments/deib/communities.html#AAPI" },
         { name: "Jewish Community", link: "/departments/deib/communities.html#Jewish" },
         { name: "LGBTQIA+ Community", link: "/departments/deib/communities.html#LGBTQIA+" },
