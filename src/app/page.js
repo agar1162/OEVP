@@ -279,11 +279,11 @@ export default function Home() {
 
       
       {/* NYT and WSJ Section */}
-      <div
+      {/* <div
         id="NYT_WSJ"
         className="w-full bg-gradient-to-r from-[#FFD67A] to-[#F9B315] px-10 py-20 flex flex-col lg:flex-row gap-10 justify-center"
       >
-        {/* NYT */}
+
         <div className="flex flex-col gap-4 text-left max-w-[600px]">
           <img src={times} alt="nyt" className="w-[54px] h-[54px]" />
           <div className="text-[34.56px] font-normal font-[Georgia] leading-[35.98px]">
@@ -300,7 +300,7 @@ export default function Home() {
           </a>
         </div>
 
-        {/* WSJ */}
+
         <div className="flex flex-col gap-4 text-left max-w-[600px]">
           <img src={wsj} alt="wsj" className="w-[73px] h-[45px]" />
           <div className="text-[34.56px] font-normal font-[Georgia] leading-[35.98px]">
@@ -316,6 +316,47 @@ export default function Home() {
             Register
           </a>
         </div>
+      </div> */}
+      <div id="NYT_WSJ" className="flex flex-col lg:flex-row bg-gradient-to-r from-[#FFD67A] to-[#F9B315] py-[5vh]">
+          {/* New York Times Section */}
+          <div className="flex-1 flex justify-center items-center">
+              <div className="mx-[5vw] flex flex-col items-start">
+              <img src={times} alt="New York Times" className="h-[50px] w-[50px] mb-4" />
+              <h1 className="text-[23px] mb-2">New York Times</h1>
+              <p className="text-md leading-relaxed mb-6">
+                  Get free access to a variety of New York Times articles, games, and podcasts
+                  if you are an undergraduate or graduate student.
+              </p>
+              <div className="w-full">
+                  <a
+                  href="https://www.nytimes.com/activate-access/edu-access"
+                  className="block w-[140px] text-center p-2 bg-white rounded-md hover:text-[#A6A6A6] hover:text-berkeley"
+                  >
+                  Register
+                  </a>
+              </div>
+              </div>
+          </div>
+
+          {/* Wall Street Journal Section */}
+          <div className="flex-1 flex justify-center items-center">
+              <div className="mx-[5vw] flex flex-col items-start">
+              <img src={wsj} alt="Wall Street Journal" className="h-[36px] w-[62px] mb-4" />
+              <h1 className="text-[23px] mb-2">Wall Street Journal</h1>
+              <p className="text-md leading-relaxed mb-6">
+                  Get free access to a variety of WSJ articles, career advice, and job prep resources
+                  if you are an undergraduate student, graduate student, or faculty/staff.
+              </p>
+              <div className="w-full">
+                  <a
+                  href="https://WSJ.com/ASUCBerkeley"
+                  className="block w-[140px] text-center p-2 bg-white rounded-md hover:text-[#A6A6A6] hover:text-berkeley"
+                  >
+                  Register
+                  </a>
+              </div>
+              </div>
+          </div>
       </div>
 
       {/* Events Section */}
