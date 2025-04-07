@@ -5,7 +5,8 @@ import { useRouter } from "next/navigation";
 
 export default function Navbar() {
   const logoref = "/evp-logo.png";
-  const icon = "/drop.png";
+  // const icon = "/drop.png";
+  const icon = "/vector.svg";
 
   // State for dropdown menus and mobile menu
   const [isOfficeMenuVisible, setOfficeMenuVisible] = useState(false);
@@ -44,7 +45,7 @@ export default function Navbar() {
       </button>
 
       <ul
-        className={`lg:flex lg:flex-row lg:space-x-6 items-center text-white text-md ${
+        className={`lg:flex lg:flex-row lg:space-x-6 items-center text-white text-sm md:text-base lg:text-lg ${
           isMobileMenuVisible
             ? "flex flex-col absolute top-full left-0 w-full bg-[#003A70] py-8 z-40"
             : "hidden lg:flex"
@@ -265,7 +266,8 @@ export default function Navbar() {
         <li className="p-4">
           <a
             href="https://berkeley.zoom.us/j/6685684771?_x_zm_rtaid=MOwFCASdTuqDG7Yo6PLAEw.1736649189758.7b91ccafcde961b05952e5e32cf3d571&_x_zm_rhtaid=781#success"
-            className="bg-[#265885] px-8 py-3 font-bold hover:bg-[#1d486a] transition"
+            // className="bg-[#265885] px-8 py-3 font-bold hover:bg-[#1d486a] transition"
+            className="bg-[#265885] px-6 py-2 font-bold hover:bg-[#1d486a] transition whitespace-nowrap text-sm md:text-base"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
