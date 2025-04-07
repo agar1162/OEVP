@@ -445,8 +445,7 @@ export default function Home() {
               other ASUC offices or campus groups, and events in conjunction with companies,
               external groups, or individuals.
             </p>
-            <br />
-            <p>
+            <p className="mt-3">
               These events vary in scope and purpose, serving the diverse needs of the campus
               community & beyond. Past events have included professional development workshops,
               leadership panels, networking opportunities, community-building events, and
