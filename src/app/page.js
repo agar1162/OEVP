@@ -208,6 +208,7 @@ export default function Home() {
             }`}
             style={{
               backgroundImage: `linear-gradient(180deg, rgba(165, 165, 165, 0.53) 4%, rgba(0, 58, 112, 0.53) 78.5%), url(${slide.url})`,
+              backgroundPosition: currentIndex === 0 ? "center 35%" : "center center",
             }}
           ></div>
         ))}
@@ -325,19 +326,19 @@ export default function Home() {
           className="flex flex-wrap justify-center items-center gap-[12vw] py-[10vh] pb-[15vh]">
           <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
             <h1 className="text-[#003A70] text-5xl md:text-7xl font-bold pb-5">
-              <CountUp end={400} duration={3} suffix="+"/>
+              <CountUp end={400} duration={6} suffix="+"/>
             </h1>
             <p className="text-xl text-center mx-4">Registered Student Organizations receive funding & resources</p>
           </div>
           <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
             <h1 className="text-[#003A70] text-5xl md:text-7xl font-bold pb-5">
-              <CountUp end={100} duration={3} suffix="+"/>
+              <CountUp end={100} duration={6} suffix="+"/>
             </h1>
             <p className="text-xl text-center mx-4">Resolutions implemented in collaboration with ASUC Senate</p>
           </div>
           <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
             <h1 className="text-[#003A70] text-5xl md:text-7xl font-bold pb-5">
-              <CountUp end={180} duration={3} suffix="k+"/>
+              <CountUp end={180} duration={6} suffix="k+"/>
             </h1>
             <p className="text-xl text-center mx-4">New York Times articles read monthly by students</p>
           </div>
