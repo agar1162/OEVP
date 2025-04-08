@@ -131,7 +131,7 @@ export default function Home() {
           >
             campus spaces
           </a>{' '}
-          for RSO’s.
+          for RSOs.
         </>
       ),
     }
@@ -197,10 +197,10 @@ export default function Home() {
       </div> */}
       <div
         id="COVER"
-        className="h-[90vh] bg-cover bg-center bg-no-repeat text-white text-center relative overflow-hidden"
+        className="h-[90vh] bg-cover bg-center bg-no-repeat md:bg-fixed text-white text-center relative overflow-hidden"
       >
         {/* Background Slideshow */}
-        {slides.map((slide, index) => (
+        {/* {slides.map((slide, index) => (
           <div
             key={index}
             className={`absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out ${
@@ -211,24 +211,35 @@ export default function Home() {
               backgroundPosition: currentIndex === 0 ? "center 35%" : "center center",
             }}
           ></div>
+        ))} */}
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={`absolute w-full h-full bg-cover bg-center md:bg-fixed transition-opacity duration-1000 ease-in-out ${
+              currentIndex === index ? "opacity-100" : "opacity-0"
+            }`}
+            style={{
+              backgroundImage: `linear-gradient(180deg, rgba(165, 165, 165, 0.53) 4%, rgba(0, 58, 112, 0.53) 78.5%), url(${slide.url})`,
+            }}
+          ></div>
         ))}
 
         {/* Title Section */}
-        <div className="absolute top-[46%] w-full flex flex-col items-center justify-center px-4 text-white text-center z-10">
+        <div className="absolute top-[12%] w-full flex flex-col items-center justify-center px-3 text-white text-center z-10">
           <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-2 tracking-wide">
             UC Berkeley ASUC
           </p>
-          <h1 className="font-extrabold tracking-tight leading-tight text-center 
-            text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
+          <h1 className="font-extrabold tracking-wide leading-tight text-center 
+            text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl mb-2"
           >
-            OFFICE OF THE EXECUTIVE<br />VICE PRESIDENT (OEVP)
+            OFFICE OF THE EXECUTIVE VICE<br />PRESIDENT
           </h1>
         </div>
 
         {/* Caption + Arrow */}
         <a
           href={slides[currentIndex].link}
-          className="absolute bottom-[14%] left-1/2 transform -translate-x-1/2 text-center flex flex-col items-center justify-center z-10"
+          className="absolute bottom-[23%] left-1/2 transform -translate-x-1/2 text-center flex flex-col items-center justify-center z-10"
         >
           <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl text-white">
             {slides[currentIndex].caption}
@@ -237,20 +248,32 @@ export default function Home() {
             src="/arrow.png"
             alt="arrow"
             // className="mt-3 w-[70px] md:w-[100px] h-auto"
-            className="mt-2 w-[40px] sm:w-[50px] md:w-[65px] lg:w-[75px] h-auto"
+            className="mt-2 w-[10px] sm:w-[20px] md:w-[35px] lg:w-[25px] h-auto"
           />
         </a>
 
         {/* Bottom Slide Nav */}
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex md:text-2xl gap-[4vw] md:gap-[10vw] p-10 w-full justify-center z-10">
           {slides.map((slide, index) => (
-            <button key={index} onClick={() => setCurrentIndex(index)} className="relative group">
+            // <button key={index} onClick={() => setCurrentIndex(index)} className="relative group">
+            //   <h3 className="transition duration-500 ease-in-out font-bold text-lg md:text-xl">
+            //     {slide.title}
+            //   </h3>
+            //   {currentIndex === index && (
+            //     <span className="block h-[2px] bg-white mb-1 w-full"></span>
+            //   )}
+            // </button>
+            <button
+              key={index}
+              onClick={() => setCurrentIndex(index)}
+              className="relative group flex flex-col items-center"
+            >
+              {currentIndex === index && (
+                <span className="block h-[2px] bg-white mb-1 w-full"></span> // moved above and changed `mt-1` → `mb-1`
+              )}
               <h3 className="transition duration-500 ease-in-out font-bold text-lg md:text-xl">
                 {slide.title}
               </h3>
-              {currentIndex === index && (
-                <span className="block h-[2px] bg-white mt-1 w-full"></span>
-              )}
             </button>
           ))}
         </div>
@@ -290,7 +313,7 @@ export default function Home() {
                 onClick={() => setCurrentText(3)}
                 className="hover:bg-[#003A70] hover:text-white  p-4 transition"
               >
-                Resources (RSO’s & Students)
+                Resources (RSOs & Students)
               </a>
             </menu>
           </div>
@@ -334,7 +357,7 @@ export default function Home() {
             <h1 className="text-[#003A70] text-5xl md:text-7xl font-bold pb-5">
               <CountUp end={100} duration={6} suffix="+"/>
             </h1>
-            <p className="text-xl text-center mx-4">Resolutions implemented in collaboration with ASUC Senate</p>
+            <p className="text-xl text-center mx-4">Resolutions implemented in collaboration with the ASUC Senate</p>
           </div>
           <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
             <h1 className="text-[#003A70] text-5xl md:text-7xl font-bold pb-5">
