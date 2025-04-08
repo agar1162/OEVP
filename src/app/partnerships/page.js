@@ -45,6 +45,10 @@ export default function partnershipPage() {
                 </p>
             </div>
 
+            <div className="p-[5vh] lg:mx-[10%] text-[20px]">
+                <p>(Coming up)</p>
+            </div>
+
             {/* <div>
                 <div className="items-center mx-[10%] pt-[5vh] text-center">
                 <div className="relative flex items-center ">
@@ -85,23 +89,25 @@ export default function partnershipPage() {
                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd0Xs2uIpKrg1rOQn6fB1CODypJsukz6WUfURqrwuy0iWJlCw/viewform?embedded=true" width="500" height="500">Loading…</iframe>
                 </div>
             </div> */}
-            <div className="flex flex-col lg:flex-row justify-center items-start gap-10 px-[10vw] py-[5vh]">
+
+            {/* keep this code here for reference */}
+            {/* <div className="flex flex-col lg:flex-row justify-center items-start gap-10 px-[10vw] py-[5vh]"> */}
             {/* Company Form */}
-            <div className="flex-1 text-center">
+            {/* <div className="flex-1 text-center">
                 <h2 className="text-[25px] font-bold">Commercial Partnerships Form</h2>
                 <p className="text-[#3D3D3D] py-4">Form for companies to share what university initiatives they would like to sponsor...</p>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSclkzXrhNg2mzCJUDPcC5JjWM1FoCUw1c68PEbXmXa0sBJU4A/viewform?usp=sf_link">
                 <img src="/form.jpg" className="w-[20vw] mx-auto" />
                 </a>
-            </div>
+            </div> */}
 
             {/* Feedback Form */}
-            <div className="flex-1 text-center">
+            {/* <div className="flex-1 text-center">
                 <h2 className="text-[25px] font-bold">Partnerships Feedback Form</h2>
                 <p className="text-[#3D3D3D] py-4">Form for students to list what partnerships they want from the university...</p>
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd0Xs2uIpKrg1rOQn6fB1CODypJsukz6WUfURqrwuy0iWJlCw/viewform?embedded=true" width="100%" height="500">Loading…</iframe>
-            </div>
-            </div>
+            </div> */}
+            {/* </div> */}
 
             <Footer />
         </div>
