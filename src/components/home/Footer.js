@@ -159,7 +159,7 @@ export default function Footer() {
       <footer className="bg-berkeley text-white font-[Georgia] text-[14px] px-8 py-[55px]">
         <div className="max-w-[1300px] mx-auto flex flex-col lg:flex-row gap-[70px] items-start">
           {/* Left: Logo + Newsletter */}
-          <div className="flex gap-[60px] items-start">
+          <div className="flex flex-col sm:flex-row gap-[40px] items-start w-full lg:w-auto">
             <img
               src="/ASUC-logo.png"
               alt="ASUC Logo"
@@ -183,7 +183,7 @@ export default function Footer() {
           </div>
   
           {/* Middle + Right Columns */}
-          <div className="flex flex-wrap gap-[20px] items-start pt-[10px] mt-[10px]">
+          <div className="flex flex-wrap gap-[20px] items-start pt-[10px] mt-[10px]"> 
             {/* Column: Home */}
             <div className="flex flex-col gap-3 min-w-[140px] mr-[12px]">
               <h3 className="text-[18px] mb-1 mb-[6px]">Home</h3>

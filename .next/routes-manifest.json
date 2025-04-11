@@ -107,6 +107,12 @@
       "namedRegex": "^/departments/student\\-affairs(?:/)?$"
     },
     {
+      "page": "/office",
+      "regex": "^/office(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/office(?:/)?$"
+    },
+    {
       "page": "/office/2024",
       "regex": "^/office/2024(?:/)?$",
       "routeKeys": {},

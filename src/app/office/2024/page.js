@@ -6,7 +6,7 @@ export default function officePage () {
       id: 1,
       name: "Robert Carrillo",
       title: "Executive Vice President",
-      major: "Political Science, Public Policy and Rhetoric",
+      major: "Political Science, Public Policy, and Rhetoric",
       contact: "robertcarrillo@berkeley.edu",
       linkedin: "https://www.linkedin.com/in/robertmcarrillo/"
     },
@@ -22,7 +22,7 @@ export default function officePage () {
       id: 3,
       name: "Dafne Rodriguez",
       title: "Chief of Staff",
-      major: "Sociology and Public Policy",
+      major: "Political Science, Public Health, and Public Policy",
       contact: "dcruzrodriguez@berkeley.edu",
       linkedin: "https://www.linkedin.com/in/dafne-cruz-rodriguez/"
     },
@@ -30,44 +30,36 @@ export default function officePage () {
       id: 4,
       name: "Kianna Rodrate",
       title: "Chief of Staff Intern",
-      major: "Economics & Political Science",
+      major: "Economics and Political Science",
       contact: "katianayb@berkeley.edu",
-      linkedin: "https://www.linkedin.com/in/katianayb/"
+      linkedin: "https://www.linkedin.com/in/kiannarodarte/"
     },
     {
       id: 5,
       name: "Ernesto Barragan",
       title: "Chief of Staff Intern",
-      major: "Political Economy, Environmental Economics",
+      major: "Political Economy and Environmental Economics & Policy, Data Science (minor)", 
       contact: "ernestobarragan@berkeley.edu",
       linkedin: "https://www.linkedin.com/in/netobarragan/"
     },
     {
       id: 6,
-      name: "Aarja Singh",
-      title: "Student Safety, Success & Wellness Director",
-      major: "Political Science",
-      contact: "aarja@berkeley.edu",
-      linkedin: null
-    },
-    {
-      id: 7,
       name: "Shawntaya Jeanes",
       title: "Communications and Public Relations Director",
-      major: null,
+      major: "Political Science",
       contact: "shawntaya.jeanes@berkeley.edu",
       linkedin: null
     },
     {
-      id: 8,
+      id: 7,
       name: "Emily Melero",
       title: "Finance Director",
-      major: "Political Science & Public Policy",
+      major: "Political Science and Public Policy",
       contact: "emilycmelero@berkeley.edu",
       linkedin: "https://www.linkedin.com/in/emily-melero-a99308254/"
     },
     {
-      id: 9,
+      id: 8,
       name: "Audrey Lee",
       title: "Legislative Affairs Director",
       major: "Business Administration",
@@ -75,52 +67,60 @@ export default function officePage () {
       linkedin: "https://www.linkedin.com/in/audrey-s-lee/"
     },
     {
-      id: 10,
+      id: 9,
       name: "Hibba Adeel",
       title: "Commercial Activities Director",
-      major: null,
+      major: "Computer Science, Data Science, and Business",
       contact: "hadeel@berkeley.edu",
       linkedin: "https://www.linkedin.com/in/hibba-a-73a709211/"
     },
     {
-      id: 11,
+      id: 10,
       name: "Joshua Chukwuka Agupugo",
       title: "Diversity, Equity, Inclusion & Belonging (DEIB) Director",
-      major: "Neuroscience & Business",
+      major: "Political Science and Government",
       contact: "joshuaagupugo@berkeley.edu",
-      linkedin: null
+      linkedin: "https://www.linkedin.com/in/joshua-agupugo-532566263/"
     },
     {
-      id: 12,
+      id: 11,
       name: "Arisbeth Ambriz",
       title: "(RSO) Support Director",
-      major: "Political Science & Social Welfare",
+      major: "Social Welfare and Political Science",
       contact: "arisbethm1904@berkeley.edu",
       linkedin: "https://www.linkedin.com/in/arisbeth-molina/"
     },
     {
-      id: 13,
+      id: 12,
       name: "Maya Lia Garcia",
       title: "Senatorial and Committee Affairs Director",
       major: "Political Science and Government",
-      contact: "aarja@berkeley.edu",
+      contact: "mayalia@berkeley.edu",
       linkedin: "https://www.linkedin.com/in/maya-lia-garcia-8196762b2/"
     },
     {
+      id: 13,
+      name: "Aarja Singh",
+      title: "Student Safety, Success & Wellness Director",
+      major: "Political Science",
+      contact: "aarja@berkeley.edu",
+      linkedin: "https://www.linkedin.com/in/aarja-singh-978894304/"
+    },
+    {
       id: 14,
-      name: "Katiana Bosdet",
-      title: "Student Affairs Director",
-      major: "Business Administration",
-      contact: "katianayb@berkeley.edu",
-      linkedin: "https://www.linkedin.com/in/katianayb/"
+      name: "Michael Moy",
+      title: "Spaces Director",
+      major: "Political Science and Economics",
+      contact: "moy.mike168@berkeley.edu,",
+      linkedin: "https://www.linkedin.com/in/michael-h-moy/"
     },
     {
       id: 15,
-      name: "Michael Moy",
-      title: "Spaces Director",
-      major: "Political Science & Economics",
-      contact: "moy.mike168@berkeley.edu,",
-      linkedin: "https://www.linkedin.com/in/michael-h-moy/"
+      name: "Katiana Bosdet",
+      title: "Student Affairs Director",
+      major: "Business Analytics and Legal Studies, Data Science (minor)",
+      contact: "katianayb@berkeley.edu",
+      linkedin: "https://www.linkedin.com/in/katianayb/"
     },
   ];
 

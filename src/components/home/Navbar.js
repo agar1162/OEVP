@@ -57,7 +57,7 @@ export default function Navbar() {
           </a>
         </li>
 
-        <li className="p-4 relative">
+        {/* <li className="p-4 relative">
           <button onClick={toggleOfficeMenu} className="flex items-center font-bold hover:text-gray-400 transition">
             Office
             <img src={icon} alt="Toggle" className="ml-2 w-4 transform transition-transform duration-300 hover:opacity-50" />
@@ -69,6 +69,11 @@ export default function Navbar() {
               </li>
             </ul>
           )}
+        </li> */}
+        <li className="p-4">
+          <a href="/office" className="font-bold hover:text-gray-400 transition">
+            Office
+          </a>
         </li>
 
         <li className="p-4 relative">
