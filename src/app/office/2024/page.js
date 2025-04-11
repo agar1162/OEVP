@@ -127,70 +127,75 @@ export default function officePage () {
     return(
         <div>
             <Navbar />
-            <div className="flex flex-wrap mx-[5%] md:mx-[10%] pt-10 justify-center items-center">
-                <h3 className="flex items-center w-full text-2xl lg:text-3xl text-center">
+            <main className="flex flex-col lg:flex-row max-w-[1300px] mx-auto px-6 md:px-10 py-10 gap-10">
+              {/* Sidebar for term selection */}
+              <aside className="w-full lg:w-[180px]">
+                <div className="bg-[#1E3A8A] text-white text-center py-3 font-bold rounded-t">Offices</div>
+                <div className="border border-gray-300">
+                  <a
+                    href="/office/2024"
+                    className="block px-4 py-2 text-black font-semibold bg-gray-100 border-t border-gray-300"
+                  >
+                    2024 - 2025
+                  </a>
+                </div>
+              </aside>
+
+              {/* Main content section: officer title + grid */}
+              <section className="flex-1">
+                <div className="flex flex-wrap mx-[5%] md:mx-0 pt-10 justify-center items-center">
+                  <h3 className="flex items-center w-full text-2xl lg:text-3xl text-center">
                     <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
                     <span className="px-4">Office of Robert Carrillo </span>
                     <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-                </h3>
-                <p className="text-center text-base font-[Georgia] mt-3 mb-9" style={{ color: "#393838" }}>Meet the 2024-2025 Team</p>
-            </div>
-        
-            <div className="items-center pb-10">
-              <div className="w-full flex justify-center">
-                <div id="image_frame" className="grid grid-cols-3 gap-x-[5rem] gap-y-20">
-                  {profiles.map((profile, index) => (
-                    <div key={profile.id} className="flex flex-col items-start relative w-[250px]">
-                      {/* Divider between profiles (center-aligned after each column 1 and 2) */}
-                      {(index % 3 === 1 || index % 3 === 2) && (
-                        <div className="absolute -left-[2.5rem] top-0 bottom-0 w-[1px] bg-[#D9D9D9]"></div>
-                      )}
-
-                      {/* Image */}
-                      <img
-                        src={`/profile/${profile.id}.jpeg`}
-                        alt={`Profile picture ${profile.id}`}
-                        className="w-full h-auto mb-2"
-                      />
-
-                      {/* Info Block */}
-                      <div className="relative w-full font-[Georgia] text-left text-[14px]">
-                        {/* Icons in top-right of text area */}
-                        <div className="absolute top-0 right-0 flex space-x-1">
-                          {profile.linkedin && (
-                            <a href={profile.linkedin} target="_blank" rel="noopener noreferrer">
-                              <img src="/linkedin.png" alt="LinkedIn" className="w-4 h-4 hover:scale-110 transition-transform" />
-                            </a>
-                          )}
-                          {profile.contact && (
-                            <a href={`mailto:${profile.contact}`}>
-                              <img src="/email.png" alt="Email" className="w-4 h-4 hover:scale-110 transition-transform" />
-                            </a>
-                          )}
-                        </div>
-
-                        {/* Name */}
-                        <h1 className="text-[14px] leading-[16px] pr-6">
-                          {profile.name}
-                        </h1>
-
-                        {/* Title */}
-                        <p className="italic text-[13px] leading-[16px] pr-6">
-                          {profile.title}
-                        </p>
-
-                        {/* Major */}
-                        {profile.major && (
-                          <p className="text-[#6d6d6d] text-[13px] leading-[16px] pr-6">
-                            {profile.major}
-                          </p>
-                        )}
-                      </div>
-                    </div>
-                  ))}
+                  </h3>
+                  <p className="text-center text-base font-[Georgia] mt-3 mb-9 text-[#393838]">
+                    Meet the 2024-2025 Team
+                  </p>
                 </div>
-              </div>
-            </div>
+
+                <div className="items-center pb-10">
+                  <div className="w-full flex justify-center">
+                    <div id="image_frame" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-[5rem] gap-y-20">
+                      {profiles.map((profile, index) => (
+                        <div key={profile.id} className="flex flex-col items-start relative w-[250px]">
+                          {(index % 3 === 1 || index % 3 === 2) && (
+                            <div className="absolute -left-[2.5rem] top-0 bottom-0 w-[1px] bg-[#D9D9D9]"></div>
+                          )}
+
+                          <img
+                            src={`/profile/${profile.id}.jpeg`}
+                            alt={`Profile picture ${profile.id}`}
+                            className="w-full h-auto mb-2"
+                          />
+
+                          <div className="relative w-full font-[Georgia] text-left text-[14px]">
+                            <div className="absolute top-0 right-0 flex space-x-1">
+                              {profile.linkedin && (
+                                <a href={profile.linkedin} target="_blank" rel="noopener noreferrer">
+                                  <img src="/linkedin.png" alt="LinkedIn" className="w-4 h-4 hover:scale-110 transition-transform" />
+                                </a>
+                              )}
+                              {profile.contact && (
+                                <a href={`mailto:${profile.contact}`}>
+                                  <img src="/email.png" alt="Email" className="w-4 h-4 hover:scale-110 transition-transform" />
+                                </a>
+                              )}
+                            </div>
+
+                            <h1 className="text-[14px] leading-[16px] pr-6">{profile.name}</h1>
+                            <p className="italic text-[13px] leading-[16px] pr-6">{profile.title}</p>
+                            {profile.major && (
+                              <p className="text-[#6d6d6d] text-[13px] leading-[16px] pr-6">{profile.major}</p>
+                            )}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </main>
             <Footer />
         </div>
     )
