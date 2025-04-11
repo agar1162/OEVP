@@ -1,7 +1,7 @@
 {
   "version": 4,
   "routes": {
-    "/departments/commercial-activities": {
+    "/departments/finance": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -14,8 +14,104 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/departments/commercial-activities",
-      "dataRoute": "/departments/commercial-activities.rsc",
+      "srcRoute": "/departments/finance",
+      "dataRoute": "/departments/finance.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/departments/communications": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/departments/communications",
+      "dataRoute": "/departments/communications.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/departments/rso": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/departments/rso",
+      "dataRoute": "/departments/rso.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/departments/spaces": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/departments/spaces",
+      "dataRoute": "/departments/spaces.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/departments/sswb": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/departments/sswb",
+      "dataRoute": "/departments/sswb.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -73,7 +169,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/departments/finance": {
+    "/departments/commercial-activities": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -86,8 +182,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/departments/finance",
-      "dataRoute": "/departments/finance.rsc",
+      "srcRoute": "/departments/commercial-activities",
+      "dataRoute": "/departments/commercial-activities.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -97,7 +193,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/departments/communications": {
+    "/office/2024": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -110,8 +206,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/departments/communications",
-      "dataRoute": "/departments/communications.rsc",
+      "srcRoute": "/office/2024",
+      "dataRoute": "/office/2024.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -121,7 +217,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/departments/spaces": {
+    "/partnerships": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -134,8 +230,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/departments/spaces",
-      "dataRoute": "/departments/spaces.rsc",
+      "srcRoute": "/partnerships",
+      "dataRoute": "/partnerships.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -193,30 +289,6 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/office/2024": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/office/2024",
-      "dataRoute": "/office/2024.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/partnerships/nyt_wsj": {
       "experimentalBypassFor": [
         {
@@ -241,7 +313,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/departments/sswb": {
+    "/departments/legal-affairs": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -254,80 +326,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/departments/sswb",
-      "dataRoute": "/departments/sswb.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/office": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/office",
-      "dataRoute": "/office.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/departments/rso": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/departments/rso",
-      "dataRoute": "/departments/rso.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/partnerships": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/partnerships",
-      "dataRoute": "/partnerships.rsc",
+      "srcRoute": "/departments/legal-affairs",
+      "dataRoute": "/departments/legal-affairs.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -361,7 +361,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/departments/legal-affairs": {
+    "/office": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -374,8 +374,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/departments/legal-affairs",
-      "dataRoute": "/departments/legal-affairs.rsc",
+      "srcRoute": "/office",
+      "dataRoute": "/office.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -389,8 +389,8 @@
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "333f6d56cb2201aa619d26eb06694e81",
-    "previewModeSigningKey": "f5efcdd1889bb010714c8ba3a527f0af74e1fb0ab44fad1ee19e23d34f95e492",
-    "previewModeEncryptionKey": "f754a169dd63cd406a50af32e66d9c40da8c9a4578b694868d5e9b46d57e773a"
+    "previewModeId": "687a59792c290f87e94fbd73b92bf7d2",
+    "previewModeSigningKey": "bfb2c0cb7f8b1c682c51d61c7777fd1a50cfc98f3b182551dfc8b046db5a2df4",
+    "previewModeEncryptionKey": "4b21f812df6bb71581d341af8b987225cabb3f3444a3775033fe7ce5523348c3"
   }
 }
