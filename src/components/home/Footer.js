@@ -185,7 +185,7 @@ export default function Footer() {
           {/* Middle + Right Columns */}
           <div className="flex flex-wrap gap-[20px] items-start pt-[10px] mt-[10px]">
             {/* Column: Home */}
-            <div className="flex flex-col gap-3 min-w-[140px]">
+            <div className="flex flex-col gap-3 min-w-[140px] mr-[12px]">
               <h3 className="text-[18px] mb-1 mb-[6px]">Home</h3>
               <a href="/office/2024.html">Office</a>
               <a href="/departments/communications.html">Departments</a>
@@ -199,7 +199,7 @@ export default function Footer() {
             </div>
   
             {/* Column: Inquiries */}
-            <div className="flex flex-col gap-3 min-w-[200px]">
+            <div className="flex flex-col gap-3 min-w-[200px] mr-[38px]">
               <h3 className="text-[18px] mb-1 mb-[6px]">Inquiries</h3>
               <p>
                 Email:{" "}
@@ -216,7 +216,7 @@ export default function Footer() {
             </div>
   
             {/* Column: Follow Us */}
-            <div className="flex flex-col gap-3 min-w-[130px]">
+            <div className="flex flex-col gap-3 min-w-[130px] ml-auto">
               <h3 className="text-[18px] mb-1 mb-[6px]">Follow Us</h3>
               <div className="flex items-center gap-[4px]">
                 <a href="https://www.instagram.com/ucbvicepresident/">
