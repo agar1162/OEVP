@@ -111,7 +111,7 @@ export default function officePage () {
       name: "Michael Moy",
       title: "Spaces Director",
       major: "Political Science and Economics",
-      contact: "moy.mike168@berkeley.edu,",
+      contact: "moy.mike168@berkeley.edu",
       linkedin: "https://www.linkedin.com/in/michael-h-moy/"
     },
     {
@@ -127,23 +127,25 @@ export default function officePage () {
     return(
         <div>
             <Navbar />
-            <main className="flex flex-col lg:flex-row max-w-[1300px] mx-auto px-6 md:px-10 py-10 gap-10">
-              {/* Sidebar for term selection */}
-              <aside className="w-full lg:w-[180px]">
-                <div className="bg-[#1E3A8A] text-white text-center py-3 font-bold rounded-t">Offices</div>
-                <div className="border border-gray-300">
-                  <a
-                    href="/office/2024"
-                    className="block px-4 py-2 text-black font-semibold bg-gray-100 border-t border-gray-300"
-                  >
-                    2024 - 2025
-                  </a>
-                </div>
-              </aside>
+            <main className="flex flex-col lg:flex-row max-w-[1300px] mx-auto px-6 md:px-10 py-10 gap-10 items-start">
+            {/* Sidebar for term selection */}
+            <aside className="w-full lg:w-[180px] flex-shrink-0 self-start mt-32 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)]">
+              {/* Title */}
+              <div className="bg-[#003A70] text-white text-center py-3 text-sm tracking-wide font-normal">
+                Offices
+              </div>
 
+              {/* Option */}
+              <a
+                href="/office/2024"
+                className="block text-center py-3 text-sm font-normal border border-gray-300 border-t-0 text-black"
+              >
+                2024 - 2025
+              </a>
+            </aside>
               {/* Main content section: officer title + grid */}
               <section className="flex-1">
-                <div className="flex flex-wrap mx-[5%] md:mx-0 pt-10 justify-center items-center">
+                {/* <div className="flex flex-wrap mx-[5%] md:mx-0 pt-10 justify-center items-center">
                   <h3 className="flex items-center w-full text-2xl lg:text-3xl text-center">
                     <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
                     <span className="px-4">Office of Robert Carrillo </span>
@@ -152,6 +154,28 @@ export default function officePage () {
                   <p className="text-center text-base font-[Georgia] mt-3 mb-9 text-[#393838]">
                     Meet the 2024-2025 Team
                   </p>
+                </div> */}
+
+                {/* <div className="w-full max-w-[1300px] mx-auto shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)] border border-[#E1E1E1] border-t-[6px] border-t-[#003A70] px-6 py-5 mb-6">
+                  <h3 className="text-2xl md:text-3xl font-[Georgia] text-[#000] text-center">
+                    Office of Robert Carrillo
+                  </h3>
+                  <p className="text-base text-[#393838] font-[Georgia] mt-2 text-center">
+                    Meet the 2024-2025 Team
+                  </p>
+                </div>                 */}
+                <div 
+                  className="w-full border border-[#E1E1E1] mx-auto text-center max-w-full sm:max-w-[720px] lg:max-w-[910px] shadow-md mb-10"
+                >
+                  <div className="w-full h-[3px] bg-[#003A70]"></div> {/* Blue line on top */}
+                  <div className="px-6 py-5">
+                    <h3 className="text-2xl md:text-3xl font-[Georgia] text-[#000]">
+                      Office of Robert Carrillo
+                    </h3>
+                    <p className="text-base text-[#393838] font-[Georgia] mt-2">
+                      Meet the 2024-2025 Team
+                    </p>
+                  </div>
                 </div>
 
                 <div className="items-center pb-10">
