@@ -169,7 +169,7 @@ export default function officePage () {
                 >
                   <div className="w-full h-[3px] bg-[#003A70]"></div> {/* Blue line on top */}
                   <div className="px-6 py-5">
-                    <h3 className="text-2xl md:text-3xl font-[Georgia] text-[#000]">
+                    <h3 className="text-2xl md:text-3xl font-[Georgia] font-extrabold text-[#000]">
                       Office of Robert Carrillo
                     </h3>
                     <p className="text-base text-[#393838] font-[Georgia] mt-2">
