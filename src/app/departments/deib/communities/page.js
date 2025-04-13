@@ -1,3 +1,5 @@
+
+
 "use client"
 import { act, useState } from "react";
 import Footer from "../../../../components/home/Footer";
@@ -49,9 +51,6 @@ export default function Page() {
           </div>
         </div>
     );
-      
-      
-      
 
     const images = () => {
         const data = []
@@ -80,10 +79,18 @@ export default function Page() {
                 Explore Our Campus’s Diverse Communities
             </h1> */}
             {/* <h1 className="text-center text-xl md:text-3xl font-extrabold text-berkeley my-6"> */}
-            <h1 className="text-center text-xl md:text-3xl font-extrabold text-berkeley my-6">
+            {/* <h1 className="text-center text-xl md:text-3xl font-extrabold text-berkeley my-6">
 
                 Explore Our Campus’s Diverse Communities
-            </h1>
+            </h1> */}
+            <div className="w-full border border-[#E1E1E1] mx-auto text-center max-w-full sm:max-w-[720px] lg:max-w-[910px] shadow-md my-10">
+                <div className="w-full h-[3px] bg-[#003A70]"></div> {/* Blue line on top */}
+                <div className="px-5 py-6">
+                    <h1 className="text-2xl md:text-3xl font-[Georgia] font-extrabold text-[#000] leading-snug">
+                    Explore Our Campus’s Diverse Communities
+                    </h1>
+                </div>
+            </div>
             {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mx-[15%] py-10">
                 {gridItem("Black/Afrikan Diaspora Community", "#Black/Afrikan", images()[0])}
                 {gridItem("Chicanx/Latinx Community", "#Latinx/Chicanx", images()[1])}
@@ -97,7 +104,18 @@ export default function Page() {
             </div> */}
             {/* <div className="grid grid-cols-1 md:grid-cols-3 w-full max-w-screen-xl mx-auto"> */}
             {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-0 max-w-screen-xl mx-auto"> */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-0 max-w-screen-xl mx-auto [&>*]:m-0 [&>*]:p-0">
+            {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-0 max-w-screen-xl mx-auto [&>*]:m-0 [&>*]:p-0">
+                {gridItem("Black/Afrikan Diaspora Community", "#Black/Afrikan", images()[0])}
+                {gridItem("Chicanx/Latinx Community", "#Latinx/Chicanx", images()[1])}
+                {gridItem("Indigenous/Native American Community", "#Indigenous", images()[2])}
+                {gridItem("Middle Eastern, North African, and Muslim Student Community", "#MENA/Muslim", images()[3])}
+                {gridItem("Asian American and Pacific Islander (AAPI) Community", "#AAPI", images()[4])}
+                {gridItem("Jewish Community", "#Jewish", images()[5])}
+                {gridItem("LGBTQIA+ Community", "#LGBTQIA+", images()[6])}
+                {gridItem("Disabled Community", "#DSP", images()[7])}
+                {gridItem("International Community", "#International", images()[8])}
+            </div> */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[1px] max-w-screen-lg mx-auto">
                 {gridItem("Black/Afrikan Diaspora Community", "#Black/Afrikan", images()[0])}
                 {gridItem("Chicanx/Latinx Community", "#Latinx/Chicanx", images()[1])}
                 {gridItem("Indigenous/Native American Community", "#Indigenous", images()[2])}
@@ -108,6 +126,7 @@ export default function Page() {
                 {gridItem("Disabled Community", "#DSP", images()[7])}
                 {gridItem("International Community", "#International", images()[8])}
             </div>
+
             
 
             <div id="COMMUNITIES_DESCRIPTIONS_CONTAINER" className="mx-[5%] md:mx-[15%] pt-10">
@@ -224,96 +243,98 @@ export default function Page() {
                         </div>
                     </div>
                 </div> */}
-                <div id="Black/Afrikan" className="p-10 border-t border-gray-300">
-                <h1 className="text-berkeley text-3xl pb-10 text-center md:hidden"><i>Black/Afrikan Diaspora</i></h1>
+                {/* Divider line between grid and section */}
+                <hr className="w-full h-[1px] bg-[#D9D9D9] border-0 my-6" />
 
-                <div className="md:flex gap-10">
-                    {/* Image */}
-                    <div className="md:basis-1/2 mb-6 md:mb-0">
-                    <img src="/departments/deib/f1.png" className="w-full h-auto md:h-[400px] object-contain" />
+                <div id="Black/Afrikan" className="w-full max-w-screen-lg mx-auto px-6 sm:px-10 pt-6 pb-10">
+                <div className="md:flex md:gap-10 items-start">
+                    {/* Left: Image */}
+                    <div className="md:w-1/2">
+                    <img
+                        src="/departments/deib/f1.png"
+                        alt="Black/Afrikan Diaspora"
+                        className="w-full h-auto object-cover"
+                    />
                     </div>
 
-                    {/* Description */}
-                    <div className="md:basis-1/2">
-                    <h1 className="text-berkeley text-3xl pb-10 hidden md:block"><i>Black/Afrikan Diaspora Community</i></h1>
-                    <p>
-                        The Black/Afrikan Diaspora community at UC Berkeley plays an integral role 
-                        in enriching the campus’s diversity and academic excellence. This community 
-                        brings with them a rich tapestry of cultural traditions, activism, and 
-                        intellectual contributions. Despite systemic challenges, Black students at 
-                        Berkeley continue to thrive through collective empowerment and advocacy 
+                    {/* Right: Text */}
+                    <div className="md:w-1/2 mt-6 md:mt-0">
+                    <h2 className="text-[18px] sm:text-[20px] font-[Georgia] text-[#000000] mb-4">
+                        Black/African Diaspora Community
+                    </h2>
+                    <p className="text-[14px] font-[Georgia] text-[#000000] leading-relaxed">
+                        The Black/Afrikan Diaspora community at UC Berkeley plays an integral role
+                        in enriching the campus’s diversity and academic excellence. This community
+                        brings with them a rich tapestry of cultural traditions, activism, and
+                        intellectual contributions. Despite systemic challenges, Black students at
+                        Berkeley continue to thrive through collective empowerment and advocacy
                         for Black liberation.
                     </p>
                     </div>
                 </div>
 
-                {/* Full-width Collapse Button */}
-                <div className="mt-8">
+                {/* Blue Button */}
+                <div className="mt-6">
                     <button
                     onClick={() => toggleSection("black_all")}
-                    className="w-full border-2 border-black py-3 px-6 flex justify-center items-center hover:opacity-70"
+                    className="w-full text-white text-sm font-[Georgia] py-3 px-4 bg-[#003A70] hover:opacity-90 transition-all flex justify-center items-center rounded-none"
                     >
                     Resources, Organizations, and Events
-                    <img src="/tri.png" className="w-2 ml-2 mt-[2px]" />
+                    <img
+                        src="/tri.svg"
+                        className={`w-1.5 h-1.5 ml-2 transition-transform duration-300 ${
+                        activeSection === "black_all" ? "rotate-90" : "rotate-0"
+                        }`}
+                        alt="dropdown icon"
+                    />
                     </button>
                 </div>
 
-                {/* Collapsible Two-Column Section */}
+                {/* Dropdown Content */}
                 {activeSection === "black_all" && (
-                    <div className="border border-gray-400 mt-6 p-6 md:grid md:grid-cols-2 md:gap-8 text-[16px]">
-                    {/* Column 1: Organizations */}
-                    <div>
-                        <h3 className="font-semibold mb-4">Organizations and Student Groups:</h3>
-                        <ul className="list-disc list-inside space-y-2">
+                <div className="grid grid-cols-1 md:grid-cols-[1fr_1px_1fr] border-x border-b border-[#E1E1E1] bg-white font-[Georgia] text-[#000000] text-[13px] leading-[1.6]">
+
+                    {/* Left Column */}
+                    <div className="px-5 pt-4 pb-4 md:pb-6">
+                    <div className="text-[15px] mb-2">Organizations and Student Groups</div>
+                    <ul className="list-disc list-inside">
                         <li><a href="#">Black Student Union (BSU)</a></li>
                         <li><a href="#">Fannie Lou Hamer Black Resource Center</a></li>
                         <li><a href="#">Organization of African Students</a></li>
                         <li><a href="#">African American Student Development (AASD)</a></li>
                         <li><a href="#">Black Recruitment and Retention Center (BRRC)</a></li>
-                        <li>
-                            Community Organizations:
-                            <ul className="list-disc ml-6 mt-1 space-y-1">
-                            <li><a href="#">Zawadi: Black LGBT Community at Cal</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            Fraternities & Sororities (NPHC – Divine Nine):
-                            <ul className="list-disc ml-6 mt-1 space-y-1">
-                            <li><a href="#">Alpha Phi Alpha</a></li>
-                            <li><a href="#">Alpha Kappa Alpha</a></li>
-                            <li><a href="#">Delta Sigma Theta</a></li>
-                            </ul>
-                        </li>
-                        </ul>
+                        <li><a href="#">Zawadi: Black LGBT Community at Cal</a></li>
+                    </ul>
                     </div>
 
-                    {/* Column 2: Resources */}
-                    <div>
-                        <h3 className="font-semibold mb-4">Resources and Events</h3>
-                        <ul className="list-disc list-inside space-y-2">
+                    {/* Vertical Divider */}
+                    <div className="hidden md:block bg-[#D9D9D9] w-[1px]" />
+
+                    {/* Right Column */}
+                    <div className="px-5 pt-4 pb-4 md:pb-6">
+                    <div className="text-[15px] mb-2">Resources and Events</div>
+                    <ul className="list-disc list-inside">
                         <li><a href="#">Black Mental Health & Wellness Resources</a></li>
                         <li><a href="#">Career Resources for Black Students</a></li>
                         <li><a href="#">Black Heritage Month Programming, Town Halls, and Socials</a></li>
-                        <li>
-                            Professional Resources:
-                            <ul className="list-disc ml-6 mt-1 space-y-1">
-                            <li><a href="#">Black Students in Health Association (BSHA)</a></li>
-                            <li><a href="#">Haas Undergraduate Black Business Association (HUBBA)</a></li>
-                            <li><a href="#">Womxn of Color Initiative – Graduate Assembly</a></li>
-                            <li><a href="#">Black Equal Opportunity Employment Journal</a></li>
-                            <li><a href="#">Jopwell</a></li>
-                            </ul>
-                        </li>
+                    </ul>
+
+                    {/* Subsection: Professional Resources */}
+                    <div className="mt-2.5">
+                        <div className="text-[13px] mb-1">Professional Resources:</div>
+                        <ul className="list-disc list-inside pl-8">
+                        <li><a href="#">Black Students in Health Association (BSHA)</a></li>
+                        <li><a href="#">Haas Undergraduate Black Business Association (HUBBA)</a></li>
+                        <li><a href="#">Womxn of Color Initiative – Graduate Assembly</a></li>
+                        <li><a href="#">Black Equal Opportunity Employment Journal</a></li>
                         </ul>
                     </div>
                     </div>
+                </div>
                 )}
                 </div>
 
-
-
                 <hr className="w-[50%] h-[3px] mx-auto my-4 bg-gray-300 border-0 rounded md:my-10" />
-
 
                 <div id="Latinx/Chicanx" className="md:flex p-10 gap-10">
                     <div className="basis-1/2 pt-10 md:pt-0">
@@ -767,13 +788,13 @@ export default function Page() {
                             <p>
                                 Cal students registered with the Disabled Student Program can schedule hour-long one-on-one appointments 
                                 with an experienced <a href="https://career.berkeley.edu/about-us/meet-our-team/ricardo-flores/"> Career Counselor</a> to support their career exploration, preparation, and job seeking 
-                                as an employee with a disability. 
+                                as an employee with a disability. 
                             </p>
 
                             <ul className="list-disc list-inside pl-4">
                                 <li>Sign up on Handshake. Select <a href="https://berkeley.joinhandshake.com/login">“DSP Counseling” as the appointment type.</a></li>
                                 <li>If you experience any accessibility difficulties with scheduling, email ricardo.flores@berkeley.edu</li>
-                                <li>Documents: <a href="https://career.berkeley.edu/wp-content/uploads/Career-Readiness-Checklist-PDF.pdf">Career Readiness Checklist</a>, <a href="https://career.berkeley.edu/wp-content/uploads/Preparing-for-a-Career-Fair.pdf">Preparing for a Career Fair</a> </li>
+                                <li>Documents: <a href="https://career.berkeley.edu/wp-content/uploads/Career-Readiness-Checklist-PDF.pdf">Career Readiness Checklist</a>, <a href="https://career.berkeley.edu/wp-content/uploads/Preparing-for-a-Career-Fair.pdf">Preparing for a Career Fair</a> </li>
                                 <li className="pl-4 list-none">
                                     <ul className="list-disc list-inside">    
                                         <li>Proof of disability form: <a href="https://career.berkeley.edu/wp-content/uploads/Sample-ScheduleALetter.pdf">Sample Schedule A</a></li>
