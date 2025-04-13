@@ -153,12 +153,12 @@ Updated Apr 12 2025:
 │   │   │       ├── FAQ.js
 │   │   │       ├── InstaPostEmbed.js
 │   │   │       └── InstaReelEmbed.js
-│   │   └── 📄 page.js                # 🔹 Departments landing page (shows latest year)
+│   │   └── 📄 page.js                # 🔹 Departments landing page (shows latest term)
 │
 │   ├── 📁 office
 │   │   ├── 📁 2024
 │       │   └── 📄 page.js
-│       └──📄 page.js
+│       └──📄 page.js               # 🔹 Office landing page (shows latest term)
 │   
 │   ├── 📁 partnerships
 │   │   └── 📄 page.js
