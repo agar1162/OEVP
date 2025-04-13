@@ -81,6 +81,7 @@ git push origin main
 ```
 
 # 2. Front End File Routing Structure
+Original:
 ```
 └── 📁src
     └── 📁app
@@ -122,3 +123,55 @@ git push origin main
             └── Footer.js
             └── Navbar.js
 
+```
+Updated Apr 12 2025:
+```
+📁 src
+├── 📁 app
+│   ├── 📁 departments
+│   │   ├── 📁 2024
+│   │   │   ├── 📁 commercial-activities
+│   │   │   │   └── page.js
+│   │   │   ├── 📁 communications
+│   │   │   │   └── page.js
+│   │   │   ├── 📁 deib
+│   │   │   │   └── page.js
+│   │   │   ├── 📁 finance
+│   │   │   │   └── page.js
+│   │   │   ├── 📁 legal-affairs
+│   │   │   │   └── page.js
+│   │   │   ├── 📁 rso
+│   │   │   │   └── page.js
+│   │   │   ├── 📁 spaces
+│   │   │   │   └── page.js
+│   │   │   ├── 📁 sswb
+│   │   │   │   └── page.js
+│   │   │   ├── 📁 student-affairs
+│   │   │   │   └── page.js
+│   │   │   └── 📁 components
+│   │   │       ├── Cover.js
+│   │   │       ├── FAQ.js
+│   │   │       ├── InstaPostEmbed.js
+│   │   │       └── InstaReelEmbed.js
+│   │   └── 📄 page.js                # 🔹 Departments landing page (shows latest year)
+│
+│   ├── 📁 office
+│   │   ├── 📁 2024
+│       │   └── 📄 page.js
+│       └──📄 page.js
+│   
+│   ├── 📁 partnerships
+│   │   └── 📄 page.js
+│   
+│
+│   ├── 📁 resources                  
+│   │   └── 📄 page.js
+│
+│   └── 📄 page.js                   # 🔹 Homepage
+│
+├── 📁 components
+│   └── 📁 home
+│       ├── Footer.js
+│       └── Navbar.js
+
+```
