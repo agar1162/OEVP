@@ -124,7 +124,7 @@ Original:
             └── Navbar.js
 
 ```
-Updated Apr 12 2025:
+Updated Apr 13 2025:
 ```
 📁 src
 ├── 📁 app
@@ -148,11 +148,12 @@ Updated Apr 12 2025:
 │   │   │   │   └── page.js
 │   │   │   ├── 📁 student-affairs
 │   │   │   │   └── page.js
-│   │   │   └── 📁 components
-│   │   │       ├── Cover.js
-│   │   │       ├── FAQ.js
-│   │   │       ├── InstaPostEmbed.js
-│   │   │       └── InstaReelEmbed.js
+│   │   │   ├── 📁 components
+│   │   │   │   ├── Cover.js
+│   │   │   │   ├── FAQ.js
+│   │   │   │   ├── InstaPostEmbed.js
+│   │   │   │   └── InstaReelEmbed.js
+│   │   │   └── 📄 page.js
 │   │   └── 📄 page.js                # 🔹 Departments landing page (shows latest term)
 │
 │   ├── 📁 office
