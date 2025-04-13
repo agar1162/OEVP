@@ -41,6 +41,84 @@
       "namedRegex": "^/_not\\-found(?:/)?$"
     },
     {
+      "page": "/departments",
+      "regex": "^/departments(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/departments(?:/)?$"
+    },
+    {
+      "page": "/departments/2024",
+      "regex": "^/departments/2024(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/departments/2024(?:/)?$"
+    },
+    {
+      "page": "/departments/2024/commercial-activities",
+      "regex": "^/departments/2024/commercial\\-activities(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/departments/2024/commercial\\-activities(?:/)?$"
+    },
+    {
+      "page": "/departments/2024/communications",
+      "regex": "^/departments/2024/communications(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/departments/2024/communications(?:/)?$"
+    },
+    {
+      "page": "/departments/2024/deib",
+      "regex": "^/departments/2024/deib(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/departments/2024/deib(?:/)?$"
+    },
+    {
+      "page": "/departments/2024/deib/communities",
+      "regex": "^/departments/2024/deib/communities(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/departments/2024/deib/communities(?:/)?$"
+    },
+    {
+      "page": "/departments/2024/finance",
+      "regex": "^/departments/2024/finance(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/departments/2024/finance(?:/)?$"
+    },
+    {
+      "page": "/departments/2024/legal-affairs",
+      "regex": "^/departments/2024/legal\\-affairs(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/departments/2024/legal\\-affairs(?:/)?$"
+    },
+    {
+      "page": "/departments/2024/rso",
+      "regex": "^/departments/2024/rso(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/departments/2024/rso(?:/)?$"
+    },
+    {
+      "page": "/departments/2024/spaces",
+      "regex": "^/departments/2024/spaces(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/departments/2024/spaces(?:/)?$"
+    },
+    {
+      "page": "/departments/2024/ssc",
+      "regex": "^/departments/2024/ssc(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/departments/2024/ssc(?:/)?$"
+    },
+    {
+      "page": "/departments/2024/sswb",
+      "regex": "^/departments/2024/sswb(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/departments/2024/sswb(?:/)?$"
+    },
+    {
+      "page": "/departments/2024/student-affairs",
+      "regex": "^/departments/2024/student\\-affairs(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/departments/2024/student\\-affairs(?:/)?$"
+    },
+    {
       "page": "/departments/commercial-activities",
       "regex": "^/departments/commercial\\-activities(?:/)?$",
       "routeKeys": {},

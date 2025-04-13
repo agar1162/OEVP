@@ -1,5 +1,5 @@
-import Navbar from "../../../components/home/Navbar";
-import Footer from "../../../components/home/Footer";
+import Navbar from "../../../../components/home/Navbar";
+import Footer from "../../../../components/home/Footer";
 import Cover from "../components/Cover";
 
 const gridItem = (name, link = "", img = "") => (
