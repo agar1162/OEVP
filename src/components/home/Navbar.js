@@ -130,7 +130,7 @@ import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
 
 export default function Navbar() {
-  const logoref = "/evp-logo.png";
+  const logoref = "/evp-transparent-logo.png";
   const icon = "/vector.svg";
 
   const [isPartnershipsMenuVisible, setPartnershipsMenuVisible] = useState(false);
@@ -146,7 +146,7 @@ export default function Navbar() {
       <div className="flex items-center justify-between px-4 md:px-10 h-[60px]">
         {/* Logo */}
         <a href="/" className="flex items-center">
-          <img src={logoref} alt="Logo" className="h-[55px] w-auto object-contain" />
+          <img src={logoref} alt="Logo" className="h-[50px] w-auto object-contain" />
         </a>
 
         {/* Desktop Menu */}
