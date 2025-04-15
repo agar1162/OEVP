@@ -18,12 +18,40 @@ export default function DepartmentsPage() {
     <div>
         <Navbar />
 
-        <Cover 
+        {/* <Cover 
             name="Communications & Public Relations"
             link="comms.jpeg"
             desc="Responsible for managing strategic communications and public relations initiatives "
             members="Responsible for managing strategic communications and public relations initiatives "
-            />
+        /> */}
+        {/* Hero section with image and text side-by-side */}
+        <div className="w-full bg-[#F8F8F8] px-6 pt-10 pb-6 md:pt-16 md:pb-10">
+            <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center gap-10">
+                {/* Left: Image */}
+                <div className="md:w-1/2 w-full">
+                <img
+                    src="/departments/comms.jpeg"
+                    alt="Communications Team"
+                    className="w-full h-auto object-cover shadow-md"
+                />
+                </div>
+
+                {/* Right: Title + Description */}
+                <div className="md:w-1/2 w-full text-left">
+                <h2 className="text-[16px] font-bold text-[#003A70] uppercase mb-2">Department</h2>
+                <h1 className="text-[30px] sm:text-[36px] md:text-[40px] font-[Georgia] font-extrabold text-[#000000] leading-tight mb-4">
+                    Communications and Public Relations
+                </h1>
+                <p className="text-[16px] md:text-[18px] text-[#000000] leading-snug mb-2">
+                    Responsible for managing strategic communications and public relations initiatives
+                </p>
+                <p className="text-sm text-[#444444]">
+                    Chloe Choi (Intern), Hailey Jung (Intern), Matt Blake (Associate)
+                </p>
+                </div>
+            </div>
+        </div>
+
     
         <div className="p-[5vh] lg:mx-[10%] text-[20px]">
             <p>

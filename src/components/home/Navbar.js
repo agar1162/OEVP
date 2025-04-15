@@ -130,7 +130,7 @@ import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
 
 export default function Navbar() {
-  const logoref = "/evp-transparent-logo.png";
+  const logoref = "/evp-logo.png";
   const icon = "/vector.svg";
 
   const [isPartnershipsMenuVisible, setPartnershipsMenuVisible] = useState(false);
