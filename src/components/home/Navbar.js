@@ -154,7 +154,7 @@ export default function Navbar() {
           <a href="/" className="hover:text-gray-400 transition">Home</a>
           <a href="/office" className="hover:text-gray-400 transition">Office</a>
           <a href="/departments" className="hover:text-gray-400 transition">Departments</a>
-          <a href="/departments/deib/communities" className="hover:text-gray-400 transition">DEI Resources</a>
+          <a href="/departments/2024/deib/communities" className="hover:text-gray-400 transition">DEI Resources</a>
 
           {/* Partnerships dropdown */}
           <div

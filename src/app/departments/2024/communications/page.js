@@ -24,6 +24,7 @@ export default function DepartmentsPage() {
             desc="Responsible for managing strategic communications and public relations initiatives "
             members="Responsible for managing strategic communications and public relations initiatives "
             /> */}
+        {/* Hero section */}
         <div className="w-full bg-white shadow-md mt-2">
         <div className="w-full flex flex-col md:flex-row items-stretch">
 

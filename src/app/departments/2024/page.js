@@ -9,7 +9,7 @@ export default function Departments2024Page() {
       slug: 'communications',
       name: 'Communications and Public Relations',
       description: 'Responsible for managing strategic communications and public relations initiatives',
-      members: 'Chloe Choi (Intern), Hailey Jung (Intern), Matt Blake (Associate)',
+      members: 'Shawntaya Jeanes (Director), Chloe Choi (Intern), Hailey Jung (Intern), Matt Blake (Associate)',
       image: '/departments/comms.jpeg',
     },
     {
