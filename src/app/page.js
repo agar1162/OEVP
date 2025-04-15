@@ -226,9 +226,9 @@ export default function Home() {
 
         {/* Title Section */}
         <div className="absolute top-[12%] w-full flex flex-col items-center justify-center px-3 text-white text-center z-10">
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-2 tracking-wide">
+          {/* <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-2 tracking-wide">
             UC Berkeley ASUC
-          </p>
+          </p> */}
           <h1 className="font-extrabold tracking-wide leading-tight text-center 
             text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl mb-2"
           >
@@ -244,12 +244,12 @@ export default function Home() {
           <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl text-white">
             {slides[currentIndex].caption}
           </h3>
-          <img
+          {/* <img
             src="/arrow.png"
             alt="arrow"
             // className="mt-3 w-[70px] md:w-[100px] h-auto"
             className="mt-2 w-[10px] sm:w-[20px] md:w-[35px] lg:w-[25px] h-auto"
-          />
+          /> */}
         </a>
 
         {/* Bottom Slide Nav */}
@@ -407,9 +407,9 @@ export default function Home() {
           </a>
         </div>
       </div> */}
-      <div id="NYT_WSJ" className="flex flex-col lg:flex-row bg-gradient-to-r from-[#FFD67A] to-[#F9B315] py-[5vh]">
+      {/* <div id="NYT_WSJ" className="flex flex-col lg:flex-row bg-gradient-to-r from-[#FFD67A] to-[#F9B315] py-[5vh]"> */}
           {/* New York Times Section */}
-          <div className="flex-1 flex justify-center items-center">
+          {/* <div className="flex-1 flex justify-center items-center">
               <div className="mx-[5vw] flex flex-col items-start">
               <img src={times} alt="New York Times" className="h-[50px] w-[50px] mb-4" />
               <h1 className="text-[23px] mb-2">New York Times</h1>
@@ -426,10 +426,10 @@ export default function Home() {
                   </a>
               </div>
               </div>
-          </div>
+          </div> */}
 
           {/* Wall Street Journal Section */}
-          <div className="flex-1 flex justify-center items-center">
+          {/* <div className="flex-1 flex justify-center items-center">
               <div className="mx-[5vw] flex flex-col items-start">
               <img src={wsj} alt="Wall Street Journal" className="h-[36px] w-[62px] mb-4" />
               <h1 className="text-[23px] mb-2">Wall Street Journal</h1>
@@ -447,7 +447,59 @@ export default function Home() {
               </div>
               </div>
           </div>
-      </div>
+      </div> */}
+      <div
+        id="NYT_WSJ"
+        className="bg-gradient-to-r from-[#FFD67A] to-[#F9B315] py-[5vh] px-4 md:px-[8vw] flex flex-col lg:flex-row justify-between gap-10"
+      >
+        {/* New York Times Section */}
+        <div className="flex-1 flex flex-col justify-start items-start">
+          <img
+            src={times}
+            alt="New York Times"
+            className="h-[40px] w-auto mb-3"
+          />
+          <h1 className="text-[24px] font-[400] font-[Georgia] leading-[35.98px] mb-1">
+            New York Times
+          </h1>
+          <p className="text-[17px] font-[Georgia] font-[400] md:leading-normal mb-6">
+            Get free access to a variety of New York Times articles, games, and podcasts
+            if you are an undergraduate or graduate student.            
+          </p>
+          <div className="mt-auto">
+            <a
+              href="https://www.nytimes.com/activate-access/edu-access"
+              className="text-[17px] font-[Georgia] px-6 py-3 bg-white rounded-[10px] border border-black inline-block"
+            >
+              Register
+            </a>
+          </div>
+        </div>
+
+        {/* Wall Street Journal Section */}
+        <div className="flex-1 flex flex-col justify-start items-start">
+          <img
+            src={wsj}
+            alt="Wall Street Journal"
+            className="h-[40px] w-auto mb-3"
+          />
+          <h1 className="text-[24px] font-[400] font-[Georgia] leading-[35.98px] mb-1">
+            Wall Street Journal
+          </h1>
+          <p className="text-[17px] font-[Georgia] font-[400] md:leading-normal mb-6">
+            Get free access to a variety of WSJ articles, career advice, and job prep resources
+            if you are an undergraduate student, graduate student, or faculty/staff.
+          </p>
+          <div className="mt-auto">
+            <a
+              href="https://WSJ.com/ASUCBerkeley"
+              className="text-[17px] font-[Georgia] px-6 py-3 bg-white rounded-[10px] border border-black inline-block"
+            >
+              Register
+            </a>
+          </div>
+        </div>
+      </div>      
 
       {/* Events Section */}
       <div id="EVENTS" className="px-[10%] py-[10vh]">

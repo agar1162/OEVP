@@ -125,7 +125,7 @@ export default function departmentsPage() {
         </div>
 
 
-        <div className="relative flex  items-center mx-[10%]">
+        <div className="relative flex items-center mx-[10%]">
             <div className="flex-grow border-t border-[#A6A6A6]"></div>
             <span className="flex-shrink mx-4 text-[25px]">Finance Resources</span>
             <div className="flex-grow border-t border-[#A6A6A6]"></div>
