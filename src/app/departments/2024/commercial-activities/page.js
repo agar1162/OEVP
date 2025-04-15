@@ -405,10 +405,10 @@ export default function departmentsPage() {
             <div className=" mt-4 md:mt-0 p-3">
               <a href="https://www.dailycal.org/archives/asuc-announces-partnerships-with-the-new-york-times-wall-street-journal/article_269c3ab0-59ae-5fcd-9322-85bfad8ece51.html">
                 <h3 className="font-bold text-xl leading-[32px]">ASUC announces partnerships with New York Times, Wall Street Journal</h3>
-                <p className="text-[#5E5E5E] text-sm leading-[32px]">TThrough ASUC partnerships with the New York Times, the Wall Street Journal and LinkedIn Premium.</p>
+                <p className="text-[#5E5E5E] text-sm leading-[32px]">Through ASUC partnerships with the New York Times, the Wall Street Journal and LinkedIn Premium.</p>
               </a>
               </div>
-          </div>
+        </div>
         </div>
 
         <Footer />

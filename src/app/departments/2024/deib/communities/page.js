@@ -1,3 +1,4 @@
+// OEVP/src/app/departments/2024/deib/communities/page.js
 "use client"
 import { act, useState } from "react";
 import Footer from "../../../../../components/home/Footer";
@@ -121,7 +122,7 @@ export default function Page() {
                 {gridItem("Black/Afrikan Diaspora Community", "#Black/Afrikan", images()[0])}
                 {gridItem("Chicanx/Latinx Community", "#Latinx/Chicanx", images()[1])}
                 {gridItem("Indigenous/Native American Community", "#Indigenous", images()[2])}
-                {gridItem("Middle Eastern, North African, and Muslim Student Community", "#MENA/Muslim", images()[3])}
+                {gridItem("Middle Eastern, North African, and Muslim Community", "#MENA/Muslim", images()[3])}
                 {gridItem("Asian American and Pacific Islander (AAPI) Community", "#AAPI", images()[4])}
                 {gridItem("Jewish Community", "#Jewish", images()[5])}
                 {gridItem("LGBTQIA+ Community", "#LGBTQIA+", images()[6])}
@@ -1719,4 +1720,3 @@ export default function Page() {
         </div>
     );
 }
-

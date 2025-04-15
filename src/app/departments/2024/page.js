@@ -48,7 +48,7 @@ export default function Departments2024Page() {
       image: '/departments/rso.jpeg',
     },
     {
-      slug: 'senatorial-affairs',
+      slug: 'ssc',
       name: 'Senatorial and Committee Affairs',
       description: 'Encourages different Senatorial Offices, Commissions, and Committees.',
       members: 'Caroline Holm (Associate), Valerie Barajas (Associate), Aarja Singh (Interim Director), Esbeidy Campos (Deputy Director), Denise Barrios Lopez (Associate), Victoria Hernadez (Associate), Not featured: Maya Garica (Director)',

@@ -186,7 +186,7 @@ export default function departmentsPage() {
             <div className="w-full max-w-[440px] bg-white rounded-[2px] shadow-md overflow-hidden rounded-none scale-[0.95]">
                 <div className="h-[280px] md:h-[330px] overflow-hidden">
                 <img
-                    src="/departments/finance/f2.jpg"
+                    src="/departments/finance/f2.png"
                     alt="Funding for RSOs"
                     className="w-full h-full object-cover"
                 />
