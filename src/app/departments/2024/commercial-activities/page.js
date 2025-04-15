@@ -179,56 +179,58 @@ export default function departmentsPage() {
         </div> */}
         <div
           id="NYT_WALL_STREET_JOURNAL"
-          className="bg-[#DFE9F5] py-[5vh] px-4 md:px-[8vw] flex flex-col lg:flex-row justify-between gap-10"
+          className="bg-[#DFE9F5] py-[5vh] px-4 md:px-[8vw] flex flex-col lg:flex-row gap-10"
         >
-          {/* New York Times Section */}
-          <div className="flex-1 flex flex-col justify-start items-start">
-            <img
-              src={times}
-              alt="New York Times"
-              className="h-[40px] w-auto mb-3"
-            />
-            <h1 className="text-[24px] font-[400] font-[Georgia] leading-[35.98px] mb-1">
-              New York Times
-            </h1>
-            <p className="text-[16px] font-[Georgia] font-[400] md:leading-normal mb-6">
-              Get free access to a variety of New York Times articles, games, and podcasts
-              if you are an undergraduate or graduate student.            
-            </p>
-            <div className="mt-auto">
-              <a
-                href="https://www.nytimes.com/activate-access/edu-access"
-                className="text-[15px] font-[Georgia] px-6 py-3 bg-white rounded-[10px] border border-black inline-block"
-              >
-                Register
-              </a>
+          {/* New York Times */}
+          <div className="flex-1 flex flex-col justify-between">
+            <div>
+              <img
+                src="/nyt.png"
+                alt="New York Times"
+                className="h-[55px] w-auto mb-3"
+              />
+              <h1 className="text-[24px] font-[400] font-[Georgia] leading-[35.98px] mb-1">
+                New York Times
+              </h1>
+              <p className="text-[18px] font-[Georgia] font-[400] leading-[34.56px] mb-6">
+                Get free access to a variety of New York Times articles, games, and
+                podcasts if you are an undergraduate or graduate student.
+              </p>
             </div>
+            <a
+              href="https://www.nytimes.com/activate-access/edu-access"
+              className="text-[18px] font-[Georgia] px-6 py-3 bg-white rounded-[10px] border border-black w-fit"
+            >
+              Register
+            </a>
           </div>
 
-          {/* Wall Street Journal Section */}
-          <div className="flex-1 flex flex-col justify-start items-start">
-            <img
-              src={wsj}
-              alt="Wall Street Journal"
-              className="h-[40px] w-auto mb-3"
-            />
-            <h1 className="text-[24px] font-[400] font-[Georgia] leading-[35.98px] mb-1">
-              Wall Street Journal
-            </h1>
-            <p className="text-[16px] font-[Georgia] font-[400] md:leading-normal mb-6">
-              Get free access to a variety of WSJ articles, career advice, and job prep resources
-              if you are an undergraduate student, graduate student, or faculty/staff.
-            </p>
-            <div className="mt-auto">
-              <a
-                href="https://WSJ.com/ASUCBerkeley"
-                className="text-[15px] font-[Georgia] px-6 py-3 bg-white rounded-[10px] border border-black inline-block"
-              >
-                Register
-              </a>
+          {/* Wall Street Journal */}
+          <div className="flex-1 flex flex-col justify-between">
+            <div>
+              <img
+                src="/wsj.png"
+                alt="Wall Street Journal"
+                className="h-[45px] w-auto mb-3"
+              />
+              <h1 className="text-[24px] font-[400] font-[Georgia] leading-[35.98px] mb-1">
+                Wall Street Journal
+              </h1>
+              <p className="text-[18px] font-[Georgia] font-[400] leading-[34.56px] mb-6">
+                Get free access to a variety of WSJ articles, career advice, and job
+                prep resources if you are an undergraduate student, graduate student, or
+                faculty/staff.
+              </p>
             </div>
+            <a
+              href="https://WSJ.com/ASUCBerkeley"
+              className="text-[18px] font-[Georgia] px-6 py-3 bg-white rounded-[10px] border border-black w-fit"
+            >
+              Register
+            </a>
           </div>
         </div>
+
 
 
       {/* <div id="CASSA" className="mx-8 py-[10vh]">
@@ -304,11 +306,78 @@ export default function departmentsPage() {
         </div>
       </div>
 
-      <div className="md:mx-[30%]  mx-[10%] py-5 place-items-center py-[5vh]">
+      {/* <div className="md:mx-[30%]  mx-[10%] py-5 place-items-center py-[5vh]">
           <img src='/departments/comm_act/c1.png' className="w-[35vw]"/>
           <p className="text-md md:text-lg w-fit mx-[10%]"><i>The OEVP provides free access to newspaper 
             subscriptions such as the Wall Street Journal and New York Times, and financial grants.</i></p>
+      </div> */}
+      <div className="px-[10%] mt-12 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8">
+        {/* Project 1: WSJ Election Tabling */}
+        <div className="bg-white bg-opacity-85 shadow-[4px_4px_8px_rgba(0,0,0,0.15)] border-x border-b border-[#D3D3D3] overflow-hidden">
+          <img
+            src="/departments/comm_act/c1.png"
+            alt="WSJ Election"
+            className="w-full h-auto object-cover"
+          />
+          <div className="p-4">
+            <h3 className="text-[15.05px] font-bold font-[Georgia] leading-[25.38px] mb-2">
+              Wall Street Journal Election Tabling
+            </h3>
+            <p className="text-[12.04px] font-[Georgia] leading-[25.38px]">
+              Teamed up with Wall Street Journal (WSJ) during the 2024 election for an event in which free WSJ merchandise was offered to students who activated their WSJ accounts — free WSJ resources were also used to educate students on the latest election coverage!
+            </p>
+          </div>
+        </div>
+
+        {/* Project 2: OEVP Website */}
+        <div className="bg-white bg-opacity-85 shadow-[4px_4px_8px_rgba(0,0,0,0.15)] border-x border-b border-[#D3D3D3] overflow-hidden">
+          <img
+            src="/departments/comm_act/c4.png"
+            alt="OEVP Website"
+            className="w-full h-auto object-cover"
+          />
+          <div className="p-4">
+            <h3 className="text-[15.05px] font-bold font-[Georgia] leading-[25.38px] mb-2">
+              ASUC Office of the Executive Vice President Website
+            </h3>
+            <p className="text-[12.04px] font-[Georgia] leading-[25.38px]">
+              Developed a website to inform the campus community about the Executive Vice President’s office, highlighting projects and free resources offered on behalf of the office.
+            </p>
+          </div>
+        </div>
+
+        {/* Project 3: Whistleblower Event */}
+        <div className="bg-white bg-opacity-85 shadow-[4px_4px_8px_rgba(0,0,0,0.15)] border-x border-b border-[#D3D3D3] overflow-hidden">
+          {/* Images */}
+          <div className="flex flex-col md:flex-row w-full">
+            <div className="w-full md:w-1/2">
+              <img
+                src="/departments/comm_act/c5.png"
+                alt="Whistleblower Event 1"
+                className="w-full h-full object-cover aspect-[1/1] md:aspect-auto"
+              />
+            </div>
+            <div className="w-full md:w-1/2">
+              <img
+                src="/departments/comm_act/c6.png"
+                alt="Whistleblower Event 2"
+                className="w-full h-full object-cover aspect-[1/1] md:aspect-auto"
+              />
+            </div>
+          </div>
+
+          {/* Caption */}
+          <div className="p-4">
+            <h3 className="text-[20.51px] font-bold font-[Georgia] leading-[34.58px] mb-2">
+              Whistleblower Event
+            </h3>
+            <p className="text-[16.41px] font-[Georgia] leading-[34.58px]">
+              Commercial Activities welcomed Tyler Shultz on April 10, 2025 to discuss his role in exposing the $9B Theranos scandal and the ethics of whistleblowing in healthcare.
+            </p>
+          </div>
+        </div>
       </div>
+
 
         <div className="items-center mx-[10%] pt-[5vh] text-center">
           <div className="relative flex items-center ">
@@ -318,17 +387,13 @@ export default function departmentsPage() {
           </div>
         </div>
         
-        
-
-
-
         <div className="flex flex-wrap pb-10 md:flex-regular mx-[10%] py-5">
             <div className=" md:flex md:basis-1/2 hover:bg-gray-100">
-              <img src="/departments/comm_act/c2.jpg" className="w-[35vh]"/>
+              <img src="/departments/comm_act/c3.png" className="w-[40vh]"/>
               <div className=" mt-4 md:mt-0 p-3">
                 <a href="https://www.dailycal.org/news/campus/asuc/asuc-contracts-provide-students-more-than-new-york-times-subscription/article_37319cec-a702-11ef-a1e8-2bba65ea0e83.html">
-                  <h3 className="font-bold text-xl">ASUC contracts provide students more than New York Times subscription</h3>
-                  <p className="text-[#5E5E5E] text-sm">Through ASUC partnerships with the New York Times, the Wall Street Journal, and LinkedIn Premium.</p>
+                  <h3 className="font-bold text-xl leading-[32px]">ASUC contracts provide students more than New York Times subscription</h3>
+                  <p className="text-[#5E5E5E] text-sm leading-[32px]">Through ASUC partnerships with the New York Times, the Wall Street Journal and LinkedIn Premium.</p>
                 </a>
                 
               </div>
@@ -336,11 +401,11 @@ export default function departmentsPage() {
 
 
           <div className=" md:flex md:basis-1/2 hover:bg-gray-100">
-            <img src="/departments/comm_act/c3.png" className="w-[35vh]"/>
+            <img src="/departments/comm_act/c2.png" className="w-[40vh]"/>
             <div className=" mt-4 md:mt-0 p-3">
               <a href="https://www.dailycal.org/archives/asuc-announces-partnerships-with-the-new-york-times-wall-street-journal/article_269c3ab0-59ae-5fcd-9322-85bfad8ece51.html">
-                <h3 className="font-bold text-xl">ASUC contracts provide students more than Walls Street Journal subscription</h3>
-                <p className="text-[#5E5E5E] text-sm">Through ASUC partnerships with the New York Times, the Wall Street Journal, and LinkedIn Premium.</p>
+                <h3 className="font-bold text-xl leading-[32px]">ASUC announces partnerships with New York Times, Wall Street Journal</h3>
+                <p className="text-[#5E5E5E] text-sm leading-[32px]">TThrough ASUC partnerships with the New York Times, the Wall Street Journal and LinkedIn Premium.</p>
               </a>
               </div>
           </div>

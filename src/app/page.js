@@ -448,12 +448,12 @@ export default function Home() {
               </div>
           </div>
       </div> */}
-      <div
-        id="NYT_WSJ"
+      {/* <div
+        id="NYT_WALL_STREET_JOURNAL"
         className="bg-gradient-to-r from-[#FFD67A] to-[#F9B315] py-[5vh] px-4 md:px-[8vw] flex flex-col lg:flex-row justify-between gap-10"
-      >
+      > */}
         {/* New York Times Section */}
-        <div className="flex-1 flex flex-col justify-start items-start">
+        {/* <div className="flex-1 flex flex-col justify-start items-start">
           <img
             src={times}
             alt="New York Times"
@@ -474,10 +474,10 @@ export default function Home() {
               Register
             </a>
           </div>
-        </div>
+        </div> */}
 
         {/* Wall Street Journal Section */}
-        <div className="flex-1 flex flex-col justify-start items-start">
+        {/* <div className="flex-1 flex flex-col justify-start items-start">
           <img
             src={wsj}
             alt="Wall Street Journal"
@@ -499,7 +499,61 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </div>      
+      </div> */}
+
+      <div
+          id="NYT_WSJ"
+          className="bg-gradient-to-r from-[#FFD67A] to-[#F9B315] py-[5vh] px-4 md:px-[8vw] flex flex-col lg:flex-row gap-10"
+        >
+          {/* New York Times */}
+          <div className="flex-1 flex flex-col justify-between">
+            <div>
+              <img
+                src="/nyt.png"
+                alt="New York Times"
+                className="h-[55px] w-auto mb-3"
+              />
+              <h1 className="text-[24px] font-[400] font-[Georgia] leading-[35.98px] mb-1">
+                New York Times
+              </h1>
+              <p className="text-[18px] font-[Georgia] font-[400] leading-[34.56px] mb-6">
+                Get free access to a variety of New York Times articles, games, and
+                podcasts if you are an undergraduate or graduate student.
+              </p>
+            </div>
+            <a
+              href="https://www.nytimes.com/activate-access/edu-access"
+              className="text-[18px] font-[Georgia] px-6 py-3 bg-white rounded-[10px] border border-black w-fit"
+            >
+              Register
+            </a>
+          </div>
+
+          {/* Wall Street Journal */}
+          <div className="flex-1 flex flex-col justify-between">
+            <div>
+              <img
+                src="/wsj.png"
+                alt="Wall Street Journal"
+                className="h-[45px] w-auto mb-3"
+              />
+              <h1 className="text-[24px] font-[400] font-[Georgia] leading-[35.98px] mb-1">
+                Wall Street Journal
+              </h1>
+              <p className="text-[18px] font-[Georgia] font-[400] leading-[34.56px] mb-6">
+                Get free access to a variety of WSJ articles, career advice, and job
+                prep resources if you are an undergraduate student, graduate student, or
+                faculty/staff.
+              </p>
+            </div>
+            <a
+              href="https://WSJ.com/ASUCBerkeley"
+              className="text-[18px] font-[Georgia] px-6 py-3 bg-white rounded-[10px] border border-black w-fit"
+            >
+              Register
+            </a>
+          </div>
+        </div>      
 
       {/* Events Section */}
       <div id="EVENTS" className="px-[10%] py-[10vh]">

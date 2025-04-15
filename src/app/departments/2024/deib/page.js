@@ -1,3 +1,5 @@
+"use client";
+import React, { useState } from "react";
 import Navbar from "../../../../components/home/Navbar";
 import Footer from "../../../../components/home/Footer";
 import Cover from "../components/Cover";
@@ -31,6 +33,11 @@ const gridItem = (name, link = "", img = "") => (
 
 
 export default function DepartmentsPage() {
+    const [isExpanded, setIsExpanded] = useState(false);
+    const toggleReadMore = () => {
+        setIsExpanded(!isExpanded);
+      };
+
     // const communities = [
     //     { name: "Black/Afrikan Diaspora Community", link: "/departments/deib/communities.html#Black/Afrikan" },
     //     { name: "Latinx/Chicanx Community", link: "/departments/deib/communities.html#Latinx/Chicanx" },
@@ -54,17 +61,14 @@ export default function DepartmentsPage() {
         { name: "International Student Community", link: "/departments/deib/communities#International" },
     ];
 
-    
-    
-
     return (
         <div>
             <Navbar />
-            <Cover
+            {/* <Cover
                 name="Diversity, Equity, Inclusion & Belonging"
                 link="deib.jpeg"
                 desc="Addresses the needs of the UC Berkeley campus."
-                mem="Doah Obaid (Associate), Risha Jain (Intern), Rishi Reddy (Director), Josalyn Huynh (Intern)"
+                mem="Doah Obaid (Associate), Risha Jain (Intern), Rishi Reddy (Director), Josalyn Huynh (Intern), Not Featured: Joshua Agupogo (Director)"
             />
 
             <div className="p-10 lg:mx-[10%] text-[20px] indent-10">
@@ -79,7 +83,71 @@ export default function DepartmentsPage() {
                     for Diversity, Equity, and Inclusion, to ensure their office is properly
                     serving the student body.
                 </p>
+            </div> */}
+            {/* Hero Section: Diversity, Equity, Inclusion & Belonging */}
+            <div className="w-full bg-white shadow-md mt-2">
+            <div className="w-full flex flex-col md:flex-row items-stretch">
+                {/* Left: Image */}
+                <div className="w-full md:w-1/2">
+                <img
+                    src="/departments/deib.jpeg"
+                    alt="Diversity, Equity, Inclusion & Belonging"
+                    className="w-full h-full object-cover"
+                />
+                </div>
+
+                {/* Right: Text */}
+                <div className="w-full md:w-1/2">
+                <div className="border-t-[6px] border-[#003A70] px-4 py-4 md:py-6 md:px-8 h-full flex flex-col justify-center">
+                    <h2 className="text-[13px] font-bold text-[#003A70] uppercase mb-1 tracking-wide">
+                    Department
+                    </h2>
+                    <h1 className="text-[24px] md:text-[30px] font-[Georgia] font-extrabold text-black leading-snug mb-2">
+                    Diversity, Equity, Inclusion & Belonging
+                    </h1>
+                    <p className="text-[14px] md:text-[15px] text-black mb-1">
+                    Addresses the needs of the UC Berkeley campus.
+                    </p>
+                    <p className="text-[12px] text-[#444444]">
+                    Doah Obaid (Associate), Risha Jain (Intern), Rishi Reddy (Director), Josalyn Huynh (Intern), Not Featured: Joshua Agupogo (Director)
+                    </p>
+                </div>
+                </div>
             </div>
+            </div>
+
+            {/* Introductory Paragraph */}
+            <div className="px-6 md:px-[10%] py-[4vh] text-center text-[15px] leading-relaxed max-w-screen-xl mx-auto">
+                <p className={`transition-all duration-300 ease-in-out ${isExpanded ? "text-black" : "text-[#3E3E3E]"}`}>
+                    Created to ensure the Office of the Executive President (OEVP) and its departments have the research to support projects, public statements, and information for the wider campus community. We are tasked with supporting the development of policy briefs and crafting and analyzing surveys and student climate data.
+                    {!isExpanded && (
+                    <span className="text-[#9E9E9E]">
+                        This department is the primary bridge between the OEVP and various cultural and identity caucuses across campus...
+                    </span>
+                    )}
+                    {isExpanded && (
+                    <span>
+                        This department is the primary bridge between the OEVP and various cultural and identity caucuses across campus. Lastly, this department works closely with the Vice Chancellor for Diversity, Equity, and Inclusion, to ensure their office is properly serving the student body.
+                    </span>
+                    )}
+                </p>
+
+                <div className="flex justify-center items-center mt-4">
+                    <button
+                    onClick={toggleReadMore}
+                    className="flex items-center text-[#747070]"
+                    aria-expanded={isExpanded}
+                    >
+                    {isExpanded ? "Read less" : "Read more"}
+                    <img
+                        src={isExpanded ? "/read-less-arrow.png" : "/read-more-arrow.png"}
+                        alt="arrow icon"
+                        className="w-3 h-3 ml-2 mt-[2px]"
+                    />
+                    </button>
+                </div>
+            </div>
+
 
             <div className="items-center mx-[10%] py-[5vh] text-center">
                 <div className="relative flex items-center">

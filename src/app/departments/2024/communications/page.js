@@ -50,7 +50,7 @@ export default function DepartmentsPage() {
                 Responsible for managing strategic communications and public relations initiatives
                 </p>
                 <p className="text-[12px] text-[#444444]">
-                Chloe Choi (Intern), Hailey Jung (Intern), Matt Blake (Associate)
+                Chloe Choi (Intern), Hailey Jung (Intern), Matt Blake (Associate), Not Featured: Shawntaya Jeanes (Director)
                 </p>
             </div>
             </div>
