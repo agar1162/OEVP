@@ -15,7 +15,7 @@ export default function departmentsPage() {
     return(
     <div>
         <Navbar />
-        <Cover 
+        {/* <Cover 
             name="Spaces Support"
             link="spaces.jpg"
             desc="Ensures that registered student organizations have access to all resources provided by the ASUC."
@@ -45,11 +45,77 @@ export default function departmentsPage() {
                 {isExpanded ? "Read less" : "Read more"}
                 </button>
             </div>
+        </div> */}
+
+        {/* Hero Section */}
+        <div className="w-full bg-white shadow-md mt-2">
+            <div className="w-full flex flex-col md:flex-row items-stretch">
+            {/* Left: Image */}
+            <div className="w-full md:w-1/2">
+                <img
+                src="/departments/spaces.jpg"
+                alt="Spaces"
+                className="w-full h-full object-cover"
+                />
+            </div>
+
+            {/* Right: Text */}
+            <div className="w-full md:w-1/2">
+                <div className="border-t-[6px] border-[#003A70] px-4 py-4 md:py-6 md:px-8 h-full flex flex-col justify-center">
+                <h2 className="text-[13px] font-bold text-[#003A70] uppercase mb-1 tracking-wide">
+                    Department
+                </h2>
+                <h1 className="text-[24px] md:text-[30px] font-[Georgia] font-extrabold text-black leading-snug mb-2">
+                    Spaces
+                </h1>
+                <p className="text-[14px] md:text-[15px] text-black mb-1">
+                    Ensures that registered student organizations have access to all resources provided by the ASUC.
+                </p>
+                <p className="text-[12px] text-[#444444]">
+                    Ailyn Perez (Deputy Director), Chloe Kubedis (Associate), Max Wohlgezogen (Associate), Michael Moy (Director), Ariana Moran (Associate)
+                </p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        {/* Expandable Caption Section */}
+        <div className="px-6 md:px-[10%] py-[4vh] text-center text-[15px] leading-relaxed max-w-screen-xl mx-auto">
+            <p className={`transition-all duration-300 ease-in-out ${isExpanded ? "text-black" : "text-[#3E3E3E]"}`}>
+                The Spaces Department is responsible for overseeing ASUC-managed student spaces, including the Hearst Gym Cages, Eshleman Hall 312, and the lockers within it. 
+                {!isExpanded && (
+                <span className="text-[#9E9E9E]">
+                    {" "}
+                    We manage the ABSA application process...
+                </span>
+                )}
+                {isExpanded && (
+                <span>
+                    {" "}
+                    We manage the ABSA application process, reviewing and approving requests to ensure fair and efficient space allocation for student organizations. This year, the department also holds a seat on the RSF Board of Governors, contributing to policy decisions and the development of annual reports that guide the future of student recreational spaces on campus.
+                </span>
+                )}
+            </p>
+
+            <div className="flex justify-center items-center mt-4">
+                <button
+                onClick={toggleReadMore}
+                className="flex items-center text-[#747070]"
+                aria-expanded={isExpanded}
+                >
+                {isExpanded ? "Read less" : "Read more"}
+                <img
+                    src={isExpanded ? "/read-less-arrow.png" : "/read-more-arrow.png"}
+                    alt="arrow icon"
+                    className="w-3 h-3 ml-2 mt-[2px]"
+                />
+                </button>
+            </div>
         </div>
 
         <div className="relative flex  items-center mx-[10%]">
             <div className="flex-grow border-t border-[#A6A6A6]"></div>
-            <span className="flex-shrink mx-4 text-[25px]">Who Are We</span>
+            <span className="flex-shrink mx-4 text-[25px]">ABSA Timeline</span>
             <div className="flex-grow border-t border-[#A6A6A6]"></div>
         </div>
 

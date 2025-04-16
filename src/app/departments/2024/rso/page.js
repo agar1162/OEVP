@@ -111,11 +111,13 @@ export default function departmentsPage() {
                 The RSO (Registered Student Organization) department supports recognized student groups on campus, fostering leadership, collaboration, and community engagement.
                 {!isExpanded && (
                 <span className="text-[#9E9E9E]">
+                    {" "}
                     We aim to strengthen the student experience through various initiatives...
                 </span>
                 )}
                 {isExpanded && (
                 <span>
+                    {" "}
                     We aim to strengthen the student experience through various initiatives that empower RSOs and connect them with the larger campus community. Our work includes providing resources, training, and event coordination for RSOs, helping student leaders navigate university policies and funding opportunities. By amplifying the voices of student groups, we aim to make Berkeley a place where every student finds a community that supports their growth and passions.
                 </span>
                 )}
@@ -136,15 +138,16 @@ export default function departmentsPage() {
                 </button>
             </div>
         </div>
+
         <div className="relative flex  items-center mx-[10%]">
              <div className="flex-grow border-t border-[#A6A6A6]"></div>
-             <span className="flex-shrink mx-4 text-[25px]">400+ RSO’s are currently ASUC Sponsored</span>
+             <span className="flex-shrink mx-4 text-[25px]">400+ ASUC Sponsored RSOs</span>
              <div className="flex-grow border-t border-[#A6A6A6]"></div>
-         </div>
+        </div>
 
-         <div className="mx-[10%] pb-10">
-             <h3 className="font-bold">Benefits of ASUC Sponsorship:</h3>
-             <ul className="list-decimal list-inside p-4">
+        <div className="mx-[10%] pb-10 mt-8">
+            <h3>ASUC Sponsorship- Info on benefits of sponsorship:</h3>
+            <ul className="list-decimal list-inside p-4 md:leading-loose mt-6">
                  <li>RSOs can apply for ASUC funding, special grants, and scholarships. They can also apply for the Senate Contingency Fund, which is available throughout the academic year for RSOs that need more funding than expected, missed deadlines, or are newly formed</li>
                  <li>RSOs can apply for office and storage space, and can use the ASUC Tax ID for fundraising. They can also apply for a fee waiver to use rooms in the MLK Student Union.</li>
                  <li>RSOs receive an on-campus mailing address</li>
@@ -152,11 +155,34 @@ export default function departmentsPage() {
                  <li>RSOs can advertise for free on the digital screens in the Student Union</li>
                  <li>RSOs have access to resources like Student Organizational Services (SOS), which provides support with finance, technology, event services, and more</li>
                  <li>RSOs can use CalLink to manage their finances and banking</li>
-             </ul>
-             <p className="pb-5">To apply for ASUC Sponsorship and/or funding, fill out the form on the ASUC Senate’s CalLink page. Form is only available during the fall and spring semesters when the Senate is in session.</p>
+            </ul>
+            <p className="pb-5 md:leading-loose mt-6">
+            To apply for ASUC Sponsorship and/or funding, fill out the form on the{" "}
+                <a
+                    href="https://callink.berkeley.edu/submitter/form/step/1?guid=a70c2cc4-f157-4f74-9517-6f0c2311daad"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline"
+                    title="Submit your ASUC Sponsorship or Funding Request Form via CalLink"
+                >
+                    ASUC Senate’s CalLink page
+                </a>
+                . The form is only available during the fall and spring semesters when the Senate is in session.
+            </p>
 
-             <a className="text-berkeley" href="https://callink.berkeley.edu/submitter/form/step/1?guid=a70c2cc4-f157-4f74-9517-6f0c2311daad"><p>Click me to apply!</p></a>
-         </div>        
+        </div>        
+
+        <div className="relative flex  items-center mx-[10%]">
+             <div className="flex-grow border-t border-[#A6A6A6]"></div>
+             <span className="flex-shrink mx-4 text-[25px]">Benefits of ASUC Sponsorship</span>
+             <div className="flex-grow border-t border-[#A6A6A6]"></div>
+        </div>
+
+        <div className="relative flex  items-center mx-[10%]">
+             <div className="flex-grow border-t border-[#A6A6A6]"></div>
+             <span className="flex-shrink mx-4 text-[25px]">Past Events</span>
+             <div className="flex-grow border-t border-[#A6A6A6]"></div>
+        </div>        
 
       <Footer />
     </div>

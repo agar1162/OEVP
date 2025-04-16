@@ -68,10 +68,10 @@ export default function departmentsPage() {
                 Legislative Affairs
                 </h1>
                 <p className="text-[14px] md:text-[15px] text-black mb-1">
-                Responsible for managing strategic communications and public relations initiatives
+                Responsible for managing strategic communications and public relations initiatives.
                 </p>
                 <p className="text-[12px] text-[#444444]">
-                Chloe Choi (Intern), Hailey Jung (Intern), Matt Blake (Associate)
+                Chloe Choi (Intern), Hailey Jung (Intern), Matt Blake (Associate), Not Featured: Audrey Lee (Director)
                 </p>
             </div>
             </div>
@@ -84,11 +84,13 @@ export default function departmentsPage() {
             The Legislative Affairs department provides the EVP along with other department leaders council on bylaws and policy initiatives by reviewing current and prospective ASUC governing documents. We also provide both the Chiefs of Staff and the EVP updates on bills that have entered the Senate and those that have passed, along with drafting and managing legislation ourselves for consideration by the Senate.{" "}
             {!isExpanded && (
             <span className="text-[#9E9E9E]">
+                {" "}
                 This includes resolutions related to student rights, DEI, and campus-wide advocacy efforts...
             </span>
             )}
             {isExpanded && (
             <span>
+                {" "}
                 This includes resolutions related to student rights, DEI, and campus-wide advocacy efforts, helping the student body navigate legislation that directly impacts them. The team collaborates with senators and other student leaders to ensure legislation is inclusive, equitable, and aligned with student needs.
             </span>
             )}
@@ -173,11 +175,11 @@ export default function departmentsPage() {
             {[
                 {
                 title: "Student Tech Fund Fee (STFF) Referendum",
-                link: "https://docs.google.com/document/d/1dQwG2S03nhfK_LrX0S2c1zMXtTbARmeC/edit?usp=sharing&ouid=106504022530916931612&rtpof=true&sd=true"
+                link: "https://docs.google.com/document/d/1LIU72whf3XwlvHcn6MFpDlxC0AX_d1IR61TFshozSys/edit?tab=t.0"
                 },
                 {
                 title: "Authorizing the Allocation of Space for University Staff",
-                link: "#"
+                link: "https://docs.google.com/document/d/1u6CPevuoObPKF08wf8PewewZNBKyNt2ht__DQnLp1DY/edit?tab=t.0"
                 },
                 {
                 title: "In Support of a Contract between the Association and the New York Times",
@@ -185,11 +187,11 @@ export default function departmentsPage() {
                 },
                 {
                 title: "Amending ASUCBL 2204: Updating and Modernizing the Spaces Director Responsibilities",
-                link: "#"
+                link: "https://docs.google.com/document/d/1G4C4wo_15CHa9HYp_-IRCqbCD48EbsQmtB8xLq9J5Cc/edit?tab=t.0"
                 },
                 {
                 title: "Resolution Against Branding Changes to the ASUC Student Union",
-                link: "#"
+                link: "https://docs.google.com/document/d/1VMI5WX28jvtLu-xbNfIphZ-A6uu78AhS4NdQUqP3oxo/edit?tab=t.0"
                 }
             ].map((item, index) => (
                 <div

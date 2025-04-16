@@ -107,7 +107,7 @@ export default function departmentsPage() {
                   Commercial Activities
                 </h1>
                 <p className="text-[14px] md:text-[15px] text-black mb-1">
-                  Responsible for managing strategic communications and public relations initiatives
+                  Responsible for managing strategic communications and public relations initiatives.
                 </p>
                 <p className="text-[12px] text-[#444444]">
                   Vanessa Jensen (Intern), Hibba Adeel (Director), Jasmine Lucero Trujillo Mata (Associate), Mayra Aguilar Perez (Associate), Sanjna Shah (Associate) 
@@ -123,11 +123,13 @@ export default function departmentsPage() {
             Commercial Activities works closely on both ongoing and future partnerships with the ASUC and UC Berkeley students. Our department ensures that important platforms, such as the Wall Street Journal and the New York Times, remain accessible to students.
             {!isExpanded && (
               <span className="text-[#9E9E9E]">
+                {" "}
                 Beyond maintaining these existing relationships, we also explore and establish new partnerships with platforms that are heavily used by students...
               </span>
             )}
             {isExpanded && (
               <span>
+                {" "}
                 Beyond maintaining these existing relationships, we also explore and establish new partnerships with platforms that are heavily used by students. Additionally, we oversee all aspects of commercial activity within the ASUC and familiarize ourselves with the ASUC-Student Union partnership and Commercial Activities and Student Services Agreement (CASSA). Collaboration is a key part of our role, and our department works closely with both the ASUC Chief Legal Officer (CLO) and the ASUC Chief Financial Officer (CFO) to ensure that all partnerships and initiatives align with legal and financial standards.
               </span>
             )}

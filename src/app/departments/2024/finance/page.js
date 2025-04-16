@@ -77,7 +77,7 @@ export default function departmentsPage() {
                         Finance
                         </h1>
                         <p className="text-[14px] md:text-[15px] text-black mb-1">
-                        Responsible for keeping track of the office budget
+                        Responsible for keeping track of the office budget.
                         </p>
                         <p className="text-[12px] text-[#444444]">
                         Emily Melero (Director), Paola Moron (Associate)
@@ -96,11 +96,13 @@ export default function departmentsPage() {
                 such as working with the ASUC Chief Financial Officer when determining the CASSA Grant.{" "}
                 {!isExpanded && (
                 <span className="text-[#9E9E9E]">
+                    {" "}
                     They work closely with the Commercial Activities Department and Student Affairs Department on projects related to or requiring financial expertise...
                 </span>
                 )}
                 {isExpanded && (
                 <span>
+                    {" "}
                     They work closely with the Commercial Activities Department and Student Affairs Department on projects related to or requiring financial expertise.
                     Whether it involves evaluating funding proposals, managing financial resources for campus programs, or advising on long-term fiscal strategies,
                     this department ensures that financial decisions are both sustainable and impactful.

@@ -159,11 +159,13 @@ export default function DepartmentsPage() {
                     Created to ensure the Office of the Executive President (OEVP) and its departments have the research to support projects, public statements, and information for the wider campus community. We are tasked with supporting the development of policy briefs and crafting and analyzing surveys and student climate data.
                     {!isExpanded && (
                     <span className="text-[#9E9E9E]">
+                        {" "}
                         This department is the primary bridge between the OEVP and various cultural and identity caucuses across campus...
                     </span>
                     )}
                     {isExpanded && (
                     <span>
+                        {" "}
                         This department is the primary bridge between the OEVP and various cultural and identity caucuses across campus. Lastly, this department works closely with the Vice Chancellor for Diversity, Equity, and Inclusion, to ensure their office is properly serving the student body.
                     </span>
                     )}
@@ -274,7 +276,7 @@ export default function DepartmentsPage() {
               </div>
           </div>
         </div> */}
-        <div className="flex flex-wrap pb-10 md:flex-regular mx-[10%] py-5">
+        <div className="flex flex-wrap pb-10 md:flex-regular mx-[10%] py-5 mt-10">
             <div className=" md:flex md:basis-1/2 hover:bg-gray-100">
                 <img src="/departments/deib/d1.jpeg" className="w-[40vh]"/>
                 <div className=" mt-4 md:mt-0 p-3">

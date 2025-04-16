@@ -36,34 +36,32 @@ export default function Home() {
       url: "/home/slideshow/team.jpeg",
       caption: "Find out more about the team and the work we do!",
       title: "THE OFFICE",
-      link: "/office/2024.html"
+      link: "/office/2024"
     }, {
       url: "/home/slideshow/events.jpg",
       caption: "Check out the events the Office of the Executive Vice President coordinates for the student body!",
       title: "EVENTS",
-      link: "departments/student-affairs.html"
+      link: "/departments/2024/student-affairs"
     },
     {
       url: "/home/slideshow/com.jpg",
       caption: "Explore resources for the diverse communities we support!",
       title: "COMMUNITIES",
-      link: "/departments/deib/communities" // used to be "/departments/deib/communities.html". will see if this change is needed
+      link: "/departments/2024/deib/communities" // used to be "/departments/deib/communities.html". will see if this change is needed
     },
     {
       url: "/home/slideshow/legis.jpg",
       caption: "Want to get involved? Learn about the different resolutions in the ASUC senate.",
       title: "LEGISLATION",
-      link: "/departments/legal-affairs.html"
+      link: "/departments/2024/legal-affairs"
     },
     {
       url: "/home/slideshow/rso.jpg",
       caption: "Read about the benefits of getting your Registered Student Organization (RSO) ASUC-funded.",
       title: "RSOs",
-      link: "/departments/rso.html"
+      link: "/departments/2024/rso"
     }
   ];
-
-
 
   const texts = [
     {
