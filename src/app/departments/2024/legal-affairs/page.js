@@ -206,7 +206,7 @@ export default function departmentsPage() {
                     href={item.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-6 py-3 bg-[#003A70] text-white text-[13.8px] font-[Times New Roman] underline rounded-sm border border-white/50"
+                    className="px-6 py-3 bg-[#003A70] text-white text-[13.8px] font-[Georgia] underline rounded-sm border border-white/50"
                     >
                     View Resolution
                     </a>

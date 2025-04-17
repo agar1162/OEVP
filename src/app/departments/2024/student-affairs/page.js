@@ -106,12 +106,99 @@ export default function departmentsPage() {
             <div className="flex-grow border-t border-[#A6A6A6]"></div>
         </div>
 
-        <div className="md:mx-[30%]  mx-[10%] py-5 place-items-center">
+        {/* <div className="md:mx-[30%]  mx-[10%] py-5 place-items-center">
             <img src="../backgrounds/stu_aff.png" />
             <p className="text-[12px] md:text-lg"><i>To celebrate Hispanic Heritage Month, the Student Affairs
                  department organized a collaborative event with Cal Dining
                   and Berkeley Dining at CrossRoads Dining Hall for a night
                    full of delicious food, vibrant music, and fun performances.</i></p>
+        </div> */}
+
+        <div className="px-[10%] mt-12 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            {/* Project 1 */}
+            <div className="bg-white bg-opacity-85 shadow-[4px_4px_8px_rgba(0,0,0,0.15)] border-x border-b border-[#D3D3D3] overflow-hidden">
+                <img
+                src="/departments/student-affairs/s1.png"
+                alt="Hispanic Heritage Month"
+                className="w-full h-auto object-cover"
+                />
+                <div className="p-4">
+                    <h3 className="text-[15.05px] font-bold font-[Georgia] leading-[25.38px] mb-2">
+                    Hispanic Heritage Month
+                    </h3>
+                    <p className="text-[12.04px] font-[Georgia] leading-[25.38px]">
+                        To celebrate Hispanic Heritage Month, the Student Affairs department organized a collaborative event with Cal Dining and Berkeley Dining at CrossRoads Dining Hall for a night full of delicious food, vibrant music, and fun performances.
+                    </p>
+                </div>
+            </div>
+
+            {/* Project 2 */}
+            <div className="bg-white bg-opacity-85 shadow-[4px_4px_8px_rgba(0,0,0,0.15)] border-x border-b border-[#D3D3D3] overflow-hidden">
+                <img
+                src="/departments/student-affairs/s2.png"
+                alt="El Mercadito"
+                className="w-full h-auto object-cover"
+                />
+                <div className="p-4">
+                    <h3 className="text-[15.05px] font-bold font-[Georgia] leading-[25.38px] mb-2">
+                        El Mercadito
+                    </h3>                    
+                    <p className="text-[12.04px] font-[Georgia] leading-[25.38px]">
+                    Worked with Senator Franco and Senator Gonzales for El Mercadito!, a night fair that celebrated the diversity of the Latino community.
+                    </p>
+                </div>
+            </div>
+
+            {/* Project 3 */}
+            <div className="bg-white bg-opacity-85 shadow-[4px_4px_8px_rgba(0,0,0,0.15)] border-x border-b border-[#D3D3D3] overflow-hidden">
+                <img
+                src="/departments/student-affairs/s3.jpeg"
+                alt="Valentine’s Day"
+                className="w-full h-auto object-cover"
+                />
+                <div className="p-4">
+                    <h3 className="text-[15.05px] font-bold font-[Georgia] leading-[25.38px] mb-2">
+                        Valentine’s Day
+                    </h3>
+                    <p className="text-[12.04px] font-[Georgia] leading-[25.38px]">
+                        On Valentine’s Day, Student Affairs handed out flowers to students on Sproul and delivered treats to the weekly Senate meeting. 
+                    </p>
+                </div>
+            </div>
+
+            {/* Project 4 */}
+            <div className="bg-white bg-opacity-85 shadow-[4px_4px_8px_rgba(0,0,0,0.15)] border-x border-b border-[#D3D3D3] overflow-hidden">
+                <img
+                src="/departments/student-affairs/s4.jpeg"
+                alt="Girls Who Code"
+                className="w-full h-auto object-contain"
+                />
+                <div className="border-t-[3px] border-[#003A70] bg-white bg-opacity-80 px-6 py-6">
+                    <h3 className="text-[15.05px] font-bold font-[Georgia] leading-[25.38px] mb-2">
+                        Girls Who Code
+                    </h3>
+                    <p className="text-[12.04px] font-[Georgia] leading-[25.38px]">
+                        Collaborated with Girls Who Code at Berkeley for an evening in honor of International Women’s Day, featuring guest speaker Morgan Young who shared her insights on tech, leadership, and women’s empowerment.
+                    </p>
+                </div>
+            </div>
+
+            {/* Project 5 */}
+            <div className="bg-white bg-opacity-85 shadow-[4px_4px_8px_rgba(0,0,0,0.15)] border-x border-b border-[#D3D3D3] overflow-hidden">
+                <img
+                src="/departments/student-affairs/s5.jpeg"
+                alt="MultiCultural Fair"
+                className="w-full h-auto object-contain"
+                />
+                <div className="border-t-[3px] border-[#003A70] bg-white bg-opacity-80 px-6 py-6">
+                    <h3 className="text-[15.05px] font-bold font-[Georgia] leading-[25.38px] mb-2">
+                        MultiCultural Fair
+                    </h3>
+                    <p className="text-[12.04px] font-[Georgia] leading-[25.38px]">
+                    Hosted the annual Spring Multicultural Fair, which coordinated with UC Berkeley’s Registered Student Organizations (RSO) to highlight various traditions around the globe.
+                    </p>
+                </div>
+            </div>
         </div>
 
         <Footer />

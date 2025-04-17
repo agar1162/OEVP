@@ -61,6 +61,8 @@
 import React, { useState } from 'react';
 import Navbar from '../../../../components/home/Navbar';
 import Footer from '../../../../components/home/Footer';
+import RSOSlideshow from '../components/RSO-Slideshow';
+
 
 export default function departmentsPage() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -172,17 +174,52 @@ export default function departmentsPage() {
 
         </div>        
 
-        <div className="relative flex  items-center mx-[10%]">
+        {/* <div className="relative flex items-center mx-[10%]">
              <div className="flex-grow border-t border-[#A6A6A6]"></div>
              <span className="flex-shrink mx-4 text-[25px]">Benefits of ASUC Sponsorship</span>
              <div className="flex-grow border-t border-[#A6A6A6]"></div>
+        </div> */}
+        <div className="relative flex flex-col sm:flex-row items-center mx-[10%] text-center">
+            {/* Top line on small screens, left line on larger screens */}
+            <div className="w-full sm:flex-grow border-t border-[#A6A6A6] sm:mr-4 mb-2 sm:mb-0"></div>
+
+            {/* Title Text (always 25px) */}
+            <span className="text-[25px] font-[Georgia]">Benefits of ASUC Sponsorship</span>
+
+            {/* Bottom line on small screens, right line on larger screens */}
+            <div className="w-full sm:flex-grow border-t border-[#A6A6A6] sm:ml-4 mt-2 sm:mt-0"></div>
         </div>
 
-        <div className="relative flex  items-center mx-[10%]">
+        <RSOSlideshow />
+
+        <div className="relative flex items-center mx-[10%]">
              <div className="flex-grow border-t border-[#A6A6A6]"></div>
              <span className="flex-shrink mx-4 text-[25px]">Past Events</span>
              <div className="flex-grow border-t border-[#A6A6A6]"></div>
-        </div>        
+        </div>
+
+        <div className="flex flex-col md:flex-row justify-center items-center gap-8 mt-10 mb-16 px-6 md:px-[10%]">
+            {/* Event 1 */}
+            <div className="w-full md:w-[500px] flex flex-col items-center">
+                <img
+                src="/departments/rso/r1.png"
+                alt="RSO Funding Workshop"
+                className="w-full h-auto object-cover shadow-md"
+                />
+                <p className="text-sm mt-6 text-center font-[Georgia]">RSO Funding Workshop</p>
+            </div>
+
+            {/* Event 2 */}
+            <div className="w-full md:w-[500px] flex flex-col items-center">
+                <img
+                src="/departments/rso/r2.jpg"
+                alt="Prelaw Panel"
+                className="w-full h-auto object-cover shadow-md"
+                />
+                <p className="text-sm mt-6 text-center font-[Georgia]">Prelaw Panel</p>
+            </div>
+        </div>
+        
 
       <Footer />
     </div>

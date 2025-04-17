@@ -119,7 +119,7 @@ export default function departmentsPage() {
             <div className="flex-grow border-t border-[#A6A6A6]"></div>
         </div>
 
-        <div className="mx-[10%] p-4 lg:mx-[15%]">
+        {/* <div className="mx-[10%] p-4 lg:mx-[15%]">
             <p>The ASUC has two main buildings: <u>MLK Jr. Student Union and Eshleman Hall. </u>
                 Both buildings are ADA accessible with entrances off of Lower Sproul Plaza.
                 MLK Jr. Student Union also has entrances off of Upper Sproul Plaza. 
@@ -138,7 +138,47 @@ export default function departmentsPage() {
                     <li>The Student Environmental Resource Center offers more progress towards sustainability by providing resources for students to contribute to a beneficial cause.</li>
                 </ul>
             </div>
+        </div> */}
+        <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 px-6 md:px-[10%] py-10">
+            {/* Instagtam Timeline Image and Caption */}
+            <div className="w-full md:w-[520px] flex flex-col items-center">
+                <img
+                src="/departments/space/s1.png"
+                alt="Instagtam Timeline"
+                className="w-full h-auto object-cover shadow-md"
+                />
+                <p className="text-sm mt-6 text-center font-[Georgia]">Instagtam Timeline</p>
+            </div>
+
+            {/* ABSA Timeline Card */}
+            <div className="w-full max-w-[550px] bg-white shadow-md overflow-hidden rounded-none scale-[0.95]">
+                <div className="h-[280px] md:h-[330px] overflow-hidden">
+                <img
+                    src="/departments/space/s2.png"
+                    alt="ABSA Timeline"
+                    className="w-full h-full object-cover"
+                />
+                </div>
+                <div className="border-t-[3px] border-[#003A70] bg-white bg-opacity-80 px-6 py-6 space-y-4">
+                <h3 className="text-black text-[22px] leading-[33px] font-[Georgia] font-normal">
+                    ABSA Timeline
+                </h3>
+                <p className="text-black text-[18.5px] leading-[20px] font-[Georgia] font-normal">
+                    This article outlines important reminders about your OASIS-Sponsored registered student group (RSO), budget and spaces allocations for the upcoming 2025-2026 academic year. Please be prepared to review the application carefully once it launches for detailed instructions and information.
+                </p>
+                <div className="mt-6 flex justify-end">
+                    <a
+                    href="https://asuc.org/absa/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-3 bg-[#003A70] text-white text-[13.8px] font-[Georgia] underline rounded-sm border border-white/50"
+                    >
+                        Read More
+                    </a>
+                </div>
+            </div>
         </div>
+    </div>
 
         <Footer />
     </div>

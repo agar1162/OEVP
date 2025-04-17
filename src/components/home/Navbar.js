@@ -136,6 +136,8 @@ export default function Navbar() {
   const [isPartnershipsMenuVisible, setPartnershipsMenuVisible] = useState(false);
   const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+  const [isPartnershipsDropdownMobile, setIsPartnershipsDropdownMobile] = useState(false);
+
   const hideTimeout = useRef(null);
 
   const pathname = usePathname();
@@ -215,8 +217,31 @@ export default function Navbar() {
           <li><a href="/" className="hover:text-gray-400">Home</a></li>
           <li><a href="/office" className="hover:text-gray-400">Office</a></li>
           <li><a href="/departments" className="hover:text-gray-400">Departments</a></li>
-          <li><a href="/departments/deib/communities" className="hover:text-gray-400">DEI Resources</a></li>
-          <li><a href="/partnerships" className="hover:text-gray-400">Partnerships</a></li>
+          <li><a href="/departments/2024/deib/communities" className="hover:text-gray-400">DEI Resources</a></li>
+          {/* <li><a href="/partnerships" className="hover:text-gray-400">Partnerships</a></li> */}
+          <li>
+            <button
+              className="flex items-center justify-between w-full hover:text-gray-400"
+              onClick={() => setIsPartnershipsDropdownMobile((prev) => !prev)}
+            >
+              Partnerships
+              <img
+                src="/vector.svg"
+                alt="Dropdown arrow"
+                className={`w-4 h-2 ml-2 transition-transform ${isPartnershipsDropdownMobile ? "rotate-180" : ""}`}
+              />
+            </button>
+
+            {isPartnershipsDropdownMobile && (
+              <ul className="pl-4 mt-2 space-y-2">
+                <li>
+                  <a href="/partnerships/nyt_wsj" className="text-sm text-white hover:text-gray-400">
+                    Free Newspaper Subscriptions
+                  </a>
+                </li>
+              </ul>
+            )}
+          </li>
           <li>
             <a
               href="https://berkeley.zoom.us/j/6685684771"

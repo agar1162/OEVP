@@ -2,159 +2,159 @@
   "pages": {
     "/_not-found/page": [
       "static/chunks/webpack-ca91b70416cab134.js",
-      "static/chunks/4bd1b696-9e8d3b15c71e6c2b.js",
-      "static/chunks/684-1d1f85948d080777.js",
+      "static/chunks/4bd1b696-36ea7e462e456b43.js",
+      "static/chunks/684-0adec25be1fb2972.js",
       "static/chunks/main-app-12606f4fac281842.js",
-      "static/chunks/app/_not-found/page-2bac13d04b4c69ac.js"
+      "static/chunks/app/_not-found/page-83db7de29922eb69.js"
     ],
     "/layout": [
       "static/chunks/webpack-ca91b70416cab134.js",
-      "static/chunks/4bd1b696-9e8d3b15c71e6c2b.js",
-      "static/chunks/684-1d1f85948d080777.js",
+      "static/chunks/4bd1b696-36ea7e462e456b43.js",
+      "static/chunks/684-0adec25be1fb2972.js",
       "static/chunks/main-app-12606f4fac281842.js",
-      "static/css/7f3d054b57b48056.css",
+      "static/css/f409d89bb8eb5ca4.css",
       "static/chunks/app/layout-0dc8d61bb4ad25b7.js"
-    ],
-    "/departments/2024/deib/communities/page": [
-      "static/chunks/webpack-ca91b70416cab134.js",
-      "static/chunks/4bd1b696-9e8d3b15c71e6c2b.js",
-      "static/chunks/684-1d1f85948d080777.js",
-      "static/chunks/main-app-12606f4fac281842.js",
-      "static/chunks/852-421ae4029d58c1c8.js",
-      "static/chunks/app/departments/2024/deib/communities/page-07c9f5baf5691ee8.js"
-    ],
-    "/departments/2024/legal-affairs/page": [
-      "static/chunks/webpack-ca91b70416cab134.js",
-      "static/chunks/4bd1b696-9e8d3b15c71e6c2b.js",
-      "static/chunks/684-1d1f85948d080777.js",
-      "static/chunks/main-app-12606f4fac281842.js",
-      "static/chunks/852-421ae4029d58c1c8.js",
-      "static/chunks/app/departments/2024/legal-affairs/page-d668cc5de759a040.js"
     ],
     "/departments/2024/communications/page": [
       "static/chunks/webpack-ca91b70416cab134.js",
-      "static/chunks/4bd1b696-9e8d3b15c71e6c2b.js",
-      "static/chunks/684-1d1f85948d080777.js",
+      "static/chunks/4bd1b696-36ea7e462e456b43.js",
+      "static/chunks/684-0adec25be1fb2972.js",
       "static/chunks/main-app-12606f4fac281842.js",
-      "static/chunks/852-421ae4029d58c1c8.js",
-      "static/chunks/app/departments/2024/communications/page-235f40b422e7ba1d.js"
+      "static/chunks/852-4668192629d8e026.js",
+      "static/chunks/app/departments/2024/communications/page-db99a8882b23d2cf.js"
     ],
     "/departments/2024/commercial-activities/page": [
       "static/chunks/webpack-ca91b70416cab134.js",
-      "static/chunks/4bd1b696-9e8d3b15c71e6c2b.js",
-      "static/chunks/684-1d1f85948d080777.js",
+      "static/chunks/4bd1b696-36ea7e462e456b43.js",
+      "static/chunks/684-0adec25be1fb2972.js",
       "static/chunks/main-app-12606f4fac281842.js",
-      "static/chunks/852-421ae4029d58c1c8.js",
-      "static/chunks/app/departments/2024/commercial-activities/page-13829ccb12181854.js"
+      "static/chunks/852-4668192629d8e026.js",
+      "static/chunks/app/departments/2024/commercial-activities/page-3e37b6c2de53c9ae.js"
     ],
     "/departments/2024/deib/page": [
       "static/chunks/webpack-ca91b70416cab134.js",
-      "static/chunks/4bd1b696-9e8d3b15c71e6c2b.js",
-      "static/chunks/684-1d1f85948d080777.js",
+      "static/chunks/4bd1b696-36ea7e462e456b43.js",
+      "static/chunks/684-0adec25be1fb2972.js",
       "static/chunks/main-app-12606f4fac281842.js",
-      "static/chunks/852-421ae4029d58c1c8.js",
-      "static/chunks/app/departments/2024/deib/page-72a6696079c8704a.js"
+      "static/chunks/852-4668192629d8e026.js",
+      "static/chunks/app/departments/2024/deib/page-1cf9edd0ab8494da.js"
     ],
-    "/departments/2024/rso/page": [
+    "/departments/2024/deib/communities/page": [
       "static/chunks/webpack-ca91b70416cab134.js",
-      "static/chunks/4bd1b696-9e8d3b15c71e6c2b.js",
-      "static/chunks/684-1d1f85948d080777.js",
+      "static/chunks/4bd1b696-36ea7e462e456b43.js",
+      "static/chunks/684-0adec25be1fb2972.js",
       "static/chunks/main-app-12606f4fac281842.js",
-      "static/chunks/852-421ae4029d58c1c8.js",
-      "static/chunks/app/departments/2024/rso/page-050eec8fe5962181.js"
+      "static/chunks/852-4668192629d8e026.js",
+      "static/chunks/app/departments/2024/deib/communities/page-80e8c851e8377eac.js"
     ],
     "/departments/2024/finance/page": [
       "static/chunks/webpack-ca91b70416cab134.js",
-      "static/chunks/4bd1b696-9e8d3b15c71e6c2b.js",
-      "static/chunks/684-1d1f85948d080777.js",
+      "static/chunks/4bd1b696-36ea7e462e456b43.js",
+      "static/chunks/684-0adec25be1fb2972.js",
       "static/chunks/main-app-12606f4fac281842.js",
-      "static/chunks/852-421ae4029d58c1c8.js",
-      "static/chunks/app/departments/2024/finance/page-d99e38ee28182783.js"
+      "static/chunks/852-4668192629d8e026.js",
+      "static/chunks/app/departments/2024/finance/page-e4f7948647d10382.js"
     ],
-    "/departments/2024/sswb/page": [
+    "/departments/2024/legal-affairs/page": [
       "static/chunks/webpack-ca91b70416cab134.js",
-      "static/chunks/4bd1b696-9e8d3b15c71e6c2b.js",
-      "static/chunks/684-1d1f85948d080777.js",
+      "static/chunks/4bd1b696-36ea7e462e456b43.js",
+      "static/chunks/684-0adec25be1fb2972.js",
       "static/chunks/main-app-12606f4fac281842.js",
-      "static/chunks/852-421ae4029d58c1c8.js",
-      "static/chunks/app/departments/2024/sswb/page-ae9c8b51c270aa8f.js"
-    ],
-    "/departments/2024/student-affairs/page": [
-      "static/chunks/webpack-ca91b70416cab134.js",
-      "static/chunks/4bd1b696-9e8d3b15c71e6c2b.js",
-      "static/chunks/684-1d1f85948d080777.js",
-      "static/chunks/main-app-12606f4fac281842.js",
-      "static/chunks/852-421ae4029d58c1c8.js",
-      "static/chunks/app/departments/2024/student-affairs/page-e2e2ad4c23c14e1e.js"
-    ],
-    "/office/2024/page": [
-      "static/chunks/webpack-ca91b70416cab134.js",
-      "static/chunks/4bd1b696-9e8d3b15c71e6c2b.js",
-      "static/chunks/684-1d1f85948d080777.js",
-      "static/chunks/main-app-12606f4fac281842.js",
-      "static/chunks/app/office/2024/page-387f22808ecb8a6f.js"
+      "static/chunks/852-4668192629d8e026.js",
+      "static/chunks/app/departments/2024/legal-affairs/page-a27edb45adc01152.js"
     ],
     "/departments/2024/page": [
       "static/chunks/webpack-ca91b70416cab134.js",
-      "static/chunks/4bd1b696-9e8d3b15c71e6c2b.js",
-      "static/chunks/684-1d1f85948d080777.js",
+      "static/chunks/4bd1b696-36ea7e462e456b43.js",
+      "static/chunks/684-0adec25be1fb2972.js",
       "static/chunks/main-app-12606f4fac281842.js",
-      "static/chunks/244-c73f75cdf1787d85.js",
-      "static/chunks/852-421ae4029d58c1c8.js",
+      "static/chunks/244-2ed838e0191aecde.js",
+      "static/chunks/852-4668192629d8e026.js",
       "static/chunks/app/departments/2024/page-23b3a83df7ad5d68.js"
+    ],
+    "/departments/2024/rso/page": [
+      "static/chunks/webpack-ca91b70416cab134.js",
+      "static/chunks/4bd1b696-36ea7e462e456b43.js",
+      "static/chunks/684-0adec25be1fb2972.js",
+      "static/chunks/main-app-12606f4fac281842.js",
+      "static/chunks/852-4668192629d8e026.js",
+      "static/chunks/app/departments/2024/rso/page-eb606dcd3ae92828.js"
     ],
     "/departments/2024/spaces/page": [
       "static/chunks/webpack-ca91b70416cab134.js",
-      "static/chunks/4bd1b696-9e8d3b15c71e6c2b.js",
-      "static/chunks/684-1d1f85948d080777.js",
+      "static/chunks/4bd1b696-36ea7e462e456b43.js",
+      "static/chunks/684-0adec25be1fb2972.js",
       "static/chunks/main-app-12606f4fac281842.js",
-      "static/chunks/852-421ae4029d58c1c8.js",
-      "static/chunks/app/departments/2024/spaces/page-a99895a1e4e19c82.js"
-    ],
-    "/departments/page": [
-      "static/chunks/webpack-ca91b70416cab134.js",
-      "static/chunks/4bd1b696-9e8d3b15c71e6c2b.js",
-      "static/chunks/684-1d1f85948d080777.js",
-      "static/chunks/main-app-12606f4fac281842.js",
-      "static/chunks/app/departments/page-1a1b0c64ec95d6d3.js"
+      "static/chunks/852-4668192629d8e026.js",
+      "static/chunks/app/departments/2024/spaces/page-897d8b14efd77b9d.js"
     ],
     "/departments/2024/ssc/page": [
       "static/chunks/webpack-ca91b70416cab134.js",
-      "static/chunks/4bd1b696-9e8d3b15c71e6c2b.js",
-      "static/chunks/684-1d1f85948d080777.js",
+      "static/chunks/4bd1b696-36ea7e462e456b43.js",
+      "static/chunks/684-0adec25be1fb2972.js",
       "static/chunks/main-app-12606f4fac281842.js",
-      "static/chunks/852-421ae4029d58c1c8.js",
-      "static/chunks/app/departments/2024/ssc/page-c8499bb20c991e4a.js"
+      "static/chunks/852-4668192629d8e026.js",
+      "static/chunks/app/departments/2024/ssc/page-cec98b7011d1bd74.js"
     ],
     "/office/page": [
       "static/chunks/webpack-ca91b70416cab134.js",
-      "static/chunks/4bd1b696-9e8d3b15c71e6c2b.js",
-      "static/chunks/684-1d1f85948d080777.js",
+      "static/chunks/4bd1b696-36ea7e462e456b43.js",
+      "static/chunks/684-0adec25be1fb2972.js",
       "static/chunks/main-app-12606f4fac281842.js",
       "static/chunks/app/office/page-64767ad7c65779c0.js"
     ],
-    "/partnerships/nyt_wsj/page": [
+    "/departments/page": [
       "static/chunks/webpack-ca91b70416cab134.js",
-      "static/chunks/4bd1b696-9e8d3b15c71e6c2b.js",
-      "static/chunks/684-1d1f85948d080777.js",
+      "static/chunks/4bd1b696-36ea7e462e456b43.js",
+      "static/chunks/684-0adec25be1fb2972.js",
       "static/chunks/main-app-12606f4fac281842.js",
-      "static/chunks/app/partnerships/nyt_wsj/page-4ca66cc99044773e.js"
+      "static/chunks/app/departments/page-1a1b0c64ec95d6d3.js"
+    ],
+    "/departments/2024/student-affairs/page": [
+      "static/chunks/webpack-ca91b70416cab134.js",
+      "static/chunks/4bd1b696-36ea7e462e456b43.js",
+      "static/chunks/684-0adec25be1fb2972.js",
+      "static/chunks/main-app-12606f4fac281842.js",
+      "static/chunks/852-4668192629d8e026.js",
+      "static/chunks/app/departments/2024/student-affairs/page-326aca592bfbfb6f.js"
     ],
     "/page": [
       "static/chunks/webpack-ca91b70416cab134.js",
-      "static/chunks/4bd1b696-9e8d3b15c71e6c2b.js",
-      "static/chunks/684-1d1f85948d080777.js",
+      "static/chunks/4bd1b696-36ea7e462e456b43.js",
+      "static/chunks/684-0adec25be1fb2972.js",
       "static/chunks/main-app-12606f4fac281842.js",
-      "static/css/7f3d054b57b48056.css",
-      "static/chunks/852-421ae4029d58c1c8.js",
-      "static/chunks/app/page-2ef2afac8b8f3dd2.js"
+      "static/css/f409d89bb8eb5ca4.css",
+      "static/chunks/852-4668192629d8e026.js",
+      "static/chunks/app/page-712428d3b4f928ac.js"
+    ],
+    "/office/2024/page": [
+      "static/chunks/webpack-ca91b70416cab134.js",
+      "static/chunks/4bd1b696-36ea7e462e456b43.js",
+      "static/chunks/684-0adec25be1fb2972.js",
+      "static/chunks/main-app-12606f4fac281842.js",
+      "static/chunks/app/office/2024/page-1f46ebf8044662d4.js"
+    ],
+    "/departments/2024/sswb/page": [
+      "static/chunks/webpack-ca91b70416cab134.js",
+      "static/chunks/4bd1b696-36ea7e462e456b43.js",
+      "static/chunks/684-0adec25be1fb2972.js",
+      "static/chunks/main-app-12606f4fac281842.js",
+      "static/chunks/852-4668192629d8e026.js",
+      "static/chunks/app/departments/2024/sswb/page-2d784edcbacc16b7.js"
     ],
     "/partnerships/page": [
       "static/chunks/webpack-ca91b70416cab134.js",
-      "static/chunks/4bd1b696-9e8d3b15c71e6c2b.js",
-      "static/chunks/684-1d1f85948d080777.js",
+      "static/chunks/4bd1b696-36ea7e462e456b43.js",
+      "static/chunks/684-0adec25be1fb2972.js",
       "static/chunks/main-app-12606f4fac281842.js",
-      "static/chunks/app/partnerships/page-99bb1e54d9d6550f.js"
+      "static/chunks/app/partnerships/page-c136f76f197764c5.js"
+    ],
+    "/partnerships/nyt_wsj/page": [
+      "static/chunks/webpack-ca91b70416cab134.js",
+      "static/chunks/4bd1b696-36ea7e462e456b43.js",
+      "static/chunks/684-0adec25be1fb2972.js",
+      "static/chunks/main-app-12606f4fac281842.js",
+      "static/chunks/app/partnerships/nyt_wsj/page-e62b7eaaf9e7397c.js"
     ]
   }
 }

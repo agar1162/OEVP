@@ -277,7 +277,7 @@ export default function Home() {
         </div>
       </div>
      
-      <div id="WHO_WE_ARE" className="mx-8 py-[10vh]">
+      {/* <div id="WHO_WE_ARE" className="mx-8 py-[10vh]">
         <h3 className="flex items-center mx-[10%] text-2xl lg:text-3xl text-center">
                 <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
                 <span className="px-4">Who Are We?</span>
@@ -316,14 +316,44 @@ export default function Home() {
             </menu>
           </div>
 
-          {/* Main Content */}
           <div id="text" className="lg:basis-1/2 pt-10 md:pt-0">
             <p className="">
               {texts[currentText].text}
             </p>
           </div>
         </main>
-      </div>
+      </div> */}
+
+        <div id="WHO_WE_ARE" className="px-6 md:px-[10%] py-[10vh]">
+          <div className="flex items-center justify-center mb-10">
+            <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+            <h3 className="px-4 text-[28px] font-[Georgia] leading-[37.5px] text-black text-center">Who are we?</h3>
+            <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+          </div>
+
+          <div className="flex flex-col lg:flex-row gap-10 items-start">
+            {/* Left table */}
+            <div className="w-full lg:w-1/2">
+              {/* <div className="border-2 border-t-[6.5px] border-[#003A70] divide-y divide-gray-200 shadow-lg w-full"> */}
+              <div className="flex flex-col border border-[#D3D3D3] border-t-[4px] border-t-[#003A70] divide-y divide-[#D3D3D3] shadow-lg w-full mt-2">
+
+                {["Our Mission", "What is the Executive Vice President’s (EVP) Role?", "What Does Our Office Do?", "Resources (RSOs & Students)"].map((item, idx) => (
+                  <a key={idx}
+                    onClick={() => setCurrentText(idx)}
+                    className="block px-6 py-4 text-[15px] font-[Georgia] hover:bg-[#003A70] hover:text-white transition cursor-pointer">
+                    {item}
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            {/* Right paragraph */}
+            <div className="w-full lg:w-3/4 text-[20px] font-[Georgia] leading-[36px]">
+              <p>{texts[currentText].text}</p>
+            </div>
+          </div>
+        </div>
+
 
         
         {/* <div 
@@ -554,18 +584,18 @@ export default function Home() {
         </div>      
 
       {/* Events Section */}
-      <div id="EVENTS" className="px-[10%] py-[10vh]">
+      {/* <div id="EVENTS" className="px-[10%] py-[10vh]"> */}
         {/* Section Header */}
-        <div className="flex items-center justify-center mb-10">
+        {/* <div className="flex items-center justify-center mb-10">
           <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
           <h3 className="px-4 text-2xl lg:text-3xl font-[Georgia]">Come To Our Events</h3>
           <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-        </div>
+        </div> */}
 
         {/* Content */}
-        <div className="flex flex-col lg:flex-row gap-10 items-start">
+        {/* <div className="flex flex-col lg:flex-row gap-10 items-start"> */}
           {/* Left Text */}
-          <div className="lg:pl-[5%] flex-1 text-[18px] md:text-[20px] font-[Georgia] leading-[36px]">
+          {/* <div className="lg:pl-[5%] flex-1 text-[18px] md:text-[20px] font-[Georgia] leading-[36px]">
             <p>
               The Office of the Executive Vice President organizes a wide range of events,
               including those led independently by one of our departments, collaborations with
@@ -578,10 +608,10 @@ export default function Home() {
               leadership panels, networking opportunities, community-building events, and
               advocacy initiatives.
             </p>
-          </div>
+          </div> */}
 
           {/* Right Image */}
-          <div className="lg:pr-[5%] flex-1">
+          {/* <div className="lg:pr-[5%] flex-1">
             <img src="/home/e_1.png" alt="Event" className="w-full h-auto" />
             <p className="text-[13.36px] font-[Georgia] italic mt-2">
               The Office of the Executive Vice President held the{' '}
@@ -591,29 +621,63 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div id="PARTNER" className="px-[10%] pb-[15vh]">
-        {/* Section Header */}
+      <div id="EVENTS" className="px-6 md:px-[10%] py-[10vh]">
         <div className="flex items-center justify-center mb-10">
           <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-          <h3 className="px-4 text-2xl lg:text-3xl font-[Georgia] text-center">Work With Us</h3>
+          <h3 className="px-4 text-[28px] font-[Georgia] leading-[37.5px]">Come To Our Events</h3>
           <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
         </div>
 
+        <div className="flex flex-col lg:flex-row gap-10 items-start">
+          {/* Left text */}
+          <div className="w-full lg:w-1/2 text-[18px] lg:text-[20px] font-[Georgia] leading-[36px]">
+            <p>
+              The Office of the Executive Vice President organizes a wide range of events,
+              including those led independently by one of our departments, collaborations
+              with other ASUC offices or campus groups, and events in conjunction with companies,
+              external groups, or individuals.
+            </p>
+            <p className="mt-4">
+              These events vary in scope and purpose, serving the diverse needs of the campus
+              community & beyond. Past events have included professional development workshops,
+              leadership panels, networking opportunities, community-building events, and
+              advocacy initiatives.
+            </p>
+          </div>
+
+          {/* Right image */}
+          <div className="w-full lg:w-1/2">
+            <img src="/home/e_1.png" alt="Event" className="w-full h-auto" />
+            <p className="text-[13.36px] font-[Georgia] italic mt-2 leading-[24px]">
+              The Office of the Executive Vice President held the <span className="underline">PPIA Junior Summer Institute</span> Panel and Mixer in collaboration with the Goldman School of Public Policy and the Student Policy Institute at Berkeley.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* <div id="PARTNER" className="px-[10%] pb-[15vh]"> */}
+        {/* Section Header */}
+        {/* <div className="flex items-center justify-center mb-10">
+          <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+          <h3 className="px-4 text-2xl lg:text-3xl font-[Georgia] text-center">Work With Us</h3>
+          <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+        </div> */}
+
         {/* Content */}
-        <div className="flex flex-col lg:flex-row gap-10 items-center justify-center text-justify">
+        {/* <div className="flex flex-col lg:flex-row gap-10 items-center justify-center text-justify"> */}
           {/* Left Image */}
-          <div className="flex-1 lg:pl-[5%] max-w-[500px]">
+          {/* <div className="flex-1 lg:pl-[5%] max-w-[500px]">
             <img
               src="/home/work.png"
               alt="Work With Us"
               className="w-full h-auto"
             />
-          </div>
+          </div> */}
 
           {/* Right Text + CTA */}
-          <div className="flex-1 lg:pr-[5%] max-w-[600px]">
+          {/* <div className="flex-1 lg:pr-[5%] max-w-[600px]">
             <p className="text-[22px] font-[Georgia] font-normal leading-[37.41px] mb-0.5 text-justify">
               Are you an<br />
               Organization or Company<br />
@@ -632,8 +696,40 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
+      <div id="PARTNER" className="px-6 md:px-[10%] pb-[15vh]">
+        <div className="flex items-center justify-center mb-10">
+          <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+          <h3 className="px-4 text-[28px] font-[Georgia] leading-[37.5px] text-center">Work with Us</h3>
+          <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+        </div>
 
+        <div className="flex flex-col lg:flex-row gap-10 items-center justify-center">
+          {/* Image */}
+          <div className="w-full lg:w-1/2 max-w-[500px]">
+            <img src="/home/work.png" alt="Work With Us" className="w-full h-auto" />
+          </div>
+
+          {/* Text & CTA */}
+          <div className="w-full lg:w-1/2 max-w-[600px] text-[18px] font-[Georgia]">
+            <p className="text-[22px] font-[Georgia] font-normal leading-[37.41px] mb-2">
+              Are you an Organization or Company<br />
+              that would like to work with us?
+            </p>
+            <p className="text-[14px] leading-[28px] mb-4 text-justify">
+              The Office of the Executive Vice President can partner with services or platforms
+              that address student needs and make them available to the student body, ensuring
+              these resources are provided in the best interest of students, on behalf of the office.
+            </p>
+            <a
+              href="/partnerships"
+              className="inline-block px-14 py-3 bg-[#003A70] rounded-[10px] text-white text-[18px] font-[Georgia] hover:bg-[#002957] transition"
+            >
+              Work With Us
+            </a>
+          </div>
+        </div>
+      </div>
       <Footer />
     </div>
   );

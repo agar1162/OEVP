@@ -380,7 +380,6 @@ export default function departmentsPage() {
         </div>
       </div>
 
-
         <div className="items-center mx-[10%] pt-[5vh] text-center">
           <div className="relative flex items-center ">
               <div className="flex-grow border-t border-[#A6A6A6] "></div>
@@ -390,16 +389,15 @@ export default function departmentsPage() {
         </div>
         
         <div className="flex flex-wrap pb-10 md:flex-regular mx-[10%] py-5">
-            <div className=" md:flex md:basis-1/2 hover:bg-gray-100">
-              <img src="/departments/comm_act/c3.png" className="w-[40vh]"/>
-              <div className=" mt-4 md:mt-0 p-3">
-                <a href="https://www.dailycal.org/news/campus/asuc/asuc-contracts-provide-students-more-than-new-york-times-subscription/article_37319cec-a702-11ef-a1e8-2bba65ea0e83.html">
-                  <h3 className="font-bold text-xl leading-[32px]">ASUC contracts provide students more than New York Times subscription</h3>
-                  <p className="text-[#5E5E5E] text-sm leading-[32px]">Through ASUC partnerships with the New York Times, the Wall Street Journal and LinkedIn Premium.</p>
-                </a>
-                
-              </div>
+          <div className=" md:flex md:basis-1/2 hover:bg-gray-100">
+            <img src="/departments/comm_act/c3.png" className="w-[40vh]"/>
+            <div className=" mt-4 md:mt-0 p-3">
+              <a href="https://www.dailycal.org/news/campus/asuc/asuc-contracts-provide-students-more-than-new-york-times-subscription/article_37319cec-a702-11ef-a1e8-2bba65ea0e83.html">
+                <h3 className="font-bold text-xl leading-[32px]">ASUC contracts provide students more than New York Times subscription</h3>
+                <p className="text-[#5E5E5E] text-sm leading-[32px]">Through ASUC partnerships with the New York Times, the Wall Street Journal and LinkedIn Premium.</p>
+              </a>                
             </div>
+          </div>
 
 
           <div className=" md:flex md:basis-1/2 hover:bg-gray-100">
@@ -409,8 +407,8 @@ export default function departmentsPage() {
                 <h3 className="font-bold text-xl leading-[32px]">ASUC announces partnerships with New York Times, Wall Street Journal</h3>
                 <p className="text-[#5E5E5E] text-sm leading-[32px]">Through ASUC partnerships with the New York Times, the Wall Street Journal and LinkedIn Premium.</p>
               </a>
-              </div>
-        </div>
+            </div>
+          </div>
         </div>
 
         <Footer />
