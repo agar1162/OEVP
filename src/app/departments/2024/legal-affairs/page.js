@@ -71,7 +71,7 @@ export default function departmentsPage() {
                 Responsible for managing strategic communications and public relations initiatives.
                 </p>
                 <p className="text-[12px] text-[#444444]">
-                Chloe Choi (Intern), Hailey Jung (Intern), Matt Blake (Associate), Not Featured: Audrey Lee (Director)
+                    Crystal Kim (Intern), Dylan Lucks (Associate), Andrea Ugaz (Intern), Not Featured: Audrey Lee (Director)
                 </p>
             </div>
             </div>
@@ -165,7 +165,9 @@ export default function departmentsPage() {
             <img src="../home/legis.png"/>
             <a className="text-berkeley" href="https://docs.google.com/spreadsheets/d/1VZvZXj5SnRYNmMwoJuFMcAf3actc0e6YN4wg9z3LRxs/edit?gid=643676931#gid=643676931"><u><i>ASUC Historical Resolution Tracker</i></u></a>
         </div> */}
-        <div className="relative flex  items-center mx-[10%]">
+
+        {/* Will keep this commented out for now */}
+        {/* <div className="relative flex  items-center mx-[10%]">
             <div className="flex-grow border-t border-[#A6A6A6]"></div>
             <span className="flex-shrink mx-4 text-[25px]">Our Work</span>
             <div className="flex-grow border-t border-[#A6A6A6]"></div>
@@ -213,7 +215,7 @@ export default function departmentsPage() {
                 </div>
                 </div>
             ))}
-        </div>
+        </div> */}
 
         <Footer />
 

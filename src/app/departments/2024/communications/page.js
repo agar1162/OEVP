@@ -148,7 +148,8 @@ export default function DepartmentsPage() {
         </div>
 
         {/* Instagram Posts Grid */}
-        <div className="lg:grid lg:grid-cols-3 px-[10%] pt-5">
+        {/* <div className="lg:grid lg:grid-cols-3 px-[10%] pt-5"> */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 pt-8 px-6 sm:px-[10%] place-items-center">
         <InstagramPostEmbed postId="DB7snwWJeB9" />
         <InstagramPostEmbed postId="DCff6JySrrl" />
         <InstagramPostEmbed postId="DB0UAelxK0v" />

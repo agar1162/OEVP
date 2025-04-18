@@ -251,7 +251,7 @@ export default function Home() {
         </a>
 
         {/* Bottom Slide Nav */}
-        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex md:text-2xl gap-[4vw] md:gap-[10vw] p-10 w-full justify-center z-10">
+        {/* <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex md:text-2xl gap-[4vw] md:gap-[10vw] p-10 w-full justify-center z-10">
           {slides.map((slide, index) => (
             // <button key={index} onClick={() => setCurrentIndex(index)} className="relative group">
             //   <h3 className="transition duration-500 ease-in-out font-bold text-lg md:text-xl">
@@ -274,7 +274,46 @@ export default function Home() {
               </h3>
             </button>
           ))}
+        </div> */}
+        {/* <div className="absolute bottom-0 w-full overflow-x-auto whitespace-nowrap z-10 px-6 pb-6">
+          <div className="inline-flex gap-6">
+            {slides.map((slide, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentIndex(index)}
+                className="relative group flex-shrink-0 px-2"
+              >
+                {currentIndex === index && (
+                  <span className="block h-[2px] bg-white mb-1 w-full"></span>
+                )}
+                <h3 className="transition duration-500 ease-in-out font-bold text-lg md:text-xl">
+                  {slide.title}
+                </h3>
+              </button>
+            ))}
+          </div>
+        </div> */}
+
+        <div className="absolute bottom-0 w-full overflow-x-auto whitespace-nowrap z-10 px-6 pb-6">
+          {/* <div className="inline-flex gap-[4vw] md:gap-[10vw] px-4 py-4 md:justify-center"> */}
+          <div className="inline-flex gap-[4vw] md:gap-[10vw] px-4 py-4 justify-start md:justify-center">
+            {slides.map((slide, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentIndex(index)}
+                className="relative group flex-shrink-0"
+              >
+                {currentIndex === index && (
+                  <span className="block h-[2px] bg-white mb-1 w-full"></span>
+                )}
+                <h3 className="transition duration-500 ease-in-out font-bold text-lg md:text-xl whitespace-nowrap">
+                  {slide.title}
+                </h3>
+              </button>
+            ))}
+          </div>
         </div>
+
       </div>
      
       {/* <div id="WHO_WE_ARE" className="mx-8 py-[10vh]">
@@ -324,8 +363,10 @@ export default function Home() {
         </main>
       </div> */}
 
-        <div id="WHO_WE_ARE" className="px-6 md:px-[10%] py-[10vh]">
-          <div className="flex items-center justify-center mb-10">
+        {/* <div id="WHO_WE_ARE" className="px-6 md:px-[10%] py-[10vh]"> */}
+        {/* <div id="WHO_WE_ARE" className="px-6 md:px-[10%] pt-[10vh] pb-[10vh]"> */}
+        <div id="WHO_WE_ARE" className="px-6 md:px-[10%] py-[8vh]">
+          <div className="flex items-center justify-center mb-6">
             <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
             <h3 className="px-4 text-[28px] font-[Georgia] leading-[37.5px] text-black text-center">Who are we?</h3>
             <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
@@ -372,9 +413,11 @@ export default function Home() {
                 <p className="text-xl text-center mx-4">New York Times articles read monthly by students</p>
             </div>
         </div> */}
-        <div 
+        {/* <div 
           id="ORGSTATS"
-          className="flex flex-wrap justify-center items-center gap-[12vw] py-[10vh] pb-[15vh]">
+          className="flex flex-wrap justify-center items-center gap-[12vw] py-[10vh] pb-[15vh]"> */}
+        {/* <div id="ORGSTATS" className="flex flex-wrap justify-center items-center gap-[12vw] pt-[10vh] pb-[10vh]"> */}
+        <div id="ORGSTATS" className="flex flex-wrap justify-center items-center gap-[12vw] px-6 md:px-[10%] pb-[10vh]">
           <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
             <h1 className="text-[#003A70] text-5xl md:text-7xl font-bold pb-5">
               <CountUp end={400} duration={6} suffix="+"/>
@@ -533,55 +576,56 @@ export default function Home() {
           id="NYT_WSJ"
           className="bg-gradient-to-r from-[#FFD67A] to-[#F9B315] py-[5vh] px-4 md:px-[8vw] flex flex-col lg:flex-row gap-10"
         >
-          {/* New York Times */}
-          <div className="flex-1 flex flex-col justify-between">
-            <div>
-              <img
-                src="/nyt.png"
-                alt="New York Times"
-                className="h-[55px] w-auto mb-3"
-              />
-              <h1 className="text-[24px] font-[400] font-[Georgia] leading-[35.98px] mb-1">
-                New York Times
-              </h1>
-              <p className="text-[18px] font-[Georgia] font-[400] leading-[34.56px] mb-6">
-                Get free access to a variety of New York Times articles, games, and
-                podcasts if you are an undergraduate or graduate student.
-              </p>
-            </div>
-            <a
-              href="https://www.nytimes.com/activate-access/edu-access"
-              className="text-[18px] font-[Georgia] px-6 py-3 bg-white rounded-[10px] border border-black w-fit"
-            >
-              Register
-            </a>
+      {/* <div id="NYT_WSJ" className="bg-gradient-to-r from-[#FFD67A] to-[#F9B315] px-4 md:px-[8vw] pt-[10vh] pb-[10vh] flex flex-col lg:flex-row gap-10"> */}
+        {/* New York Times */}
+        <div className="flex-1 flex flex-col justify-between">
+          <div>
+            <img
+              src="/nyt.png"
+              alt="New York Times"
+              className="h-[45px] w-auto mb-3"
+            />
+            <h1 className="text-[24px] font-[400] font-[Georgia] leading-[35.98px] mb-1">
+              New York Times
+            </h1>
+            <p className="text-[18px] font-[Georgia] font-[400] leading-[34.56px] mb-6">
+              Get free access to a variety of New York Times articles, games, and
+              podcasts if you are an undergraduate or graduate student.
+            </p>
           </div>
+          <a
+            href="https://www.nytimes.com/activate-access/edu-access"
+            className="text-[18px] font-[Georgia] px-6 py-3 bg-white rounded-[10px] border border-black w-fit"
+          >
+            Register
+          </a>
+        </div>
 
-          {/* Wall Street Journal */}
-          <div className="flex-1 flex flex-col justify-between">
-            <div>
-              <img
-                src="/wsj.png"
-                alt="Wall Street Journal"
-                className="h-[45px] w-auto mb-3"
-              />
-              <h1 className="text-[24px] font-[400] font-[Georgia] leading-[35.98px] mb-1">
-                Wall Street Journal
-              </h1>
-              <p className="text-[18px] font-[Georgia] font-[400] leading-[34.56px] mb-6">
-                Get free access to a variety of WSJ articles, career advice, and job
-                prep resources if you are an undergraduate student, graduate student, or
-                faculty/staff.
-              </p>
-            </div>
-            <a
-              href="https://WSJ.com/ASUCBerkeley"
-              className="text-[18px] font-[Georgia] px-6 py-3 bg-white rounded-[10px] border border-black w-fit"
-            >
-              Register
-            </a>
+        {/* Wall Street Journal */}
+        <div className="flex-1 flex flex-col justify-between">
+          <div>
+            <img
+              src="/wsj.png"
+              alt="Wall Street Journal"
+              className="h-[45px] w-auto mb-3"
+            />
+            <h1 className="text-[24px] font-[400] font-[Georgia] leading-[35.98px] mb-1">
+              Wall Street Journal
+            </h1>
+            <p className="text-[18px] font-[Georgia] font-[400] leading-[34.56px] mb-6">
+              Get free access to a variety of WSJ articles, career advice, and job
+              prep resources if you are an undergraduate student, graduate student, or
+              faculty/staff.
+            </p>
           </div>
-        </div>      
+          <a
+            href="https://WSJ.com/ASUCBerkeley"
+            className="text-[18px] font-[Georgia] px-6 py-3 bg-white rounded-[10px] border border-black w-fit"
+          >
+            Register
+          </a>
+        </div>
+      </div>      
 
       {/* Events Section */}
       {/* <div id="EVENTS" className="px-[10%] py-[10vh]"> */}
@@ -624,6 +668,7 @@ export default function Home() {
       </div> */}
 
       <div id="EVENTS" className="px-6 md:px-[10%] py-[10vh]">
+      {/* <div id="EVENTS" className="px-6 md:px-[10%] pt-[10vh] pb-[10vh]"> */}
         <div className="flex items-center justify-center mb-10">
           <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
           <h3 className="px-4 text-[28px] font-[Georgia] leading-[37.5px]">Come To Our Events</h3>
@@ -698,6 +743,7 @@ export default function Home() {
         </div>
       </div> */}
       <div id="PARTNER" className="px-6 md:px-[10%] pb-[15vh]">
+      {/* <div id="PARTNER" className="px-6 md:px-[10%] pt-[10vh] pb-[10vh]"> */}
         <div className="flex items-center justify-center mb-10">
           <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
           <h3 className="px-4 text-[28px] font-[Georgia] leading-[37.5px] text-center">Work with Us</h3>

@@ -59,7 +59,7 @@ export default function departmentsPage() {
                     Addresses the gaps in resources for students.
                     </p>
                     <p className="text-[12px] text-[#444444]">
-                    Jeremiah Lopez (Associate), Hailey Burnsed (Associate), Katiana Yazdani Bosdet (Director), Natalie Villalobos (Intern), Fiona Kim (Intern) 
+                        Jeremiah Lopez (Associate), Hailey Burnsed (Associate), Katiana Yazdani Bosdet (Director), Natalie Villalobos (Intern), Fiona Kim (Intern)
                     </p>
                 </div>
                 </div>

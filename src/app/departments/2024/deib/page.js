@@ -143,7 +143,7 @@ export default function DepartmentsPage() {
                     Diversity, Equity, Inclusion & Belonging
                     </h1>
                     <p className="text-[14px] md:text-[15px] text-black mb-1">
-                    Addresses the needs of the UC Berkeley campus.
+                        Serves and supports the diverse communities of UC Berkeley.
                     </p>
                     <p className="text-[12px] text-[#444444]">
                     Doah Obaid (Associate), Risha Jain (Intern), Rishi Reddy (Director), Josalyn Huynh (Intern), Not Featured: Joshua Agupogo (Director)
@@ -190,7 +190,7 @@ export default function DepartmentsPage() {
             <div className="items-center mx-[10%] py-[5vh] text-center">
                 <div className="relative flex items-center">
                     <div className="flex-grow border-t border-[#A6A6A6]"></div>
-                    <span className="flex-shrink mx-4 text-[25px] font-bold md:font-normal">
+                    <span className="flex-shrink mx-4 text-[25px] md:font-normal">
                         Explore UC Berkeley’s Diverse Student Community
                     </span>
                     <div className="flex-grow border-t border-[#A6A6A6]"></div>
@@ -221,27 +221,29 @@ export default function DepartmentsPage() {
             <div className="items-center mx-[10%] pt-[5vh] text-center">
             <div className="relative flex items-center ">
                 <div className="flex-grow border-t border-[#A6A6A6] "></div>
-                <span className="flex-shrink mx-4 text-[25px] font-bold md:font-normal">Project</span>
+                <span className="flex-shrink mx-4 text-[25px] md:font-normal">Project</span>
                 <div className="flex-grow border-t border-[#A6A6A6]"></div>
             </div>
             </div>
 
-            <div className="mt-12 flex justify-center">
-            <div className="w-full max-w-[20%] bg-white bg-opacity-85 shadow-[4px_4px_8px_rgba(0,0,0,0.15)] border-x border-b border-[#D3D3D3] overflow-hidden">
-                <img
-                src="/departments/deib/deib-proj-1.png"
-                alt="FAFSA Fridays event"
-                className="w-full h-auto object-cover"
-                />
-                <div className="p-4">
-                <h3 className="text-[15.05px] font-bold font-[Georgia] leading-[25.38px] mb-2">
-                    FAFSA Fridays
-                </h3>
-                <p className="text-[12.04px] font-[Georgia] leading-[25.38px]">
-                    Collaborating with Office of AID AND SCHOLARSHIPS for FAFSA to help students with financial aid.
-                </p>
+            {/* <div className="mt-12 flex justify-center">
+            <div className="w-full max-w-[20%] bg-white bg-opacity-85 shadow-[4px_4px_8px_rgba(0,0,0,0.15)] border-x border-b border-[#D3D3D3] overflow-hidden"> */}
+            <div className="mt-12 flex justify-center px-6">
+                <div className="w-full max-w-sm sm:max-w-md md:max-w-lg bg-white bg-opacity-85 shadow-[4px_4px_8px_rgba(0,0,0,0.15)] border-x border-b border-[#D3D3D3] overflow-hidden">
+                    <img
+                    src="/departments/deib/deib-proj-1.png"
+                    alt="FAFSA Fridays event"
+                    className="w-full h-auto object-cover"
+                    />
+                    <div className="p-4">
+                    <h3 className="text-[15.05px] font-bold font-[Georgia] leading-[25.38px] mb-2">
+                        FAFSA Fridays
+                    </h3>
+                    <p className="text-[12.04px] font-[Georgia] leading-[25.38px]">
+                        Collaborating with Office of AID AND SCHOLARSHIPS for FAFSA to help students with financial aid.
+                    </p>
+                    </div>
                 </div>
-            </div>
             </div>
 
 
@@ -249,7 +251,7 @@ export default function DepartmentsPage() {
             <div className="items-center mx-[10%] pt-[5vh] text-center">
             <div className="relative flex items-center ">
                 <div className="flex-grow border-t border-[#A6A6A6] "></div>
-                <span className="flex-shrink mx-4 text-[25px] font-bold md:font-normal">Past Work As Seen on Daily Cal</span>
+                <span className="flex-shrink mx-4 text-[25px] md:font-normal">Past Work As Seen on Daily Cal</span>
                 <div className="flex-grow border-t border-[#A6A6A6]"></div>
             </div>
             </div>

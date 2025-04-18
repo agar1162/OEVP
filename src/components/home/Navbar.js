@@ -159,7 +159,7 @@ export default function Navbar() {
           <a href="/departments/2024/deib/communities" className="hover:text-gray-400 transition">DEI Resources</a>
 
           {/* Partnerships dropdown */}
-          <div
+          {/* <div
             onMouseEnter={() => {
               if (hideTimeout.current) clearTimeout(hideTimeout.current);
               setPartnershipsMenuVisible(true);
@@ -185,7 +185,54 @@ export default function Navbar() {
                 </li>
               </ul>
             )}
+          </div> */}
+          {/* Partnerships dropdown (desktop + tablet behavior) */}
+          <div
+            className="relative group cursor-pointer"
+            onMouseEnter={() => {
+              if (window.innerWidth >= 1024) setPartnershipsMenuVisible(true);
+            }}
+            onMouseLeave={() => {
+              if (window.innerWidth >= 1024) {
+                hideTimeout.current = setTimeout(() => setPartnershipsMenuVisible(false), 200);
+              }
+            }}
+          >
+            <div className="flex items-center gap-[5px] group">
+              <a
+                href="/partnerships"
+                className="font-bold transition group-hover:text-gray-400"
+              >
+                Partnerships
+              </a>
+
+              <button
+                className="focus:outline-none"
+                onClick={(e) => {
+                  e.preventDefault();
+                  if (window.innerWidth < 1024 && window.innerWidth >= 768) {
+                    setPartnershipsMenuVisible((prev) => !prev);
+                  }
+                }}
+              >
+                <img
+                  src={icon}
+                  alt="Dropdown"
+                  className="w-[14px] h-[7px] mt-[1px] transition group-hover:brightness-75 group-hover:invert group-hover:opacity-60"
+                />
+              </button>
+            </div>
+
+            {isPartnershipsMenuVisible && (
+              <ul className="absolute top-full left-0 mt-2 bg-berkeley border-t-2 border-[#FDB515] text-white shadow-lg w-60 z-50">
+                <li className="px-4 py-2 hover:text-gray-400">
+                  <a href="/partnerships/nyt_wsj">Free Newspaper Subscriptions</a>
+                </li>
+              </ul>
+            )}
           </div>
+
+
 
           {/* Join Senate Live */}
           <a

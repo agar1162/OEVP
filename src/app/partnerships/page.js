@@ -124,10 +124,10 @@ export default function PartnershipsPage() {
   
         {/* Hero Section */}
         <div className="bg-white shadow-md border-t-[6px] border-berkeley mx-auto mt-10 mb-16 px-6 sm:px-8 md:px-12 lg:px-[8vw] py-10 max-w-[95vw] lg:max-w-[80vw] bg-opacity-[0.83]">
-          <h2 className="text-berkeley text-[28px] sm:text-[30px] md:text-[32px] font-[Georgia] font-bold leading-tight mb-2">
+          <h2 className="text-berkeley text-[24px] sm:text-[26px] md:text-[28px] font-[Georgia] font-bold leading-tight mb-2">
             Partnerships
           </h2>
-          <h1 className="text-black text-[32px] sm:text-[40px] md:text-[50px] lg:text-[64px] font-[Georgia] font-bold leading-tight mb-6">
+          <h1 className="text-black text-[30px] sm:text-[34px] md:text-[40px] lg:text-[48px] font-[Georgia] font-bold leading-tight mb-6">
             Office of the Executive Vice President Partnerships
           </h1>
           <p className="text-black text-[16px] sm:text-[18px] md:text-[19px] lg:text-[20px] font-[Georgia] leading-[1.8]">

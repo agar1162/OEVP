@@ -127,47 +127,30 @@ export default function officePage () {
     return(
         <div>
             <Navbar />
-            <main className="flex flex-col lg:flex-row max-w-[1300px] mx-auto px-6 md:px-10 py-10 gap-10 items-start">
-            {/* Sidebar for term selection */}
-            <aside className="w-full lg:w-[180px] flex-shrink-0 self-start mt-32 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)]">
-              {/* Title */}
-              <div className="bg-[#003A70] text-white text-center py-3 text-sm tracking-wide font-normal">
-                Offices
-              </div>
+            <main className="flex flex-col lg:flex-row max-w-[1300px] mx-auto px-6 md:px-10 py-10 gap-10">
+              {/* Sidebar for term selection */} 
+              <aside className="w-full lg:w-[250px] lg:sticky lg:top-[120px] self-start py-32">
+                <div className="shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)] bg-white">
+                  {/* Title */}
+                  <div className="bg-[#003A70] text-white text-center py-3 text-sm tracking-wide font-normal">
+                    Offices
+                  </div>
 
-              {/* Option */}
-              <a
-                href="/office/2024"
-                className="block text-center py-3 text-sm font-normal border border-gray-300 border-t-0 text-black"
-              >
-                2024 - 2025
-              </a>
-            </aside>
+                  {/* Option */}
+                  <a
+                    href="/office/2024"
+                    className="block text-center py-3 text-sm font-normal border border-gray-300 border-t-0 text-black"
+                  >
+                    2024 - 2025
+                  </a>
+                </div>
+              </aside>
+
+
               {/* Main content section: officer title + grid */}
               <section className="flex-1">
-                {/* <div className="flex flex-wrap mx-[5%] md:mx-0 pt-10 justify-center items-center">
-                  <h3 className="flex items-center w-full text-2xl lg:text-3xl text-center">
-                    <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-                    <span className="px-4">Office of Robert Carrillo </span>
-                    <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-                  </h3>
-                  <p className="text-center text-base font-[Georgia] mt-3 mb-9 text-[#393838]">
-                    Meet the 2024-2025 Team
-                  </p>
-                </div> */}
-
-                {/* <div className="w-full max-w-[1300px] mx-auto shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)] border border-[#E1E1E1] border-t-[6px] border-t-[#003A70] px-6 py-5 mb-6">
-                  <h3 className="text-2xl md:text-3xl font-[Georgia] text-[#000] text-center">
-                    Office of Robert Carrillo
-                  </h3>
-                  <p className="text-base text-[#393838] font-[Georgia] mt-2 text-center">
-                    Meet the 2024-2025 Team
-                  </p>
-                </div>                 */}
-                <div 
-                  className="w-full border border-[#E1E1E1] mx-auto text-center max-w-full sm:max-w-[720px] lg:max-w-[910px] shadow-md mb-10"
-                >
-                  <div className="w-full h-[3px] bg-[#003A70]"></div> {/* Blue line on top */}
+                <div className="w-full border border-[#E1E1E1] mx-auto text-center max-w-full sm:max-w-[720px] lg:max-w-[910px] shadow-md mb-10">
+                  <div className="w-full h-[3px] bg-[#003A70]"></div>
                   <div className="px-6 py-5">
                     <h3 className="text-2xl md:text-3xl font-[Georgia] font-extrabold text-[#000]">
                       Office of Robert Carrillo
@@ -180,11 +163,17 @@ export default function officePage () {
 
                 <div className="items-center pb-10">
                   <div className="w-full flex justify-center">
-                    <div id="image_frame" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-[5rem] gap-y-20">
+                    <div
+                      id="image_frame"
+                      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-16 sm:gap-x-16 lg:gap-x-[5rem]"
+                    >
                       {profiles.map((profile, index) => (
-                        <div key={profile.id} className="flex flex-col items-start relative w-[250px]">
+                        <div
+                          key={profile.id}
+                          className="flex flex-col items-start relative w-full max-w-[250px] mx-auto sm:mx-0"
+                        >
                           {(index % 3 === 1 || index % 3 === 2) && (
-                            <div className="absolute -left-[2.5rem] top-0 bottom-0 w-[1px] bg-[#D9D9D9]"></div>
+                            <div className="absolute -left-[2.5rem] top-0 bottom-0 w-[1px] bg-[#D9D9D9] hidden lg:block"></div>
                           )}
 
                           <img
@@ -193,16 +182,28 @@ export default function officePage () {
                             className="w-full h-auto mb-2"
                           />
 
-                          <div className="relative w-full font-[Georgia] text-left text-[14px]">
-                            <div className="absolute top-0 right-0 flex space-x-1">
+                          <div className="relative w-full font-[Georgia] text-left text-[13px] leading-snug">
+                            <div className="absolute top-0 right-0 flex flex-wrap gap-1">
                               {profile.linkedin && (
-                                <a href={profile.linkedin} target="_blank" rel="noopener noreferrer">
-                                  <img src="/linkedin.png" alt="LinkedIn" className="w-4 h-4 hover:scale-110 transition-transform" />
+                                <a
+                                  href={profile.linkedin}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  <img
+                                    src="/linkedin.png"
+                                    alt="LinkedIn"
+                                    className="w-4 h-4 hover:scale-110 transition-transform"
+                                  />
                                 </a>
                               )}
                               {profile.contact && (
                                 <a href={`mailto:${profile.contact}`}>
-                                  <img src="/email.png" alt="Email" className="w-4 h-4 hover:scale-110 transition-transform" />
+                                  <img
+                                    src="/email.png"
+                                    alt="Email"
+                                    className="w-4 h-4 hover:scale-110 transition-transform"
+                                  />
                                 </a>
                               )}
                             </div>
@@ -210,7 +211,9 @@ export default function officePage () {
                             <h1 className="text-[14px] leading-[16px] pr-6">{profile.name}</h1>
                             <p className="italic text-[13px] leading-[16px] pr-6">{profile.title}</p>
                             {profile.major && (
-                              <p className="text-[#6d6d6d] text-[13px] leading-[16px] pr-6">{profile.major}</p>
+                              <p className="text-[#6d6d6d] text-[13px] leading-[16px] pr-6">
+                                {profile.major}
+                              </p>
                             )}
                           </div>
                         </div>
@@ -220,6 +223,7 @@ export default function officePage () {
                 </div>
               </section>
             </main>
+
             <Footer />
         </div>
     )

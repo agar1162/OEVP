@@ -153,8 +153,10 @@ export default function departmentsPage() {
         <div className="flex flex-row justify-center items-center m-0 p-0">
             <InstagramPostEmbed postId="DBzVcxiTLil"/>
         </div> */}
-        <div className="mt-12 flex justify-center mb-10">
-            <div className="w-full max-w-[20%] bg-white bg-opacity-85 shadow-[4px_4px_8px_rgba(0,0,0,0.15)] border-x border-b border-[#D3D3D3] overflow-hidden">
+        {/* <div className="mt-12 flex justify-center mb-10">
+            <div className="w-full max-w-[20%] bg-white bg-opacity-85 shadow-[4px_4px_8px_rgba(0,0,0,0.15)] border-x border-b border-[#D3D3D3] overflow-hidden"> */}
+        <div className="mt-12 flex justify-center px-6 mb-12">
+            <div className="w-full max-w-sm sm:max-w-md md:max-w-lg bg-white bg-opacity-85 shadow-[4px_4px_8px_rgba(0,0,0,0.15)] border-x border-b border-[#D3D3D3] overflow-hidden">
                 <img
                 src="/departments/sssw/s1.png"
                 alt="Student Wellness and Recovery Fair"

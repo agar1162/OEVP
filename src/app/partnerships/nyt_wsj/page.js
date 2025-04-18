@@ -139,7 +139,7 @@ export default function resourcesPage() {
                     <img
                         src="/wsj.png"
                         alt="Wall Street Journal"
-                        className="h-[45px] w-auto mb-3"
+                        className="h-[55px] w-auto mb-3"
                     />
                     <h1 className="text-[24px] font-[400] font-[Georgia] leading-[35.98px] mb-1">
                         Wall Street Journal
