@@ -87,6 +87,24 @@
   }
 }
 
+/* START: Fade-in Animation on Page Load */
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadein {
+  animation: fadein 0.8s ease-out;
+}
+/* END: Fade-in Animation on Page Load */
+
+
 /* START: Slideshow in homepage */
 /* Hide scrollbar for horizontal scroll */
 .scrollbar-hide::-webkit-scrollbar {

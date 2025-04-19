@@ -138,643 +138,665 @@ export default function Home() {
   return (
     <div>
       <Navbar />
+      <div className="animate-fadein transition-opacity duration-1000">
+        {/* <div
+          id="COVER"
+          className="h-[90vh] bg-cover bg-center bg-no-repeat text-white text-center flex items-start justify-center relative">
+          {slides.map((slide, index) => (
+            <div
+              key={index}
+              className={`absolute bg-cover bg-center b w-full h-full transition-opacity duration-1000 ease-in-out md:bg-fixed ${
+                currentIndex === index ? "opacity-100" : "opacity-0"
+              }`}
+              style={{
+                backgroundImage: `linear-gradient(180deg, rgba(165, 165, 165, 0.53) 4%, rgba(0, 58, 112, 0.53) 78.5%), url(${slide.url})`,
+              }}
+            ></div>
+          ))}
 
-      {/* <div
-        id="COVER"
-        className="h-[90vh] bg-cover bg-center bg-no-repeat text-white text-center flex items-start justify-center relative">
-        {slides.map((slide, index) => (
-          <div
-            key={index}
-            className={`absolute bg-cover bg-center b w-full h-full transition-opacity duration-1000 ease-in-out md:bg-fixed ${
-              currentIndex === index ? "opacity-100" : "opacity-0"
-            }`}
-            style={{
-              backgroundImage: `linear-gradient(180deg, rgba(165, 165, 165, 0.53) 4%, rgba(0, 58, 112, 0.53) 78.5%), url(${slide.url})`,
-            }}
-          ></div>
-        ))}
+        <div className="w-full pb-10">
+          <div className="absolute p-8 rounded-md mt-14">
+            <div className="absolute top-[30%] w-full flex flex-col items-center px-4 text-white">
+              <p className="text-xl md:text-2xl lg:text-3xl mb-2">UC Berkeley ASUC</p>
+              <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-wider leading-tight text-center">
+                OFFICE OF THE EXECUTIVE<br />VICE PRESIDENT (OEVP)
+              </h1>
+            </div>          
+            <a href={slides[currentIndex].link} className="flex flex-col items-center justify-center mt-[5%] mx-[20%]">
+              <h3 className="text-2xl md:text-3xl text-center text-white">
+                {slides[currentIndex].caption}
+              </h3>
+              <img
+                src="/arrow.png"
+                alt="arrow"
+                className="mt-4 w-[70px] md:w-[100px] h-auto"
+              />
+            </a>
 
-      <div className="w-full pb-10">
-        <div className="absolute p-8 rounded-md mt-14">
-          <div className="absolute top-[30%] w-full flex flex-col items-center px-4 text-white">
-            <p className="text-xl md:text-2xl lg:text-3xl mb-2">UC Berkeley ASUC</p>
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-wider leading-tight text-center">
-              OFFICE OF THE EXECUTIVE<br />VICE PRESIDENT (OEVP)
+          </div>
+          
+          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex md:text-2xl gap-[4vw] md:gap-[10vw] p-10 w-full justify-center">
+            {slides.map((slide, index) => (
+              <div key={index} className="relative flex-shrink-0">
+                {currentIndex === index && (
+                  <hr className="absolute top-[-20px] left-1/2 transform -translate-x-1/2 w-[60px] h-[2px] bg-white duration-700 ease-in-out" />
+                )}
+                <button onClick={() => setCurrentIndex(index)}>
+                  <h3 className="transition duration-500 ease-in-out">
+                    {slide.title}
+                  </h3>
+                </button>
+              </div>
+            ))}
+            </div>
+    
+          </div>
+
+        </div> */}
+        <div
+          id="COVER"
+          className="h-[90vh] bg-cover bg-center bg-no-repeat md:bg-fixed text-white text-center relative overflow-hidden"
+        >
+          {/* Background Slideshow */}
+          {/* {slides.map((slide, index) => (
+            <div
+              key={index}
+              className={`absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out ${
+                currentIndex === index ? "opacity-100" : "opacity-0"
+              }`}
+              style={{
+                backgroundImage: `linear-gradient(180deg, rgba(165, 165, 165, 0.53) 4%, rgba(0, 58, 112, 0.53) 78.5%), url(${slide.url})`,
+                backgroundPosition: currentIndex === 0 ? "center 35%" : "center center",
+              }}
+            ></div>
+          ))} */}
+          {slides.map((slide, index) => (
+            <div
+              key={index}
+              // className={`absolute w-full h-full bg-cover bg-center md:bg-fixed transition-opacity duration-1000 ease-in-out ${
+              className={`absolute w-full h-full bg-cover bg-center md:bg-fixed transition-opacity duration-1000 ease-in-out ${
+                // currentIndex === index ? "opacity-100" : "opacity-0"
+                currentIndex === index ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+              }`}
+              style={{
+                backgroundImage: `linear-gradient(180deg, rgba(165, 165, 165, 0.53) 4%, rgba(0, 58, 112, 0.53) 78.5%), url(${slide.url})`,
+                willChange: "opacity",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                transition: "background-image 0.8s ease-in-out",
+              }}
+            ></div>
+          ))}
+
+          {/* Title Section */}
+          <div className="absolute top-[12%] w-full flex flex-col items-center justify-center px-3 text-white text-center z-10">
+            {/* <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-2 tracking-wide">
+              UC Berkeley ASUC
+            </p> */}
+            <h1 className="font-extrabold tracking-wide leading-tight text-center 
+              text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl mb-2"
+            >
+              OFFICE OF THE EXECUTIVE VICE<br />PRESIDENT
             </h1>
-          </div>          
-          <a href={slides[currentIndex].link} className="flex flex-col items-center justify-center mt-[5%] mx-[20%]">
-            <h3 className="text-2xl md:text-3xl text-center text-white">
+          </div>
+
+          {/* Caption + Arrow */}
+          <a
+            href={slides[currentIndex].link}
+            className="absolute bottom-[23%] left-1/2 transform -translate-x-1/2 text-center flex flex-col items-center justify-center z-10"
+          >
+            <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl text-white">
               {slides[currentIndex].caption}
             </h3>
-            <img
+            {/* <img
               src="/arrow.png"
               alt="arrow"
-              className="mt-4 w-[70px] md:w-[100px] h-auto"
-            />
+              // className="mt-3 w-[70px] md:w-[100px] h-auto"
+              className="mt-2 w-[10px] sm:w-[20px] md:w-[35px] lg:w-[25px] h-auto"
+            /> */}
           </a>
 
-        </div>
-        
-        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex md:text-2xl gap-[4vw] md:gap-[10vw] p-10 w-full justify-center">
-          {slides.map((slide, index) => (
-            <div key={index} className="relative flex-shrink-0">
-              {currentIndex === index && (
-                <hr className="absolute top-[-20px] left-1/2 transform -translate-x-1/2 w-[60px] h-[2px] bg-white duration-700 ease-in-out" />
-              )}
-              <button onClick={() => setCurrentIndex(index)}>
-                <h3 className="transition duration-500 ease-in-out">
-                  {slide.title}
-                </h3>
-              </button>
-            </div>
-          ))}
-          </div>
-  
-        </div>
-
-      </div> */}
-      <div
-        id="COVER"
-        className="h-[90vh] bg-cover bg-center bg-no-repeat md:bg-fixed text-white text-center relative overflow-hidden"
-      >
-        {/* Background Slideshow */}
-        {/* {slides.map((slide, index) => (
-          <div
-            key={index}
-            className={`absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out ${
-              currentIndex === index ? "opacity-100" : "opacity-0"
-            }`}
-            style={{
-              backgroundImage: `linear-gradient(180deg, rgba(165, 165, 165, 0.53) 4%, rgba(0, 58, 112, 0.53) 78.5%), url(${slide.url})`,
-              backgroundPosition: currentIndex === 0 ? "center 35%" : "center center",
-            }}
-          ></div>
-        ))} */}
-        {slides.map((slide, index) => (
-          <div
-            key={index}
-            className={`absolute w-full h-full bg-cover bg-center md:bg-fixed transition-opacity duration-1000 ease-in-out ${
-              currentIndex === index ? "opacity-100" : "opacity-0"
-            }`}
-            style={{
-              backgroundImage: `linear-gradient(180deg, rgba(165, 165, 165, 0.53) 4%, rgba(0, 58, 112, 0.53) 78.5%), url(${slide.url})`,
-            }}
-          ></div>
-        ))}
-
-        {/* Title Section */}
-        <div className="absolute top-[12%] w-full flex flex-col items-center justify-center px-3 text-white text-center z-10">
-          {/* <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-2 tracking-wide">
-            UC Berkeley ASUC
-          </p> */}
-          <h1 className="font-extrabold tracking-wide leading-tight text-center 
-            text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl mb-2"
-          >
-            OFFICE OF THE EXECUTIVE VICE<br />PRESIDENT
-          </h1>
-        </div>
-
-        {/* Caption + Arrow */}
-        <a
-          href={slides[currentIndex].link}
-          className="absolute bottom-[23%] left-1/2 transform -translate-x-1/2 text-center flex flex-col items-center justify-center z-10"
-        >
-          <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl text-white">
-            {slides[currentIndex].caption}
-          </h3>
-          {/* <img
-            src="/arrow.png"
-            alt="arrow"
-            // className="mt-3 w-[70px] md:w-[100px] h-auto"
-            className="mt-2 w-[10px] sm:w-[20px] md:w-[35px] lg:w-[25px] h-auto"
-          /> */}
-        </a>
-
-        {/* Bottom Slide Nav */}
-        {/* <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex md:text-2xl gap-[4vw] md:gap-[10vw] p-10 w-full justify-center z-10">
-          {slides.map((slide, index) => (
-            // <button key={index} onClick={() => setCurrentIndex(index)} className="relative group">
-            //   <h3 className="transition duration-500 ease-in-out font-bold text-lg md:text-xl">
-            //     {slide.title}
-            //   </h3>
-            //   {currentIndex === index && (
-            //     <span className="block h-[2px] bg-white mb-1 w-full"></span>
-            //   )}
-            // </button>
-            <button
-              key={index}
-              onClick={() => setCurrentIndex(index)}
-              className="relative group flex flex-col items-center"
-            >
-              {currentIndex === index && (
-                <span className="block h-[2px] bg-white mb-1 w-full"></span> // moved above and changed `mt-1` → `mb-1`
-              )}
-              <h3 className="transition duration-500 ease-in-out font-bold text-lg md:text-xl">
-                {slide.title}
-              </h3>
-            </button>
-          ))}
-        </div> */}
-        {/* <div className="absolute bottom-0 w-full overflow-x-auto whitespace-nowrap z-10 px-6 pb-6">
-          <div className="inline-flex gap-6">
+          {/* Bottom Slide Nav */}
+          {/* <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex md:text-2xl gap-[4vw] md:gap-[10vw] p-10 w-full justify-center z-10">
             {slides.map((slide, index) => (
+              // <button key={index} onClick={() => setCurrentIndex(index)} className="relative group">
+              //   <h3 className="transition duration-500 ease-in-out font-bold text-lg md:text-xl">
+              //     {slide.title}
+              //   </h3>
+              //   {currentIndex === index && (
+              //     <span className="block h-[2px] bg-white mb-1 w-full"></span>
+              //   )}
+              // </button>
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className="relative group flex-shrink-0 px-2"
+                className="relative group flex flex-col items-center"
               >
                 {currentIndex === index && (
-                  <span className="block h-[2px] bg-white mb-1 w-full"></span>
+                  <span className="block h-[2px] bg-white mb-1 w-full"></span> // moved above and changed `mt-1` → `mb-1`
                 )}
                 <h3 className="transition duration-500 ease-in-out font-bold text-lg md:text-xl">
                   {slide.title}
                 </h3>
               </button>
             ))}
-          </div>
-        </div> */}
-
-        <div className="absolute bottom-0 w-full overflow-x-auto whitespace-nowrap z-10 px-6 pb-6">
-          {/* <div className="inline-flex gap-[4vw] md:gap-[10vw] px-4 py-4 md:justify-center"> */}
-          <div className="inline-flex gap-[4vw] md:gap-[10vw] px-4 py-4 justify-start md:justify-center">
-            {slides.map((slide, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentIndex(index)}
-                className="relative group flex-shrink-0"
-              >
-                {currentIndex === index && (
-                  <span className="block h-[2px] bg-white mb-1 w-full"></span>
-                )}
-                <h3 className="transition duration-500 ease-in-out font-bold text-lg md:text-xl whitespace-nowrap">
-                  {slide.title}
-                </h3>
-              </button>
-            ))}
-          </div>
-        </div>
-
-      </div>
-     
-      {/* <div id="WHO_WE_ARE" className="mx-8 py-[10vh]">
-        <h3 className="flex items-center mx-[10%] text-2xl lg:text-3xl text-center">
-                <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-                <span className="px-4">Who Are We?</span>
-                <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-        </h3>
-
-        <main className="flex flex-col md:flex-row  pt-10 text-xl mx-[10%] text-sm md:text-xl">
-
-          <div id="sidemenu" className="lg:basis-1/2 flex flex-col items-center ">
-
-            <menu className="flex flex-col mx-[10%] border-2 border-t-4 border-t-[#003A70] divide-y-2 divide-gray-200  shadow-xl">
-              <a
-                onClick={() => setCurrentText(0)}
-                className="hover:bg-[#003A70] hover:text-white p-4  transition"
-              >
-                Our Mission
-              </a>
-              <a
-                onClick={() => setCurrentText(1)}
-                className="hover:bg-[#003A70] hover:text-white p-4  transition"
-              >
-                What is the Executive Vice President's (EVP) Role?
-              </a>
-              <a
-                onClick={() => setCurrentText(2)}
-                className="hover:bg-[#003A70] hover:text-white  p-4 transition"
-              >
-                What Does Our Office Do?
-              </a>
-              <a
-                onClick={() => setCurrentText(3)}
-                className="hover:bg-[#003A70] hover:text-white  p-4 transition"
-              >
-                Resources (RSOs & Students)
-              </a>
-            </menu>
-          </div>
-
-          <div id="text" className="lg:basis-1/2 pt-10 md:pt-0">
-            <p className="">
-              {texts[currentText].text}
-            </p>
-          </div>
-        </main>
-      </div> */}
-
-        {/* <div id="WHO_WE_ARE" className="px-6 md:px-[10%] py-[10vh]"> */}
-        {/* <div id="WHO_WE_ARE" className="px-6 md:px-[10%] pt-[10vh] pb-[10vh]"> */}
-        <div id="WHO_WE_ARE" className="px-6 md:px-[10%] py-[8vh]">
-          <div className="flex items-center justify-center mb-6">
-            <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-            <h3 className="px-4 text-[28px] font-[Georgia] leading-[37.5px] text-black text-center">Who are we?</h3>
-            <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-          </div>
-
-          <div className="flex flex-col lg:flex-row gap-10 items-start">
-            {/* Left table */}
-            <div className="w-full lg:w-1/2">
-              {/* <div className="border-2 border-t-[6.5px] border-[#003A70] divide-y divide-gray-200 shadow-lg w-full"> */}
-              <div className="flex flex-col border border-[#D3D3D3] border-t-[4px] border-t-[#003A70] divide-y divide-[#D3D3D3] shadow-lg w-full mt-2">
-
-                {["Our Mission", "What is the Executive Vice President’s (EVP) Role?", "What Does Our Office Do?", "Resources (RSOs & Students)"].map((item, idx) => (
-                  <a key={idx}
-                    onClick={() => setCurrentText(idx)}
-                    className="block px-6 py-4 text-[15px] font-[Georgia] hover:bg-[#003A70] hover:text-white transition cursor-pointer">
-                    {item}
-                  </a>
-                ))}
-              </div>
+          </div> */}
+          {/* <div className="absolute bottom-0 w-full overflow-x-auto whitespace-nowrap z-10 px-6 pb-6">
+            <div className="inline-flex gap-6">
+              {slides.map((slide, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentIndex(index)}
+                  className="relative group flex-shrink-0 px-2"
+                >
+                  {currentIndex === index && (
+                    <span className="block h-[2px] bg-white mb-1 w-full"></span>
+                  )}
+                  <h3 className="transition duration-500 ease-in-out font-bold text-lg md:text-xl">
+                    {slide.title}
+                  </h3>
+                </button>
+              ))}
             </div>
-
-            {/* Right paragraph */}
-            <div className="w-full lg:w-3/4 text-[20px] font-[Georgia] leading-[36px]">
-              <p>{texts[currentText].text}</p>
-            </div>
-          </div>
-        </div>
-
-
-        
-        {/* <div 
-          id="ORGSTATS"
-          className="flex flex-wrap transition-all duration-75 ease-in justify-center items-center gap-[12vw] py-[10vh] pb-[15vh]">
-            <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
-                <h1 className="text-[#003A70] text-5xl md:text-7xl  font-bold pb-5" >400+</h1>
-                <p className="text-xl text-center mx-4">Registered Student Organizations receive funding & resources</p>
-            </div>
-            <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
-                <h1  className="text-[#003A70] text-5xl md:text-7xl font-bold pb-5" >100+</h1>
-                <p className="text-xl text-center mx-4">Legislations implemented in collaboration with ASUC Senate</p>
-            </div>
-            <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
-                <h1 className="text-[#003A70] text-5xl md:text-7xl font-bold pb-5" >180k</h1>
-                <p className="text-xl text-center mx-4">New York Times articles read monthly by students</p>
-            </div>
-        </div> */}
-        {/* <div 
-          id="ORGSTATS"
-          className="flex flex-wrap justify-center items-center gap-[12vw] py-[10vh] pb-[15vh]"> */}
-        {/* <div id="ORGSTATS" className="flex flex-wrap justify-center items-center gap-[12vw] pt-[10vh] pb-[10vh]"> */}
-        <div id="ORGSTATS" className="flex flex-wrap justify-center items-center gap-[12vw] px-6 md:px-[10%] pb-[10vh]">
-          <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
-            <h1 className="text-[#003A70] text-5xl md:text-7xl font-bold pb-5">
-              <CountUp end={400} duration={6} suffix="+"/>
-            </h1>
-            <p className="text-xl text-center mx-4">Registered Student Organizations receive funding & resources</p>
-          </div>
-          <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
-            <h1 className="text-[#003A70] text-5xl md:text-7xl font-bold pb-5">
-              <CountUp end={100} duration={6} suffix="+"/>
-            </h1>
-            <p className="text-xl text-center mx-4">Resolutions implemented in collaboration with the ASUC Senate</p>
-          </div>
-          <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
-            <h1 className="text-[#003A70] text-5xl md:text-7xl font-bold pb-5">
-              <CountUp end={180} duration={6} suffix="k+"/>
-            </h1>
-            <p className="text-xl text-center mx-4">New York Times articles read monthly by students</p>
-          </div>
-        </div>
-
-      
-      {/* NYT and WSJ Section */}
-      {/* <div
-        id="NYT_WSJ"
-        className="w-full bg-gradient-to-r from-[#FFD67A] to-[#F9B315] px-10 py-20 flex flex-col lg:flex-row gap-10 justify-center"
-      >
-
-        <div className="flex flex-col gap-4 text-left max-w-[600px]">
-          <img src={times} alt="nyt" className="w-[54px] h-[54px]" />
-          <div className="text-[34.56px] font-normal font-[Georgia] leading-[35.98px]">
-            New York Times
-          </div>
-          <div className="text-[23.93px] font-normal font-[Georgia] leading-[34.56px]">
-            Get free access to a variety of New York Times articles, games, and podcasts if you are an undergraduate or graduate student.
-          </div>
-          <a
-            href="https://www.nytimes.com/activate-access/edu-access"
-            className="bg-white w-fit px-6 py-2 rounded text-[26.35px] font-[Georgia] text-black hover:bg-gray-200"
-          >
-            Register
-          </a>
-        </div>
-
-
-        <div className="flex flex-col gap-4 text-left max-w-[600px]">
-          <img src={wsj} alt="wsj" className="w-[73px] h-[45px]" />
-          <div className="text-[34.56px] font-normal font-[Georgia] leading-[35.98px]">
-            Wall Street Journal
-          </div>
-          <div className="text-[23.93px] font-normal font-[Georgia] leading-[34.56px]">
-            Get free access to a variety of WSJ articles, career advice, and job prep resources if you are an undergraduate student, graduate student, or faculty/staff.
-          </div>
-          <a
-            href="https://WSJ.com/ASUCBerkeley"
-            className="bg-white w-fit px-6 py-2 rounded text-[26.29px] font-[Georgia] text-black hover:bg-gray-200"
-          >
-            Register
-          </a>
-        </div>
-      </div> */}
-      {/* <div id="NYT_WSJ" className="flex flex-col lg:flex-row bg-gradient-to-r from-[#FFD67A] to-[#F9B315] py-[5vh]"> */}
-          {/* New York Times Section */}
-          {/* <div className="flex-1 flex justify-center items-center">
-              <div className="mx-[5vw] flex flex-col items-start">
-              <img src={times} alt="New York Times" className="h-[50px] w-[50px] mb-4" />
-              <h1 className="text-[23px] mb-2">New York Times</h1>
-              <p className="text-md leading-relaxed mb-6">
-                  Get free access to a variety of New York Times articles, games, and podcasts
-                  if you are an undergraduate or graduate student.
-              </p>
-              <div className="w-full">
-                  <a
-                  href="https://www.nytimes.com/activate-access/edu-access"
-                  className="block w-[140px] text-center p-2 bg-white rounded-md hover:text-[#A6A6A6] hover:text-berkeley"
-                  >
-                  Register
-                  </a>
-              </div>
-              </div>
           </div> */}
 
-          {/* Wall Street Journal Section */}
-          {/* <div className="flex-1 flex justify-center items-center">
-              <div className="mx-[5vw] flex flex-col items-start">
-              <img src={wsj} alt="Wall Street Journal" className="h-[36px] w-[62px] mb-4" />
-              <h1 className="text-[23px] mb-2">Wall Street Journal</h1>
-              <p className="text-md leading-relaxed mb-6">
-                  Get free access to a variety of WSJ articles, career advice, and job prep resources
-                  if you are an undergraduate student, graduate student, or faculty/staff.
-              </p>
-              <div className="w-full">
-                  <a
-                  href="https://WSJ.com/ASUCBerkeley"
-                  className="block w-[140px] text-center p-2 bg-white rounded-md hover:text-[#A6A6A6] hover:text-berkeley"
-                  >
-                  Register
-                  </a>
-              </div>
-              </div>
+          <div className="absolute bottom-0 w-full overflow-x-auto whitespace-nowrap z-10 px-6 pb-6">
+            {/* <div className="inline-flex gap-[4vw] md:gap-[10vw] px-4 py-4 md:justify-center"> */}
+            <div className="inline-flex gap-[4vw] md:gap-[10vw] px-4 py-4 justify-start md:justify-center">
+              {slides.map((slide, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentIndex(index)}
+                  className="relative group flex-shrink-0"
+                >
+                  {currentIndex === index && (
+                    <span className="block h-[2px] bg-white mb-1 w-full"></span>
+                  )}
+                  <h3 className="transition duration-500 ease-in-out font-bold text-lg md:text-xl whitespace-nowrap">
+                    {slide.title}
+                  </h3>
+                </button>
+              ))}
+            </div>
           </div>
-      </div> */}
-      {/* <div
-        id="NYT_WALL_STREET_JOURNAL"
-        className="bg-gradient-to-r from-[#FFD67A] to-[#F9B315] py-[5vh] px-4 md:px-[8vw] flex flex-col lg:flex-row justify-between gap-10"
-      > */}
-        {/* New York Times Section */}
-        {/* <div className="flex-1 flex flex-col justify-start items-start">
-          <img
-            src={times}
-            alt="New York Times"
-            className="h-[40px] w-auto mb-3"
-          />
-          <h1 className="text-[24px] font-[400] font-[Georgia] leading-[35.98px] mb-1">
-            New York Times
-          </h1>
-          <p className="text-[17px] font-[Georgia] font-[400] md:leading-normal mb-6">
-            Get free access to a variety of New York Times articles, games, and podcasts
-            if you are an undergraduate or graduate student.            
-          </p>
-          <div className="mt-auto">
+
+        </div>
+      
+        {/* <div id="WHO_WE_ARE" className="mx-8 py-[10vh]">
+          <h3 className="flex items-center mx-[10%] text-2xl lg:text-3xl text-center">
+                  <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+                  <span className="px-4">Who Are We?</span>
+                  <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+          </h3>
+
+          <main className="flex flex-col md:flex-row  pt-10 text-xl mx-[10%] text-sm md:text-xl">
+
+            <div id="sidemenu" className="lg:basis-1/2 flex flex-col items-center ">
+
+              <menu className="flex flex-col mx-[10%] border-2 border-t-4 border-t-[#003A70] divide-y-2 divide-gray-200  shadow-xl">
+                <a
+                  onClick={() => setCurrentText(0)}
+                  className="hover:bg-[#003A70] hover:text-white p-4  transition"
+                >
+                  Our Mission
+                </a>
+                <a
+                  onClick={() => setCurrentText(1)}
+                  className="hover:bg-[#003A70] hover:text-white p-4  transition"
+                >
+                  What is the Executive Vice President's (EVP) Role?
+                </a>
+                <a
+                  onClick={() => setCurrentText(2)}
+                  className="hover:bg-[#003A70] hover:text-white  p-4 transition"
+                >
+                  What Does Our Office Do?
+                </a>
+                <a
+                  onClick={() => setCurrentText(3)}
+                  className="hover:bg-[#003A70] hover:text-white  p-4 transition"
+                >
+                  Resources (RSOs & Students)
+                </a>
+              </menu>
+            </div>
+
+            <div id="text" className="lg:basis-1/2 pt-10 md:pt-0">
+              <p className="">
+                {texts[currentText].text}
+              </p>
+            </div>
+          </main>
+        </div> */}
+
+          {/* <div id="WHO_WE_ARE" className="px-6 md:px-[10%] py-[10vh]"> */}
+          {/* <div id="WHO_WE_ARE" className="px-6 md:px-[10%] pt-[10vh] pb-[10vh]"> */}
+          <div id="WHO_WE_ARE" className="px-6 md:px-[10%] py-[8vh]">
+            <div className="flex items-center justify-center mb-6">
+              <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+              <h3 className="px-4 text-[40px] font-[Georgia] leading-[37.5px] text-black text-center">
+                Who are we?
+              </h3>
+              <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+            </div>
+
+            <div className="flex flex-col lg:flex-row gap-10 items-start">
+              {/* Left table - Bigger now */}
+              <div className="w-full lg:w-[45%]">
+                <div className="flex flex-col border border-[#D3D3D3] border-t-[4px] border-t-[#003A70] divide-y divide-[#D3D3D3] shadow-lg w-full mt-2">
+                  {[
+                    "Our Mission",
+                    "What is the Executive Vice President’s (EVP) Role?",
+                    "What Does Our Office Do?",
+                    "Resources (RSOs & Students)",
+                  ].map((item, idx) => (
+                    <a
+                      key={idx}
+                      onClick={() => setCurrentText(idx)}
+                      className="block px-8 py-6 text-[27px] font-[Georgia] hover:bg-[#003A70] hover:text-white transition cursor-pointer"
+                    >
+                      {item}
+                    </a>
+                  ))}
+                </div>
+              </div>
+
+              {/* Right paragraph */}
+              <div className="w-full lg:w-[55%] text-[28px] font-[Georgia] leading-[42px]">
+                <p>{texts[currentText].text}</p>
+              </div>
+            </div>
+          </div>
+
+
+
+          
+          {/* <div 
+            id="ORGSTATS"
+            className="flex flex-wrap transition-all duration-75 ease-in justify-center items-center gap-[12vw] py-[10vh] pb-[15vh]">
+              <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
+                  <h1 className="text-[#003A70] text-5xl md:text-7xl  font-bold pb-5" >400+</h1>
+                  <p className="text-xl text-center mx-4">Registered Student Organizations receive funding & resources</p>
+              </div>
+              <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
+                  <h1  className="text-[#003A70] text-5xl md:text-7xl font-bold pb-5" >100+</h1>
+                  <p className="text-xl text-center mx-4">Legislations implemented in collaboration with ASUC Senate</p>
+              </div>
+              <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
+                  <h1 className="text-[#003A70] text-5xl md:text-7xl font-bold pb-5" >180k</h1>
+                  <p className="text-xl text-center mx-4">New York Times articles read monthly by students</p>
+              </div>
+          </div> */}
+          {/* <div 
+            id="ORGSTATS"
+            className="flex flex-wrap justify-center items-center gap-[12vw] py-[10vh] pb-[15vh]"> */}
+          {/* <div id="ORGSTATS" className="flex flex-wrap justify-center items-center gap-[12vw] pt-[10vh] pb-[10vh]"> */}
+          <div id="ORGSTATS" className="flex flex-wrap justify-center items-center gap-[12vw] px-6 md:px-[10%] pb-[10vh]">
+            <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
+              <h1 className="text-[#003A70] text-5xl md:text-7xl pb-5">
+                <CountUp end={400} duration={6} suffix="+"/>
+              </h1>
+              <p className="text-xl text-center mx-4">Registered Student Organizations receive funding & resources</p>
+            </div>
+            <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
+              <h1 className="text-[#003A70] text-5xl md:text-7xl pb-5">
+                <CountUp end={100} duration={6} suffix="+"/>
+              </h1>
+              <p className="text-xl text-center mx-4">Resolutions implemented in collaboration with the ASUC Senate</p>
+            </div>
+            <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
+              <h1 className="text-[#003A70] text-5xl md:text-7xl pb-5">
+                <CountUp end={180} duration={6} suffix="k+"/>
+              </h1>
+              <p className="text-xl text-center mx-4">New York Times articles read monthly by students</p>
+            </div>
+          </div>
+
+        
+        {/* NYT and WSJ Section */}
+        {/* <div
+          id="NYT_WSJ"
+          className="w-full bg-gradient-to-r from-[#FFD67A] to-[#F9B315] px-10 py-20 flex flex-col lg:flex-row gap-10 justify-center"
+        >
+
+          <div className="flex flex-col gap-4 text-left max-w-[600px]">
+            <img src={times} alt="nyt" className="w-[54px] h-[54px]" />
+            <div className="text-[34.56px] font-normal font-[Georgia] leading-[35.98px]">
+              New York Times
+            </div>
+            <div className="text-[23.93px] font-normal font-[Georgia] leading-[34.56px]">
+              Get free access to a variety of New York Times articles, games, and podcasts if you are an undergraduate or graduate student.
+            </div>
             <a
               href="https://www.nytimes.com/activate-access/edu-access"
-              className="text-[17px] font-[Georgia] px-6 py-3 bg-white rounded-[10px] border border-black inline-block"
+              className="bg-white w-fit px-6 py-2 rounded text-[26.35px] font-[Georgia] text-black hover:bg-gray-200"
+            >
+              Register
+            </a>
+          </div>
+
+
+          <div className="flex flex-col gap-4 text-left max-w-[600px]">
+            <img src={wsj} alt="wsj" className="w-[73px] h-[45px]" />
+            <div className="text-[34.56px] font-normal font-[Georgia] leading-[35.98px]">
+              Wall Street Journal
+            </div>
+            <div className="text-[23.93px] font-normal font-[Georgia] leading-[34.56px]">
+              Get free access to a variety of WSJ articles, career advice, and job prep resources if you are an undergraduate student, graduate student, or faculty/staff.
+            </div>
+            <a
+              href="https://WSJ.com/ASUCBerkeley"
+              className="bg-white w-fit px-6 py-2 rounded text-[26.29px] font-[Georgia] text-black hover:bg-gray-200"
             >
               Register
             </a>
           </div>
         </div> */}
+        {/* <div id="NYT_WSJ" className="flex flex-col lg:flex-row bg-gradient-to-r from-[#FFD67A] to-[#F9B315] py-[5vh]"> */}
+            {/* New York Times Section */}
+            {/* <div className="flex-1 flex justify-center items-center">
+                <div className="mx-[5vw] flex flex-col items-start">
+                <img src={times} alt="New York Times" className="h-[50px] w-[50px] mb-4" />
+                <h1 className="text-[23px] mb-2">New York Times</h1>
+                <p className="text-md leading-relaxed mb-6">
+                    Get free access to a variety of New York Times articles, games, and podcasts
+                    if you are an undergraduate or graduate student.
+                </p>
+                <div className="w-full">
+                    <a
+                    href="https://www.nytimes.com/activate-access/edu-access"
+                    className="block w-[140px] text-center p-2 bg-white rounded-md hover:text-[#A6A6A6] hover:text-berkeley"
+                    >
+                    Register
+                    </a>
+                </div>
+                </div>
+            </div> */}
 
-        {/* Wall Street Journal Section */}
-        {/* <div className="flex-1 flex flex-col justify-start items-start">
-          <img
-            src={wsj}
-            alt="Wall Street Journal"
-            className="h-[40px] w-auto mb-3"
-          />
-          <h1 className="text-[24px] font-[400] font-[Georgia] leading-[35.98px] mb-1">
-            Wall Street Journal
-          </h1>
-          <p className="text-[17px] font-[Georgia] font-[400] md:leading-normal mb-6">
-            Get free access to a variety of WSJ articles, career advice, and job prep resources
-            if you are an undergraduate student, graduate student, or faculty/staff.
-          </p>
-          <div className="mt-auto">
-            <a
-              href="https://WSJ.com/ASUCBerkeley"
-              className="text-[17px] font-[Georgia] px-6 py-3 bg-white rounded-[10px] border border-black inline-block"
-            >
-              Register
-            </a>
-          </div>
-        </div>
-      </div> */}
-
-      <div
-          id="NYT_WSJ"
-          className="bg-gradient-to-r from-[#FFD67A] to-[#F9B315] py-[5vh] px-4 md:px-[8vw] flex flex-col lg:flex-row gap-10"
-        >
-      {/* <div id="NYT_WSJ" className="bg-gradient-to-r from-[#FFD67A] to-[#F9B315] px-4 md:px-[8vw] pt-[10vh] pb-[10vh] flex flex-col lg:flex-row gap-10"> */}
-        {/* New York Times */}
-        <div className="flex-1 flex flex-col justify-between">
-          <div>
+            {/* Wall Street Journal Section */}
+            {/* <div className="flex-1 flex justify-center items-center">
+                <div className="mx-[5vw] flex flex-col items-start">
+                <img src={wsj} alt="Wall Street Journal" className="h-[36px] w-[62px] mb-4" />
+                <h1 className="text-[23px] mb-2">Wall Street Journal</h1>
+                <p className="text-md leading-relaxed mb-6">
+                    Get free access to a variety of WSJ articles, career advice, and job prep resources
+                    if you are an undergraduate student, graduate student, or faculty/staff.
+                </p>
+                <div className="w-full">
+                    <a
+                    href="https://WSJ.com/ASUCBerkeley"
+                    className="block w-[140px] text-center p-2 bg-white rounded-md hover:text-[#A6A6A6] hover:text-berkeley"
+                    >
+                    Register
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div> */}
+        {/* <div
+          id="NYT_WALL_STREET_JOURNAL"
+          className="bg-gradient-to-r from-[#FFD67A] to-[#F9B315] py-[5vh] px-4 md:px-[8vw] flex flex-col lg:flex-row justify-between gap-10"
+        > */}
+          {/* New York Times Section */}
+          {/* <div className="flex-1 flex flex-col justify-start items-start">
             <img
-              src="/nyt.png"
+              src={times}
               alt="New York Times"
-              className="h-[45px] w-auto mb-3"
+              className="h-[40px] w-auto mb-3"
             />
             <h1 className="text-[24px] font-[400] font-[Georgia] leading-[35.98px] mb-1">
               New York Times
             </h1>
-            <p className="text-[18px] font-[Georgia] font-[400] leading-[34.56px] mb-6">
-              Get free access to a variety of New York Times articles, games, and
-              podcasts if you are an undergraduate or graduate student.
+            <p className="text-[17px] font-[Georgia] font-[400] md:leading-normal mb-6">
+              Get free access to a variety of New York Times articles, games, and podcasts
+              if you are an undergraduate or graduate student.            
             </p>
-          </div>
-          <a
-            href="https://www.nytimes.com/activate-access/edu-access"
-            className="text-[18px] font-[Georgia] px-6 py-3 bg-white rounded-[10px] border border-black w-fit"
-          >
-            Register
-          </a>
-        </div>
+            <div className="mt-auto">
+              <a
+                href="https://www.nytimes.com/activate-access/edu-access"
+                className="text-[17px] font-[Georgia] px-6 py-3 bg-white rounded-[10px] border border-black inline-block"
+              >
+                Register
+              </a>
+            </div>
+          </div> */}
 
-        {/* Wall Street Journal */}
-        <div className="flex-1 flex flex-col justify-between">
-          <div>
+          {/* Wall Street Journal Section */}
+          {/* <div className="flex-1 flex flex-col justify-start items-start">
             <img
-              src="/wsj.png"
+              src={wsj}
               alt="Wall Street Journal"
-              className="h-[45px] w-auto mb-3"
+              className="h-[40px] w-auto mb-3"
             />
             <h1 className="text-[24px] font-[400] font-[Georgia] leading-[35.98px] mb-1">
               Wall Street Journal
             </h1>
-            <p className="text-[18px] font-[Georgia] font-[400] leading-[34.56px] mb-6">
-              Get free access to a variety of WSJ articles, career advice, and job
-              prep resources if you are an undergraduate student, graduate student, or
-              faculty/staff.
+            <p className="text-[17px] font-[Georgia] font-[400] md:leading-normal mb-6">
+              Get free access to a variety of WSJ articles, career advice, and job prep resources
+              if you are an undergraduate student, graduate student, or faculty/staff.
             </p>
+            <div className="mt-auto">
+              <a
+                href="https://WSJ.com/ASUCBerkeley"
+                className="text-[17px] font-[Georgia] px-6 py-3 bg-white rounded-[10px] border border-black inline-block"
+              >
+                Register
+              </a>
+            </div>
           </div>
-          <a
-            href="https://WSJ.com/ASUCBerkeley"
-            className="text-[18px] font-[Georgia] px-6 py-3 bg-white rounded-[10px] border border-black w-fit"
+        </div> */}
+
+        <div
+            id="NYT_WSJ"
+            className="bg-gradient-to-r from-[#FFD67A] to-[#F9B315] py-[5vh] px-4 md:px-[8vw] flex flex-col lg:flex-row gap-10"
           >
-            Register
-          </a>
-        </div>
-      </div>      
-
-      {/* Events Section */}
-      {/* <div id="EVENTS" className="px-[10%] py-[10vh]"> */}
-        {/* Section Header */}
-        {/* <div className="flex items-center justify-center mb-10">
-          <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-          <h3 className="px-4 text-2xl lg:text-3xl font-[Georgia]">Come To Our Events</h3>
-          <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-        </div> */}
-
-        {/* Content */}
-        {/* <div className="flex flex-col lg:flex-row gap-10 items-start"> */}
-          {/* Left Text */}
-          {/* <div className="lg:pl-[5%] flex-1 text-[18px] md:text-[20px] font-[Georgia] leading-[36px]">
-            <p>
-              The Office of the Executive Vice President organizes a wide range of events,
-              including those led independently by one of our departments, collaborations with
-              other ASUC offices or campus groups, and events in conjunction with companies,
-              external groups, or individuals.
-            </p>
-            <p className="mt-3">
-              These events vary in scope and purpose, serving the diverse needs of the campus
-              community & beyond. Past events have included professional development workshops,
-              leadership panels, networking opportunities, community-building events, and
-              advocacy initiatives.
-            </p>
-          </div> */}
-
-          {/* Right Image */}
-          {/* <div className="lg:pr-[5%] flex-1">
-            <img src="/home/e_1.png" alt="Event" className="w-full h-auto" />
-            <p className="text-[13.36px] font-[Georgia] italic mt-2">
-              The Office of the Executive Vice President held the{' '}
-              <span className="underline">PPIA Junior Summer Institute</span> Panel and Mixer
-              in collaboration with the Goldman School of Public Policy and the Student Policy
-              Institute at Berkeley.
-            </p>
-          </div>
-        </div>
-      </div> */}
-
-      <div id="EVENTS" className="px-6 md:px-[10%] py-[10vh]">
-      {/* <div id="EVENTS" className="px-6 md:px-[10%] pt-[10vh] pb-[10vh]"> */}
-        <div className="flex items-center justify-center mb-10">
-          <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-          <h3 className="px-4 text-[28px] font-[Georgia] leading-[37.5px]">Come To Our Events</h3>
-          <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-        </div>
-
-        <div className="flex flex-col lg:flex-row gap-10 items-start">
-          {/* Left text */}
-          <div className="w-full lg:w-1/2 text-[18px] lg:text-[20px] font-[Georgia] leading-[36px]">
-            <p>
-              The Office of the Executive Vice President organizes a wide range of events,
-              including those led independently by one of our departments, collaborations
-              with other ASUC offices or campus groups, and events in conjunction with companies,
-              external groups, or individuals.
-            </p>
-            <p className="mt-4">
-              These events vary in scope and purpose, serving the diverse needs of the campus
-              community & beyond. Past events have included professional development workshops,
-              leadership panels, networking opportunities, community-building events, and
-              advocacy initiatives.
-            </p>
-          </div>
-
-          {/* Right image */}
-          <div className="w-full lg:w-1/2">
-            <img src="/home/e_1.png" alt="Event" className="w-full h-auto" />
-            <p className="text-[13.36px] font-[Georgia] italic mt-2 leading-[24px]">
-              The Office of the Executive Vice President held the <span className="underline">PPIA Junior Summer Institute</span> Panel and Mixer in collaboration with the Goldman School of Public Policy and the Student Policy Institute at Berkeley.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* <div id="PARTNER" className="px-[10%] pb-[15vh]"> */}
-        {/* Section Header */}
-        {/* <div className="flex items-center justify-center mb-10">
-          <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-          <h3 className="px-4 text-2xl lg:text-3xl font-[Georgia] text-center">Work With Us</h3>
-          <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-        </div> */}
-
-        {/* Content */}
-        {/* <div className="flex flex-col lg:flex-row gap-10 items-center justify-center text-justify"> */}
-          {/* Left Image */}
-          {/* <div className="flex-1 lg:pl-[5%] max-w-[500px]">
-            <img
-              src="/home/work.png"
-              alt="Work With Us"
-              className="w-full h-auto"
-            />
-          </div> */}
-
-          {/* Right Text + CTA */}
-          {/* <div className="flex-1 lg:pr-[5%] max-w-[600px]">
-            <p className="text-[22px] font-[Georgia] font-normal leading-[37.41px] mb-0.5 text-justify">
-              Are you an<br />
-              Organization or Company<br />
-              that would like to work with us?
-            </p>
-
-            <p className="text-[12px] font-[Georgia] font-normal leading-[28px] mb-4 px-2 text-justify">
-              The Office of the Executive Vice President can partner with services or platforms that address student needs and make them available to the student body, ensuring these resources are provided in the best interest of students, on behalf of the office.
-            </p>
-
+        {/* <div id="NYT_WSJ" className="bg-gradient-to-r from-[#FFD67A] to-[#F9B315] px-4 md:px-[8vw] pt-[10vh] pb-[10vh] flex flex-col lg:flex-row gap-10"> */}
+          {/* New York Times */}
+          <div className="flex-1 flex flex-col justify-between">
+            <div>
+              <img
+                src="/nyt.png"
+                alt="New York Times"
+                className="h-[45px] w-auto mb-3"
+              />
+              <h1 className="text-[24px] font-[400] font-[Georgia] leading-[35.98px] mb-1">
+                New York Times
+              </h1>
+              <p className="text-[18px] font-[Georgia] font-[400] leading-[34.56px] mb-6">
+                Get free access to a variety of New York Times articles, games, and
+                podcasts if you are an undergraduate or graduate student.
+              </p>
+            </div>
             <a
-              href="/partnerships.html"
-              className="inline-flex justify-center items-center px-4 py-[6px] bg-[#003A70] rounded-full outline outline-[2.67px] outline-white outline-offset-[-2.67px] font-[Georgia] text-white text-[26.79px] font-normal hover:bg-[#002957] transition-colors"
+              href="https://www.nytimes.com/activate-access/edu-access"
+              className="text-[18px] font-[Georgia] px-6 py-3 bg-white rounded-[10px] border border-black w-fit"
             >
-              Partner with ASUC Here
+              Register
             </a>
           </div>
-        </div>
-      </div> */}
-      <div id="PARTNER" className="px-6 md:px-[10%] pb-[15vh]">
-      {/* <div id="PARTNER" className="px-6 md:px-[10%] pt-[10vh] pb-[10vh]"> */}
-        <div className="flex items-center justify-center mb-10">
-          <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-          <h3 className="px-4 text-[28px] font-[Georgia] leading-[37.5px] text-center">Work with Us</h3>
-          <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-        </div>
 
-        <div className="flex flex-col lg:flex-row gap-10 items-center justify-center">
-          {/* Image */}
-          <div className="w-full lg:w-1/2 max-w-[500px]">
-            <img src="/home/work.png" alt="Work With Us" className="w-full h-auto" />
-          </div>
-
-          {/* Text & CTA */}
-          <div className="w-full lg:w-1/2 max-w-[600px] text-[18px] font-[Georgia]">
-            <p className="text-[22px] font-[Georgia] font-normal leading-[37.41px] mb-2">
-              Are you an Organization or Company<br />
-              that would like to work with us?
-            </p>
-            <p className="text-[14px] leading-[28px] mb-4 text-justify">
-              The Office of the Executive Vice President can partner with services or platforms
-              that address student needs and make them available to the student body, ensuring
-              these resources are provided in the best interest of students, on behalf of the office.
-            </p>
+          {/* Wall Street Journal */}
+          <div className="flex-1 flex flex-col justify-between">
+            <div>
+              <img
+                src="/wsj.png"
+                alt="Wall Street Journal"
+                className="h-[45px] w-auto mb-3"
+              />
+              <h1 className="text-[24px] font-[400] font-[Georgia] leading-[35.98px] mb-1">
+                Wall Street Journal
+              </h1>
+              <p className="text-[18px] font-[Georgia] font-[400] leading-[34.56px] mb-6">
+                Get free access to a variety of WSJ articles, career advice, and job
+                prep resources if you are an undergraduate student, graduate student, or
+                faculty/staff.
+              </p>
+            </div>
             <a
-              href="/partnerships"
-              className="inline-block px-14 py-3 bg-[#003A70] rounded-[10px] text-white text-[18px] font-[Georgia] hover:bg-[#002957] transition"
+              href="https://WSJ.com/ASUCBerkeley"
+              className="text-[18px] font-[Georgia] px-6 py-3 bg-white rounded-[10px] border border-black w-fit"
             >
-              Work With Us
+              Register
             </a>
           </div>
+        </div>      
+
+        {/* Events Section */}
+        {/* <div id="EVENTS" className="px-[10%] py-[10vh]"> */}
+          {/* Section Header */}
+          {/* <div className="flex items-center justify-center mb-10">
+            <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+            <h3 className="px-4 text-2xl lg:text-3xl font-[Georgia]">Come To Our Events</h3>
+            <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+          </div> */}
+
+          {/* Content */}
+          {/* <div className="flex flex-col lg:flex-row gap-10 items-start"> */}
+            {/* Left Text */}
+            {/* <div className="lg:pl-[5%] flex-1 text-[18px] md:text-[20px] font-[Georgia] leading-[36px]">
+              <p>
+                The Office of the Executive Vice President organizes a wide range of events,
+                including those led independently by one of our departments, collaborations with
+                other ASUC offices or campus groups, and events in conjunction with companies,
+                external groups, or individuals.
+              </p>
+              <p className="mt-3">
+                These events vary in scope and purpose, serving the diverse needs of the campus
+                community & beyond. Past events have included professional development workshops,
+                leadership panels, networking opportunities, community-building events, and
+                advocacy initiatives.
+              </p>
+            </div> */}
+
+            {/* Right Image */}
+            {/* <div className="lg:pr-[5%] flex-1">
+              <img src="/home/e_1.png" alt="Event" className="w-full h-auto" />
+              <p className="text-[13.36px] font-[Georgia] italic mt-2">
+                The Office of the Executive Vice President held the{' '}
+                <span className="underline">PPIA Junior Summer Institute</span> Panel and Mixer
+                in collaboration with the Goldman School of Public Policy and the Student Policy
+                Institute at Berkeley.
+              </p>
+            </div>
+          </div>
+        </div> */}
+
+        <div id="EVENTS" className="px-6 md:px-[10%] py-[10vh]">
+        {/* <div id="EVENTS" className="px-6 md:px-[10%] pt-[10vh] pb-[10vh]"> */}
+          <div className="flex items-center justify-center mb-10">
+            <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+            <h3 className="px-4 text-[40px] font-[Georgia] leading-[37.5px]">Come To Our Events</h3>
+            <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+          </div>
+
+          <div className="flex flex-col lg:flex-row gap-10 items-start">
+            {/* Left text */}
+            <div className="w-full lg:w-1/2 text-[25px] lg:text-[35px] font-[Georgia] leading-[45px]">
+              <p>
+                The Office of the Executive Vice President organizes a wide range of events,
+                including those led independently by one of our departments, collaborations
+                with other ASUC offices or campus groups, and events in conjunction with companies,
+                external groups, or individuals.
+              </p>
+              <p className="mt-10">
+                These events vary in scope and purpose, serving the diverse needs of the campus
+                community & beyond. Past events have included professional development workshops,
+                leadership panels, networking opportunities, community-building events, and
+                advocacy initiatives.
+              </p>
+            </div>
+
+            {/* Right image */}
+            <div className="w-full lg:w-1/2">
+              <img src="/home/e_1.png" alt="Event" className="w-full h-auto" />
+              <p className="text-[15.36px] font-[Georgia] italic mt-2 leading-[24px]">
+                The Office of the Executive Vice President held the <span className="underline">PPIA Junior Summer Institute</span> Panel and Mixer in collaboration with the Goldman School of Public Policy and the Student Policy Institute at Berkeley.
+              </p>
+            </div>
+          </div>
         </div>
+
+        {/* <div id="PARTNER" className="px-[10%] pb-[15vh]"> */}
+          {/* Section Header */}
+          {/* <div className="flex items-center justify-center mb-10">
+            <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+            <h3 className="px-4 text-2xl lg:text-3xl font-[Georgia] text-center">Work With Us</h3>
+            <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+          </div> */}
+
+          {/* Content */}
+          {/* <div className="flex flex-col lg:flex-row gap-10 items-center justify-center text-justify"> */}
+            {/* Left Image */}
+            {/* <div className="flex-1 lg:pl-[5%] max-w-[500px]">
+              <img
+                src="/home/work.png"
+                alt="Work With Us"
+                className="w-full h-auto"
+              />
+            </div> */}
+
+            {/* Right Text + CTA */}
+            {/* <div className="flex-1 lg:pr-[5%] max-w-[600px]">
+              <p className="text-[22px] font-[Georgia] font-normal leading-[37.41px] mb-0.5 text-justify">
+                Are you an<br />
+                Organization or Company<br />
+                that would like to work with us?
+              </p>
+
+              <p className="text-[12px] font-[Georgia] font-normal leading-[28px] mb-4 px-2 text-justify">
+                The Office of the Executive Vice President can partner with services or platforms that address student needs and make them available to the student body, ensuring these resources are provided in the best interest of students, on behalf of the office.
+              </p>
+
+              <a
+                href="/partnerships.html"
+                className="inline-flex justify-center items-center px-4 py-[6px] bg-[#003A70] rounded-full outline outline-[2.67px] outline-white outline-offset-[-2.67px] font-[Georgia] text-white text-[26.79px] font-normal hover:bg-[#002957] transition-colors"
+              >
+                Partner with ASUC Here
+              </a>
+            </div>
+          </div>
+        </div> */}
+        <div id="PARTNER" className="px-6 md:px-[10%] pb-[15vh]">
+          {/* Title */}
+          <div className="flex items-center justify-center mb-10">
+            <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+            <h3 className="px-4 text-[28px] font-[Georgia] leading-[37.5px] text-center">Work with Us</h3>
+            <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+          </div>
+
+          {/* Content */}
+          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-16">
+
+            {/* Image - Expands to left edge on desktop */}
+            <div className="w-full lg:w-[55%]">
+              <img
+                src="/home/work.png"
+                alt="Work With Us"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+
+            {/* Text Section - Always centered */}
+            <div className="w-full lg:w-[45%] text-center font-[Georgia]">
+              <p className="text-[30px] leading-[50px] mb-8">
+                Are you an Organization or Company<br />
+                that would like to work with us?
+              </p>
+              <p className="text-[20px] leading-[36px] mb-10 px-1 md:px-4">
+                The Office of the Executive Vice President can partner with services or platforms
+                that address student needs and make them available to the student body, ensuring
+                these resources are provided in the best interest of students, on behalf of the office.
+              </p>
+              <a
+                href="/partnerships"
+                className="inline-block mt-[-8px] px-10 py-2 bg-[#003A70] rounded-[5px] text-white text-[18px] hover:bg-[#002957] transition"
+              >
+                Work With Us
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
       <Footer />
     </div>
