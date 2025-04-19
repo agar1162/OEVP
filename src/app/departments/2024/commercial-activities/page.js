@@ -181,7 +181,7 @@ export default function departmentsPage() {
         </div> */}
         <div
           id="NYT_WALL_STREET_JOURNAL"
-          className="bg-[#DFE9F5] py-[5vh] px-4 md:px-[8vw] flex flex-col lg:flex-row gap-10"
+          className="bg-[#DFE9F5] py-[5vh] px-4 md:px-[8vw] flex flex-col lg:flex-row gap-10 mt-14"
         >
           {/* New York Times */}
           <div className="flex-1 flex flex-col justify-between">
@@ -284,26 +284,26 @@ export default function departmentsPage() {
       </div> */}
 
       <div className="items-center mx-[10%] pt-[5vh] text-center">
-              <div className="relative flex items-center mt-10">
+              <div className="relative flex items-center mt-14">
                   <div className="flex-grow border-t border-[#A6A6A6] "></div>
-                  <span className="flex-shrink mx-4 text-[25px] font-bold md:font-normal">Partnership Feedback</span>
+                  <span className="flex-shrink mx-4 text-[25px] md:font-normal">Partnership Feedback</span>
                   <div className="flex-grow border-t border-[#A6A6A6]"></div>
               </div>
         </div>
 
-        <div className="place-content-center text-center mx-[10%] pb-8 mt-10">
+        <div className="place-content-center text-center mx-[10%] pb-8 mt-4">
               <p className="text-[#3D3D3D] text-md">Are you a student? Let us know how you’re liking our current partnerships (like NYT and WSJ), and suggest new ones you’d love to see!</p>
         </div>
 
           
-        <div className="flex justify-center items-center mt-5">
+        <div className="flex justify-center items-center mt-2">
           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd0Xs2uIpKrg1rOQn6fB1CODypJsukz6WUfURqrwuy0iWJlCw/viewform?embedded=true" className="w-[500px] h-[500px] shadow-lg rounded-[20px] border-0">Loading…</iframe>
         </div>
 
-      <div className="items-center mx-[10%] pt-[5vh] text-center">
+      <div className="items-center mx-[10%] pt-[5vh] text-center mt-14">
         <div className="relative flex items-center ">
             <div className="flex-grow border-t border-[#A6A6A6] "></div>
-            <span className="flex-shrink mx-4 text-[25px] font-bold md:font-normal">Projects</span>
+            <span className="flex-shrink mx-4 text-[25px] md:font-normal">Projects</span>
             <div className="flex-grow border-t border-[#A6A6A6]"></div>
         </div>
       </div>
@@ -313,7 +313,7 @@ export default function departmentsPage() {
           <p className="text-md md:text-lg w-fit mx-[10%]"><i>The OEVP provides free access to newspaper 
             subscriptions such as the Wall Street Journal and New York Times, and financial grants.</i></p>
       </div> */}
-      <div className="px-[10%] mt-12 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="px-[10%] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8 mt-6">
         {/* Project 1: WSJ Election Tabling */}
         <div className="bg-white bg-opacity-85 shadow-[4px_4px_8px_rgba(0,0,0,0.15)] border-x border-b border-[#D3D3D3] overflow-hidden">
           <img
@@ -380,14 +380,25 @@ export default function departmentsPage() {
         </div>
       </div>
 
-        <div className="items-center mx-[10%] pt-[5vh] text-center">
+        {/* <div className="items-center mx-[10%] pt-[5vh] text-center">
           <div className="relative flex items-center ">
               <div className="flex-grow border-t border-[#A6A6A6] "></div>
-              <span className="flex-shrink mx-4 text-[25px] font-bold md:font-normal">Our Past Work As Seen on Daily Cal</span>
+              <span className="flex-shrink mx-4 text-[25px] md:font-normal">Past Work As Seen on Daily Cal</span>
               <div className="flex-grow border-t border-[#A6A6A6]"></div>
           </div>
-        </div>
+        </div> */}
         
+        <div className="relative flex flex-col sm:flex-row items-center mx-[10%] text-center mt-14">
+            {/* Top line on small screens, left line on larger screens */}
+            <div className="w-full sm:flex-grow border-t border-[#A6A6A6] sm:mr-4 mb-2 sm:mb-0"></div>
+
+            {/* Title Text (always 25px) */}
+            <span className="text-[25px] font-[Georgia]">Past Work As Seen on Daily Cal</span>
+
+            {/* Bottom line on small screens, right line on larger screens */}
+            <div className="w-full sm:flex-grow border-t border-[#A6A6A6] sm:ml-4 mt-2 sm:mt-0"></div>
+        </div>
+
         <div className="flex flex-wrap pb-10 md:flex-regular mx-[10%] py-5">
           <div className=" md:flex md:basis-1/2 hover:bg-gray-100">
             <img src="/departments/comm_act/c3.png" className="w-[40vh]"/>

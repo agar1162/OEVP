@@ -127,7 +127,7 @@ export default function departmentsPage() {
         </div>
 
 
-        <div className="relative flex items-center mx-[10%]">
+        <div className="relative flex items-center mx-[10%] mt-12">
             <div className="flex-grow border-t border-[#A6A6A6]"></div>
             <span className="flex-shrink mx-4 text-[25px]">Finance Resources</span>
             <div className="flex-grow border-t border-[#A6A6A6]"></div>
@@ -156,7 +156,7 @@ export default function departmentsPage() {
                 </p>
             </div>
         </div> */}
-        <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 px-6 md:px-[10%] py-10">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 px-6 md:px-[10%] py-4">
             {/* CASSA Form Card */}
             <div className="w-full max-w-[440px] bg-white rounded-[2px] shadow-md overflow-hidden scale-[0.95]">
                 <div className="h-[280px] md:h-[330px] overflow-hidden">
@@ -212,7 +212,7 @@ export default function departmentsPage() {
             </div>
         </div>
 
-        <div className="w-full px-6 md:px-[10%]">
+        <div className="w-full px-6 md:px-[10%] mt-10">
         <div className="relative flex  items-center mx-[10%]">
             <div className="flex-grow border-t border-[#A6A6A6]"></div>
             <span className="flex-shrink mx-4 text-[25px] md:hidden">FAQ</span>

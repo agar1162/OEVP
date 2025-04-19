@@ -141,7 +141,7 @@ export default function DepartmentsPage() {
 
         </div> */}
         {/* Our Work Section Title */}
-        <div className="relative flex items-center max-w-screen-xl mx-auto px-6 lg:px-0 pt-10">
+        <div className="relative flex items-center max-w-screen-xl mx-auto px-6 lg:px-0 mt-14">
         <div className="flex-grow border-t border-[#A6A6A6]"></div>
         <span className="flex-shrink mx-4 text-[25px]">Our Work</span>
         <div className="flex-grow border-t border-[#A6A6A6]"></div>
@@ -149,7 +149,7 @@ export default function DepartmentsPage() {
 
         {/* Instagram Posts Grid */}
         {/* <div className="lg:grid lg:grid-cols-3 px-[10%] pt-5"> */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 pt-8 px-6 sm:px-[10%] place-items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 pt-8 px-6 sm:px-[10%] place-items-center mt-1">
         <InstagramPostEmbed postId="DB7snwWJeB9" />
         <InstagramPostEmbed postId="DCff6JySrrl" />
         <InstagramPostEmbed postId="DB0UAelxK0v" />

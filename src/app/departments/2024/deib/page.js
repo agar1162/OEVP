@@ -154,7 +154,7 @@ export default function DepartmentsPage() {
             </div>
 
             {/* Introductory Paragraph */}
-            <div className="px-6 md:px-[10%] py-[4vh] text-center text-[15px] leading-relaxed max-w-screen-xl mx-auto">
+            <div className="px-6 md:px-[10%] py-[4vh] text-center text-[15px] leading-relaxed max-w-screen-xl mx-auto mb-14">
                 <p className={`transition-all duration-300 ease-in-out ${isExpanded ? "text-black" : "text-[#3E3E3E]"}`}>
                     Created to ensure the Office of the Executive President (OEVP) and its departments have the research to support projects, public statements, and information for the wider campus community. We are tasked with supporting the development of policy briefs and crafting and analyzing surveys and student climate data.
                     {!isExpanded && (
@@ -187,7 +187,7 @@ export default function DepartmentsPage() {
                 </div>
             </div>
 
-            <div className="items-center mx-[10%] py-[5vh] text-center">
+            {/* <div className="items-center mx-[10%] py-[5vh] text-center">
                 <div className="relative flex items-center">
                     <div className="flex-grow border-t border-[#A6A6A6]"></div>
                     <span className="flex-shrink mx-4 text-[25px] md:font-normal">
@@ -195,6 +195,16 @@ export default function DepartmentsPage() {
                     </span>
                     <div className="flex-grow border-t border-[#A6A6A6]"></div>
                 </div>
+            </div> */}
+            <div className="relative flex flex-col sm:flex-row items-center mx-[10%] text-center mb-8">
+                {/* Top line on small screens, left line on larger screens */}
+                <div className="w-full sm:flex-grow border-t border-[#A6A6A6] sm:mr-4 mb-2 sm:mb-0"></div>
+
+                {/* Title Text (always 25px) */}
+                <span className="text-[25px] font-[Georgia]">Explore UC Berkeley’s Diverse Student Community</span>
+
+                {/* Bottom line on small screens, right line on larger screens */}
+                <div className="w-full sm:flex-grow border-t border-[#A6A6A6] sm:ml-4 mt-2 sm:mt-0"></div>
             </div>
 
             {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mx-[10%] pb-10">
@@ -204,7 +214,7 @@ export default function DepartmentsPage() {
                     </div>
                 ))}
             </div> */}
-            <div className="w-full max-w-screen-lg mx-auto px-6">
+            <div className="w-full max-w-screen-lg mx-auto px-6 mb-14">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[1px] max-w-screen-lg mx-auto">
                     {gridItem("Black/Afrikan Diaspora Community", "/departments/2024/deib/communities/#Black/Afrikan", images()[0])}
                     {gridItem("Chicanx/Latinx Community", "/departments/2024/deib/communities/#Latinx/Chicanx", images()[1])}
@@ -228,7 +238,7 @@ export default function DepartmentsPage() {
 
             {/* <div className="mt-12 flex justify-center">
             <div className="w-full max-w-[20%] bg-white bg-opacity-85 shadow-[4px_4px_8px_rgba(0,0,0,0.15)] border-x border-b border-[#D3D3D3] overflow-hidden"> */}
-            <div className="mt-12 flex justify-center px-6">
+            <div className="flex justify-center px-6 mt-6">
                 <div className="w-full max-w-sm sm:max-w-md md:max-w-lg bg-white bg-opacity-85 shadow-[4px_4px_8px_rgba(0,0,0,0.15)] border-x border-b border-[#D3D3D3] overflow-hidden">
                     <img
                     src="/departments/deib/deib-proj-1.png"
@@ -248,12 +258,22 @@ export default function DepartmentsPage() {
 
 
 
-            <div className="items-center mx-[10%] pt-[5vh] text-center">
-            <div className="relative flex items-center ">
-                <div className="flex-grow border-t border-[#A6A6A6] "></div>
-                <span className="flex-shrink mx-4 text-[25px] md:font-normal">Past Work As Seen on Daily Cal</span>
-                <div className="flex-grow border-t border-[#A6A6A6]"></div>
-            </div>
+            {/* <div className="items-center mx-[10%] pt-[5vh] text-center">
+                <div className="relative flex items-center ">
+                    <div className="flex-grow border-t border-[#A6A6A6] "></div>
+                    <span className="flex-shrink mx-4 text-[25px] md:font-normal">Past Work As Seen on Daily Cal</span>
+                    <div className="flex-grow border-t border-[#A6A6A6]"></div>
+                </div>
+            </div> */}
+            <div className="relative flex flex-col sm:flex-row items-center mx-[10%] text-center mb-4 mt-20">
+                {/* Top line on small screens, left line on larger screens */}
+                <div className="w-full sm:flex-grow border-t border-[#A6A6A6] sm:mr-4 mb-2 sm:mb-0"></div>
+
+                {/* Title Text (always 25px) */}
+                <span className="text-[25px] font-[Georgia]">Past Work As Seen on Daily Cal</span>
+
+                {/* Bottom line on small screens, right line on larger screens */}
+                <div className="w-full sm:flex-grow border-t border-[#A6A6A6] sm:ml-4 mt-2 sm:mt-0"></div>
             </div>
         
         {/* <div className="flex flex-wrap pb-10 md:flex-regular mx-[10%] py-5">
@@ -278,7 +298,7 @@ export default function DepartmentsPage() {
               </div>
           </div>
         </div> */}
-        <div className="flex flex-wrap pb-10 md:flex-regular mx-[10%] py-5 mt-10">
+        <div className="flex flex-wrap pb-10 md:flex-regular mx-[10%] py-5 mt-4">
             <div className=" md:flex md:basis-1/2 hover:bg-gray-100">
                 <img src="/departments/deib/d1.jpeg" className="w-[40vh]"/>
                 <div className=" mt-4 md:mt-0 p-3">

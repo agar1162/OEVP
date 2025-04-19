@@ -93,7 +93,7 @@ export default function DepartmentsPage() {
       </div>
     </div>
 
-    <div className="relative flex  items-center mx-[10%]">
+    <div className="relative flex  items-center mx-[10%] mt-14">
         <div className="flex-grow border-t border-[#A6A6A6]"></div>
         <span className="flex-shrink mx-4 text-[25px]">Our Work</span>
         <div className="flex-grow border-t border-[#A6A6A6]"></div>
@@ -107,7 +107,7 @@ export default function DepartmentsPage() {
               full of delicious food, vibrant music, and fun performances.</i>
         </p>
     </div> */}
-    <div className="px-[10%] mt-12 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="px-[10%] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
       {/* Work 1 */}
       <div className="bg-white bg-opacity-85 shadow-[4px_4px_8px_rgba(0,0,0,0.15)] border-x border-b border-[#D3D3D3] overflow-hidden">
         <img
@@ -179,13 +179,23 @@ export default function DepartmentsPage() {
       </div>
     </div>
 
-    <div className="items-center mx-[10%] pt-[5vh] text-center">
+    {/* <div className="items-center mx-[10%] pt-[5vh] text-center">
       <div className="relative flex items-center ">
           <div className="flex-grow border-t border-[#A6A6A6] "></div>
           <span className="flex-shrink mx-4 text-[25px] md:font-normal">Past Work As Seen on Daily Cal</span>
           <div className="flex-grow border-t border-[#A6A6A6]"></div>
       </div>
-    </div>
+    </div> */}
+    <div className="relative flex flex-col sm:flex-row items-center mx-[10%] text-center mt-14 mb-2">
+        {/* Top line on small screens, left line on larger screens */}
+        <div className="w-full sm:flex-grow border-t border-[#A6A6A6] sm:mr-4 mb-2 sm:mb-0"></div>
+
+        {/* Title Text (always 25px) */}
+        <span className="text-[25px] font-[Georgia]">Past Work As Seen on Daily Cal</span>
+
+        {/* Bottom line on small screens, right line on larger screens */}
+        <div className="w-full sm:flex-grow border-t border-[#A6A6A6] sm:ml-4 mt-2 sm:mt-0"></div>
+    </div>    
 
     {/* <div className="flex flex-wrap pb-10 md:flex-regular mx-[10%] py-5">
         <div className=" md:flex md:basis-1/2 hover:bg-gray-100">

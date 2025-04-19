@@ -118,7 +118,8 @@ export default function Departments2024Page() {
               <img src={dept.image} alt={dept.name} className="w-full h-[208px] object-cover" />
               <div className="bg-white bg-opacity-80 border-t-[2px] border-[#003A70] px-4 py-5">
                 <p className="text-[#003A70] text-[10px] font-bold font-[Georgia]">Department</p>
-                <h3 className="text-[21px] font-[Georgia] leading-[24px]">{dept.name}</h3>
+                {/* <h3 className="text-[21px] font-[Georgia] leading-[24px]">{dept.name}</h3> */}
+                <h3 className="text-[17px] sm:text-[19px] md:text-[21px] font-[Georgia] leading-[1.4]">{dept.name}</h3>
                 <p className="text-[12px] font-[Georgia] leading-[14px] mt-1">{dept.description}</p>
                 <p className="text-[8px] font-[Georgia] text-[#3D3D3D] leading-[10px] mt-2">
                   {dept.members}

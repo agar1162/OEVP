@@ -100,7 +100,7 @@ export default function departmentsPage() {
             </div>
         </div>
 
-        <div className="relative flex  items-center mx-[10%]">
+        <div className="relative flex  items-center mx-[10%] mt-14">
             <div className="flex-grow border-t border-[#A6A6A6]"></div>
             <span className="flex-shrink mx-4 text-[25px]">Projects</span>
             <div className="flex-grow border-t border-[#A6A6A6]"></div>
@@ -114,7 +114,7 @@ export default function departmentsPage() {
                    full of delicious food, vibrant music, and fun performances.</i></p>
         </div> */}
 
-        <div className="px-[10%] mt-12 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="px-[10%] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 mb-6">
             {/* Project 1 */}
             <div className="bg-white bg-opacity-85 shadow-[4px_4px_8px_rgba(0,0,0,0.15)] border-x border-b border-[#D3D3D3] overflow-hidden">
                 <img

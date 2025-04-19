@@ -113,7 +113,7 @@ export default function departmentsPage() {
             </div>
         </div>
 
-        <div className="relative flex  items-center mx-[10%]">
+        <div className="relative flex  items-center mx-[10%] mt-14">
             <div className="flex-grow border-t border-[#A6A6A6]"></div>
             <span className="flex-shrink mx-4 text-[25px]">ABSA Timeline</span>
             <div className="flex-grow border-t border-[#A6A6A6]"></div>
@@ -139,7 +139,7 @@ export default function departmentsPage() {
                 </ul>
             </div>
         </div> */}
-        <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 px-6 md:px-[10%] py-10">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 px-6 md:px-[10%] mt-4 mb-4">
             {/* Instagtam Timeline Image and Caption */}
             <div className="w-full md:w-[520px] flex flex-col items-center">
                 <img

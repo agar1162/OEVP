@@ -141,10 +141,21 @@ export default function departmentsPage() {
             </div>
         </div>
 
-        <div className="relative flex  items-center mx-[10%]">
-             <div className="flex-grow border-t border-[#A6A6A6]"></div>
-             <span className="flex-shrink mx-4 text-[25px]">400+ ASUC Sponsored RSOs</span>
-             <div className="flex-grow border-t border-[#A6A6A6]"></div>
+        {/* <div className="relative flex  items-center mx-[10%]">
+          <div className="flex-grow border-t border-[#A6A6A6]"></div>
+          <span className="flex-shrink mx-4 text-[25px]">400+ ASUC Sponsored RSOs</span>
+          <div className="flex-grow border-t border-[#A6A6A6]"></div>
+        </div> */}
+
+        <div className="relative flex flex-col sm:flex-row items-center mx-[10%] text-center mt-14">
+            {/* Top line on small screens, left line on larger screens */}
+            <div className="w-full sm:flex-grow border-t border-[#A6A6A6] sm:mr-4 mb-2 sm:mb-0"></div>
+
+            {/* Title Text (always 25px) */}
+            <span className="text-[25px] font-[Georgia]">400+ ASUC Sponsored RSOs</span>
+
+            {/* Bottom line on small screens, right line on larger screens */}
+            <div className="w-full sm:flex-grow border-t border-[#A6A6A6] sm:ml-4 mt-2 sm:mt-0"></div>
         </div>
 
         <div className="mx-[10%] pb-10 mt-8">
@@ -192,7 +203,7 @@ export default function departmentsPage() {
 
         <RSOSlideshow />
 
-        <div className="relative flex items-center mx-[10%]">
+        <div className="relative flex items-center mx-[10%] mt-16">
              <div className="flex-grow border-t border-[#A6A6A6]"></div>
              <span className="flex-shrink mx-4 text-[25px]">Past Events</span>
              <div className="flex-grow border-t border-[#A6A6A6]"></div>
@@ -219,8 +230,6 @@ export default function departmentsPage() {
                 <p className="text-sm mt-6 text-center font-[Georgia]">Prelaw Panel</p>
             </div>
         </div>
-        
-
       <Footer />
     </div>
   );
