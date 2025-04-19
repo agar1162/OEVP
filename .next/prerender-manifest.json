@@ -1,30 +1,6 @@
 {
   "version": 4,
   "routes": {
-    "/departments/2024": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/departments/2024",
-      "dataRoute": "/departments/2024.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/departments/2024/deib": {
       "experimentalBypassFor": [
         {
@@ -40,6 +16,30 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/departments/2024/deib",
       "dataRoute": "/departments/2024/deib.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/departments/2024": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/departments/2024",
+      "dataRoute": "/departments/2024.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -97,6 +97,30 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/departments/2024/spaces": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/departments/2024/spaces",
+      "dataRoute": "/departments/2024/spaces.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/departments/2024/finance": {
       "experimentalBypassFor": [
         {
@@ -121,7 +145,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/departments": {
+    "/departments/2024/deib/communities": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -134,32 +158,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/departments",
-      "dataRoute": "/departments.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/office/2024": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/office/2024",
-      "dataRoute": "/office/2024.rsc",
+      "srcRoute": "/departments/2024/deib/communities",
+      "dataRoute": "/departments/2024/deib/communities.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -217,7 +217,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/office": {
+    "/office/2024": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -230,32 +230,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/office",
-      "dataRoute": "/office.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/departments/2024/student-affairs": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/departments/2024/student-affairs",
-      "dataRoute": "/departments/2024/student-affairs.rsc",
+      "srcRoute": "/office/2024",
+      "dataRoute": "/office/2024.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -289,7 +265,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/departments/2024/communications": {
+    "/departments/2024/student-affairs": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -302,8 +278,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/departments/2024/communications",
-      "dataRoute": "/departments/2024/communications.rsc",
+      "srcRoute": "/departments/2024/student-affairs",
+      "dataRoute": "/departments/2024/student-affairs.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -313,7 +289,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/partnerships/nyt_wsj": {
+    "/departments": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -326,32 +302,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/partnerships/nyt_wsj",
-      "dataRoute": "/partnerships/nyt_wsj.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/departments/2024/spaces": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/departments/2024/spaces",
-      "dataRoute": "/departments/2024/spaces.rsc",
+      "srcRoute": "/departments",
+      "dataRoute": "/departments.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -385,7 +337,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/departments/2024/deib/communities": {
+    "/office": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -398,8 +350,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/departments/2024/deib/communities",
-      "dataRoute": "/departments/2024/deib/communities.rsc",
+      "srcRoute": "/office",
+      "dataRoute": "/office.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -432,13 +384,61 @@
         "x-next-revalidated-tags",
         "x-next-revalidate-tag-token"
       ]
+    },
+    "/partnerships/nyt_wsj": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/partnerships/nyt_wsj",
+      "dataRoute": "/partnerships/nyt_wsj.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/departments/2024/communications": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/departments/2024/communications",
+      "dataRoute": "/departments/2024/communications.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
     }
   },
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "7ed8232676e69a6b5540c52abd8b3d47",
-    "previewModeSigningKey": "942643d27e6fccf84b5f49aa97d7a8b47f9005f98d9c336b023bee125f5f0d64",
-    "previewModeEncryptionKey": "7f365c357495dc5ed6a4497833e649d10b8bd594d9d2c649f48cf0d368ebf868"
+    "previewModeId": "a061990552568eb5b1d3b524ab54f841",
+    "previewModeSigningKey": "513649ce2ef2114a4a37aa6ca3f0e1a778432feb062dfcaa4ef4a97e65585955",
+    "previewModeEncryptionKey": "a8e00f5a16879e77fe23cc0255dae084713dcb000b1cbc7706b7550fe4dc387c"
   }
 }
