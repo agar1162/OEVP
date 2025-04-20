@@ -253,8 +253,8 @@ export default function departmentsPage() {
                 title="What types of financial resources does the ASUC provide for students?"
                 text="Registered Student Organizations (RSOs),
                     Campus-wide events and initiatives,
-                    Grants, and
-                    Support for long-term projects benefiting students"
+                    grants, and
+                    support for long-term projects benefiting students"
             />
         <FAQ
         title="Can students provide input on how ASUC funds are allocated?"

@@ -131,7 +131,7 @@ export default function DepartmentsPage() {
         />
         <div className="p-4">
           <p className="text-[12.04px] font-[Georgia] leading-[25.38px]">
-            Developed a website to inform the campus community about the Executive Vice President’s office, highlighting projects and free resources offered on behalf of the office.
+            Collaborated with Jonathan Ngai’s Office and UHS Dietitian Services for "Meal Prepping & Nutrition 101” which covered the essentials of meal prepping and nutrition. 
           </p>
         </div>
       </div>
