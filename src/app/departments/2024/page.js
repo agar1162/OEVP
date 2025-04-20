@@ -22,7 +22,7 @@ export default function Departments2024Page() {
     {
       slug: 'legal-affairs',
       name: 'Legislative Affairs',
-      description: '(Coming up)',
+      description: 'Drafts legislation to be considered by the Senate.',
       members: 'Crystal Kim (Intern), Dylan Lucks (Associate), Andrea Ugaz (Intern), Not Featured: Audrey Lee (Director)',
       image: '/departments/legal.jpeg',
     },
@@ -57,7 +57,7 @@ export default function Departments2024Page() {
     {
       slug: 'spaces',
       name: 'Spaces',
-      description: '(Coming up)',
+      description: 'Oversees ASUC managed spaces.',
       members: 'Ailyn Perez (Deputy Director), Chloe Kubedis (Associate), Max Wohlgezogen (Associate), Michael Moy (Director), Ariana Moran (Associate)',
       image: '/departments/spaces.jpg',
     },

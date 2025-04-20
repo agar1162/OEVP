@@ -69,7 +69,7 @@ export default function departmentsPage() {
                     Spaces
                 </h1>
                 <p className="text-[14px] md:text-[15px] text-black mb-1">
-                    Ensures that registered student organizations have access to all resources provided by the ASUC.
+                    Oversees ASUC managed spaces.
                 </p>
                 <p className="text-[12px] text-[#444444]">
                     Ailyn Perez (Deputy Director), Chloe Kubedis (Associate), Max Wohlgezogen (Associate), Michael Moy (Director), Ariana Moran (Associate)

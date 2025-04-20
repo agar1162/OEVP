@@ -107,7 +107,7 @@ export default function departmentsPage() {
                   Commercial Activities
                 </h1>
                 <p className="text-[14px] md:text-[15px] text-black mb-1">
-                  Responsible for managing strategic communications and public relations initiatives.
+                  Establishes partnerships with platforms heavily used by students.
                 </p>
                 <p className="text-[12px] text-[#444444]">
                   Vanessa Jensen (Intern), Hibba Adeel (Director), Jasmine Lucero Trujillo Mata (Associate), Mayra Aguilar Perez (Associate), Sanjna Shah (Associate) 
@@ -349,9 +349,9 @@ export default function departmentsPage() {
         </div>
 
         {/* Project 3: Whistleblower Event */}
-        <div className="bg-white bg-opacity-85 shadow-[4px_4px_8px_rgba(0,0,0,0.15)] border-x border-b border-[#D3D3D3] overflow-hidden">
+        {/* <div className="bg-white bg-opacity-85 shadow-[4px_4px_8px_rgba(0,0,0,0.15)] border-x border-b border-[#D3D3D3] overflow-hidden"> */}
           {/* Images */}
-          <div className="flex flex-col md:flex-row w-full">
+          {/* <div className="flex flex-col md:flex-row w-full">
             <div className="w-full md:w-1/2">
               <img
                 src="/departments/comm_act/c5.png"
@@ -366,10 +366,10 @@ export default function departmentsPage() {
                 className="w-full h-full object-cover aspect-[1/1] md:aspect-auto"
               />
             </div>
-          </div>
+          </div> */}
 
           {/* Caption */}
-          <div className="p-4">
+          {/* <div className="p-4">
             <h3 className="text-[20.51px] font-bold font-[Georgia] leading-[34.58px] mb-2">
               Whistleblower Event
             </h3>
@@ -377,7 +377,7 @@ export default function departmentsPage() {
               Commercial Activities welcomed Tyler Shultz on April 10, 2025 to discuss his role in exposing the $9B Theranos scandal and the ethics of whistleblowing in healthcare.
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
 
         {/* <div className="items-center mx-[10%] pt-[5vh] text-center">

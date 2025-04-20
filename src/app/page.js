@@ -213,17 +213,13 @@ export default function Home() {
           {slides.map((slide, index) => (
             <div
               key={index}
-              // className={`absolute w-full h-full bg-cover bg-center md:bg-fixed transition-opacity duration-1000 ease-in-out ${
               className={`absolute w-full h-full bg-cover bg-center md:bg-fixed transition-opacity duration-1000 ease-in-out ${
-                // currentIndex === index ? "opacity-100" : "opacity-0"
-                currentIndex === index ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+              // className={`absolute w-full h-full bg-cover bg-center md:bg-fixed transition-opacity duration-1000 ease-in-out ${
+                currentIndex === index ? "opacity-100" : "opacity-0"
+                // currentIndex === index ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
               }`}
               style={{
                 backgroundImage: `linear-gradient(180deg, rgba(165, 165, 165, 0.53) 4%, rgba(0, 58, 112, 0.53) 78.5%), url(${slide.url})`,
-                willChange: "opacity",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                transition: "background-image 0.8s ease-in-out",
               }}
             ></div>
           ))}
@@ -375,7 +371,7 @@ export default function Home() {
             <div className="flex items-center justify-center mb-6">
               <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
               <h3 className="px-4 text-[40px] font-[Georgia] leading-[37.5px] text-black text-center">
-                Who are we?
+                Who Are We?
               </h3>
               <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
             </div>
@@ -760,7 +756,7 @@ export default function Home() {
           {/* Title */}
           <div className="flex items-center justify-center mb-10">
             <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-            <h3 className="px-4 text-[28px] font-[Georgia] leading-[37.5px] text-center">Work with Us</h3>
+            <h3 className="px-4 text-[40px] font-[Georgia] leading-[37.5px] text-center">Work With Us</h3>
             <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
           </div>
 
