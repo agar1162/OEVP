@@ -758,7 +758,7 @@ export default function Home() {
         these resources are provided in the best interest of students, on behalf of the office.
       </p>
       <a
-        href="/partnerships"
+        href="https://docs.google.com/forms/d/1rwVDX89fmSyXyJJPGd-AK11CYUtPesFqlVq-wqhCTVg/edit"
         className="inline-block px-10 py-2 bg-[#003A70] rounded-[5px] text-white text-[16px] hover:bg-[#002957] transition"
       >
         Work With Us

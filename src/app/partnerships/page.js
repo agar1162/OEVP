@@ -147,7 +147,7 @@ export default function PartnershipsPage() {
             Are you a student? Let us know how you’re liking our current partnerships (like NYT and WSJ), and suggest new ones you’d love to see!
           </p>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSd0Xs2uIpKrg1rOQn6fB1CODypJsukz6WUfURqrwuy0iWJlCw/viewform?embedded=true"
+            href="https://docs.google.com/forms/d/1bJX18_Pqbl-xnEU4oNbcBTtVnuDqPdwfuKjeS-LDYqA/edit"
             className="bg-berkeley text-white px-6 py-3 rounded-md font-[Georgia] text-[16px] sm:text-[17px] md:text-[18.6px] hover:bg-[#002f56] transition"
           >
             Partnership Feedback Form
