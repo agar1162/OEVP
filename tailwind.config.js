@@ -67,6 +67,9 @@ module.exports = {
   				'5': 'hsl(var(--chart-5))'
   			}
   		},
+		fontFamily: {
+			georgia: ['Georgia', 'Times New Roman', 'Times', 'serif'],
+		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',

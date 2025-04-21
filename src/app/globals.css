@@ -7,6 +7,19 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/* body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  @apply font-georgia;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga" 0;
+  font-variant-ligatures: none;
+  -webkit-text-size-adjust: 100%;
+} */
+
+
+
 @layer components {
   #COMMUNITIES_DESCRIPTIONS_CONTAINER a {
     @apply italic;
@@ -103,17 +116,5 @@
   animation: fadein 0.8s ease-out;
 }
 /* END: Fade-in Animation on Page Load */
-
-
-/* START: Slideshow in homepage */
-/* Hide scrollbar for horizontal scroll */
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
-.scrollbar-hide {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;     /* Firefox */
-}
-/* END: Slideshow in homepage */
 
 

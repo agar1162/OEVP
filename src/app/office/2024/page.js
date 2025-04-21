@@ -129,7 +129,7 @@ export default function officePage () {
             <Navbar />
             <main className="flex flex-col lg:flex-row max-w-[1300px] mx-auto px-6 md:px-10 py-10 gap-10">
               {/* Sidebar for term selection */} 
-              <aside className="w-full lg:w-[250px] lg:sticky lg:top-[120px] self-start py-32">
+              <aside className="w-full lg:w-[250px] flex-shrink-0 py-32">
                 <div className="shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)] bg-white">
                   {/* Title */}
                   <div className="bg-[#003A70] text-white text-center py-3 text-sm tracking-wide font-normal">
@@ -145,7 +145,6 @@ export default function officePage () {
                   </a>
                 </div>
               </aside>
-
 
               {/* Main content section: officer title + grid */}
               <section className="flex-1">

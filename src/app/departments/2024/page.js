@@ -22,14 +22,14 @@ export default function Departments2024Page() {
     {
       slug: 'legal-affairs',
       name: 'Legislative Affairs',
-      description: 'Drafts legislation to be considered by the Senate.',
+      description: 'Learn about what our legislative team does in the ASUC Senate.',
       members: 'Crystal Kim (Intern), Dylan Lucks (Associate), Andrea Ugaz (Intern), Not Featured: Audrey Lee (Director)',
       image: '/departments/legal.jpeg',
     },
     {
       slug: 'commercial-activities',
       name: 'Commercial Activities',
-      description: '(Coming up)',
+      description: 'Establishes partnerships with platforms heavily used by students.',
       members: 'Vanessa Jensen (Intern), Hibba Adeel (Director), Jasmine Lucero Trujillo Mata (Associate), Mayra Aguilar Perez (Associate), Sanjna Shah (Associate)',
       image: '/departments/act.jpg',
     },

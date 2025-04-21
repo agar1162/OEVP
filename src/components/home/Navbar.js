@@ -145,14 +145,14 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 w-full bg-[#003A70]">
-      <div className="flex items-center justify-between px-6 md:px-10 h-[80px]">
+      <div className="flex items-center justify-between px-6 md:px-10 h-[94px]">
         {/* Logo */}
         <a href="/" className="flex items-center">
-          <img src={logoref} alt="Logo" className="h-[65px] w-auto object-contain" />
+          <img src={logoref} alt="Logo" className="h-[80px] w-auto object-contain" />
         </a>
 
         {/* Desktop Menu */}
-        <div className="hidden lg:flex items-center space-x-6 text-white font-bold text-[15px] font-[Georgia] lg:ml-4 xl:ml-6">
+        <div className="hidden lg:flex items-center space-x-6 text-white font-bold text-[17px] font-[Georgia] lg:ml-4 xl:ml-6">
           <a href="/" className="hover:text-gray-400 transition">Home</a>
           <a href="/office" className="hover:text-gray-400 transition">Office</a>
           <a href="/departments" className="hover:text-gray-400 transition">Departments</a>

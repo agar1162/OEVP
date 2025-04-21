@@ -193,30 +193,16 @@ export default function Home() {
           </div>
 
         </div> */}
+
         <div
           id="COVER"
           className="h-[90vh] bg-cover bg-center bg-no-repeat md:bg-fixed text-white text-center relative overflow-hidden"
         >
-          {/* Background Slideshow */}
-          {/* {slides.map((slide, index) => (
-            <div
-              key={index}
-              className={`absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out ${
-                currentIndex === index ? "opacity-100" : "opacity-0"
-              }`}
-              style={{
-                backgroundImage: `linear-gradient(180deg, rgba(165, 165, 165, 0.53) 4%, rgba(0, 58, 112, 0.53) 78.5%), url(${slide.url})`,
-                backgroundPosition: currentIndex === 0 ? "center 35%" : "center center",
-              }}
-            ></div>
-          ))} */}
           {slides.map((slide, index) => (
             <div
               key={index}
               className={`absolute w-full h-full bg-cover bg-center md:bg-fixed transition-opacity duration-1000 ease-in-out ${
-              // className={`absolute w-full h-full bg-cover bg-center md:bg-fixed transition-opacity duration-1000 ease-in-out ${
                 currentIndex === index ? "opacity-100" : "opacity-0"
-                // currentIndex === index ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
               }`}
               style={{
                 backgroundImage: `linear-gradient(180deg, rgba(165, 165, 165, 0.53) 4%, rgba(0, 58, 112, 0.53) 78.5%), url(${slide.url})`,
@@ -226,9 +212,6 @@ export default function Home() {
 
           {/* Title Section */}
           <div className="absolute top-[12%] w-full flex flex-col items-center justify-center px-3 text-white text-center z-10">
-            {/* <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-2 tracking-wide">
-              UC Berkeley ASUC
-            </p> */}
             <h1 className="font-extrabold tracking-wide leading-tight text-center 
               text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl mb-2"
             >
@@ -244,61 +227,11 @@ export default function Home() {
             <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl text-white">
               {slides[currentIndex].caption}
             </h3>
-            {/* <img
-              src="/arrow.png"
-              alt="arrow"
-              // className="mt-3 w-[70px] md:w-[100px] h-auto"
-              className="mt-2 w-[10px] sm:w-[20px] md:w-[35px] lg:w-[25px] h-auto"
-            /> */}
           </a>
 
-          {/* Bottom Slide Nav */}
-          {/* <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex md:text-2xl gap-[4vw] md:gap-[10vw] p-10 w-full justify-center z-10">
-            {slides.map((slide, index) => (
-              // <button key={index} onClick={() => setCurrentIndex(index)} className="relative group">
-              //   <h3 className="transition duration-500 ease-in-out font-bold text-lg md:text-xl">
-              //     {slide.title}
-              //   </h3>
-              //   {currentIndex === index && (
-              //     <span className="block h-[2px] bg-white mb-1 w-full"></span>
-              //   )}
-              // </button>
-              <button
-                key={index}
-                onClick={() => setCurrentIndex(index)}
-                className="relative group flex flex-col items-center"
-              >
-                {currentIndex === index && (
-                  <span className="block h-[2px] bg-white mb-1 w-full"></span> // moved above and changed `mt-1` → `mb-1`
-                )}
-                <h3 className="transition duration-500 ease-in-out font-bold text-lg md:text-xl">
-                  {slide.title}
-                </h3>
-              </button>
-            ))}
-          </div> */}
-          {/* <div className="absolute bottom-0 w-full overflow-x-auto whitespace-nowrap z-10 px-6 pb-6">
-            <div className="inline-flex gap-6">
-              {slides.map((slide, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentIndex(index)}
-                  className="relative group flex-shrink-0 px-2"
-                >
-                  {currentIndex === index && (
-                    <span className="block h-[2px] bg-white mb-1 w-full"></span>
-                  )}
-                  <h3 className="transition duration-500 ease-in-out font-bold text-lg md:text-xl">
-                    {slide.title}
-                  </h3>
-                </button>
-              ))}
-            </div>
-          </div> */}
-
+          {/* Bottom Nav */}
           <div className="absolute bottom-0 w-full overflow-x-auto whitespace-nowrap z-10 px-6 pb-6">
-            {/* <div className="inline-flex gap-[4vw] md:gap-[10vw] px-4 py-4 md:justify-center"> */}
-            <div className="inline-flex gap-[4vw] md:gap-[10vw] px-4 py-4 justify-start md:justify-center">
+            <div className="inline-flex gap-4 md:gap-12 justify-center">
               {slides.map((slide, index) => (
                 <button
                   key={index}
@@ -308,15 +241,15 @@ export default function Home() {
                   {currentIndex === index && (
                     <span className="block h-[2px] bg-white mb-1 w-full"></span>
                   )}
-                  <h3 className="transition duration-500 ease-in-out font-bold text-lg md:text-xl whitespace-nowrap">
+                  <h3 className="transition duration-500 ease-in-out font-bold text-sm sm:text-base md:text-lg whitespace-nowrap">
                     {slide.title}
                   </h3>
                 </button>
               ))}
             </div>
           </div>
-
         </div>
+
       
         {/* <div id="WHO_WE_ARE" className="mx-8 py-[10vh]">
           <h3 className="flex items-center mx-[10%] text-2xl lg:text-3xl text-center">
@@ -367,19 +300,21 @@ export default function Home() {
 
           {/* <div id="WHO_WE_ARE" className="px-6 md:px-[10%] py-[10vh]"> */}
           {/* <div id="WHO_WE_ARE" className="px-6 md:px-[10%] pt-[10vh] pb-[10vh]"> */}
-          <div id="WHO_WE_ARE" className="px-6 md:px-[10%] py-[8vh]">
-            <div className="flex items-center justify-center mb-6">
-              <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-              <h3 className="px-4 text-[40px] font-[Georgia] leading-[37.5px] text-black text-center">
-                Who Are We?
-              </h3>
-              <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-            </div>
+          <div id="WHO_WE_ARE" className="w-full bg-white py-[8vh] px-6">
+            <div className="max-w-screen-xl mx-auto">
+              {/* Section Header */}
+              <div className="flex items-center justify-center mb-10">
+                <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+                <h3 className="px-4 text-[30px] font-[Georgia] leading-[37.5px] text-black text-center whitespace-nowrap">
+                  Who Are We?
+                </h3>
+                <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+              </div>
 
-            <div className="flex flex-col lg:flex-row gap-10 items-start">
-              {/* Left table - Bigger now */}
-              <div className="w-full lg:w-[45%]">
-                <div className="flex flex-col border border-[#D3D3D3] border-t-[4px] border-t-[#003A70] divide-y divide-[#D3D3D3] shadow-lg w-full mt-2">
+              {/* Content Area */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch">
+                {/* Left Menu Table */}
+                <div className="flex flex-col border border-[#D3D3D3] border-t-[4px] border-t-[#003A70] divide-y divide-[#D3D3D3] shadow-lg h-full">
                   {[
                     "Our Mission",
                     "What is the Executive Vice President’s (EVP) Role?",
@@ -389,23 +324,22 @@ export default function Home() {
                     <a
                       key={idx}
                       onClick={() => setCurrentText(idx)}
-                      className="block px-8 py-6 text-[27px] font-[Georgia] hover:bg-[#003A70] hover:text-white transition cursor-pointer"
+                      className="px-6 py-5 text-[15px] md:text-[18px] font-[Georgia] leading-[22px] hover:bg-[#003A70] hover:text-white transition cursor-pointer whitespace-nowrap"
                     >
                       {item}
                     </a>
                   ))}
                 </div>
-              </div>
 
-              {/* Right paragraph */}
-              <div className="w-full lg:w-[55%] text-[28px] font-[Georgia] leading-[42px]">
-                <p>{texts[currentText].text}</p>
+                {/* Right Text */}
+                <div className="flex items-start h-full">
+                  <p className="text-[18px] font-[Georgia] leading-[32px] text-justify">
+                    {texts[currentText].text}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-
-
-
           
           {/* <div 
             id="ORGSTATS"
@@ -427,26 +361,39 @@ export default function Home() {
             id="ORGSTATS"
             className="flex flex-wrap justify-center items-center gap-[12vw] py-[10vh] pb-[15vh]"> */}
           {/* <div id="ORGSTATS" className="flex flex-wrap justify-center items-center gap-[12vw] pt-[10vh] pb-[10vh]"> */}
-          <div id="ORGSTATS" className="flex flex-wrap justify-center items-center gap-[12vw] px-6 md:px-[10%] pb-[10vh]">
+          <div id="ORGSTATS" className="flex flex-wrap justify-center items-center gap-[6vw] px-6 md:px-[10%] pb-[10vh]">
+            {/* Stat 1 */}
             <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
-              <h1 className="text-[#003A70] text-5xl md:text-7xl pb-5">
-                <CountUp end={400} duration={6} suffix="+"/>
+              <h1 className="text-[#003A70] text-5xl md:text-7xl font-[Georgia] pb-5">
+                <CountUp end={400} duration={6} suffix="+" />
               </h1>
-              <p className="text-xl text-center mx-4">Registered Student Organizations receive funding & resources</p>
+              <p className="text-[20px] md:text-[22px] font-[Georgia] text-center leading-[32px]">
+                Registered Student Organizations receive funding & resources
+              </p>
             </div>
+
+            {/* Stat 2 */}
             <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
-              <h1 className="text-[#003A70] text-5xl md:text-7xl pb-5">
-                <CountUp end={100} duration={6} suffix="+"/>
+              <h1 className="text-[#003A70] text-5xl md:text-7xl font-[Georgia] pb-5">
+                <CountUp end={100} duration={6} suffix="+" />
               </h1>
-              <p className="text-xl text-center mx-4">Resolutions implemented in collaboration with the ASUC Senate</p>
+              <p className="text-[20px] md:text-[22px] font-[Georgia] text-center leading-[32px]">
+                Resolutions implemented in collaboration with the ASUC Senate
+              </p>
             </div>
+
+            {/* Stat 3 */}
             <div className="flex-1 flex flex-col items-center justify-center max-w-[300px]">
-              <h1 className="text-[#003A70] text-5xl md:text-7xl pb-5">
-                <CountUp end={180} duration={6} suffix="k+"/>
+              <h1 className="text-[#003A70] text-5xl md:text-7xl font-[Georgia] pb-5">
+                <CountUp end={180} duration={6} suffix="k+" />
               </h1>
-              <p className="text-xl text-center mx-4">New York Times articles read monthly by students</p>
+              <p className="text-[20px] md:text-[22px] font-[Georgia] text-center leading-[32px]">
+                New York Times articles read monthly by students
+              </p>
             </div>
           </div>
+
+
 
         
         {/* NYT and WSJ Section */}
@@ -583,12 +530,11 @@ export default function Home() {
         </div> */}
 
         <div
-            id="NYT_WSJ"
-            className="bg-gradient-to-r from-[#FFD67A] to-[#F9B315] py-[5vh] px-4 md:px-[8vw] flex flex-col lg:flex-row gap-10"
-          >
-        {/* <div id="NYT_WSJ" className="bg-gradient-to-r from-[#FFD67A] to-[#F9B315] px-4 md:px-[8vw] pt-[10vh] pb-[10vh] flex flex-col lg:flex-row gap-10"> */}
+          id="NYT_WSJ"
+          className="bg-gradient-to-r from-[#FFD67A] to-[#F9B315] py-[5vh] px-4 md:px-[8vw] flex flex-col lg:flex-row gap-12 lg:gap-[5vw]"
+        >
           {/* New York Times */}
-          <div className="flex-1 flex flex-col justify-between">
+          <div className="flex-1 flex flex-col justify-between min-w-[280px]">
             <div>
               <img
                 src="/nyt.png"
@@ -612,7 +558,7 @@ export default function Home() {
           </div>
 
           {/* Wall Street Journal */}
-          <div className="flex-1 flex flex-col justify-between">
+          <div className="flex-1 flex flex-col justify-between min-w-[280px]">
             <div>
               <img
                 src="/wsj.png"
@@ -635,7 +581,8 @@ export default function Home() {
               Register
             </a>
           </div>
-        </div>      
+        </div>
+      
 
         {/* Events Section */}
         {/* <div id="EVENTS" className="px-[10%] py-[10vh]"> */}
@@ -677,37 +624,60 @@ export default function Home() {
           </div>
         </div> */}
 
-        <div id="EVENTS" className="px-6 md:px-[10%] py-[10vh]">
-        {/* <div id="EVENTS" className="px-6 md:px-[10%] pt-[10vh] pb-[10vh]"> */}
-          <div className="flex items-center justify-center mb-10">
-            <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-            <h3 className="px-4 text-[40px] font-[Georgia] leading-[37.5px]">Come To Our Events</h3>
-            <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-          </div>
-
-          <div className="flex flex-col lg:flex-row gap-10 items-start">
-            {/* Left text */}
-            <div className="w-full lg:w-1/2 text-[25px] lg:text-[35px] font-[Georgia] leading-[45px]">
-              <p>
-                The Office of the Executive Vice President organizes a wide range of events,
-                including those led independently by one of our departments, collaborations
-                with other ASUC offices or campus groups, and events in conjunction with companies,
-                external groups, or individuals.
-              </p>
-              <p className="mt-10">
-                These events vary in scope and purpose, serving the diverse needs of the campus
-                community & beyond. Past events have included professional development workshops,
-                leadership panels, networking opportunities, community-building events, and
-                advocacy initiatives.
-              </p>
+        <div id="EVENTS" className="w-full bg-white py-[8vh] px-6">
+          <div className="max-w-screen-xl mx-auto">
+            {/* Section Header */}
+            <div className="flex items-center justify-center mb-10">
+              <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+              <h3 className="px-4 text-[30px] font-[Georgia] leading-[37.5px] text-black text-center whitespace-nowrap">
+                Come To Our Events
+              </h3>
+              <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
             </div>
 
-            {/* Right image */}
-            <div className="w-full lg:w-1/2">
-              <img src="/home/e_1.png" alt="Event" className="w-full h-auto" />
-              <p className="text-[15.36px] font-[Georgia] italic mt-2 leading-[24px]">
-                The Office of the Executive Vice President held the <span className="underline">PPIA Junior Summer Institute</span> Panel and Mixer in collaboration with the Goldman School of Public Policy and the Student Policy Institute at Berkeley.
-              </p>
+            {/* Content */}
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-x-6 items-start px-8">
+              {/* Left Text */}
+              <div className="text-[19px] md:text-[20px] lg:text-[21px] font-[Georgia] leading-[40px] text-justify">
+                <p>
+                  The Office of the Executive Vice President organizes a wide range of events,
+                  including those led independently by one of our departments, collaborations with
+                  other ASUC offices or campus groups, and events in conjunction with companies,
+                  external groups, or individuals.
+                </p>
+                <p className="mt-8">
+                  These events vary in scope and purpose, serving the diverse needs of the campus
+                  community & beyond. Past events have included professional development workshops,
+                  leadership panels, networking opportunities, community-building events, and
+                  advocacy initiatives.
+                </p>
+              </div>
+
+              {/* Right Image + Caption */}
+              {/* <div className="pl-6 lg:pl-10">
+                <div className="w-full max-w-[440px]">
+                  <img
+                    src="/home/e_1.png"
+                    alt="Event"
+                    className="w-full h-auto object-contain"
+                  />
+                  <p className="text-[13.36px] font-[Georgia] italic mt-2 leading-[20px] text-left">
+                    The Office of the Executive Vice President held the <span className="underline">PPIA Junior Summer Institute</span> Panel and Mixer in collaboration with the Goldman School of Public Policy and the Student Policy Institute at Berkeley.
+                  </p>
+                </div>
+              </div> */}
+              <div className="flex justify-center items-center w-full lg:pl-10 sm:mt-4">
+                <div className="w-full max-w-[440px] text-center lg:text-left">
+                  <img
+                    src="/home/e_1.png"
+                    alt="Event"
+                    className="w-full h-auto object-contain"
+                  />
+                  <p className="text-[13.36px] font-[Georgia] italic mt-2 leading-[20px]">
+                    The Office of the Executive Vice President held the <span className="underline">PPIA Junior Summer Institute</span> Panel and Mixer in collaboration with the Goldman School of Public Policy and the Student Policy Institute at Berkeley.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -752,46 +722,52 @@ export default function Home() {
             </div>
           </div>
         </div> */}
-        <div id="PARTNER" className="px-6 md:px-[10%] pb-[15vh]">
-          {/* Title */}
-          <div className="flex items-center justify-center mb-10">
-            <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-            <h3 className="px-4 text-[40px] font-[Georgia] leading-[37.5px] text-center">Work With Us</h3>
-            <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-          </div>
+<div id="PARTNER" className="w-full bg-white px-6 md:px-[8vw] xl:px-[10%] pb-[10vh]">
+  {/* Section Header */}
+  <div className="flex items-center justify-center mb-10">
+    <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span> 
+    <h3 className="px-4 text-[30px] font-[Georgia] leading-[37.5px] text-black text-center whitespace-nowrap">
+      Work With Us
+    </h3>
+    <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+  </div>
 
-          {/* Content */}
-          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-16">
+  {/* Content */}
+  <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+    
+    {/* Left Image */}
+    <div className="w-full lg:w-[55%]">
+      <img
+        src="/home/work.png"
+        alt="Work With Us"
+        className="w-full h-auto object-cover"
+      />
+    </div>
 
-            {/* Image - Expands to left edge on desktop */}
-            <div className="w-full lg:w-[55%]">
-              <img
-                src="/home/work.png"
-                alt="Work With Us"
-                className="w-full h-auto object-cover"
-              />
-            </div>
+    {/* Right Text — always centered */}
+    <div className="w-full lg:w-[45%] flex flex-col items-center text-center font-georgia">
+      {/* <p className="text-[24px] md:text-[28px] leading-[38px] md:leading-[44px] xl:leading-[50px] mb-6 md:mb-8"> */}
+      <p className="text-[22px] leading-[36px] mb-6">
 
-            {/* Text Section - Always centered */}
-            <div className="w-full lg:w-[45%] text-center font-[Georgia]">
-              <p className="text-[30px] leading-[50px] mb-8">
-                Are you an Organization or Company<br />
-                that would like to work with us?
-              </p>
-              <p className="text-[20px] leading-[36px] mb-10 px-1 md:px-4">
-                The Office of the Executive Vice President can partner with services or platforms
-                that address student needs and make them available to the student body, ensuring
-                these resources are provided in the best interest of students, on behalf of the office.
-              </p>
-              <a
-                href="/partnerships"
-                className="inline-block mt-[-8px] px-10 py-2 bg-[#003A70] rounded-[5px] text-white text-[18px] hover:bg-[#002957] transition"
-              >
-                Work With Us
-              </a>
-            </div>
-          </div>
-        </div>
+        Are you an Organization or Company<br />
+        that would like to work with us?
+      </p>
+      <p className="text-[17px] leading-[28px] mb-8 px-1">
+        The Office of the Executive Vice President can partner with services or platforms
+        that address student needs and make them available to the student body, ensuring
+        these resources are provided in the best interest of students, on behalf of the office.
+      </p>
+      <a
+        href="/partnerships"
+        className="inline-block px-10 py-2 bg-[#003A70] rounded-[5px] text-white text-[16px] hover:bg-[#002957] transition"
+      >
+        Work With Us
+      </a>
+    </div>
+  </div>
+</div>
+
+
 
       </div>
       <Footer />

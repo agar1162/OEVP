@@ -313,7 +313,7 @@ export default function departmentsPage() {
           <p className="text-md md:text-lg w-fit mx-[10%]"><i>The OEVP provides free access to newspaper 
             subscriptions such as the Wall Street Journal and New York Times, and financial grants.</i></p>
       </div> */}
-      <div className="px-[10%] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8 mt-6">
+      <div className="px-[30%] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 mt-6">
         {/* Project 1: WSJ Election Tabling */}
         <div className="bg-white bg-opacity-85 shadow-[4px_4px_8px_rgba(0,0,0,0.15)] border-x border-b border-[#D3D3D3] overflow-hidden">
           <img

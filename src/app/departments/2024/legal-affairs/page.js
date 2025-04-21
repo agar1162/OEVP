@@ -68,7 +68,7 @@ export default function departmentsPage() {
                 Legislative Affairs
                 </h1>
                 <p className="text-[14px] md:text-[15px] text-black mb-1">
-                    Drafts legislation to be considered by the Senate.
+                    Learn about what our legislative team does in the ASUC Senate.
                 </p>
                 <p className="text-[12px] text-[#444444]">
                     Crystal Kim (Intern), Dylan Lucks (Associate), Andrea Ugaz (Intern), Not Featured: Audrey Lee (Director)
