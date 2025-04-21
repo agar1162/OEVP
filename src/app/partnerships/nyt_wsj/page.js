@@ -32,7 +32,7 @@ export default function resourcesPage() {
                     <div className="flex justify-center lg:justify-end items-center gap-4 mt-0 mb-0 pr-0 lg:pr-6">
                     <img src="/nyt.png" alt="New York Times Logo" className="h-[28px] sm:h-[30px] md:h-[32px] lg:h-[35px] w-auto" />
                     <img src="/wsj.png" alt="Wall Street Journal Logo" className="h-[28px] sm:h-[30px] md:h-[32px] lg:h-[35px] w-auto" />
-                    <img src="/asuc-logo.png" alt="ASUC Logo" className="h-[32px] sm:h-[36px] md:h-[38px] lg:h-[40px] w-auto" />
+                    <img src="/ASUC-logo.png" alt="ASUC Logo" className="h-[32px] sm:h-[36px] md:h-[38px] lg:h-[40px] w-auto" />
                     </div>
                 </div>
             </div>
