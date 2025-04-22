@@ -196,18 +196,33 @@ export default function Home() {
 
         <div
           id="COVER"
-          className="h-[90vh] bg-cover bg-center bg-no-repeat md:bg-fixed text-white text-center relative overflow-hidden"
+          // className="h-[90vh] bg-cover bg-center bg-no-repeat md:bg-fixed text-white text-center relative overflow-hidden"
+          className="h-[90vh] text-white text-center relative overflow-hidden"
         >
           {slides.map((slide, index) => (
+            // <div
+            //   key={index}
+            //   className={`absolute w-full h-full bg-cover bg-center md:bg-fixed transition-opacity duration-1000 ease-in-out ${
+            //     currentIndex === index ? "opacity-100" : "opacity-0"
+            //   }`}
+            //   style={{
+            //     backgroundImage: `linear-gradient(180deg, rgba(165, 165, 165, 0.53) 4%, rgba(0, 58, 112, 0.53) 78.5%), url(${slide.url})`,
+            //   }}
+            // ></div>
             <div
               key={index}
-              className={`absolute w-full h-full bg-cover bg-center md:bg-fixed transition-opacity duration-1000 ease-in-out ${
+              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
                 currentIndex === index ? "opacity-100" : "opacity-0"
               }`}
-              style={{
-                backgroundImage: `linear-gradient(180deg, rgba(165, 165, 165, 0.53) 4%, rgba(0, 58, 112, 0.53) 78.5%), url(${slide.url})`,
-              }}
-            ></div>
+            >
+              <img
+                src={slide.url}
+                alt={slide.title}
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-[#A5A5A587] to-[#003A7087]"></div>
+            </div>
+
           ))}
 
           {/* Title Section */}
@@ -722,53 +737,61 @@ export default function Home() {
             </div>
           </div>
         </div> */}
-<div id="PARTNER" className="w-full bg-white px-6 md:px-[8vw] xl:px-[10%] pb-[10vh]">
-  {/* Section Header */}
-  <div className="flex items-center justify-center mb-10">
-    <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span> 
-    <h3 className="px-4 text-[30px] font-[Georgia] leading-[37.5px] text-black text-center whitespace-nowrap">
-      Work With Us
-    </h3>
-    <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
-  </div>
 
-  {/* Content */}
-  <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
-    
-    {/* Left Image */}
-    <div className="w-full lg:w-[55%]">
-      <img
-        src="/home/work.png"
-        alt="Work With Us"
-        className="w-full h-auto object-cover"
-      />
-    </div>
+        {/* <div id="PARTNER" className="w-full bg-white px-6 md:px-[8vw] xl:px-[10%] pb-[10vh]">
+          <div className="flex items-center justify-center mb-10">
+            <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span> 
+            <h3 className="px-4 text-[30px] font-[Georgia] leading-[37.5px] text-black text-center whitespace-nowrap">
+              Work With Us
+            </h3>
+            <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+          </div> */}
+          <div id="PARTNER" className="w-full bg-white px-6 pb-[10vh]">
+            <div className="max-w-screen-xl mx-auto">
+              {/* Section Header */}
+              <div className="flex items-center justify-center mb-10">
+                <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span> 
+                <h3 className="px-4 text-[30px] font-[Georgia] leading-[37.5px] text-black text-center whitespace-nowrap">
+                  Work With Us
+                </h3>
+                <span className="flex-grow h-[2px] bg-[#A6A6A6]"></span>
+              </div>
 
-    {/* Right Text — always centered */}
-    <div className="w-full lg:w-[45%] flex flex-col items-center text-center font-georgia">
-      {/* <p className="text-[24px] md:text-[28px] leading-[38px] md:leading-[44px] xl:leading-[50px] mb-6 md:mb-8"> */}
-      <p className="text-[22px] leading-[36px] mb-6">
+              {/* Content */}
+              <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+                
+                {/* Left Image */}
+                <div className="w-full lg:w-[55%]">
+                  <img
+                    src="/home/work.png"
+                    alt="Work With Us"
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
 
-        Are you an Organization or Company<br />
-        that would like to work with us?
-      </p>
-      <p className="text-[17px] leading-[28px] mb-8 px-1">
-        The Office of the Executive Vice President can partner with services or platforms
-        that address student needs and make them available to the student body, ensuring
-        these resources are provided in the best interest of students, on behalf of the office.
-      </p>
-      <a
-        href="https://docs.google.com/forms/d/1rwVDX89fmSyXyJJPGd-AK11CYUtPesFqlVq-wqhCTVg/edit"
-        className="inline-block px-10 py-2 bg-[#003A70] rounded-[5px] text-white text-[16px] hover:bg-[#002957] transition"
-      >
-        Work With Us
-      </a>
-    </div>
-  </div>
-</div>
+                {/* Right Text — always centered */}
+                <div className="w-full lg:w-[45%] flex flex-col items-center text-center font-georgia">
+                  {/* <p className="text-[24px] md:text-[28px] leading-[38px] md:leading-[44px] xl:leading-[50px] mb-6 md:mb-8"> */}
+                  <p className="text-[22px] leading-[36px] mb-6">
 
-
-
+                    Are you an Organization or Company<br />
+                    that would like to work with us?
+                  </p>
+                  <p className="text-[17px] leading-[28px] mb-8 px-1">
+                    The Office of the Executive Vice President can partner with services or platforms
+                    that address student needs and make them available to the student body, ensuring
+                    these resources are provided in the best interest of students, on behalf of the office.
+                  </p>
+                  <a
+                    href="https://docs.google.com/forms/d/1rwVDX89fmSyXyJJPGd-AK11CYUtPesFqlVq-wqhCTVg/edit"
+                    className="inline-block px-10 py-2 bg-[#003A70] rounded-[5px] text-white text-[16px] hover:bg-[#002957] transition"
+                  >
+                    Work With Us
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
       <Footer />
     </div>
