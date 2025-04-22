@@ -339,7 +339,7 @@ export default function Home() {
                     <a
                       key={idx}
                       onClick={() => setCurrentText(idx)}
-                      className="px-6 py-5 text-[15px] md:text-[18px] font-[Georgia] leading-[22px] hover:bg-[#003A70] hover:text-white transition cursor-pointer whitespace-nowrap"
+                      className="px-6 py-5 text-[13.5px] md:text-[18px] font-[Georgia] leading-[22px] hover:bg-[#003A70] hover:text-white transition cursor-pointer whitespace-nowrap"
                     >
                       {item}
                     </a>
