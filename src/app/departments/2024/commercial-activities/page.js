@@ -297,7 +297,7 @@ export default function departmentsPage() {
 
           
         <div className="flex justify-center items-center mt-2">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd0Xs2uIpKrg1rOQn6fB1CODypJsukz6WUfURqrwuy0iWJlCw/viewform?embedded=true" className="w-[500px] h-[500px] shadow-lg rounded-[20px] border-0">Loading…</iframe>
+          <iframe src="https://docs.google.com/forms/d/1bJX18_Pqbl-xnEU4oNbcBTtVnuDqPdwfuKjeS-LDYqA/viewform?embedded=true" className="w-[500px] h-[500px] shadow-lg rounded-[20px] border-0">Loading…</iframe>
         </div>
 
       <div className="items-center mx-[10%] pt-[5vh] text-center mt-14">
