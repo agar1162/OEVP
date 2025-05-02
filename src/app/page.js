@@ -684,7 +684,7 @@ export default function Home() {
               <div className="flex justify-center items-center w-full lg:pl-10 sm:mt-4">
                 <div className="w-full max-w-[440px] text-center lg:text-left">
                   <img
-                    src="/home/e_1.png"
+                    src="/home/e_2.png"
                     alt="Event"
                     className="w-full h-auto object-contain"
                   />

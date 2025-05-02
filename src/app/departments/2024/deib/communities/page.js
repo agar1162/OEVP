@@ -482,7 +482,7 @@ export default function Page() {
                         <a href="https://callink.berkeley.edu/organization/CASA">Chicanx/Latinx Architecture Student Association (CASA)</a>
                         </li>
                         <li>
-                        <a href="https://callink.berkeley.edu/organization/hermanosunidos">Hermanos Unidos</a>
+                        <a href="https://callink.berkeley.edu/organization/hermanasunidas">Hermanos Unidas</a>
                         </li>
                         <li>
                         <a href="https://www.law.berkeley.edu/berkeley-la-raza-law-journal/">La Raza Law Journal</a>
