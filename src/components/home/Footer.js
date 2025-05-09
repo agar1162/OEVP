@@ -361,10 +361,10 @@ export default function Footer() {
           {/* Column: Home */}
           <div className="flex flex-col gap-3 min-w-[140px]">
             <h3 className="text-[18px] mb-[6px]">Home</h3>
-            <a href="/office/2024.html">Office</a>
-            <a href="/departments/communications.html">Departments</a>
-            <a href="/departments/deib/communities">DEI Resources</a>
-            <a href="/partnerships.html">Partnerships</a>
+            <a href="/office/2024">Office</a>
+            <a href="/departments">Departments</a>
+            <a href="/departments/2024/deib/communities">DEI Resources</a>
+            <a href="/partnerships">Partnerships</a>
             <a href="https://berkeley.zoom.us/j/6685684771">Join Senate Live!</a>
           </div>
 
