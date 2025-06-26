@@ -57,8 +57,8 @@ Run the deployment script (aka the update_evp.sh file):
 ./update_evp.sh
 ```
 
-### 1.3.2. If You Made Changes Directly in SSH (⚠️ Not Recommended)
-> *⚠️ Note: Direct development in SSH is not recommended, as npm is not available in the OCF environment. This could lead to deployment issues if npm run deploy is skipped.*
+### 1.3.2. If You Made Changes Directly in SSH (⚠️ Not Recommended, does not work)
+> *⚠️ Note: Direct development in SSH is not recommended, as npm is not available in the OCF environment. This could lead to deployment issues because npm run deploy is skipped.*
 #### 1.3.2.1. If you must push changes made through SSH: 
 Assume you have been editing code via ssh on your IDE, follow those steps:\
 **Navigate to the repo directory: Assume you are in home directory (~/), run:** 
